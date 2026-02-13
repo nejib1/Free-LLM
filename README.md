@@ -19,13 +19,30 @@ For a better viewing experience with filters and comparisons, visit our website:
 
 ## 📚 Table of Contents
 
-- [Free Providers](#free-providers)
-- [Models List](#models-list)
+- [Verified Free APIs](#verified-free-apis)
+- [Full Provider List](#full-provider-list)
 - [Contributing](#contributing)
 
 ---
+## ⚡ Verified Free APIs
 
-## ⚡ Free Providers
+These providers offer **truly free** access (no credit card, no trial expiration) to powerful models.
+
+| Provider | Description | Limits | Verified |
+| :--- | :--- | :--- | :---: |
+| **[Cerebras](https://inference.cerebras.ai/)** | Inference at the speed of light. Powered by the Wafer-Scale Engine (WSE-3), p... | 30 RPM | ✅ |
+| **[Google AI Studio](https://aistudio.google.com/)** | Google's official platform for building with the most capable multimodal mode... | 30 RPM (Pro/Flash) | ✅ |
+| **[Groq Cloud](https://console.groq.com/)** | The speed king of AI. Powered by custom LPU hardware, Groq delivers instant i... | 30 RPM, 14,400 RPD | ✅ |
+| **[HuggingFace Inference API](https://huggingface.co/inference-api)** | Serverless inference for 500,000+ models. The hub of open source AI. Access e... | Rate limited (throttled) | ✅ |
+| **[Mistral AI](https://console.mistral.ai/)** | Frontier AI in your hands. Access Mistral's open-weights and commercial model... | 1 req/sec (Experiment Plan) | ✅ |
+| **[OpenRouter](https://openrouter.ai/)** | Unified interface for accessing truly free LLMs. Aggregates $0/cost models fr... | Dependent on provider availability | ✅ |
+| **[SambaNova](https://cloud.sambanova.ai/)** | Experience the world's fastest inference on SambaNova's SN40L regular Reconfi... | Varies | ✅ |
+| **[Together.AI](https://together.ai/)** | Access specific free research models from ServiceNow and others. Currently ho... | Subject to availability | ✅ |
+
+---
+
+## 📋 Full Provider List
+
 ### [AI21 Labs](https://studio.ai21.com/)
 
 **Description:** Creators of the Jamba model family, the world's first production-grade Mamba-based LLMs. Offers massive context windows with high throughput.  
