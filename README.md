@@ -30,11 +30,17 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 | Provider | Description | Limits | Verified |
 | :--- | :--- | :--- | :---: |
-| **[Cerebras](https://inference.cerebras.ai/)** | Inference at the speed of light. Powered by the Wafer-Scale Engine (WSE-3), p... | 30 RPM | ✅ |
-| **[Google AI Studio](https://aistudio.google.com/)** | Google's official platform for building with the most capable multimodal mode... | 30 RPM (Pro/Flash) | ✅ |
-| **[Groq Cloud](https://console.groq.com/)** | The speed king of AI. Powered by custom LPU hardware, Groq delivers instant i... | 30 RPM, 14,400 RPD | ✅ |
-| **[HuggingFace Inference API](https://huggingface.co/inference-api)** | Serverless inference for 500,000+ models. The hub of open source AI. Access e... | Rate limited (throttled) | ✅ |
-| **[Mistral AI](https://console.mistral.ai/)** | Frontier AI in your hands. Access Mistral's open-weights and commercial model... | 1 req/sec (Experiment Plan) | ✅ |
+| **[Cerebras](https://cloud.cerebras.ai/)** | Instant inference. | 10-30 RPM | ✅ |
+| **[Chutes](https://chutes.ai)** | Decentralized, crypto-based compute network. Offers free access to various op... | Distributed | ✅ |
+| **[Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)** | 10,000 neurons/day (~ 100-500 requests). | - | ✅ |
+| **[Cohere](https://cohere.com/)** | Models share a common monthly quota. | 20 requests/minute | ✅ |
+| **[GitHub Models](https://github.com/marketplace/models)** | Extremely restrictive limits. Dependent on Copilot subscription tier. | Varies by Copilot Tier | ✅ |
+| **[Google AI Studio](https://aistudio.google.com/)** | Google's prototype platform. Data is used for training outside UK/CH/EEA/EU. | 5-30 RPM | ✅ |
+| **[Groq](https://console.groq.com/)** | LPU Inference Engine. | Varies | ✅ |
+| **[HuggingFace Inference Providers](https://huggingface.co/inference-api)** | Serverless Inference. Limited to models < 10GB. Some popular larger models su... | - | ✅ |
+| **[Mistral (Codestral)](https://codestral.mistral.ai/)** | Currently free to use Codestral model. Monthly subscription based. Phone veri... | 30 requests/minute | ✅ |
+| **[Mistral (La Plateforme)](https://console.mistral.ai/)** | Mistral Experiment plan. Requires opting into data training and phone verific... | 1 request/second | ✅ |
+| **[NVIDIA NIM](https://build.nvidia.com/explore/discover)** | NVIDIA Inference Microservices. Phone verification required. Context window l... | 40 requests/minute | ✅ |
 | **[OpenRouter](https://openrouter.ai/)** | Unified interface for accessing truly free LLMs. Aggregates $0/cost models fr... | Dependent on provider availability | ✅ |
 | **[SambaNova](https://cloud.sambanova.ai/)** | Experience the world's fastest inference on SambaNova's SN40L regular Reconfi... | Varies | ✅ |
 | **[Together.AI](https://together.ai/)** | Access specific free research models from ServiceNow and others. Currently ho... | Subject to availability | ✅ |
@@ -190,17 +196,20 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ---
 
-### [Cerebras](https://inference.cerebras.ai/)
+### [Cerebras](https://cloud.cerebras.ai/)
 
-**Description:** Inference at the speed of light. Powered by the Wafer-Scale Engine (WSE-3), providing the fastest Llama 3.1 inference in the world. Ideal for applications requiring instant responses.  
-**Limits:** 30 RPM
+**Description:** Instant inference.  
+**Limits:** 10-30 RPM
 
 <details>
-<summary><strong>Available Models (3)</strong></summary>
+<summary><strong>Available Models (6)</strong></summary>
 
-- Llama 3.1 70B
+- gpt-oss-120b
+- Qwen 3 235B A22B Instruct
+- Llama 3.3 70B
+- Qwen 3 32B
 - Llama 3.1 8B
-- DocChat Llama
+- Z.ai GLM-4.6
 
 </details>
 
@@ -220,68 +229,78 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ---
 
-### [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai)
+### [Chutes](https://chutes.ai)
 
-**Description:** Run serverless AI inference at the edge. Powered by Cloudflare's global network of GPUs. Supports a wide range of open-source models including Llama 3, Gemma, and more.  
-**Limits:** N/A
+**Description:** Decentralized, crypto-based compute network. Offers free access to various open models run by community hosts.  
+**Limits:** Distributed
 
 <details>
-<summary><strong>Available Models (54)</strong></summary>
+<summary><strong>Available Models (1)</strong></summary>
 
-- Zephyr 7B Beta (AWQ)
-- Una Cybertron 7B v2 (BF16)
-- TinyLlama 1.1B Chat v1.0
-- Starling LM 7B Beta
-- SQLCoder 7B 2
-- Qwen QwQ 32B
-- Qwen 2.5 Coder 32B Instruct
-- Qwen 1.5 7B Chat (AWQ)
-- Qwen 1.5 14B Chat (AWQ)
-- Qwen 1.5 1.8B Chat
-- Qwen 1.5 0.5B Chat
-- Phi-2
-- OpenHermes 2.5 Mistral 7B (AWQ)
-- OpenChat 3.5 0106
-- Neural Chat 7B v3.1 (AWQ)
-- Mistral Small 3.1 24B Instruct
-- Mistral 7B Instruct v0.2 (LoRA)
-- Mistral 7B Instruct v0.2
-- Mistral 7B Instruct v0.1 (AWQ)
-- Mistral 7B Instruct v0.1
-- Llama Guard 3 8B
-- Llama 4 Scout Instruct
-- Llama 3.3 70B Instruct (FP8)
-- Llama 3.2 3B Instruct
-- Llama 3.2 1B Instruct
-- Llama 3.2 11B Vision Instruct
-- Llama 3.1 8B Instruct (FP8)
-- Llama 3.1 8B Instruct (AWQ)
-- Llama 3 8B Instruct (AWQ)
-- Llama 3 8B Instruct
-- Llama 2 7B Chat (LoRA)
-- Llama 2 7B Chat (INT8)
-- Llama 2 7B Chat (FP16)
-- Llama 2 13B Chat (AWQ)
-- Hermes 2 Pro Mistral 7B
-- Gemma 7B Instruct (LoRA)
-- Gemma 7B Instruct
-- Gemma 3 12B Instruct
-- Gemma 2B Instruct (LoRA)
-- Falcom 7B Instruct
-- Discolm German 7B v1 (AWQ)
-- Deepseek Math 7B Instruct
-- Deepseek Coder 6.7B Instruct (AWQ)
-- Deepseek Coder 6.7B Base (AWQ)
-- DeepSeek R1 Distill Qwen 32B
-- @cf/qwen/qwen3-30b-a3b-fp8
-- @cf/openai/gpt-oss-20b
-- @cf/openai/gpt-oss-120b
-- @cf/ibm-granite/granite-4.0-h-micro
+- Various Open Models
+
+</details>
+
+---
+
+### [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)
+
+**Description:** 10,000 neurons/day (~ 100-500 requests).  
+**Limits:** -
+
+<details>
+<summary><strong>Available Models (50)</strong></summary>
+
 - @cf/aisingapore/gemma-sea-lion-v4-27b-it
-- @cf/meta/llama-3.1-8b-instruct
-- @cf/google/gemma-7b-it
-- @cf/mistral/mistral-7b-instruct-v0.1
-- @cf/stabilityai/stable-diffusion-xl-base-1.0
+- @cf/ibm-granite/granite-4.0-h-micro
+- @cf/openai/gpt-oss-120b
+- @cf/openai/gpt-oss-20b
+- @cf/qwen/qwen3-30b-a3b-fp8
+- DeepSeek R1 Distill Qwen 32B
+- Deepseek Coder 6.7B Base (AWQ)
+- Deepseek Coder 6.7B Instruct (AWQ)
+- Deepseek Math 7B Instruct
+- Discolm German 7B v1 (AWQ)
+- Falcom 7B Instruct
+- Gemma 2B Instruct (LoRA)
+- Gemma 3 12B Instruct
+- Gemma 7B Instruct
+- Gemma 7B Instruct (LoRA)
+- Hermes 2 Pro Mistral 7B
+- Llama 2 13B Chat (AWQ)
+- Llama 2 7B Chat (FP16)
+- Llama 2 7B Chat (INT8)
+- Llama 2 7B Chat (LoRA)
+- Llama 3 8B Instruct
+- Llama 3 8B Instruct (AWQ)
+- Llama 3.1 8B Instruct (AWQ)
+- Llama 3.1 8B Instruct (FP8)
+- Llama 3.2 11B Vision Instruct
+- Llama 3.2 1B Instruct
+- Llama 3.2 3B Instruct
+- Llama 3.3 70B Instruct (FP8)
+- Llama 4 Scout Instruct
+- Llama Guard 3 8B
+- Mistral 7B Instruct v0.1
+- Mistral 7B Instruct v0.1 (AWQ)
+- Mistral 7B Instruct v0.2
+- Mistral 7B Instruct v0.2 (LoRA)
+- Mistral Small 3.1 24B Instruct
+- Neural Chat 7B v3.1 (AWQ)
+- OpenChat 3.5 0106
+- OpenHermes 2.5 Mistral 7B (AWQ)
+- Phi-2
+- Qwen 1.5 0.5B Chat
+- Qwen 1.5 1.8B Chat
+- Qwen 1.5 14B Chat (AWQ)
+- Qwen 1.5 7B Chat (AWQ)
+- Qwen 2.5 Coder 32B Instruct
+- Qwen QwQ 32B
+- SQLCoder 7B 2
+- Starling LM 7B Beta
+- TinyLlama 1.1B Chat v1.0
+- Una Cybertron 7B v2 (BF16)
+- Zephyr 7B Beta (AWQ)
 
 </details>
 
@@ -320,27 +339,24 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ### [Cohere](https://cohere.com/)
 
-**Description:** Enterprise AI platform focused on search and retrieval. Creators of the Command R series, optimized for RAG (Retrieval Augmented Generation) and tool use.  
+**Description:** Models share a common monthly quota.  
 **Limits:** 20 requests/minute
 
 <details>
-<summary><strong>Available Models (15)</strong></summary>
+<summary><strong>Available Models (12)</strong></summary>
 
-- command-r7b-arabic-02-2025
-- command-r7b-12-2024
-- command-r-plus-08-2024
-- command-r-08-2024
-- command-a-vision-07-2025
-- command-a-translate-08-2025
-- command-a-reasoning-08-2025
-- command-a-03-2025
-- c4ai-aya-vision-8b
-- c4ai-aya-vision-32b
-- c4ai-aya-expanse-8b
 - c4ai-aya-expanse-32b
-- Command R+
-- Command R
-- Aya 23
+- c4ai-aya-expanse-8b
+- c4ai-aya-vision-32b
+- c4ai-aya-vision-8b
+- command-a-03-2025
+- command-a-reasoning-08-2025
+- command-a-translate-08-2025
+- command-a-vision-07-2025
+- command-r-08-2024
+- command-r-plus-08-2024
+- command-r7b-12-2024
+- command-r7b-arabic-02-2025
 
 </details>
 
@@ -530,59 +546,55 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ### [GitHub Models](https://github.com/marketplace/models)
 
-**Description:** Prototyping with AI models directly in GitHub. Access top models like GPT-4o, Llama 3, and Mistral via a unified API or the playground. Perfect for testing and experimentation.  
-**Limits:** Varies by tier (Free/Pro/Enterprise)
+**Description:** Extremely restrictive limits. Dependent on Copilot subscription tier.  
+**Limits:** Varies by Copilot Tier
 
 <details>
-<summary><strong>Available Models (47)</strong></summary>
+<summary><strong>Available Models (43)</strong></summary>
 
-- Phi-4-reasoning
-- Phi-4-multimodal-instruct
-- Phi-4-mini-reasoning
-- Phi-4-mini-instruct
-- Phi-4
-- OpenAI o4-mini
-- OpenAI o3-mini
-- OpenAI o3
-- OpenAI o1-preview
-- OpenAI o1-mini
-- OpenAI o1
-- OpenAI gpt-5-nano
-- OpenAI gpt-5-mini
-- OpenAI gpt-5-chat (preview)
-- OpenAI gpt-5
-- OpenAI Text Embedding 3 (small)
-- OpenAI Text Embedding 3 (large)
-- OpenAI GPT-4o mini
-- OpenAI GPT-4o
-- OpenAI GPT-4.1-nano
-- OpenAI GPT-4.1-mini
-- OpenAI GPT-4.1
-- Mistral Small 3.1
-- Mistral Medium 3 (25.05)
-- Ministral 3B
-- Meta-Llama-3.1-8B-Instruct
-- Meta-Llama-3.1-405B-Instruct
-- MAI-DS-R1
-- Llama-3.3-70B-Instruct
-- Llama-3.2-90B-Vision-Instruct
-- Llama-3.2-11B-Vision-Instruct
-- Llama 4 Scout 17B 16E Instruct
-- Llama 4 Maverick 17B 128E Instruct FP8
-- Grok 3 Mini
-- Grok 3
-- DeepSeek-V3-0324
-- DeepSeek-R1-0528
-- DeepSeek-R1
-- Cohere Command R+ 08-2024
-- Cohere Command R 08-2024
-- Cohere Command A
-- Codestral 25.01
 - AI21 Jamba 1.5 Large
-- GPT-4o
-- Llama 3.1 405B
-- Mistral Large 2
-- Phi-3.5-mini
+- Codestral 25.01
+- Cohere Command A
+- Cohere Command R 08-2024
+- Cohere Command R+ 08-2024
+- DeepSeek-R1
+- DeepSeek-R1-0528
+- DeepSeek-V3-0324
+- Grok 3
+- Grok 3 Mini
+- Llama 4 Maverick 17B 128E Instruct FP8
+- Llama 4 Scout 17B 16E Instruct
+- Llama-3.2-11B-Vision-Instruct
+- Llama-3.2-90B-Vision-Instruct
+- Llama-3.3-70B-Instruct
+- MAI-DS-R1
+- Meta-Llama-3.1-405B-Instruct
+- Meta-Llama-3.1-8B-Instruct
+- Ministral 3B
+- Mistral Medium 3 (25.05)
+- Mistral Small 3.1
+- OpenAI GPT-4.1
+- OpenAI GPT-4.1-mini
+- OpenAI GPT-4.1-nano
+- OpenAI GPT-4o
+- OpenAI GPT-4o mini
+- OpenAI Text Embedding 3 (large)
+- OpenAI Text Embedding 3 (small)
+- OpenAI gpt-5
+- OpenAI gpt-5-chat (preview)
+- OpenAI gpt-5-mini
+- OpenAI gpt-5-nano
+- OpenAI o1
+- OpenAI o1-mini
+- OpenAI o1-preview
+- OpenAI o3
+- OpenAI o3-mini
+- OpenAI o4-mini
+- Phi-4
+- Phi-4-mini-instruct
+- Phi-4-mini-reasoning
+- Phi-4-multimodal-instruct
+- Phi-4-reasoning
 
 </details>
 
@@ -590,15 +602,19 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ### [Google AI Studio](https://aistudio.google.com/)
 
-**Description:** Google's official platform for building with the most capable multimodal models. Features the groundbreaking Gemini 3.0 series with infinite context windows and real-time native multimodal reasoning.  
-**Limits:** 30 RPM (Pro/Flash)
+**Description:** Google's prototype platform. Data is used for training outside UK/CH/EEA/EU.  
+**Limits:** 5-30 RPM
 
 <details>
-<summary><strong>Available Models (3)</strong></summary>
+<summary><strong>Available Models (7)</strong></summary>
 
-- Gemini 3.0 Pro
-- Gemini 3.0 Flash
-- Gemini 2.5 Pro (Legacy)
+- Gemini 3 Flash
+- Gemini 2.5 Flash
+- Gemini 2.5 Flash-Lite
+- Gemma 3 27B Instruct
+- Gemma 3 12B Instruct
+- Gemma 3 4B Instruct
+- Gemma 3 1B Instruct
 
 </details>
 
@@ -661,49 +677,45 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ---
 
-### [Groq Cloud](https://console.groq.com/)
+### [Groq](https://console.groq.com/)
 
-**Description:** The speed king of AI. Powered by custom LPU hardware, Groq delivers instant inference for open-source models including Llama 4 and Mixtral. Essential for real-time applications.  
-**Limits:** 30 RPM, 14,400 RPD
+**Description:** LPU Inference Engine.  
+**Limits:** Varies
 
 <details>
-<summary><strong>Available Models (6)</strong></summary>
+<summary><strong>Available Models (16)</strong></summary>
 
-- Llama 4 405B (Preview)
-- Llama 3.3 70B Versatile
-- Llama 4 70B
-- DeepSeek R1 Distill Llama 70B
-- Mixtral 8x22B
-- Whisper V3 Turbo
+- Allam 2 7B
+- Llama 3.1 8B
+- Llama 3.3 70B
+- Llama 4 Maverick 17B 128E Instruct
+- Llama 4 Scout Instruct
+- Whisper Large v3
+- Whisper Large v3 Turbo
+- groq/compound
+- groq/compound-mini
+- meta-llama/llama-guard-4-12b
+- moonshotai/kimi-k2-instruct
+- moonshotai/kimi-k2-instruct-0905
+- openai/gpt-oss-120b
+- openai/gpt-oss-20b
+- openai/gpt-oss-safeguard-20b
+- qwen/qwen3-32b
 
 </details>
 
 ---
 
-### [HuggingFace Inference API](https://huggingface.co/inference-api)
+### [HuggingFace Inference Providers](https://huggingface.co/inference-api)
 
-**Description:** Serverless inference for 500,000+ models. The hub of open source AI. Access everything from BERT to the latest Llama and Qwen models for free (rate limited).  
-**Limits:** Rate limited (throttled)
+**Description:** Serverless Inference. Limited to models < 10GB. Some popular larger models supported.  
+**Limits:** -
 
 <details>
-<summary><strong>Available Models (16)</strong></summary>
+<summary><strong>Available Models (2)</strong></summary>
 
-- Qwen 2.5 72B Instruct
-- Llama 4 8B Instruct
-- Llama 3.2 11B Vision
-- DeepSeek R1
-- DeepSeek V3
-- SmolLM2 1.7B
-- Flux.1 Dev (Image)
-- Stable Diffusion 3.5 Large
-- Mistral NeMo 12B
-- Phi-4
-- Gemma 3 9B
-- Whisper Large V3 Turbo
-- Parler-TTS Large
-- Florence-2 Large
-- Nomic Embed Text V1.5
-- BGE M3
+- Various open models across supported providers
+- Various Open Models
 
 </details>
 
@@ -909,20 +921,30 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ---
 
-### [Mistral AI](https://console.mistral.ai/)
+### [Mistral (Codestral)](https://codestral.mistral.ai/)
 
-**Description:** Frontier AI in your hands. Access Mistral's open-weights and commercial models via La Plateforme. Includes the flagship Mistral 3 and specialized Magistral models.  
-**Limits:** 1 req/sec (Experiment Plan)
+**Description:** Currently free to use Codestral model. Monthly subscription based. Phone verification required.  
+**Limits:** 30 requests/minute
 
 <details>
-<summary><strong>Available Models (6)</strong></summary>
+<summary><strong>Available Models (1)</strong></summary>
+
+- Codestral
+
+</details>
+
+---
+
+### [Mistral (La Plateforme)](https://console.mistral.ai/)
+
+**Description:** Mistral Experiment plan. Requires opting into data training and phone verification.  
+**Limits:** 1 request/second
+
+<details>
+<summary><strong>Available Models (2)</strong></summary>
 
 - Codestral
 - Open and Proprietary Mistral models
-- Mistral 3 Large (Flagship)
-- Mistral Magistral Medium
-- Mistral Large 2 (Legacy)
-- Codestral 2
 
 </details>
 
@@ -1021,17 +1043,13 @@ These providers offer **truly free** access (no credit card, no trial expiration
 
 ### [NVIDIA NIM](https://build.nvidia.com/explore/discover)
 
-**Description:** Accelerated inference microservices for generative AI. Experience the fastest inference for open-source models like Llama 3 and Mistral, optimized for NVIDIA GPUs.  
+**Description:** NVIDIA Inference Microservices. Phone verification required. Context window limited.  
 **Limits:** 40 requests/minute
 
 <details>
-<summary><strong>Available Models (5)</strong></summary>
+<summary><strong>Available Models (1)</strong></summary>
 
-- Various open models
-- Llama 3.1 405B Instruct
-- Llama 3.1 70B Instruct
-- Mistral Large 2
-- Nemotron-4 340B Reward
+- Various Open Models
 
 </details>
 
