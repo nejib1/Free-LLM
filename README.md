@@ -37,7 +37,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 | **[GitHub Models](https://github.com/marketplace/models)** | Extremely restrictive limits. Dependent on Copilot subscription tier. | Varies by Copilot Tier | ✅ |
 | **[Google AI Studio](https://aistudio.google.com/)** | Google AI Studio is a web-based prototyping environment for developers to exp... | 2-15 RPM | ✅ |
 | **[Google Vertex AI](https://console.cloud.google.com/vertex-ai/model-garden)** | Very stringent payment verification for Google Cloud. | 30-60 RPM | ✅ |
-| **[Groq](https://console.groq.com/)** | LPU Inference Engine. | Varies | ✅ |
+| **[Groq](https://console.groq.com/)** | LPU Inference Engine. | 30 RPM, 14.4k RPD | ✅ |
 | **[Hugging Face Inference](https://huggingface.co/inference-api/serverless)** | The Hugging Face Serverless Inference API allows you to access over 100,000 p... | 300 Requests / hour | ✅ |
 | **[Mistral (Codestral)](https://codestral.mistral.ai/)** | Currently free to use Codestral model. Monthly subscription based. Phone veri... | 30 requests/minute | ✅ |
 | **[Mistral (La Plateforme)](https://console.mistral.ai/)** | Mistral Experiment plan. Requires opting into data training and phone verific... | 1 request/second | ✅ |
@@ -54,13 +54,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** Creators of the Jamba model family, the world's first production-grade Mamba-based LLMs. Offers massive context windows with high throughput.  
 **Limits:** Standard
 
-<details>
-<summary><strong>Available Models (2)</strong></summary>
-
-- Jamba 1.5 Large
-- Jamba 1.5 Mini
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -84,7 +78,13 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** Access 200+ AI models with one API key. High limits, low latency, and 24/7 support. Supports OpenAI, Anthropic, Mistral, and many more via a single integration.  
 **Limits:** High throughput
 
-*No specific free models listed currently.*
+<details>
+<summary><strong>Available Models (2)</strong></summary>
+
+- Google: Gemma 3 4B Instruct (free)
+- Google: Gemma 3 12B Instruct (free)
+
+</details>
 
 ---
 
@@ -93,14 +93,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** The enterprise AI platform from Alibaba Cloud. Home of the Qwen (Tongyi Qianwen) model family, offering state-of-the-art performance in coding and mathematics.  
 **Limits:** Standard
 
-<details>
-<summary><strong>Available Models (3)</strong></summary>
-
-- Qwen-Max
-- Qwen-Plus
-- Qwen-Turbo
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -109,15 +102,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** Constitutional AI with industry-leading reasoning and safety. Home of the legendary Claude 4.6 Opus, widely considered the most intelligent model available. Free tier access through claude.ai with generous daily limits.  
 **Limits:** Dynamic based on demand
 
-<details>
-<summary><strong>Available Models (4)</strong></summary>
-
-- Claude 4.6 Opus
-- Claude 4.5 Sonnet
-- Claude 4.5 Haiku
-- Claude 4.0 Opus (Legacy)
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -136,9 +121,10 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** QPS limits apply
 
 <details>
-<summary><strong>Available Models (1)</strong></summary>
+<summary><strong>Available Models (2)</strong></summary>
 
-- ERNIE-Speed
+- ERNIE Speed 128K (Free)
+- ERNIE Lite 8K (Free)
 
 </details>
 
@@ -158,19 +144,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** An Inference Platform built for speed and control, enabling deployment of any AI/ML model anywhere with tailored optimization, efficient scaling, and streamlined operations. It offers a complete solution to simplify inference infrastructure while giving full control over deployments.  
 **Limits:** Hardware dependent
 
-<details>
-<summary><strong>Available Models (8)</strong></summary>
-
-- OpenLLM
-- Llama 4
-- DeepSeek
-- Ling/Ring
-- Flux
-- Qwen
-- GPT-OSS
-- Custom Models
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -182,22 +156,22 @@ These providers offer **truly free** access (no credit card, no trial expiration
 <details>
 <summary><strong>Available Models (1)</strong></summary>
 
-- BLOOM 176B
+- BLOOM 176B (via HF)
 
 </details>
 
 ---
 
-### [BLOOM Inference](https://huggingface.co/bigscience/bloom)
+### [BLOOM Inference (BigScience)](https://huggingface.co/bigscience/bloom)
 
-**Description:** The world's largest open-multilingual language model. BLOOM (176B) is capable of generating text in 46 natural languages and 13 programming languages.  
+**Description:** Access the world's largest open-multilingual language model. BLOOM (176B) is capable of generating text in 46 natural languages and 13 programming languages, developed by over 1000 researchers.  
 **Limits:** Shared HF limits
 
 <details>
 <summary><strong>Available Models (2)</strong></summary>
 
-- BLOOM-176B
-- BLOOMZ (Instruct)
+- BLOOM 176B
+- BLOOMZ 176B (Instruct)
 
 </details>
 
@@ -209,11 +183,10 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** 30 RPM
 
 <details>
-<summary><strong>Available Models (3)</strong></summary>
+<summary><strong>Available Models (2)</strong></summary>
 
-- Llama 3.3 70B
-- Llama 3.1 8B
-- Llama 3.1 70B
+- Llama 3.1 8B (Fast)
+- Llama 3.1 70B (Fast)
 
 </details>
 
@@ -227,7 +200,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 <details>
 <summary><strong>Available Models (1)</strong></summary>
 
-- Character LLM
+- Character.AI (Web Platform)
 
 </details>
 
@@ -316,11 +289,10 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** Fair use
 
 <details>
-<summary><strong>Available Models (3)</strong></summary>
+<summary><strong>Available Models (2)</strong></summary>
 
-- Codeium Base
-- Codeium Chat
-- SWE-1.5
+- Codeium Base (Autocomplete)
+- Codeium Chat (Windsurf)
 
 </details>
 
@@ -347,23 +319,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** Models share a common monthly quota.  
 **Limits:** 20 requests/minute
 
-<details>
-<summary><strong>Available Models (12)</strong></summary>
-
-- c4ai-aya-expanse-32b
-- c4ai-aya-expanse-8b
-- c4ai-aya-vision-32b
-- c4ai-aya-vision-8b
-- command-a-03-2025
-- command-a-reasoning-08-2025
-- command-a-translate-08-2025
-- command-a-vision-07-2025
-- command-r-08-2024
-- command-r-plus-08-2024
-- command-r7b-12-2024
-- command-r7b-arabic-02-2025
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -375,8 +331,8 @@ These providers offer **truly free** access (no credit card, no trial expiration
 <details>
 <summary><strong>Available Models (2)</strong></summary>
 
-- XTTS v2
-- VITS
+- XTTS v2 (Local)
+- VITS (Local)
 
 </details>
 
@@ -388,10 +344,11 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** Device dependent
 
 <details>
-<summary><strong>Available Models (2)</strong></summary>
+<summary><strong>Available Models (3)</strong></summary>
 
-- Stable Diffusion on Core ML
-- Transformers (via swift-transformers)
+- Stable Diffusion v1.5 (Core ML)
+- Stable Diffusion XL (Core ML)
+- Core ML Transformers
 
 </details>
 
@@ -464,11 +421,10 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** Shared HF limits
 
 <details>
-<summary><strong>Available Models (3)</strong></summary>
+<summary><strong>Available Models (2)</strong></summary>
 
-- GPT-NeoX-20B
-- Pythia-12B
-- GPT-J-6B
+- GPT-NeoX-20B (via HF)
+- Pythia-12B (via HF)
 
 </details>
 
@@ -486,21 +442,9 @@ These providers offer **truly free** access (no credit card, no trial expiration
 ### [Fireworks AI](https://fireworks.ai/)
 
 **Description:** The fastest production platform for Generative AI. Run open-source models with blazing speed and efficiency. Specialized in fire-function calling and JSON mode.  
-**Limits:** 600 requests/minute (Shared)
+**Limits:** Shared
 
-<details>
-<summary><strong>Available Models (8)</strong></summary>
-
-- Llama 4 405B Instruct
-- Llama 4 70B Instruct
-- Llama 3.3 70B Instruct
-- Qwen 2.5 72B Instruct
-- DeepSeek V3
-- Mixtral 8x22B
-- FireLLaVA-13B
-- Flux.1 Dev
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -526,12 +470,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** Compound AI systems with multiple models. Free tier for orchestration and routing.  
 **Limits:** Rate limit applies
 
-<details>
-<summary><strong>Available Models (1)</strong></summary>
-
-- FireFunction V1
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -555,51 +494,14 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** Varies by Copilot Tier
 
 <details>
-<summary><strong>Available Models (43)</strong></summary>
+<summary><strong>Available Models (6)</strong></summary>
 
-- AI21 Jamba 1.5 Large
-- Codestral 25.01
-- Cohere Command A
-- Cohere Command R 08-2024
-- Cohere Command R+ 08-2024
-- DeepSeek-R1
-- DeepSeek-R1-0528
-- DeepSeek-V3-0324
-- Grok 3
-- Grok 3 Mini
-- Llama 4 Maverick 17B 128E Instruct FP8
-- Llama 4 Scout 17B 16E Instruct
-- Llama-3.2-11B-Vision-Instruct
-- Llama-3.2-90B-Vision-Instruct
-- Llama-3.3-70B-Instruct
-- MAI-DS-R1
-- Meta-Llama-3.1-405B-Instruct
-- Meta-Llama-3.1-8B-Instruct
-- Ministral 3B
-- Mistral Medium 3 (25.05)
-- Mistral Small 3.1
-- OpenAI GPT-4.1
-- OpenAI GPT-4.1-mini
-- OpenAI GPT-4.1-nano
-- OpenAI GPT-4o
-- OpenAI GPT-4o mini
-- OpenAI Text Embedding 3 (large)
-- OpenAI Text Embedding 3 (small)
-- OpenAI gpt-5
-- OpenAI gpt-5-chat (preview)
-- OpenAI gpt-5-mini
-- OpenAI gpt-5-nano
-- OpenAI o1
-- OpenAI o1-mini
-- OpenAI o1-preview
-- OpenAI o3
-- OpenAI o3-mini
-- OpenAI o4-mini
+- GPT-4o
+- Llama 3.3 70B Instruct
 - Phi-4
-- Phi-4-mini-instruct
-- Phi-4-mini-reasoning
-- Phi-4-multimodal-instruct
-- Phi-4-reasoning
+- Mistral Large (24.11)
+- Cohere Command R+
+- AI21 Jamba 1.5 Large
 
 </details>
 
@@ -611,13 +513,12 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** 2-15 RPM
 
 <details>
-<summary><strong>Available Models (5)</strong></summary>
+<summary><strong>Available Models (4)</strong></summary>
 
 - Gemini 2.0 Flash
 - Gemini 2.0 Flash-Lite
 - Gemini 1.5 Flash
 - Gemini 1.5 Pro
-- Gemini 1.5 Flash-8B
 
 </details>
 
@@ -693,7 +594,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 ### [Groq](https://console.groq.com/)
 
 **Description:** LPU Inference Engine.  
-**Limits:** Varies
+**Limits:** 30 RPM, 14.4k RPD
 
 <details>
 <summary><strong>Available Models (16)</strong></summary>
@@ -725,14 +626,13 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** 300 Requests / hour
 
 <details>
-<summary><strong>Available Models (6)</strong></summary>
+<summary><strong>Available Models (5)</strong></summary>
 
+- Llama 3.2 11B Vision
 - Llama 3.1 8B Instruct
-- Mistral 7B Instruct v0.3
-- Phi-3 Mini 4k Instruct
-- Qwen2.5 7B Instruct
+- Qwen 2.5 72B Instruct
 - Gemma 2 9B Instruct
-- Nous Hermes 2 Mixtral 8x7B
+- Flux.1 Dev
 
 </details>
 
@@ -743,14 +643,7 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Description:** Decentralized AI inference network. Access top-tier open source models like Llama 3.1 405B and DeepSeek V3 at a fraction of the cost.  
 **Limits:** Standard
 
-<details>
-<summary><strong>Available Models (3)</strong></summary>
-
-- Llama 3.1 405B Instruct
-- DeepSeek V3
-- Qwen 2.5 72B
-
-</details>
+*No specific free models listed currently.*
 
 ---
 
@@ -789,12 +682,11 @@ These providers offer **truly free** access (no credit card, no trial expiration
 **Limits:** Hardware dependent
 
 <details>
-<summary><strong>Available Models (4)</strong></summary>
+<summary><strong>Available Models (3)</strong></summary>
 
 - Llama 3 (Local)
 - Mistral (Local)
-- Gemma 3 (Local)
-- GGUF (Local)
+- Gemma 2 (Local)
 
 </details>
 
