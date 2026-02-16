@@ -1,53 +1,56 @@
 # 🚀 Free LLM API Directory
 
-> **The comprehensive, automated list of free LLM APIs and models.**  
-> *Last updated: 2026-02-16*
-
 [![Website](https://img.shields.io/badge/Website-free--llm.com-blue?style=for-the-badge)](https://free-llm.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Auto-Updated](https://img.shields.io/badge/Updates-Daily-orange?style=for-the-badge)](#)
 
-## 📖 Overview
-
-This repository contains a curated list of providers offering **free access** to Large Language Models (LLMs) via API.  
-The list is **automatically synchronized** with the latest resources from the community and verified availability.
-
-For a better viewing experience with filters and comparisons, visit our website:  
-👉 **[https://free-llm.com](https://free-llm.com)**
+**A curated collection of the best free LLM APIs for developers.**  
+*Strictly vetted. No shady wrappers. Just free compute.*
 
 ---
 
-## 📚 Table of Contents
+## 🏆 Top Tier (Must-Haves)
 
-- [Verified Free APIs](#verified-free-apis)
-- [Full Provider List](#full-provider-list)
-- [Contributing](#contributing)
+The absolute best free tiers available right now. High limits, top models, and reliable uptime.
 
----
-## ⚡ Verified Free APIs
-
-These providers offer **truly free** access (no credit card, no trial expiration) to powerful models.
-
-| Provider | Description | Limits | Verified |
-| :--- | :--- | :--- | :---: |
-| **[Cerebras](https://cerebras.ai/inference)** | Cerebras Systems offers the world's fastest AI inference service, powered by ... | 30 RPM | ✅ |
-| **[Chutes](https://chutes.ai)** | Decentralized, crypto-based compute network. Offers free access to various op... | Distributed | ✅ |
-| **[Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)** | 10,000 neurons/day (~ 100-500 requests). | - | ✅ |
-| **[Cohere](https://cohere.com/)** | Models share a common monthly quota. | 20 requests/minute | ✅ |
-| **[GitHub Models](https://github.com/marketplace/models)** | Extremely restrictive limits. Dependent on Copilot subscription tier. | Varies by Copilot Tier | ✅ |
-| **[Google AI Studio](https://aistudio.google.com/)** | Google AI Studio is a web-based prototyping environment for developers to exp... | 2-15 RPM | ✅ |
-| **[Google Vertex AI](https://console.cloud.google.com/vertex-ai/model-garden)** | Very stringent payment verification for Google Cloud. | 30-60 RPM | ✅ |
-| **[Groq](https://console.groq.com/)** | LPU Inference Engine. | 30 RPM, 14.4k RPD | ✅ |
-| **[Hugging Face Inference](https://huggingface.co/inference-api/serverless)** | The Hugging Face Serverless Inference API allows you to access over 100,000 p... | 300 Requests / hour | ✅ |
-| **[Mistral (Codestral)](https://codestral.mistral.ai/)** | Currently free to use Codestral model. Monthly subscription based. Phone veri... | 30 requests/minute | ✅ |
-| **[Mistral (La Plateforme)](https://console.mistral.ai/)** | Mistral Experiment plan. Requires opting into data training and phone verific... | 1 request/second | ✅ |
-| **[NVIDIA NIM](https://build.nvidia.com/explore/discover)** | NVIDIA Inference Microservices. Phone verification required. Context window l... | 40 requests/minute | ✅ |
-| **[OpenRouter](https://openrouter.ai/)** | A community-focused router for LLMs. Offers a specific list of truly free mod... | 20 requests/minute | ✅ |
-| **[Together.AI](https://together.ai/)** | Access specific free research models from ServiceNow and others. Currently ho... | Subject to availability | ✅ |
+| Provider | Best For | Free Limit | Notable Models |
+| :--- | :--- | :--- | :--- |
+| **[OpenRouter](https://openrouter.ai)** | 🏅 **Everything** | ~20 RPM | Llama 3.1 405B, Gemini Pro, Claude 3 (via free credits), Mistral Large |
+| **[Google AI Studio](https://aistudio.google.com)** | 📚 **Context** | 15 RPM | **Gemini 1.5 Pro (2M Context)**, Gemini 2.0 Flash |
+| **[Groq](https://console.groq.com)** | ⚡ **Speed** | 30 RPM | Llama 3.3 70B, Mixtral 8x7B (@ ~1000 tok/s) |
+| **[Cohere](https://cohere.com)** | 🛍️ **RAG / Embed** | 20 RPM | Command R+, Embed v3 Multilingual |
 
 ---
 
-## 📋 Full Provider List
+## ⚡ Forever Free (No Credit Card)
+
+Generous free tiers that replenish daily or monthly. Perfect for side projects.
+
+| Provider | Limit | Notes |
+| :--- | :--- | :--- |
+| **[Hugging Face](https://huggingface.co/inference-api/serverless)** | 300 Req/hr | Access 100k+ open models (Warmup times vary) |
+| **[Mistral AI](https://console.mistral.ai)** | 1 Req/sec | Requires phone verification. Top-tier French models. |
+| **[NVIDIA NIM](https://build.nvidia.com)** | 1000 Credits | "Testing" credits that often reset. Enterprise-grade. |
+| **[GitHub Models](https://github.com/marketplace/models)** | Varies | Free GPT-4o & o1-mini for Copilot subscribers. |
+| **[Cloudflare AI](https://developers.cloudflare.com/workers-ai/)** | 10k Neurons | Runs on edge workers. Good for small tasks. |
+
+---
+
+## 💳 Trial Credits (One-Time)
+
+Massive compute for benchmarking or training. Requires phone/credit card verification.
+
+| Provider | Credits | Valid For | Best Model |
+| :--- | :--- | :--- | :--- |
+| **[ScaleWay](https://console.scaleway.com)** | **~€100+** | Varies | Llama 3.1 70B (European servers) |
+| **[Alibaba Cloud](https://bailian.console.alibabacloud.com)** | **1M Tokens** | 30 Days | Qwen 2.5 72B (Top tier coding model) |
+| **[Tencent Cloud](https://cloud.tencent.com)** | **100k Tokens** | N/A | Hunyuan (Great for Chinese text) |
+| **[DeepInfra](https://deepinfra.com)** | **$1.80** | N/A | diverse open models |
+| **[Together AI](https://together.ai)** | **$5.00** | N/A | Llama 3.3, Qwen 2.5 |
+| **[Upstage](https://console.upstage.ai)** | **$10.00** | N/A | Solar Pro (Compact & Smart) |
+
+---
+
+## 📂 Complete Provider Directory
 
 ### [AI21 Labs](https://docs.ai21.com/)
 
@@ -1379,12 +1382,6 @@ These providers offer **truly free** access (no credit card, no trial expiration
 </details>
 
 ---
-
-## 🤝 Contributing
-
-This list is maintained automatically. If you know of a free provider that isn't listed, please verify it on [free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) as we sync from there.
-
-## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
