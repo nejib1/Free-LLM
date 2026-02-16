@@ -1,6 +1,6 @@
 # 🚀 Free LLM API Directory
 
-> **The comprehensive list of free LLM APIs and models.**  
+> **The comprehensive, automated list of free LLM APIs and models.**  
 > *Last updated: 2026-02-16*
 
 [![Website](https://img.shields.io/badge/Website-free--llm.com-blue?style=for-the-badge)](https://free-llm.com)
@@ -1379,6 +1379,12 @@ These providers offer **truly free** access (no credit card, no trial expiration
 </details>
 
 ---
+
+## 🤝 Contributing
+
+This list is maintained automatically. If you know of a free provider that isn't listed, please verify it on [free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) as we sync from there.
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
