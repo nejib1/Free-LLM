@@ -2,8 +2,6 @@
 
 **Stop paying for AI.** This project indexes every provider that lets you use large language models at zero cost — whether through permanent free tiers, trial credits, or local execution on your own hardware.
 
-🌐 **Live at [free-llm.com](https://free-llm.com)** — filterable cards, side-by-side comparisons, community votes, and code snippets ready to copy.
-
 ---
 
 ## Why This Exists
@@ -153,3 +151,4 @@ Most providers listed here support the **OpenAI SDK** — meaning you can switch
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
+
