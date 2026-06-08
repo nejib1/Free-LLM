@@ -70,6 +70,7 @@ Sign up and receive credits to use until depleted.
 | [Scaleway](https://console.scaleway.com/generative-api/models) | Standard | 1M free tokens (trial) | 1M tokens | One-time trial | Mistral, Llama, Qwen (EU-hosted) |
 | [Yi AI](https://www.01.ai/) | Standard | Initial trial credits | Credit-based | One-time trial | Yi-Large (200K context) |
 | [Requesty](https://requesty.ai/) | Standard | Free monthly credits | Free monthly credits | Free tier included | Multi-provider routing |
+| [Starveri API](https://api.starveri.net/credits) | 1 concurrent demo request | 5 demo requests | 2,000 demo tokens | One-time per user | GPT 5.5 demo; paid GPT/Codex credits at 1/3 OpenAI-style pricing |
 
 ### 🖥️ Local / Self-Hosted (Unlimited & Private)
 
