@@ -8,7 +8,7 @@ curl -X POST https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
   -d '{
-    "model": "{{model}}",
+    "model": "Qwen3Guard-Gen-8B",
     "messages": [
       {
         "role": "user",

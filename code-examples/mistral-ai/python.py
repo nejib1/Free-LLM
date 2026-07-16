@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="{{model}}",
+    model="mistral-small-2503",
     messages=[
         {"role": "user", "content": "Explain the Mixture of Experts architecture"}
     ]

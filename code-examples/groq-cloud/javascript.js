@@ -16,7 +16,7 @@ async function main() {
         content: "Explain the importance of fast language models",
       },
     ],
-    model: "{{model}}",
+    model: "llama-3.3-70b-versatile",
   });
 
   console.log(chatCompletion.choices[0].message.content);

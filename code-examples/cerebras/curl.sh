@@ -8,7 +8,7 @@ curl https://api.cerebras.ai/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_CEREBRAS_API_KEY" \
   -d '{
-    "model": "{{model}}",
+    "model": "llama-4-scout-17b-16e-instruct",
     "messages": [
       {"role": "user", "content": "Why is fast inference important?"}
     ],

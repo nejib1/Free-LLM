@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="{{model}}",
+    model="gpt-4.5",
     messages=[
         {"role": "user", "content": "Explain how GitHub Models works"}
     ]

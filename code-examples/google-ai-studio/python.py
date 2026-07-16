@@ -9,7 +9,7 @@ import os
 
 # Get your API key from https://aistudio.google.com/
 api_key = "YOUR_API_KEY"
-url = f"https://generativelanguage.googleapis.com/v1beta/models/{{model}}:generateContent?key={api_key}"
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent?key={api_key}"
 
 headers = {
     "Content-Type": "application/json"

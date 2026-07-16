@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="{{model}}",
+    model="meta-llama/Llama-4-Scout-17B-16E-Instruct-FP8",
     messages=[
         {"role": "user", "content": "Explain the Apriel model architecture"}
     ]

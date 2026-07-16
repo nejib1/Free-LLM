@@ -6,7 +6,7 @@
 
 import requests
 
-API_URL = "https://api-inference.huggingface.co/models/{{model}}"
+API_URL = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3.1-8B-Instruct"
 headers = {"Authorization": "Bearer YOUR_HF_TOKEN"}
 
 def query(payload):
