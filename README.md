@@ -35,6 +35,7 @@ These providers offer ongoing free access with rate-limited quotas that never ex
 | [Coze](https://www.coze.com/) | Varies by model | Token-based daily limits | Free daily tokens | Resets daily | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 40 RPM | — | — | — | Llama 4 Scout, DeepSeek-R1, various open-source models (phone verification required) |
 | [Z.AI (GLM)](https://z.ai/) | ~1 req/s | ~1,000 RPD (Flash tier) | Varies by model | Free (Flash tier) | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Yingsuan AI](https://yingsuan.top/) | 5 RPM (free tier) | ~100 requests/day | Varies by model | No monthly cap | glm-4-flash, glm-4.7-flash, Qwen2.5-7B-Instruct |
 
 ### 💰 Renewable Credits
 
@@ -71,6 +72,7 @@ Sign up and receive credits to use until depleted.
 | [Scaleway](https://console.scaleway.com/generative-api/models) | Standard | 1M free tokens (trial) | 1M tokens | One-time trial | Mistral, Llama, Qwen (EU-hosted) |
 | [Yi AI](https://www.01.ai/) | Standard | Initial trial credits | Credit-based | One-time trial | Yi-Large (200K context) |
 | [Requesty](https://requesty.ai/) | Standard | Free monthly credits | Free monthly credits | Free tier included | Multi-provider routing |
+| [Yingsuan AI](https://yingsuan.top/) | 5 RPM (free tier) | 100 free trial calls | ~100 requests | Never expires (free plan) | DeepSeek, Kimi K3, GLM-4, Qwen2.5, +3 free models |
 
 ### 🖥️ Local / Self-Hosted (Unlimited & Private)
 
