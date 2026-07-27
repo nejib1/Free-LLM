@@ -1,0 +1,25 @@
+# ===============================================
+# Cerebrium - Minimal deployment config
+# Free LLM API - https://free-llm.com
+# Provider URL: https://www.cerebrium.ai/
+# ===============================================
+# Deploys a vLLM-backed, OpenAI-compatible chat endpoint.
+# Run `cerebrium deploy` from this directory once logged in.
+
+[cerebrium.deployment]
+name = "free-llm-example"
+python_version = "3.11"
+
+[cerebrium.hardware]
+gpu = "AMPERE_A10"
+cpu = 2
+memory = 12.0
+
+[cerebrium.dependencies.pip]
+vllm = "latest"
+
+[cerebrium.runtime.custom]
+# vLLM's built-in OpenAI-compatible server, exposed on port 8000
+port = 8000
+entrypoint = ["python", "-m", "vllm.entrypoints.openai.api_server", "--model", "meta-llama/Meta-Llama-3.1-8B-Instruct", "--port", "8000"]
+healthcheck_endpoint = "/health"
