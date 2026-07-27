@@ -4,7 +4,7 @@
 
 ## About
 
-Ultra-low-cost serverless host for open-source models (Llama, Qwen, Mixtral, and 40+ others) with an OpenAI-compatible endpoint. New accounts get a one-time $5 credit; there is no standing free tier. Double-check the exact model slug on deepinfra.com/models before relying on it, naming changes often.
+Cost-effective inference platform with $5 free credits on signup. Hosts 40+ open-source models with OpenAI-compatible API. Known for reliable uptime and competitive pricing after credits.
 
 **Official Website:** [https://deepinfra.com/](https://deepinfra.com/)
 

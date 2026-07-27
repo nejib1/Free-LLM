@@ -8,7 +8,7 @@ curl https://openrouter.ai/api/v1/chat/completions \
   -H "Authorization: Bearer YOUR_OPENROUTER_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "meta-llama/llama-4-scout:free",
+    "model": "deepseek/deepseek-r1:free",
     "messages": [
       {
         "role": "user",

@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://console.upstage.ai/
 const client = new OpenAI({
-  apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.upstage.ai/v1',
+  apiKey: 'YOUR_UPSTAGE_KEY',
+  baseURL: 'https://api.upstage.ai/v1/solar'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'solar-mini',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'solar-mini',
+  messages: [
+    { role: 'user', content: 'What is document understanding?' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

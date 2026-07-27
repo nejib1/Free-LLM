@@ -4,7 +4,7 @@
 # Provider URL: https://huggingface.co/inference-api/serverless
 # ===============================================
 
-curl https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3.1-8B-Instruct \
+curl https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev \
 	-X POST \
 	-d '{"inputs": "Can you please let us know more details about your"}' \
 	-H 'Content-Type: application/json' \

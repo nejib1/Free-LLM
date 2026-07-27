@@ -4,12 +4,15 @@
 # Provider URL: https://gpt4all.io/
 # ===============================================
 
+# Enable Server Mode in GPT4All settings first
 curl http://localhost:4891/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer gpt4all" \
   -d '{
-    "model": "Phi-3 Mini Instruct",
+    "model": "local-model",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "Summarize this document for me"
+      }
     ]
   }'

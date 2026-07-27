@@ -4,7 +4,7 @@
 
 ## About
 
-Nomic AI's simple offline desktop chat app with a curated, vetted model list. The API server must be manually enabled in Settings → Application → Advanced; it then listens on the distinctive port 4891.
+A free-to-use, locally running, privacy-aware chatbot. No GPU or internet required. Runs on popular consumer hardware using CPU quantization.
 
 **Official Website:** [https://gpt4all.io/](https://gpt4all.io/)
 

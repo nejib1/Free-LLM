@@ -3,22 +3,19 @@
 # Free LLM API - https://free-llm.com
 # Provider URL: https://www.cerebrium.ai/
 # ===============================================
-# Cerebrium has no shared endpoint -- deploy your own with
-# `cerebrium deploy` (see cerebrium.toml in this folder) first,
-# then call the URL it prints.
 
-from openai import OpenAI
+# Install: pip install cerebrium
+from cerebrium import get_secret
 
-client = OpenAI(
-    api_key="YOUR_PROJECT_JWT",
-    base_url="https://YOUR_DEPLOYMENT_URL/v1",
-)
+# Cerebrium uses Python-native deployments
+# main.py (deployed to Cerebrium)
+from vllm import LLM, SamplingParams
 
-response = client.chat.completions.create(
-    model="meta-llama/Meta-Llama-3.1-8B-Instruct",
-    messages=[
-        {"role": "user", "content": "What makes serverless GPU deployment useful?"}
-    ],
-)
+llm = LLM(model="meta-llama/Llama-3.1-8B-Instruct")
 
-print(response.choices[0].message.content)
+def predict(prompt: str):
+    params = SamplingParams(temperature=0.7, max_tokens=512)
+    output = llm.generate([prompt], params)
+    return {"response": output[0].outputs[0].text}
+
+# Deploy: cerebrium deploy my-llm

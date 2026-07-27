@@ -5,11 +5,14 @@
 # ===============================================
 
 curl https://integrate.api.nvidia.com/v1/chat/completions \
+  -H "Authorization: Bearer YOUR_NVIDIA_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer nvapi-YOUR_API_KEY" \
   -d '{
     "model": "meta/llama-3.1-70b-instruct",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What is NVIDIA NIM?"
+      }
     ]
   }'

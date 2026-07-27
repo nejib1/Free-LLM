@@ -4,21 +4,17 @@
 // Provider URL: https://github.com/ggml-org/llama.cpp
 // ===============================================
 
-import OpenAI from 'openai';
-
-// Get your API key from https://github.com/ggml-org/llama.cpp
-const client = new OpenAI({
-  apiKey: 'no-key',
-  baseURL: 'http://localhost:8080/v1',
+// llama.cpp server provides OpenAI-compatible API
+const response = await fetch('http://localhost:8080/v1/chat/completions', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    model: 'local',
+    messages: [
+      { role: 'user', content: 'Explain quantum computing' }
+    ]
+  })
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'Meta-Llama-3-8B-Instruct.Q4_K_M.gguf',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
-
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+const data = await response.json();
+console.log(data.choices[0].message.content);

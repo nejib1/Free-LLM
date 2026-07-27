@@ -4,12 +4,15 @@
 # Provider URL: https://ollama.com/
 # ===============================================
 
-curl http://localhost:11434/v1/chat/completions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ollama" \
+# First: ollama run llama3.2:3b
+curl http://localhost:11434/api/chat \
   -d '{
-    "model": "llama3.2",
+    "model": "llama3.2:3b",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
-    ]
+      {
+        "role": "user",
+        "content": "Hello, how are you?"
+      }
+    ],
+    "stream": false
   }'

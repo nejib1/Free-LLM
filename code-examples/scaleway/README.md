@@ -1,10 +1,10 @@
-# Scaleway - Code Examples
+# Scaleway Generative APIs - Code Examples
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
 ## About
 
-French/EU sovereign-cloud provider (GDPR-compliant) offering serverless Generative APIs for open models (Llama, Mistral, Qwen), explicitly designed as a drop-in OpenAI replacement. Every new customer gets 1,000,000 free tokens before billing kicks in.
+European cloud provider offering managed generative AI APIs. Host to Mistral, Llama, and Qwen models with full GDPR compliance and data sovereignty.
 
 **Official Website:** [https://console.scaleway.com/generative-api/models](https://console.scaleway.com/generative-api/models)
 

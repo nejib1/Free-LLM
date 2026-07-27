@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://deepinfra.com/
 const client = new OpenAI({
-  apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.deepinfra.com/v1/openai',
+  apiKey: 'YOUR_DEEPINFRA_KEY',
+  baseURL: 'https://api.deepinfra.com/v1/openai'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'meta-llama/Meta-Llama-3.1-8B-Instruct',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'deepseek-ai/DeepSeek-V3',
+  messages: [
+    { role: 'user', content: 'Explain the MoE architecture' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

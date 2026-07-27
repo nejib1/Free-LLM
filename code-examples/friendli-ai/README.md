@@ -4,7 +4,7 @@
 
 ## About
 
-Serving-infrastructure company (Friendli Engine) offering serverless endpoints for fast, cheap open-model inference. Free trial credits are granted at onboarding (amount not fixed/public). Check the current serverless model catalog before publishing — it rotates.
+Enterprise-grade serverless inference with $10 free trial credits. Optimized for latency and throughput with support for popular open-source models. OpenAI-compatible API.
 
 **Official Website:** [https://friendli.ai/](https://friendli.ai/)
 

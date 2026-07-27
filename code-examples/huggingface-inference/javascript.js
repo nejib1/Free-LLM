@@ -6,7 +6,7 @@
 
 async function query(data) {
 	const response = await fetch(
-		"https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3.1-8B-Instruct",
+		"https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev",
 		{
 			headers: { Authorization: "Bearer YOUR_HF_TOKEN" },
 			method: "POST",

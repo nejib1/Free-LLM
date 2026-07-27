@@ -1,10 +1,10 @@
-# Qwen / Alibaba - Code Examples
+# Qwen (Alibaba) - Code Examples
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
 ## About
 
-Alibaba Cloud's Model Studio (Bailian) platform hosting the Qwen LLM family via an OpenAI-compatible Chat API. IMPORTANT: the free trial (1M input + 1M output tokens, 90 days) only applies to International/Singapore accounts using the `dashscope-intl` endpoint shown here — the Global/US-Virginia endpoint has no free quota.
+The enterprise AI platform from Alibaba Cloud. Home of the Qwen (Tongyi Qianwen) model family, offering state-of-the-art performance in coding and mathematics.
 
 **Official Website:** [https://bailian.console.alibabacloud.com/](https://bailian.console.alibabacloud.com/)
 

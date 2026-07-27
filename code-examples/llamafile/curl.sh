@@ -4,12 +4,15 @@
 # Provider URL: https://github.com/Mozilla-Ocho/llamafile
 # ===============================================
 
+# Run: ./model.llamafile --server
 curl http://localhost:8080/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer llamafile" \
   -d '{
-    "model": "llava-v1.5-7b",
+    "model": "local",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What is llamafile?"
+      }
     ]
   }'

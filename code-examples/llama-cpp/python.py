@@ -6,17 +6,17 @@
 
 from openai import OpenAI
 
-# Get your API key from https://github.com/ggml-org/llama.cpp
+# llama.cpp server: ./server -m model.gguf
 client = OpenAI(
-    api_key="no-key",
-    base_url="http://localhost:8080/v1",
+    api_key="llama-cpp",
+    base_url="http://localhost:8080/v1"
 )
 
 response = client.chat.completions.create(
-    model="Meta-Llama-3-8B-Instruct.Q4_K_M.gguf",
+    model="local",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "Explain quantum computing"}
+    ]
 )
 
 print(response.choices[0].message.content)

@@ -6,17 +6,17 @@
 
 from openai import OpenAI
 
-# Get your API key from https://ollama.com/
+# Ollama runs a local OpenAI-compatible server
 client = OpenAI(
     api_key="ollama",
-    base_url="http://localhost:11434/v1",
+    base_url="http://localhost:11434/v1"
 )
 
 response = client.chat.completions.create(
-    model="llama3.2",
+    model="llama3.2:3b",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "Hello, how are you?"}
+    ]
 )
 
 print(response.choices[0].message.content)

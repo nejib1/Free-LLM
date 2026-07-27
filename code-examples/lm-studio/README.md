@@ -4,7 +4,7 @@
 
 ## About
 
-Desktop GUI for downloading and running GGUF/MLX models with a built-in model browser. Enable the local server from the app; it serves a fully OpenAI-compatible API on port 1234. No API key is enforced (binds to loopback only).
+The easiest way to discover, download, and run local LLMs. Features a beautiful UI, GPU offloading, and a built-in local server that mimics OpenAI's API. Perfect for non-technical users.
 
 **Official Website:** [https://lmstudio.ai/](https://lmstudio.ai/)
 

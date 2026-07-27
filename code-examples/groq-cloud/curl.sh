@@ -8,7 +8,7 @@ curl https://api.groq.com/openai/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
-    "model": "llama-3.3-70b-versatile",
+    "model": "allam-2-7b-instruct",
     "messages": [
       {
         "role": "user",

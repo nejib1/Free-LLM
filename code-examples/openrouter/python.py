@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="meta-llama/llama-4-scout:free",
+    model="deepseek/deepseek-r1:free",
     messages=[
         {"role": "user", "content": "What is OpenRouter?"}
     ]

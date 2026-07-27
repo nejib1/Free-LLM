@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://friendli.ai/
 const client = new OpenAI({
-  apiKey: 'flp_YOUR_API_KEY',
-  baseURL: 'https://api.friendli.ai/serverless/v1',
+  apiKey: 'YOUR_FRIENDLI_KEY',
+  baseURL: 'https://inference.friendli.ai/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'zai-org/GLM-5.2',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'meta-llama-3.1-70b-instruct',
+  messages: [
+    { role: 'user', content: 'What makes your inference fast?' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

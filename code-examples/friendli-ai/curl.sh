@@ -4,12 +4,15 @@
 # Provider URL: https://friendli.ai/
 # ===============================================
 
-curl https://api.friendli.ai/serverless/v1/chat/completions \
+curl https://inference.friendli.ai/v1/chat/completions \
+  -H "Authorization: Bearer YOUR_FRIENDLI_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer flp_YOUR_API_KEY" \
   -d '{
-    "model": "zai-org/GLM-5.2",
+    "model": "meta-llama-3.1-70b-instruct",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What makes your inference fast?"
+      }
     ]
   }'

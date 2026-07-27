@@ -6,17 +6,17 @@
 
 from openai import OpenAI
 
-# Get your API key from https://lmstudio.ai/
+# LM Studio runs a local OpenAI-compatible server on port 1234
 client = OpenAI(
     api_key="lm-studio",
-    base_url="http://localhost:1234/v1",
+    base_url="http://localhost:1234/v1"
 )
 
 response = client.chat.completions.create(
-    model="llama-3.2-3b-instruct",
+    model="local-model",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "What can you help me with?"}
+    ]
 )
 
 print(response.choices[0].message.content)

@@ -1,24 +1,21 @@
 // ===============================================
-// Qwen / Alibaba - Code Example
+// Qwen (Alibaba) - Code Example
 // Free LLM API - https://free-llm.com
 // Provider URL: https://bailian.console.alibabacloud.com/
 // ===============================================
 
 import OpenAI from 'openai';
 
-// Get your API key from https://bailian.console.alibabacloud.com/
 const client = new OpenAI({
-  apiKey: 'YOUR_DASHSCOPE_API_KEY',
-  baseURL: 'https://dashscope-intl.aliyuncs.com/compatible-mode/v1',
+  apiKey: 'YOUR_DASHSCOPE_KEY',
+  baseURL: 'https://dashscope-intl.aliyuncs.com/compatible-mode/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'qwen-plus',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'qwen-max',
+  messages: [
+    { role: 'user', content: 'Explain the Qwen model architecture' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

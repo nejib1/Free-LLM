@@ -6,17 +6,16 @@
 
 from openai import OpenAI
 
-# Get your API key from https://deepinfra.com/
 client = OpenAI(
-    api_key="YOUR_API_KEY",
-    base_url="https://api.deepinfra.com/v1/openai",
+    api_key="YOUR_DEEPINFRA_KEY",
+    base_url="https://api.deepinfra.com/v1/openai"
 )
 
 response = client.chat.completions.create(
-    model="meta-llama/Meta-Llama-3.1-8B-Instruct",
+    model="deepseek-ai/DeepSeek-V3",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "Explain the MoE architecture"}
+    ]
 )
 
 print(response.choices[0].message.content)

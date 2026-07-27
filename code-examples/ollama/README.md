@@ -4,7 +4,7 @@
 
 ## About
 
-CLI-first local model runner — pulls GGUF models from its own registry with a single `ollama run <model>` command, then serves an OpenAI-compatible API on port 11434. No API key needed; the client library still requires a non-empty string.
+The standard for local AI. Run Llama 3, Mistral, Gemma, and hundreds of other models directly on your Mac, Linux, or Windows machine. Complete privacy, zero cost, and offline capability.
 
 **Official Website:** [https://ollama.com/](https://ollama.com/)
 

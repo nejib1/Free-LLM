@@ -3,16 +3,14 @@
 # Free LLM API - https://free-llm.com
 # Provider URL: https://replicate.com/
 # ===============================================
-# Replicate uses an async prediction API, not /chat/completions.
-# "Prefer: wait" makes this call block for a synchronous result
-# instead of returning a prediction ID you'd have to poll.
 
-curl https://api.replicate.com/v1/models/meta/meta-llama-3-70b-instruct/predictions \
+curl -s -X POST https://api.replicate.com/v1/predictions \
+  -H "Authorization: Bearer YOUR_REPLICATE_TOKEN" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_TOKEN" \
-  -H "Prefer: wait" \
   -d '{
+    "version": "MODEL_VERSION_ID",
     "input": {
-      "prompt": "What makes model-hosting marketplaces useful?"
+      "prompt": "Write a short poem about AI",
+      "max_tokens": 512
     }
   }'

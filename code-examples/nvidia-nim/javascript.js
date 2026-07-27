@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://build.nvidia.com/explore/discover
 const client = new OpenAI({
-  apiKey: 'nvapi-YOUR_API_KEY',
-  baseURL: 'https://integrate.api.nvidia.com/v1',
+  apiKey: 'YOUR_NVIDIA_KEY',
+  baseURL: 'https://integrate.api.nvidia.com/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'meta/llama-3.1-70b-instruct',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'meta/llama-3.1-70b-instruct',
+  messages: [
+    { role: 'user', content: 'What is NVIDIA NIM?' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

@@ -4,21 +4,15 @@
 // Provider URL: https://github.com/LostRuins/koboldcpp
 // ===============================================
 
-import OpenAI from 'openai';
-
-// Get your API key from https://github.com/LostRuins/koboldcpp
-const client = new OpenAI({
-  apiKey: 'koboldcpp',
-  baseURL: 'http://localhost:5001/v1',
+const response = await fetch('http://localhost:5001/api/v1/generate', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    prompt: 'Once upon a time in a magical land,',
+    max_length: 200,
+    temperature: 0.7
+  })
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'Llama-3-8B-Instruct.Q4_K_M.gguf',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
-
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+const data = await response.json();
+console.log(data.results[0].text);

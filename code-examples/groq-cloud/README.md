@@ -15,7 +15,9 @@ LPU Inference Engine.
 This directory contains ready-to-use code examples in multiple languages:
 
 - **Curl** - `curl.sh`
+- **Go** - `go.go`
 - **Javascript** - `javascript.js`
+- **Php** - `php.php`
 - **Python** - `python.py`
 
 ## Usage

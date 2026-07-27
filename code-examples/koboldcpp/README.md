@@ -4,7 +4,7 @@
 
 ## About
 
-Single-binary llama.cpp fork built for story-writing/roleplay with a KoboldAI-style UI, dominant in the SillyTavern community. Ships both a native Kobold API (`/api/v1/generate`) and, since v1.45.2, a full OpenAI-compatible API on port 5001 shown here.
+A single-file GGUF inference engine for LLMs. Oriented towards storytelling and roleplay, with rich features for context management and world info.
 
 **Official Website:** [https://github.com/LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp)
 

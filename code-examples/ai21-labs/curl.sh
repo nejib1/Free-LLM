@@ -5,11 +5,14 @@
 # ===============================================
 
 curl https://api.ai21.com/studio/v1/chat/completions \
-  -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
   -d '{
-    "model": "jamba-large",
+    "model": "jamba-1.5-large",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "Explain the Mamba architecture"
+      }
     ]
   }'

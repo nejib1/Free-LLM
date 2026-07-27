@@ -4,7 +4,7 @@
 
 ## About
 
-Open-source Electron desktop ChatGPT alternative with an integrated model hub (Cortex engine) and an OpenAI-shaped local server built in, listening on port 1337. No API key is required unless you set one in Jan's settings.
+Run open source AI locally on your desktop. Jan is a ChatGPT-alternative that runs 100% offline, privacy-focused, and provides an OpenAI-compatible local server.
 
 **Official Website:** [https://jan.ai/](https://jan.ai/)
 

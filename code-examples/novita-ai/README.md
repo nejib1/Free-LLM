@@ -4,7 +4,7 @@
 
 ## About
 
-GPU cloud and serverless inference marketplace for LLM, image, and video models via an OpenAI-compatible API. Signup credit offers are promotional and change often — verify the current amount at novita.ai/user/register before relying on it.
+AI infrastructure for developers. Offers various open-source models including Llama and Mistral, with a focus on stability and ease of use.
 
 **Official Website:** [https://novita.ai/](https://novita.ai/)
 

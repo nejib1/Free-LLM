@@ -4,7 +4,7 @@
 
 ## About
 
-Mozilla's project that packages both the model weights and a llama.cpp server into one self-contained, cross-platform executable — no separate install step. Run the executable and it serves an OpenAI-compatible API on port 8080, same convention as llama.cpp since it embeds the same server code.
+Distribute and run LLMs with a single file. Llamafile combines llama.cpp with Cosmopolitan Libc to create multi-platform executables that run anywhere.
 
 **Official Website:** [https://github.com/Mozilla-Ocho/llamafile](https://github.com/Mozilla-Ocho/llamafile)
 

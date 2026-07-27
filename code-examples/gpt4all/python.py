@@ -6,17 +6,17 @@
 
 from openai import OpenAI
 
-# Get your API key from https://gpt4all.io/
+# GPT4All local server (enable in Settings > Server)
 client = OpenAI(
     api_key="gpt4all",
-    base_url="http://localhost:4891/v1",
+    base_url="http://localhost:4891/v1"
 )
 
 response = client.chat.completions.create(
-    model="Phi-3 Mini Instruct",
+    model="local-model",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "Summarize this document for me"}
+    ]
 )
 
 print(response.choices[0].message.content)

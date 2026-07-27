@@ -4,7 +4,7 @@
 
 ## About
 
-Fast inference platform for open-source and custom/fine-tuned LLMs. New accounts get a one-time $1 starter credit (~1M tokens on a 70B-class model) — this is a trial credit, not a standing free tier.
+The fastest production platform for Generative AI. Run open-source models with blazing speed and efficiency. Specialized in fire-function calling and JSON mode.
 
 **Official Website:** [https://fireworks.ai/](https://fireworks.ai/)
 

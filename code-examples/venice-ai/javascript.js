@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'llama-3.1-405b',
+  model: 'dolphin-mixtral',
   messages: [
     { role: 'user', content: 'What is privacy-first AI?' }
   ]

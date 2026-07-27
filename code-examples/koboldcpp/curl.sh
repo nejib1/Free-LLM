@@ -4,12 +4,10 @@
 # Provider URL: https://github.com/LostRuins/koboldcpp
 # ===============================================
 
-curl http://localhost:5001/v1/chat/completions \
+curl http://localhost:5001/api/v1/generate \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer koboldcpp" \
   -d '{
-    "model": "Llama-3-8B-Instruct.Q4_K_M.gguf",
-    "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
-    ]
+    "prompt": "Once upon a time in a magical land,",
+    "max_length": 200,
+    "temperature": 0.7
   }'

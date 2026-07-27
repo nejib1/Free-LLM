@@ -4,7 +4,7 @@
 
 ## About
 
-Access specific free research models from ServiceNow and others. Currently hosting the Apriel Thinker series for free.
+Together AI provides free access (once you add a $5 min deposit) to select research models plus paid access to Llama 4, DeepSeek, and 100+ open models. The platform specializes in high-performance inference and fine-tuning.
 
 **Official Website:** [https://together.ai/](https://together.ai/)
 

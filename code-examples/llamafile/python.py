@@ -6,17 +6,17 @@
 
 from openai import OpenAI
 
-# Get your API key from https://github.com/Mozilla-Ocho/llamafile
+# Run: ./model.llamafile --server
 client = OpenAI(
     api_key="llamafile",
-    base_url="http://localhost:8080/v1",
+    base_url="http://localhost:8080/v1"
 )
 
 response = client.chat.completions.create(
-    model="llava-v1.5-7b",
+    model="local",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "What is llamafile?"}
+    ]
 )
 
 print(response.choices[0].message.content)

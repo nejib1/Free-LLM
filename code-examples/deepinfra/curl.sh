@@ -5,11 +5,14 @@
 # ===============================================
 
 curl https://api.deepinfra.com/v1/openai/chat/completions \
+  -H "Authorization: Bearer YOUR_DEEPINFRA_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
-    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "model": "deepseek-ai/DeepSeek-V3",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "Explain the MoE architecture"
+      }
     ]
   }'

@@ -4,21 +4,13 @@
 // Provider URL: https://docs.ai21.com/
 // ===============================================
 
-import OpenAI from 'openai';
+import { AI21Client } from "@ai21/ai21-js-sdk";
 
-// Get your API key from https://docs.ai21.com/
-const client = new OpenAI({
-  apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.ai21.com/studio/v1',
+const client = new AI21Client({ apiKey: "YOUR_API_KEY" });
+
+const response = await client.chat.completions.create({
+  model: "jamba-1.5-large",
+  messages: [{ role: "user", content: "Explain the Mamba architecture" }],
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'jamba-large',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
-
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

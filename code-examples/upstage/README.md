@@ -4,7 +4,7 @@
 
 ## About
 
-Korean AI company behind the Solar LLM family (plus Document AI/OCR products), offering an OpenAI-compatible Chat API. Trial credits are time-limited (~3 months) — check console.upstage.ai/pricing for the current offer, some flagship-model promos have already expired.
+Leading AI company specializing in DUS (Document Understanding) and Solar LLMs. Solar Pro delivers GPT-4 level performance with remarkable speed and efficiency.
 
 **Official Website:** [https://console.upstage.ai/](https://console.upstage.ai/)
 

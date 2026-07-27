@@ -4,12 +4,15 @@
 # Provider URL: https://console.upstage.ai/
 # ===============================================
 
-curl https://api.upstage.ai/v1/chat/completions \
+curl https://api.upstage.ai/v1/solar/chat/completions \
+  -H "Authorization: Bearer YOUR_UPSTAGE_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
     "model": "solar-mini",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What is document understanding?"
+      }
     ]
   }'

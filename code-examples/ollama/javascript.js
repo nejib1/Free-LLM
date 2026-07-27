@@ -4,21 +4,18 @@
 // Provider URL: https://ollama.com/
 // ===============================================
 
-import OpenAI from 'openai';
-
-// Get your API key from https://ollama.com/
-const client = new OpenAI({
-  apiKey: 'ollama',
-  baseURL: 'http://localhost:11434/v1',
+// Ollama provides OpenAI-compatible API locally
+const response = await fetch('http://localhost:11434/api/chat', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    model: 'llama3.2:3b',
+    messages: [
+      { role: 'user', content: 'Hello, how are you?' }
+    ],
+    stream: false
+  })
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'llama3.2',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
-
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+const data = await response.json();
+console.log(data.message.content);

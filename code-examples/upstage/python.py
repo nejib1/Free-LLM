@@ -6,17 +6,16 @@
 
 from openai import OpenAI
 
-# Get your API key from https://console.upstage.ai/
 client = OpenAI(
-    api_key="YOUR_API_KEY",
-    base_url="https://api.upstage.ai/v1",
+    api_key="YOUR_UPSTAGE_KEY",
+    base_url="https://api.upstage.ai/v1/solar"
 )
 
 response = client.chat.completions.create(
     model="solar-mini",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "What is document understanding?"}
+    ]
 )
 
 print(response.choices[0].message.content)

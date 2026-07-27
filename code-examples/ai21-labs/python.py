@@ -4,19 +4,15 @@
 # Provider URL: https://docs.ai21.com/
 # ===============================================
 
-from openai import OpenAI
+import ai21
 
-# Get your API key from https://docs.ai21.com/
-client = OpenAI(
-    api_key="YOUR_API_KEY",
-    base_url="https://api.ai21.com/studio/v1",
-)
+client = ai21.AI21Client(api_key="YOUR_API_KEY")
 
 response = client.chat.completions.create(
-    model="jamba-large",
+    model="jamba-1.5-large",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "Explain the Mamba architecture"}
+    ]
 )
 
 print(response.choices[0].message.content)

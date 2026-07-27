@@ -4,9 +4,7 @@
 
 ## About
 
-Replicate is a general-purpose model-hosting marketplace (any Docker/Cog-packaged model — LLMs, image, audio, video). Unlike most providers in this list, it does **not** expose an OpenAI-compatible `/chat/completions` endpoint — it uses an async **prediction** API instead. Adding the `Prefer: wait` header (shown below) makes the call block and return synchronously rather than requiring you to poll a prediction ID.
-
-Replicate is pay-per-second with no confirmed standing free credit as of writing — check [replicate.com/pricing](https://replicate.com/pricing) for the current signup offer before assuming a free allotment.
+Run open-source models with a single line of code. Thousands of models available, from LLMs to Stable Diffusion, running on scalable GPU infrastructure.
 
 **Official Website:** [https://replicate.com/](https://replicate.com/)
 
@@ -22,9 +20,9 @@ This directory contains ready-to-use code examples in multiple languages:
 
 ## Usage
 
-1. Get your API token from [https://replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
-2. Replace `YOUR_API_TOKEN` in the code examples
-3. Run the example in your preferred language — note the model+version naming (`owner/model`) changes as new model generations ship, double-check [replicate.com/collections/language-models](https://replicate.com/collections/language-models) for the current one
+1. Get your free API key from [https://replicate.com/](https://replicate.com/)
+2. Replace `YOUR_API_KEY` in the code examples
+3. Run the example in your preferred language
 
 ## More Information
 

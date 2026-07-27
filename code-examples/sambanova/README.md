@@ -1,10 +1,10 @@
-# SambaNova - Code Examples
+# SambaNova Cloud - Code Examples
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
 ## About
 
-Custom-silicon (RDU chip) inference company running open models at very high tokens/sec via SambaNova Cloud. New accounts get a one-time $5 credit (~3 months), followed by a standing rate-limited free tier (~20 RPM / 20 RPD / 200K TPD).
+SambaNova Cloud delivers the world's fastest inference for open-source models like Llama 3.1 405B and Qwen 2.5, powered by the purpose-built SN40L Reconfigurable Dataflow Unit (RDU). It offers lightning-fast speed and a generous free credit for new users.
 
 **Official Website:** [https://cloud.sambanova.ai/](https://cloud.sambanova.ai/)
 

@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://tokenfactory.nebius.com/
 const client = new OpenAI({
-  apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.tokenfactory.nebius.com/v1',
+  apiKey: 'YOUR_NEBIUS_KEY',
+  baseURL: 'https://api.tokenfactory.nebius.com/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'deepseek-ai/DeepSeek-R1-0528',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'meta-llama/Meta-Llama-3.1-70B-Instruct',
+  messages: [
+    { role: 'user', content: 'Explain the benefits of Nebius Token Factory' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

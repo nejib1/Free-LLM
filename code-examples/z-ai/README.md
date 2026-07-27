@@ -4,7 +4,7 @@
 
 ## About
 
-Zhipu AI's Z.AI platform, home of the GLM model family. The Flash-tier models (GLM-4.5-Flash, GLM-4.7-Flash) are genuinely free and rate-limited rather than a one-time trial.
+Zhipu AI's global platform for the GLM model family. GLM-4.5-Flash and GLM-4.7-Flash are free, rate-limited models with strong coding performance, served through an OpenAI-compatible endpoint.
 
 **Official Website:** [https://z.ai/](https://z.ai/)
 

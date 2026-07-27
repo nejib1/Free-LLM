@@ -6,7 +6,7 @@
 
 import requests
 
-API_URL = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3.1-8B-Instruct"
+API_URL = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
 headers = {"Authorization": "Bearer YOUR_HF_TOKEN"}
 
 def query(payload):

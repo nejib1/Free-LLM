@@ -6,17 +6,16 @@
 
 from openai import OpenAI
 
-# Get your API key from https://friendli.ai/
 client = OpenAI(
-    api_key="flp_YOUR_API_KEY",
-    base_url="https://api.friendli.ai/serverless/v1",
+    api_key="YOUR_FRIENDLI_KEY",
+    base_url="https://inference.friendli.ai/v1"
 )
 
 response = client.chat.completions.create(
-    model="zai-org/GLM-5.2",
+    model="meta-llama-3.1-70b-instruct",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "What makes your inference fast?"}
+    ]
 )
 
 print(response.choices[0].message.content)

@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://app.hyperbolic.xyz/
 const client = new OpenAI({
-  apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.hyperbolic.xyz/v1',
+  apiKey: 'YOUR_HYPERBOLIC_KEY',
+  baseURL: 'https://api.hyperbolic.xyz/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'meta-llama/Meta-Llama-3.1-8B-Instruct',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'deepseek-ai/DeepSeek-V3',
+  messages: [
+    { role: 'user', content: 'What is decentralized AI inference?' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

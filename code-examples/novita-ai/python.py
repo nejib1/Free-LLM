@@ -6,17 +6,16 @@
 
 from openai import OpenAI
 
-# Get your API key from https://novita.ai/
 client = OpenAI(
-    api_key="YOUR_API_KEY",
-    base_url="https://api.novita.ai/openai/v1",
+    api_key="YOUR_NOVITA_KEY",
+    base_url="https://api.novita.ai/v3/openai"
 )
 
 response = client.chat.completions.create(
-    model="meta-llama/llama-3.1-8b-instruct",
+    model="meta-llama/llama-3.1-70b-instruct",
     messages=[
-        {"role": "user", "content": "What makes your inference platform unique?"}
-    ],
+        {"role": "user", "content": "What are open source LLMs?"}
+    ]
 )
 
 print(response.choices[0].message.content)

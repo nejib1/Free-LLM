@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-4.5",
+    model="AI21-Jamba-1.5-Large",
     messages=[
         {"role": "user", "content": "Explain how GitHub Models works"}
     ]

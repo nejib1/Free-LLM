@@ -4,7 +4,7 @@
 
 ## About
 
-Cloud infrastructure company (Nebius, ex-Yandex heritage) running a GPU cloud and hosted-inference marketplace. Rebranded from \"Nebius AI Studio\" to \"Token Factory\" in late 2025 — update any bookmarks pointing at the old studio.nebius.com domain.
+Efficient AI inference studio. Access a wide range of open-source models with low latency and cost-effective pricing.
 
 **Official Website:** [https://tokenfactory.nebius.com/](https://tokenfactory.nebius.com/)
 

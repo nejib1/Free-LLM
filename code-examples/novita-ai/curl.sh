@@ -4,12 +4,15 @@
 # Provider URL: https://novita.ai/
 # ===============================================
 
-curl https://api.novita.ai/openai/v1/chat/completions \
+curl https://api.novita.ai/v3/openai/chat/completions \
+  -H "Authorization: Bearer YOUR_NOVITA_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
-    "model": "meta-llama/llama-3.1-8b-instruct",
+    "model": "meta-llama/llama-3.1-70b-instruct",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What are open source LLMs?"
+      }
     ]
   }'

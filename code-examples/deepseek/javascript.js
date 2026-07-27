@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://platform.deepseek.com/
 const client = new OpenAI({
-  apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.deepseek.com',
+  apiKey: 'YOUR_DEEPSEEK_KEY',
+  baseURL: 'https://api.deepseek.com/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'deepseek-chat',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'deepseek-chat',
+  messages: [
+    { role: 'user', content: 'Write a Python function to detect palindromes' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

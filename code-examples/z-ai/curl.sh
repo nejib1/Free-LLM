@@ -5,11 +5,14 @@
 # ===============================================
 
 curl https://api.z.ai/api/paas/v4/chat/completions \
+  -H "Authorization: Bearer YOUR_ZAI_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
     "model": "glm-4.5-flash",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What makes the GLM Flash tier fast?"
+      }
     ]
   }'

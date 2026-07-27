@@ -19,7 +19,7 @@ chat_completion = client.chat.completions.create(
             "content": "Why is fast inference important?",
         }
     ],
-    model="llama-4-scout-17b-16e-instruct",
+    model="llama3.1-70b",
 )
 
 print(chat_completion.choices[0].message.content)

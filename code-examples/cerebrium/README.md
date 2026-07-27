@@ -4,9 +4,7 @@
 
 ## About
 
-Cerebrium is a **serverless GPU deployment platform** (comparable to Modal or Banana), not a shared hosted-model endpoint like most other providers in this list. There's no pre-existing "sign up, get a key, curl a free model" flow — instead, you deploy your own inference container (Cerebrium provides ready-made templates, e.g. vLLM serving an OpenAI-compatible API), and Cerebrium then exposes that deployment at its own unique URL.
-
-New accounts get a one-time $30 credit to cover the pay-per-second compute cost of running your deployment.
+Serverless GPU infrastructure for AI models. Deploy any model in minutes with automatic scaling. New users receive $30 in free compute credits.
 
 **Official Website:** [https://www.cerebrium.ai/](https://www.cerebrium.ai/)
 
@@ -14,19 +12,17 @@ New accounts get a one-time $30 credit to cover the pay-per-second compute cost 
 
 ## Available Examples
 
-This directory shows the **deploy-then-call** workflow instead of a single API call:
+This directory contains ready-to-use code examples in multiple languages:
 
-- **Curl** - `curl.sh` — calling an already-deployed endpoint
-- **Javascript** - `javascript.js` — calling an already-deployed endpoint
-- **Python** - `python.py` — calling an already-deployed endpoint
-- **cerebrium.toml** - minimal deployment config to stand up a vLLM OpenAI-compatible endpoint
+- **Curl** - `curl.sh`
+- **Javascript** - `javascript.js`
+- **Python** - `python.py`
 
 ## Usage
 
-1. Install the CLI: `pip install cerebrium` and run `cerebrium login`
-2. Deploy the included vLLM template: `cerebrium deploy` (uses `cerebrium.toml` in this folder)
-3. Cerebrium prints your deployment's unique base URL and a JWT — plug both into the examples below
-4. Replace `YOUR_DEPLOYMENT_URL` and `YOUR_PROJECT_JWT` in the code examples
+1. Get your free API key from [https://www.cerebrium.ai/](https://www.cerebrium.ai/)
+2. Replace `YOUR_API_KEY` in the code examples
+3. Run the example in your preferred language
 
 ## More Information
 

@@ -4,7 +4,7 @@
 
 ## About
 
-The original/reference GGUF inference engine in C/C++. Its built-in `llama-server` binary (`llama-server -m model.gguf --port 8080`) exposes an OpenAI-compatible endpoint that most other local tools on this list copy. The `model` field in requests is effectively ignored — one model is loaded per server instance.
+Port of Facebook's LLaMA model in C/C++. The foundational project that enables running LLMs on consumer hardware (Mac, Windows, Linux, Android) with high performance.
 
 **Official Website:** [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)
 

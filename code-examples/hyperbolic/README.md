@@ -4,7 +4,7 @@
 
 ## About
 
-Open-access GPU cloud offering on-demand GPU rental plus serverless inference for 25+ open models (Llama, Qwen, DeepSeek). New accounts get a one-time $1 trial credit.
+Decentralized AI inference network. Access top-tier open source models like Llama 3.1 405B and DeepSeek V3 at a fraction of the cost.
 
 **Official Website:** [https://app.hyperbolic.xyz/](https://app.hyperbolic.xyz/)
 

@@ -4,7 +4,7 @@
 
 ## About
 
-Chinese AI lab behind the DeepSeek-V3/R1 reasoning models, exposed via a low-cost OpenAI-compatible API. New accounts get 5M free tokens valid for 30 days — there is no standing free tier beyond that. As of July 2026, the `deepseek-chat` / `deepseek-reasoner` model names route to DeepSeek-V4-Flash's non-thinking and thinking modes.
+Creators of DeepSeek-V3 and DeepSeek-R1, breakthrough open-source reasoning models. New users receive 10M free tokens. API is OpenAI-compatible with extremely competitive pricing after credits.
 
 **Official Website:** [https://platform.deepseek.com/](https://platform.deepseek.com/)
 

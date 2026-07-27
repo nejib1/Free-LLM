@@ -4,7 +4,7 @@
 
 ## About
 
-NVIDIA's hosted model catalog (NIM microservices) offering 100+ open models through a single OpenAI-compatible endpoint. Sign up via the NVIDIA Developer Program for ~1,000 free inference credits/month, no card required.
+NVIDIA Inference Microservices. Access various open-source models with free credits. Phone verification required.
 
 **Official Website:** [https://build.nvidia.com/explore/discover](https://build.nvidia.com/explore/discover)
 

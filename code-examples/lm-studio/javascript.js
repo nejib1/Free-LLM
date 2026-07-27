@@ -6,19 +6,16 @@
 
 import OpenAI from 'openai';
 
-// Get your API key from https://lmstudio.ai/
 const client = new OpenAI({
   apiKey: 'lm-studio',
-  baseURL: 'http://localhost:1234/v1',
+  baseURL: 'http://localhost:1234/v1'
 });
 
-async function main() {
-  const completion = await client.chat.completions.create({
-    model: 'llama-3.2-3b-instruct',
-    messages: [{ role: 'user', content: 'What makes your inference platform unique?' }],
-  });
+const response = await client.chat.completions.create({
+  model: 'local-model',
+  messages: [
+    { role: 'user', content: 'What can you help me with?' }
+  ]
+});
 
-  console.log(completion.choices[0].message.content);
-}
-
-main();
+console.log(response.choices[0].message.content);

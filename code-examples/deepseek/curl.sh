@@ -4,12 +4,15 @@
 # Provider URL: https://platform.deepseek.com/
 # ===============================================
 
-curl https://api.deepseek.com/chat/completions \
+curl https://api.deepseek.com/v1/chat/completions \
+  -H "Authorization: Bearer YOUR_DEEPSEEK_KEY" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
     "model": "deepseek-chat",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "Write a Python function to detect palindromes"
+      }
     ]
   }'

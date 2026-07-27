@@ -4,7 +4,7 @@
 
 ## About
 
-Israeli AI lab building the Jamba hybrid SSM-Transformer models, aimed at long-context enterprise workloads. New accounts get a $10 trial credit valid for 3 months (200 RPM during trial). AI21 also ships dedicated `ai21` Python/npm SDKs if you'd rather not use the OpenAI-compatible route.
+Creators of the Jamba model family, the world's first production-grade Mamba-based LLMs. Offers massive context windows with high throughput. $10 free credits for new users.
 
 **Official Website:** [https://docs.ai21.com/](https://docs.ai21.com/)
 

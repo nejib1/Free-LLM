@@ -4,12 +4,15 @@
 # Provider URL: https://lmstudio.ai/
 # ===============================================
 
+# Start LM Studio server first, then:
 curl http://localhost:1234/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer lm-studio" \
   -d '{
-    "model": "llama-3.2-3b-instruct",
+    "model": "local-model",
     "messages": [
-      {"role": "user", "content": "What makes your inference platform unique?"}
+      {
+        "role": "user",
+        "content": "What can you help me with?"
+      }
     ]
   }'

@@ -1,14 +1,14 @@
-# Text Gen WebUI - Code Examples
+# Text Generation WebUI - Code Examples
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
 ## About
 
-Full-featured Gradio web UI supporting many backends (llama.cpp, ExLlama, Transformers) with rich sampler/parameter control. Launch with the `--api` flag to enable its OpenAI-compatible API on port 5000 (older forks may need `--extension openai` instead).
+The Swiss Army Knife of local LLMs. Highly customizable Gradio interface for running Large Language Models like Llama, GPT-J, OPT, and GALACTICA locally.
 
 **Official Website:** [https://github.com/oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)
 
-**Full Details:** [https://free-llm.com/api/text-gen-webui](https://free-llm.com/api/text-gen-webui)
+**Full Details:** [https://free-llm.com/api/text-generation-webui](https://free-llm.com/api/text-generation-webui)
 
 ## Available Examples
 
@@ -27,7 +27,7 @@ This directory contains ready-to-use code examples in multiple languages:
 ## More Information
 
 For rate limits, pricing details, and setup instructions, visit:
-[https://free-llm.com/api/text-gen-webui](https://free-llm.com/api/text-gen-webui)
+[https://free-llm.com/api/text-generation-webui](https://free-llm.com/api/text-generation-webui)
 
 ---
 
