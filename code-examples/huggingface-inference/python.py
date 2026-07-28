@@ -4,16 +4,15 @@
 # Provider URL: https://huggingface.co/inference-api/serverless
 # ===============================================
 
-import requests
+from huggingface_hub import InferenceClient
 
-API_URL = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
-headers = {"Authorization": "Bearer YOUR_HF_TOKEN"}
+client = InferenceClient(api_key="YOUR_HF_TOKEN")
 
-def query(payload):
-	response = requests.post(API_URL, headers=headers, json=payload)
-	return response.json()
+completion = client.chat.completions.create(
+    model="black-forest-labs/FLUX.1-dev",
+    messages=[
+        {"role": "user", "content": "Explain the benefits of open inference routing"}
+    ]
+)
 
-output = query({
-	"inputs": "Can you please let us know more details about your",
-})
-print(output)
+print(completion.choices[0].message.content)

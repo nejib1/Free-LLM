@@ -4,7 +4,7 @@
 
 ## About
 
-Free serverless inference for open-source models. Access Llama, Mistral, and other models through an OpenAI-compatible API with generous free tier. Simple, developer-friendly platform.
+STATUS UNCONFIRMED: as of July 2026 both glhf.chat and its API return a persistent Cloudflare 522 (origin unreachable) error, and other sources report the free tier may have already ended. Not confirmed shut down like Kluster.ai (no official notice found), but currently unreachable. Original listing: Free serverless inference for open-source models. Access Llama, Mistral, and other models through an OpenAI-compatible API with generous free tier. Simple, developer-friendly platform.
 
 **Official Website:** [https://glhf.chat/](https://glhf.chat/)
 

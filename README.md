@@ -30,7 +30,7 @@ These providers offer ongoing free access with rate-limited quotas that never ex
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 2 RPM (anon) / 400 RPM (auth) | Unspecified | Unspecified | Beta access | Qwen3-32B, Qwen3.6-27B, 20+ open-weight models |
 | [Chutes.ai](https://chutes.ai/) | Varies (community) | Subject to availability | Free (community-powered) | No hard cap | DeepSeek-R1, Llama 3.1 70B, Qwen 2.5 72B |
 | [Inference.net](https://inference.net/) | Varies | Fair use | Free for listed models | Fair use policy | DeepSeek-R1, Llama 3.1 8B/70B |
-| [Glhf.chat](https://glhf.chat/) | Standard | Generous for personal use | Free tier included | Unlimited for free models | Llama 3.1 70B, Mixtral 8x7B, Phi-3 Mini |
+| [Glhf.chat](https://glhf.chat/) ⚠️ *currently unreachable, status unconfirmed* | Standard | Generous for personal use | Free tier included | Unlimited for free models | Llama 3.1 70B, Mixtral 8x7B, Phi-3 Mini |
 | [Coze](https://www.coze.com/) | Varies by model | Token-based daily limits | Free daily tokens | Resets daily | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 40 RPM | — | — | — | Llama 4 Scout, DeepSeek-R1, various open-source models (phone verification required) |
 | [Z.AI (GLM)](https://z.ai/) | ~1 req/s | ~1,000 RPD (Flash tier) | Varies by model | Free (Flash tier) | GLM-4.5-Flash, GLM-4.7-Flash |

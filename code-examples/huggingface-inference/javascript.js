@@ -4,19 +4,18 @@
 // Provider URL: https://huggingface.co/inference-api/serverless
 // ===============================================
 
-async function query(data) {
-	const response = await fetch(
-		"https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev",
-		{
-			headers: { Authorization: "Bearer YOUR_HF_TOKEN" },
-			method: "POST",
-			body: JSON.stringify(data),
-		}
-	);
-	const result = await response.json();
-	return result;
-}
+import OpenAI from '"'"'openai'"'"';
 
-query({"inputs": "Can you please let us know more details about your"}).then((response) => {
-	console.log(JSON.stringify(response));
+const client = new OpenAI({
+  apiKey: '"'"'YOUR_HF_TOKEN'"'"',
+  baseURL: '"'"'https://router.huggingface.co/v1'"'"'
 });
+
+const response = await client.chat.completions.create({
+  model: '"'"'black-forest-labs/FLUX.1-dev'"'"',
+  messages: [
+    { role: '"'"'user'"'"', content: '"'"'Explain the benefits of open inference routing'"'"' }
+  ]
+});
+
+console.log(response.choices[0].message.content);
