@@ -148,6 +148,14 @@ The [`code-examples/`](code-examples/) directory has ready-to-run Python, JavaSc
 
 ---
 
+## Related Projects
+
+### [free-llm-atlas](https://github.com/happyyboxx/free-llm-atlas)
+
+Auto-probed atlas of 46+ free LLM API providers with structured JSON data and gateway configs (Hermes/LiteLLM/Portkey/Open WebUI). Daily automated probing via GitHub Actions at 06:00 UTC — every provider, every endpoint, every day. 17 permanent free providers (no credit card) clearly tagged. `data/providers.json` includes status, rate limits, context windows, and feature flags — ready for programmatic use. Git history doubles as an uptime dashboard.
+
+---
+
 ## Contributing
 
 1. **Add a provider** — use the [submit form](https://free-llm.com/submit) on the website or open a PR.
