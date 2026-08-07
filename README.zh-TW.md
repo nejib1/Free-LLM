@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — 免費 AI 與 LLM API 開放目錄</h1>
 <!--STATS:START-->
-  <p align="center"><strong>來自 33 個提供商的 130+ 個免費 LLM 模型</strong> — 幾秒鐘內發現、比較並設定免費模型，另有 9 款本機/自架工具可無限私密使用。</p>
+  <p align="center"><strong>來自 33 個提供商的 120+ 個免費 LLM 模型</strong> — 幾秒鐘內發現、比較並設定免費模型，另有 9 款本機/自架工具可無限私密使用。</p>
 <!--STATS:END-->
 </p>
 
@@ -103,7 +103,6 @@ print(response.choices[0].message.content)
 | [Z.AI (GLM)](https://z.ai/) | 需註冊 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需註冊 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
 | [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
-| [Chutes.ai](https://chutes.ai/) | 需註冊 | Varies (community capacity) | 視可用性而定 | 無硬性上限 | DeepSeek-R1, Llama 3.1 70B Instruct, Qwen 2.5 72B Instruct |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 可續期額度
@@ -197,7 +196,6 @@ print(response.choices[0].message.content)
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得金鑰 →](https://console.x.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得金鑰 →](https://inference.net/) |
-| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [取得金鑰 →](https://chutes.ai/) |
 <!--TABLE:QUICKREF:END-->
 
 ---

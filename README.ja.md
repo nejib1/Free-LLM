@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — 無料 AI・LLM API オープンディレクトリ</h1>
 <!--STATS:START-->
-  <p align="center"><strong>33 プロバイダーから 130 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
+  <p align="center"><strong>33 プロバイダーから 120 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
 <!--STATS:END-->
 </p>
 
@@ -103,7 +103,6 @@ print(response.choices[0].message.content)
 | [Z.AI (GLM)](https://z.ai/) | 登録が必要 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 登録が必要 | 2 RPM (Anonymous) / 400 RPM (Auth) | 非公開 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
 | [Inference.net](https://inference.net/) | 不要 | 30 RPM（フェアユース） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
-| [Chutes.ai](https://chutes.ai/) | 登録が必要 | Varies (community capacity) | 空き状況による | 上限なし | DeepSeek-R1, Llama 3.1 70B Instruct, Qwen 2.5 72B Instruct |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 更新型クレジット
@@ -197,7 +196,6 @@ print(response.choices[0].message.content)
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得 →](https://friendli.ai/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得 →](https://console.x.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得 →](https://inference.net/) |
-| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [取得 →](https://chutes.ai/) |
 <!--TABLE:QUICKREF:END-->
 
 ---

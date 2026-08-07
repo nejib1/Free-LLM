@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — Open Directory of Free AI &amp; LLM APIs</h1>
 <!--STATS:START-->
-  <p align="center"><strong>130+ free LLM models from 33 providers</strong> — find, compare &amp; configure free models in seconds, plus 9 local/self-hosted tools for unlimited private use.</p>
+  <p align="center"><strong>120+ free LLM models from 33 providers</strong> — find, compare &amp; configure free models in seconds, plus 9 local/self-hosted tools for unlimited private use.</p>
 <!--STATS:END-->
 </p>
 
@@ -103,7 +103,6 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Z.AI (GLM)](https://z.ai/) | Registration | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | Registration | 2 RPM (Anonymous) / 400 RPM (Auth) | Unspecified | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
 | [Inference.net](https://inference.net/) | No | 30 RPM (fair use) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
-| [Chutes.ai](https://chutes.ai/) | Registration | Varies (community capacity) | Subject to availability | No hard cap | DeepSeek-R1, Llama 3.1 70B Instruct, Qwen 2.5 72B Instruct |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
@@ -197,7 +196,6 @@ Sign up and receive credits to use until depleted.
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
-| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [Get Key →](https://chutes.ai/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
