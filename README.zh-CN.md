@@ -144,6 +144,15 @@ print(response.choices[0].message.content)
 | [Novita AI](https://novita.ai/) | 需注册 | <!--TABLE:TRIAL:START-->
 | 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
 |:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *免费研究模型需先充值最低 * | 需注册 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 需注册 | 少量试用额度 | 一次性 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 需注册 |  | 一次性 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 |  | 一次性 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 需注册 |  | 一次性 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 |  | 一次性 | See provider |
+| [Novita AI](https://novita.ai/) | 需注册 | <!--TABLE:TRIAL:START-->
+| 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
+|:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *免费研究模型需先充值最低 $5* | 需注册 | 免费研究模型 | 永久免费（研究用途） | Apriel 1.6/1.5 15B Thinker |
 | [DeepSeek](https://platform.deepseek.com/) | 需注册 | 500 万 tokens | 30 天 | DeepSeek-V4 Flash（对话 + 推理模式） |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 | $5 额度 | 一次性 | Llama 3.3 70B, DeepSeek-V3.1 |
@@ -159,6 +168,16 @@ print(response.choices[0].message.content)
 | [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 需注册 | 每个模型 100 万入 + 100 万出 tokens（仅限国际/新加坡账号） | 90 天 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 需注册 | 100 万免费 tokens | 一次性试用 | Mistral, Llama, Qwen（欧盟托管） |
 | [Requesty](https://requesty.ai/) | 需注册 | 每月免费额度 | 每月续期 | 多提供商路由 |
+<!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 需注册 |  | 3 个月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 需注册 |  | 3 个月 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 需注册 | 5M tokens | 30 天 | See provider |
+| [Requesty](https://requesty.ai/) | 需注册 | 每月免费额度 | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 需注册 |  | 一次性 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 需注册 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 需注册 |  | 一次性 | See provider |
 <!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | 1M tokens/model | One-time per model | See provider |

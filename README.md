@@ -144,6 +144,15 @@ Sign up and receive credits to use until depleted.
 | [Novita AI](https://novita.ai/) | Registration | <!--TABLE:TRIAL:START-->
 | Provider | Credit Card? | Credit Amount | Expiry | Key Models |
 |:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *free research models need a  minimum deposit* | Registration | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | Registration | Small trial credit | One-time | See provider |
+| [Fireworks AI](https://fireworks.ai/) | Registration |  | One-time | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | Registration |  | One-time | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | Registration |  | One-time | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | Registration |  | One-time | See provider |
+| [Novita AI](https://novita.ai/) | Registration | <!--TABLE:TRIAL:START-->
+| Provider | Credit Card? | Credit Amount | Expiry | Key Models |
+|:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *free research models need a $5 minimum deposit* | Registration | Free research models | Free forever (research) | Apriel 1.6/1.5 15B Thinker |
 | [DeepSeek](https://platform.deepseek.com/) | Registration | 5,000,000 tokens | 30 days | DeepSeek-V4 Flash (chat + reasoning modes) |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | Registration | $5 credit | One-time | Llama 3.3 70B, DeepSeek-V3.1 |
@@ -159,6 +168,16 @@ Sign up and receive credits to use until depleted.
 | [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | Registration | 1M in + 1M out tokens per model (Intl/Singapore accounts only) | 90 days | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | Registration | 1M free tokens | One-time trial | Mistral, Llama, Qwen (EU-hosted) |
 | [Requesty](https://requesty.ai/) | Registration | Free monthly credits | Renews monthly | Multi-provider routing |
+<!--TABLE:TRIAL:END-->.50 | One-time | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | Registration | 1M tokens | One-time | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | Registration | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | Registration |  | 3 months | See provider |
+| [Upstage](https://console.upstage.ai/) | Registration |  | 3 months | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | Registration | 5M tokens | 30 days | See provider |
+| [Requesty](https://requesty.ai/) | Registration | Free monthly credits | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | Registration |  | One-time | See provider |
+| [DeepInfra](https://deepinfra.com/) | Registration |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | Registration |  | One-time | See provider |
 <!--TABLE:TRIAL:END-->.50 | One-time | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | Registration | 1M tokens | One-time | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | Registration | 1M tokens/model | One-time per model | See provider |

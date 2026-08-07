@@ -144,6 +144,15 @@ print(response.choices[0].message.content)
 | [Novita AI](https://novita.ai/) | 登録が必要 | <!--TABLE:TRIAL:START-->
 | プロバイダー | クレジットカード | クレジット額 | 有効期限 | 主なモデル |
 |:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *無料の研究用モデルには最低  の入金が必要* | 登録が必要 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 登録が必要 | 少額の試用クレジット | 一度きり | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 登録が必要 |  | 一度きり | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 登録が必要 |  | 一度きり | See provider |
+| [Novita AI](https://novita.ai/) | 登録が必要 | <!--TABLE:TRIAL:START-->
+| プロバイダー | クレジットカード | クレジット額 | 有効期限 | 主なモデル |
+|:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *無料の研究用モデルには最低 $5 の入金が必要* | 登録が必要 | 無料の研究用モデル | 永久無料（研究目的） | Apriel 1.6/1.5 15B Thinker |
 | [DeepSeek](https://platform.deepseek.com/) | 登録が必要 | 500 万トークン | 30 日間 | DeepSeek-V4 Flash（チャット + 推論モード） |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 登録が必要 | $5 分のクレジット | 一度きり | Llama 3.3 70B, DeepSeek-V3.1 |
@@ -159,6 +168,16 @@ print(response.choices[0].message.content)
 | [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 登録が必要 | モデルごとに入力・出力各 100 万トークン（国際/シンガポールアカウントのみ） | 90 日間 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 登録が必要 | 無料 100 万トークン | 一度きりの試用 | Mistral, Llama, Qwen（EU ホスティング） |
 | [Requesty](https://requesty.ai/) | 登録が必要 | 毎月の無料クレジット | 毎月更新 | マルチプロバイダー・ルーティング |
+<!--TABLE:TRIAL:END-->.50 | 一度きり | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 登録が必要 | 1M tokens | 一度きり | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 登録が必要 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 登録が必要 |  | 3 ヶ月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 登録が必要 |  | 3 ヶ月 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 登録が必要 | 5M tokens | 30 日間 | See provider |
+| [Requesty](https://requesty.ai/) | 登録が必要 | 毎月の無料クレジット | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [DeepInfra](https://deepinfra.com/) | 登録が必要 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 登録が必要 |  | 一度きり | See provider |
 <!--TABLE:TRIAL:END-->.50 | 一度きり | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 登録が必要 | 1M tokens | 一度きり | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 登録が必要 | 1M tokens/model | One-time per model | See provider |
