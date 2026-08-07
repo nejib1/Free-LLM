@@ -1,6 +1,8 @@
 <p align="center">
   <h1 align="center">Free-LLM — 免费 AI 与 LLM API 开放目录</h1>
+<!--STATS:START-->
   <p align="center"><strong>来自 33 个提供商的 130+ 免费 LLM 模型</strong> — 几秒钟内发现、对比并配置免费模型，另有 9 款本地/自托管工具供无限私密使用。</p>
+<!--STATS:END-->
 </p>
 
 <p align="center">
@@ -86,37 +88,60 @@ print(response.choices[0].message.content)
 
 持续免费访问，限速但永不过期。
 
+<!--TABLE:PERMANENT:START-->
 | 提供商 | 需要信用卡？ | 速率限制 | 每日限额 | 每月限额 | 主要模型 |
 |:---|:---:|:---|:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | 否 | 5–30 RPM（因模型而异） | 9,000 RPD (Flash) / 25 RPD (Pro) | 完全免费 | Gemini 3.1 Pro Preview, 3.6 Flash, 3.5 Flash, 3.5 Flash-Lite |
-| [Groq](https://console.groq.com/) | 否 | 30 RPM | 14,400 RPD | 永久免费 | Llama 3.3 70B, Qwen3.6 27B, GPT-OSS 120B/20B, Kimi K2, Whisper |
-| [Cerebras](https://inference.cerebras.ai/) | 否 | 30 RPM | 每天 100 万 tokens | 永久免费 | GPT-OSS 120B, GLM-4.7, Gemma 4 31B |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 否 | 300 次/小时 | 视负载而定 | 永久免费（限速） | Llama 3.2 11B, Qwen 2.5 72B, Gemma 2 9B, Flux.1 |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | 每月约 30 万 neurons | Llama 3.1 8B, Mistral 7B, Qwen 1.5 7B, DeepSeek Coder 6.7B, Phi-2 |
-| [Cohere](https://cohere.com/) | 否 | 20 RPM | — | 每月 1,000 次请求 | Command A+, Command A Reasoning, Command A, Command R+, Command R |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | 需手机验证 | 1 次/秒 | — | 免费（"Experiment" 套餐） | Mistral Large 3, Mistral Medium 3.5, Codestral, Mistral Small |
-| [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | 合理使用范围内 | 列出的模型免费 | DeepSeek-R1, Llama 3.1 8B/70B |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM（匿名）/ 400 RPM（已认证） | 未公布 | 测试阶段 | Qwen3-32B, Qwen3.6-27B, 20+ 开源模型 |
-| [Chutes.ai](https://chutes.ai/) | 需注册 | 视社区算力而定 | 视可用性而定 | 无硬性上限 | DeepSeek-R1, Llama 3.1 70B, Qwen 2.5 72B |
-| [Coze](https://www.coze.com/) | 需注册 | 因模型而异 | 按 token 计算的每日限额 | 每日重置 | GPT-4o（通过 Coze）, Gemini 1.5 Pro（通过 Coze） |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需手机验证 | 40 RPM | — | — | Llama 4 Scout, DeepSeek-R1, 多款开源模型 |
-| [Z.AI (GLM)](https://z.ai/) | 需注册 | 约 1 次/秒（Flash 档） | 约每天 1,000 次请求（Flash 档） | 免费档持续提供 | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Google AI Studio](https://aistudio.google.com/) | 否 | 5-30 RPM (varies by model) | 9000 RPD (Flash) / 25 RPD (3.1 Pro) | 完全免费 | Gemini 3.1 Pro, Gemini 3.1 Flash, Gemini 3.0 Flash, Gemini 3.0 Flash-Lite |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | 需手机验证 | 1 request/second | - | Free | Mistral 7B, Mixtral 8x7B, Mistral Small, Mistral Nemo |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 否 | 300 Requests / hour | Dependent on global load | Free Forever (Rate Limited) | Llama 3.2 11B Vision, Llama 3.1 8B Instruct, Qwen 2.5 72B Instruct, Gemma 2 9B Instruct |
+| [Cohere](https://cohere.com/) | 否 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需手机验证 | 40 requests/minute | - | - | See provider |
+| [Cerebras](https://cerebras.ai/inference) | 否 | 30 RPM | 1,000,000 Tokens / Day | Free Forever | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
+| [Groq](https://console.groq.com/) | 否 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Allam 2 7B, Llama 3.1 8B, Llama 3.3 70B, Llama 4 Maverick 17B |
+| [Coze](https://www.coze.com/) | 需注册 | 因模型而异 | 按 token 计算的每日限额 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
+| [Z.AI (GLM)](https://z.ai/) | 需注册 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
+| [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [Chutes.ai](https://chutes.ai/) | 需注册 | Varies (community capacity) | 视可用性而定 | 无硬性上限 | DeepSeek-R1, Llama 3.1 70B Instruct, Qwen 2.5 72B Instruct |
+<!--TABLE:PERMANENT:END-->
 
 ### 💰 可续期额度
 
 定期续期的免费额度，没有一次性到期问题。
 
+<!--TABLE:RENEWABLE:START-->
 | 提供商 | 需要信用卡？ | 速率限制 | 免费额度 | 主要模型 |
 |:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 否 | 20 RPM | 每天 50 次请求（一次性充值 $10 后可达 1,000 次） | DeepSeek V4 Flash, Llama 4 Maverick/Scout, GPT-OSS 120B, Gemini 2.0（29+ 免费模型） |
-| [GitHub Models](https://github.com/marketplace/models) | 否 | 10 RPM（高阶模型） | 50 RPD（高阶）/ 150 RPD（mini 档） | GPT-5 Chat, GPT-5 Mini, Llama 4 Scout/Maverick, Phi-4, Mistral Medium |
-| [Grok / xAI](https://console.x.ai/) | 需注册 | 视额度而定（免费档较低） | 一次性 $25 注册赠金（可选 $150/月，需同意数据共享） | Grok 4.5, Grok 4.3 |
-| [Venice.ai](https://venice.ai/) ⚠️ *完整 API 访问需要 Pro 订阅* | 需注册 | 10 RPM（免费档） | 每日使用量有限，每日重置 | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with  topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
+| [Venice.ai](https://venice.ai/) ⚠️ *完整 API 访问需要 Pro 订阅* | 需注册 | 10 RPM（免费档） | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [GitHub Models](https://github.com/marketplace/models) | 否 | 10 RPM (high-tier) / higher for mini-tier | 50 RPD (high-tier models) / 150 RPD (mini-tier models) | GPT-4o, Llama 3.3 70B Instruct, Phi-4, Mistral Large (24.11) |
+| [Grok (xAI)](https://console.x.ai/) | 需注册 | 视额度而定（免费档较低） |  one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+<!--TABLE:RENEWABLE:END-->
 
 ### 🎁 一次性试用额度
 
 注册后获得一次性额度，用完为止。
 
+<!--TABLE:TRIAL:START-->
+| 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
+|:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *免费研究模型需先充值最低 * | 需注册 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 需注册 | 少量试用额度 | 一次性 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 需注册 |  | 一次性 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 |  | 一次性 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 需注册 |  | 一次性 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 |  | 一次性 | See provider |
+| [Novita AI](https://novita.ai/) | 需注册 | <!--TABLE:TRIAL:START-->
+| 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
+|:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *免费研究模型需先充值最低 * | 需注册 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 需注册 | 少量试用额度 | 一次性 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 需注册 |  | 一次性 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 |  | 一次性 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 需注册 |  | 一次性 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 |  | 一次性 | See provider |
+| [Novita AI](https://novita.ai/) | 需注册 | <!--TABLE:TRIAL:START-->
 | 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
 |:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *免费研究模型需先充值最低 $5* | 需注册 | 免费研究模型 | 永久免费（研究用途） | Apriel 1.6/1.5 15B Thinker |
@@ -134,6 +159,27 @@ print(response.choices[0].message.content)
 | [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 需注册 | 每个模型 100 万入 + 100 万出 tokens（仅限国际/新加坡账号） | 90 天 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 需注册 | 100 万免费 tokens | 一次性试用 | Mistral, Llama, Qwen（欧盟托管） |
 | [Requesty](https://requesty.ai/) | 需注册 | 每月免费额度 | 每月续期 | 多提供商路由 |
+<!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 需注册 |  | 3 个月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 需注册 |  | 3 个月 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 需注册 | 5M tokens | 30 天 | See provider |
+| [Requesty](https://requesty.ai/) | 需注册 | 每月免费额度 | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 需注册 |  | 一次性 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 需注册 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 需注册 |  | 一次性 | See provider |
+<!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 需注册 |  | 3 个月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 需注册 |  | 3 个月 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 需注册 | 5M tokens | 30 天 | See provider |
+| [Requesty](https://requesty.ai/) | 需注册 | 每月免费额度 | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 需注册 |  | 一次性 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 需注册 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 需注册 |  | 一次性 | See provider |
+<!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本地 / 自托管（无限、私密、永久免费）
 
@@ -153,40 +199,43 @@ print(response.choices[0].message.content)
 
 ## Quick Reference — Base URL 与 API Key
 
+<!--TABLE:QUICKREF:START-->
 | 提供商 | Base URL | 获取密钥 |
 |:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | `https://generativelanguage.googleapis.com/v1beta` | [获取密钥 →](https://aistudio.google.com/app/apikey) |
-| [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [获取密钥 →](https://console.groq.com/keys) |
-| [Cerebras](https://inference.cerebras.ai/) | `https://api.cerebras.ai/v1` | [获取密钥 →](https://cloud.cerebras.ai/) |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | `https://router.huggingface.co/v1` | [获取密钥 →](https://huggingface.co/settings/tokens) |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [获取密钥 →](https://dash.cloudflare.com/profile/api-tokens) |
-| [Cohere](https://cohere.com/) | `https://api.cohere.ai/v1` | [获取密钥 →](https://dashboard.cohere.com/api-keys) |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | `https://api.mistral.ai/v1` | [获取密钥 →](https://console.mistral.ai/api-keys) |
-| [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [获取密钥 →](https://inference.net/) |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [获取密钥 →](https://endpoints.ai.cloud.ovh.net/) |
-| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [获取密钥 →](https://chutes.ai/) |
-| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [获取密钥 →](https://www.coze.com/) |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [获取密钥 →](https://build.nvidia.com/settings/api-keys) |
-| [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [获取密钥 →](https://z.ai/) |
-| [OpenRouter](https://openrouter.ai/) | `https://openrouter.ai/api/v1` | [获取密钥 →](https://openrouter.ai/keys) |
-| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [获取密钥 →](https://github.com/marketplace/models) |
-| [Grok / xAI](https://console.x.ai/) | `https://api.x.ai/v1` | [获取密钥 →](https://console.x.ai/) |
-| [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [获取密钥 →](https://venice.ai/) |
+| [OpenRouter](https://openrouter.ai/) | `https://openrouter.ai/api/v1` | [获取密钥 →](https://openrouter.ai/) |
+| [Google AI Studio](https://aistudio.google.com/) | `https://generativelanguage.googleapis.com/v1beta` | [获取密钥 →](https://aistudio.google.com/) |
 | [Together.AI](https://together.ai/) | `https://api.together.xyz/v1` | [获取密钥 →](https://together.ai/) |
-| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [获取密钥 →](https://platform.deepseek.com/api_keys) |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [获取密钥 →](https://cloud.sambanova.ai/apis) |
-| [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [获取密钥 →](https://www.cerebrium.ai/) |
-| [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [获取密钥 →](https://studio.ai21.com/account/api-key) |
-| [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [获取密钥 →](https://fireworks.ai/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [获取密钥 →](https://friendli.ai/) |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [获取密钥 →](https://app.hyperbolic.xyz/) |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [获取密钥 →](https://studio.nebius.com/settings/api-keys) |
-| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [获取密钥 →](https://novita.ai/) |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | `https://api.mistral.ai/v1` | [获取密钥 →](https://console.mistral.ai/) |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | `https://router.huggingface.co/v1` | [获取密钥 →](https://huggingface.co/inference-api/serverless) |
+| [Cohere](https://cohere.com/) | `https://api.cohere.ai/v1` | [获取密钥 →](https://cohere.com/) |
 | [Replicate](https://replicate.com/) | `https://api.replicate.com/v1` | [获取密钥 →](https://replicate.com/) |
+| [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [获取密钥 →](https://fireworks.ai/) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [获取密钥 →](https://build.nvidia.com/explore/discover) |
+| [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [获取密钥 →](https://venice.ai/) |
+| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [获取密钥 →](https://github.com/marketplace/models) |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [获取密钥 →](https://cloud.sambanova.ai/) |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [获取密钥 →](https://app.hyperbolic.xyz/) |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [获取密钥 →](https://tokenfactory.nebius.com/) |
+| [Cerebras](https://cerebras.ai/inference) | `https://api.cerebras.ai/v1` | [获取密钥 →](https://cerebras.ai/inference) |
+| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [获取密钥 →](https://novita.ai/) |
+| [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [获取密钥 →](https://console.groq.com/) |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [获取密钥 →](https://console.scaleway.com/generative-api/models) |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [获取密钥 →](https://bailian.console.alibabacloud.com/) |
+| [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [获取密钥 →](https://docs.ai21.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [获取密钥 →](https://console.upstage.ai/) |
-| [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [获取密钥 →](https://bailian.console.alibabacloud.com/) |
-| [Scaleway](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [获取密钥 →](https://console.scaleway.com/generative-api/models) |
+| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [获取密钥 →](https://platform.deepseek.com/) |
+| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [获取密钥 →](https://www.coze.com/) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [获取密钥 →](https://dash.cloudflare.com/) |
+| [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [获取密钥 →](https://z.ai/) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [获取密钥 →](https://requesty.ai/) |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [获取密钥 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [获取密钥 →](https://www.cerebrium.ai/) |
+| [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [获取密钥 →](https://deepinfra.com/) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [获取密钥 →](https://friendli.ai/) |
+| [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [获取密钥 →](https://console.x.ai/) |
+| [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [获取密钥 →](https://inference.net/) |
+| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [获取密钥 →](https://chutes.ai/) |
+<!--TABLE:QUICKREF:END-->
 
 ---
 
@@ -275,3 +324,7 @@ Free-LLM/
 ## License
 
 MIT — 详见 [LICENSE](LICENSE)。
+
+---
+
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-07<!--LASTSYNC:END--></sub></p>

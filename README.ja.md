@@ -1,6 +1,8 @@
 <p align="center">
   <h1 align="center">Free-LLM — 無料 AI・LLM API オープンディレクトリ</h1>
+<!--STATS:START-->
   <p align="center"><strong>33 プロバイダーから 130 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
+<!--STATS:END-->
 </p>
 
 <p align="center">
@@ -86,37 +88,60 @@ print(response.choices[0].message.content)
 
 期限なく使い続けられる、レート制限付きの無料アクセスです。
 
+<!--TABLE:PERMANENT:START-->
 | プロバイダー | クレジットカード | レート制限 | 1 日の上限 | 月間上限 | 主なモデル |
 |:---|:---:|:---|:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | 不要 | 5〜30 RPM（モデルにより異なる） | 9,000 RPD (Flash) / 25 RPD (Pro) | 完全無料 | Gemini 3.1 Pro Preview, 3.6 Flash, 3.5 Flash, 3.5 Flash-Lite |
-| [Groq](https://console.groq.com/) | 不要 | 30 RPM | 14,400 RPD | 永久無料 | Llama 3.3 70B, Qwen3.6 27B, GPT-OSS 120B/20B, Kimi K2, Whisper |
-| [Cerebras](https://inference.cerebras.ai/) | 不要 | 30 RPM | 1 日 100 万トークン | 永久無料 | GPT-OSS 120B, GLM-4.7, Gemma 4 31B |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 不要 | 300 リクエスト/時 | 負荷状況による | 永久無料（レート制限あり） | Llama 3.2 11B, Qwen 2.5 72B, Gemma 2 9B, Flux.1 |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 不要 | モデルにより異なる | 1 日 10,000 neurons | 月間約 30 万 neurons | Llama 3.1 8B, Mistral 7B, Qwen 1.5 7B, DeepSeek Coder 6.7B, Phi-2 |
-| [Cohere](https://cohere.com/) | 不要 | 20 RPM | — | 月 1,000 リクエスト | Command A+, Command A Reasoning, Command A, Command R+, Command R |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | 電話番号認証が必要 | 1 リクエスト/秒 | — | 無料（"Experiment" プラン） | Mistral Large 3, Mistral Medium 3.5, Codestral, Mistral Small |
-| [Inference.net](https://inference.net/) | 不要 | 30 RPM（フェアユース） | フェアユースの範囲内 | 対象モデルは無料 | DeepSeek-R1, Llama 3.1 8B/70B |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 登録が必要 | 2 RPM（匿名）/ 400 RPM（認証済み） | 非公開 | ベータ提供中 | Qwen3-32B, Qwen3.6-27B, 20 以上のオープンモデル |
-| [Chutes.ai](https://chutes.ai/) | 登録が必要 | コミュニティの計算資源による | 空き状況による | 上限なし | DeepSeek-R1, Llama 3.1 70B, Qwen 2.5 72B |
-| [Coze](https://www.coze.com/) | 登録が必要 | モデルにより異なる | トークン制の日次上限 | 毎日リセット | GPT-4o（Coze 経由）, Gemini 1.5 Pro（Coze 経由） |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 電話番号認証が必要 | 40 RPM | — | — | Llama 4 Scout, DeepSeek-R1, 各種オープンソースモデル |
-| [Z.AI (GLM)](https://z.ai/) | 登録が必要 | 約 1 リクエスト/秒（Flash 枠） | 約 1 日 1,000 リクエスト（Flash 枠） | 無料枠は継続提供 | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Google AI Studio](https://aistudio.google.com/) | 不要 | 5-30 RPM (varies by model) | 9000 RPD (Flash) / 25 RPD (3.1 Pro) | 完全無料 | Gemini 3.1 Pro, Gemini 3.1 Flash, Gemini 3.0 Flash, Gemini 3.0 Flash-Lite |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | 電話番号認証が必要 | 1 request/second | - | Free | Mistral 7B, Mixtral 8x7B, Mistral Small, Mistral Nemo |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 不要 | 300 Requests / hour | Dependent on global load | Free Forever (Rate Limited) | Llama 3.2 11B Vision, Llama 3.1 8B Instruct, Qwen 2.5 72B Instruct, Gemma 2 9B Instruct |
+| [Cohere](https://cohere.com/) | 不要 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 電話番号認証が必要 | 40 requests/minute | - | - | See provider |
+| [Cerebras](https://cerebras.ai/inference) | 不要 | 30 RPM | 1,000,000 Tokens / Day | Free Forever | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
+| [Groq](https://console.groq.com/) | 不要 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Allam 2 7B, Llama 3.1 8B, Llama 3.3 70B, Llama 4 Maverick 17B |
+| [Coze](https://www.coze.com/) | 登録が必要 | モデルにより異なる | トークン制の日次上限 | 毎日リセット | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 不要 | モデルにより異なる | 1 日 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
+| [Z.AI (GLM)](https://z.ai/) | 登録が必要 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 登録が必要 | 2 RPM (Anonymous) / 400 RPM (Auth) | 非公開 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
+| [Inference.net](https://inference.net/) | 不要 | 30 RPM（フェアユース） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [Chutes.ai](https://chutes.ai/) | 登録が必要 | Varies (community capacity) | 空き状況による | 上限なし | DeepSeek-R1, Llama 3.1 70B Instruct, Qwen 2.5 72B Instruct |
+<!--TABLE:PERMANENT:END-->
 
 ### 💰 更新型クレジット
 
 定期的に更新される無料クレジットで、一度きりの失効はありません。
 
+<!--TABLE:RENEWABLE:START-->
 | プロバイダー | クレジットカード | レート制限 | 無料枠 | 主なモデル |
 |:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 不要 | 20 RPM | 1 日 50 リクエスト（$10 の一度きりのチャージで最大 1,000 に） | DeepSeek V4 Flash, Llama 4 Maverick/Scout, GPT-OSS 120B, Gemini 2.0（29 以上の無料モデル） |
-| [GitHub Models](https://github.com/marketplace/models) | 不要 | 10 RPM（上位モデル） | 50 RPD（上位）/ 150 RPD（mini 枠） | GPT-5 Chat, GPT-5 Mini, Llama 4 Scout/Maverick, Phi-4, Mistral Medium |
-| [Grok / xAI](https://console.x.ai/) | 登録が必要 | 無料枠は低め | 登録時に $25 分（データ共有に同意すると月額 $150 のオプションも） | Grok 4.5, Grok 4.3 |
-| [Venice.ai](https://venice.ai/) ⚠️ *フル API アクセスには Pro サブスクリプションが必要* | 登録が必要 | 10 RPM（無料枠） | 1 日の利用量に制限あり、毎日リセット | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [OpenRouter](https://openrouter.ai/) | 不要 | 20 requests/minute | 50 requests/day (up to 1000 with  topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
+| [Venice.ai](https://venice.ai/) ⚠️ *フル API アクセスには Pro サブスクリプションが必要* | 登録が必要 | 10 RPM（無料枠） | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [GitHub Models](https://github.com/marketplace/models) | 不要 | 10 RPM (high-tier) / higher for mini-tier | 50 RPD (high-tier models) / 150 RPD (mini-tier models) | GPT-4o, Llama 3.3 70B Instruct, Phi-4, Mistral Large (24.11) |
+| [Grok (xAI)](https://console.x.ai/) | 登録が必要 | 無料枠は低め |  one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+<!--TABLE:RENEWABLE:END-->
 
 ### 🎁 一度きりの試用クレジット
 
 登録すると使い切りのクレジットがもらえます。
 
+<!--TABLE:TRIAL:START-->
+| プロバイダー | クレジットカード | クレジット額 | 有効期限 | 主なモデル |
+|:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *無料の研究用モデルには最低  の入金が必要* | 登録が必要 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 登録が必要 | 少額の試用クレジット | 一度きり | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 登録が必要 |  | 一度きり | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 登録が必要 |  | 一度きり | See provider |
+| [Novita AI](https://novita.ai/) | 登録が必要 | <!--TABLE:TRIAL:START-->
+| プロバイダー | クレジットカード | クレジット額 | 有効期限 | 主なモデル |
+|:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *無料の研究用モデルには最低  の入金が必要* | 登録が必要 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 登録が必要 | 少額の試用クレジット | 一度きり | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 登録が必要 |  | 一度きり | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 登録が必要 |  | 一度きり | See provider |
+| [Novita AI](https://novita.ai/) | 登録が必要 | <!--TABLE:TRIAL:START-->
 | プロバイダー | クレジットカード | クレジット額 | 有効期限 | 主なモデル |
 |:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *無料の研究用モデルには最低 $5 の入金が必要* | 登録が必要 | 無料の研究用モデル | 永久無料（研究目的） | Apriel 1.6/1.5 15B Thinker |
@@ -134,6 +159,27 @@ print(response.choices[0].message.content)
 | [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 登録が必要 | モデルごとに入力・出力各 100 万トークン（国際/シンガポールアカウントのみ） | 90 日間 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 登録が必要 | 無料 100 万トークン | 一度きりの試用 | Mistral, Llama, Qwen（EU ホスティング） |
 | [Requesty](https://requesty.ai/) | 登録が必要 | 毎月の無料クレジット | 毎月更新 | マルチプロバイダー・ルーティング |
+<!--TABLE:TRIAL:END-->.50 | 一度きり | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 登録が必要 | 1M tokens | 一度きり | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 登録が必要 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 登録が必要 |  | 3 ヶ月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 登録が必要 |  | 3 ヶ月 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 登録が必要 | 5M tokens | 30 日間 | See provider |
+| [Requesty](https://requesty.ai/) | 登録が必要 | 毎月の無料クレジット | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [DeepInfra](https://deepinfra.com/) | 登録が必要 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 登録が必要 |  | 一度きり | See provider |
+<!--TABLE:TRIAL:END-->.50 | 一度きり | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 登録が必要 | 1M tokens | 一度きり | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 登録が必要 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 登録が必要 |  | 3 ヶ月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 登録が必要 |  | 3 ヶ月 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 登録が必要 | 5M tokens | 30 日間 | See provider |
+| [Requesty](https://requesty.ai/) | 登録が必要 | 毎月の無料クレジット | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 登録が必要 |  | 一度きり | See provider |
+| [DeepInfra](https://deepinfra.com/) | 登録が必要 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 登録が必要 |  | 一度きり | See provider |
+<!--TABLE:TRIAL:END-->
 
 ### 🖥️ ローカル / セルフホスト（無制限・プライベート・永久無料）
 
@@ -153,40 +199,43 @@ print(response.choices[0].message.content)
 
 ## Quick Reference — Base URL と API キー
 
+<!--TABLE:QUICKREF:START-->
 | プロバイダー | Base URL | API キー取得 |
 |:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | `https://generativelanguage.googleapis.com/v1beta` | [取得 →](https://aistudio.google.com/app/apikey) |
-| [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [取得 →](https://console.groq.com/keys) |
-| [Cerebras](https://inference.cerebras.ai/) | `https://api.cerebras.ai/v1` | [取得 →](https://cloud.cerebras.ai/) |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | `https://router.huggingface.co/v1` | [取得 →](https://huggingface.co/settings/tokens) |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得 →](https://dash.cloudflare.com/profile/api-tokens) |
-| [Cohere](https://cohere.com/) | `https://api.cohere.ai/v1` | [取得 →](https://dashboard.cohere.com/api-keys) |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | `https://api.mistral.ai/v1` | [取得 →](https://console.mistral.ai/api-keys) |
-| [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得 →](https://inference.net/) |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得 →](https://endpoints.ai.cloud.ovh.net/) |
-| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [取得 →](https://chutes.ai/) |
-| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [取得 →](https://www.coze.com/) |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [取得 →](https://build.nvidia.com/settings/api-keys) |
-| [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [取得 →](https://z.ai/) |
-| [OpenRouter](https://openrouter.ai/) | `https://openrouter.ai/api/v1` | [取得 →](https://openrouter.ai/keys) |
-| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [取得 →](https://github.com/marketplace/models) |
-| [Grok / xAI](https://console.x.ai/) | `https://api.x.ai/v1` | [取得 →](https://console.x.ai/) |
-| [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [取得 →](https://venice.ai/) |
+| [OpenRouter](https://openrouter.ai/) | `https://openrouter.ai/api/v1` | [取得 →](https://openrouter.ai/) |
+| [Google AI Studio](https://aistudio.google.com/) | `https://generativelanguage.googleapis.com/v1beta` | [取得 →](https://aistudio.google.com/) |
 | [Together.AI](https://together.ai/) | `https://api.together.xyz/v1` | [取得 →](https://together.ai/) |
-| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [取得 →](https://platform.deepseek.com/api_keys) |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [取得 →](https://cloud.sambanova.ai/apis) |
-| [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得 →](https://www.cerebrium.ai/) |
-| [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [取得 →](https://studio.ai21.com/account/api-key) |
-| [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [取得 →](https://fireworks.ai/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得 →](https://friendli.ai/) |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [取得 →](https://app.hyperbolic.xyz/) |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [取得 →](https://studio.nebius.com/settings/api-keys) |
-| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [取得 →](https://novita.ai/) |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | `https://api.mistral.ai/v1` | [取得 →](https://console.mistral.ai/) |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | `https://router.huggingface.co/v1` | [取得 →](https://huggingface.co/inference-api/serverless) |
+| [Cohere](https://cohere.com/) | `https://api.cohere.ai/v1` | [取得 →](https://cohere.com/) |
 | [Replicate](https://replicate.com/) | `https://api.replicate.com/v1` | [取得 →](https://replicate.com/) |
+| [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [取得 →](https://fireworks.ai/) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [取得 →](https://build.nvidia.com/explore/discover) |
+| [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [取得 →](https://venice.ai/) |
+| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [取得 →](https://github.com/marketplace/models) |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [取得 →](https://cloud.sambanova.ai/) |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [取得 →](https://app.hyperbolic.xyz/) |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [取得 →](https://tokenfactory.nebius.com/) |
+| [Cerebras](https://cerebras.ai/inference) | `https://api.cerebras.ai/v1` | [取得 →](https://cerebras.ai/inference) |
+| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [取得 →](https://novita.ai/) |
+| [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [取得 →](https://console.groq.com/) |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [取得 →](https://console.scaleway.com/generative-api/models) |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [取得 →](https://bailian.console.alibabacloud.com/) |
+| [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [取得 →](https://docs.ai21.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [取得 →](https://console.upstage.ai/) |
-| [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [取得 →](https://bailian.console.alibabacloud.com/) |
-| [Scaleway](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [取得 →](https://console.scaleway.com/generative-api/models) |
+| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [取得 →](https://platform.deepseek.com/) |
+| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [取得 →](https://www.coze.com/) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得 →](https://dash.cloudflare.com/) |
+| [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [取得 →](https://z.ai/) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得 →](https://requesty.ai/) |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得 →](https://www.cerebrium.ai/) |
+| [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [取得 →](https://deepinfra.com/) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得 →](https://friendli.ai/) |
+| [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得 →](https://console.x.ai/) |
+| [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得 →](https://inference.net/) |
+| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [取得 →](https://chutes.ai/) |
+<!--TABLE:QUICKREF:END-->
 
 ---
 
@@ -275,3 +324,7 @@ Free-LLM/
 ## License
 
 MIT — 詳細は [LICENSE](LICENSE) を参照してください。
+
+---
+
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-07<!--LASTSYNC:END--></sub></p>

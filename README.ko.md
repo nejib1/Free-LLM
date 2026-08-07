@@ -1,6 +1,8 @@
 <p align="center">
   <h1 align="center">Free-LLM — 무료 AI·LLM API 오픈 디렉터리</h1>
+<!--STATS:START-->
   <p align="center"><strong>33개 제공업체의 무료 LLM 모델 130개 이상</strong> — 몇 초 만에 무료 모델을 찾고, 비교하고, 설정하세요. 무제한·프라이빗하게 쓸 수 있는 로컬/셀프호스팅 도구도 9종 제공합니다.</p>
+<!--STATS:END-->
 </p>
 
 <p align="center">
@@ -86,37 +88,60 @@ print(response.choices[0].message.content)
 
 만료 없이 계속 사용할 수 있는, 속도 제한이 있는 무료 액세스입니다.
 
+<!--TABLE:PERMANENT:START-->
 | 제공업체 | 신용카드? | 속도 제한 | 일일 한도 | 월간 한도 | 주요 모델 |
 |:---|:---:|:---|:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | 불필요 | 5–30 RPM (모델별 상이) | 9,000 RPD (Flash) / 25 RPD (Pro) | 완전 무료 | Gemini 3.1 Pro Preview, 3.6 Flash, 3.5 Flash, 3.5 Flash-Lite |
-| [Groq](https://console.groq.com/) | 불필요 | 30 RPM | 14,400 RPD | 영구 무료 | Llama 3.3 70B, Qwen3.6 27B, GPT-OSS 120B/20B, Kimi K2, Whisper |
-| [Cerebras](https://inference.cerebras.ai/) | 불필요 | 30 RPM | 하루 100만 토큰 | 영구 무료 | GPT-OSS 120B, GLM-4.7, Gemma 4 31B |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 불필요 | 시간당 300회 | 서버 부하에 따라 다름 | 영구 무료 (속도 제한 있음) | Llama 3.2 11B, Qwen 2.5 72B, Gemma 2 9B, Flux.1 |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 불필요 | 모델별 상이 | 하루 10,000 neurons | 월 약 30만 neurons | Llama 3.1 8B, Mistral 7B, Qwen 1.5 7B, DeepSeek Coder 6.7B, Phi-2 |
-| [Cohere](https://cohere.com/) | 불필요 | 20 RPM | — | 월 1,000회 요청 | Command A+, Command A Reasoning, Command A, Command R+, Command R |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | 전화번호 인증 필요 | 초당 1회 | — | 무료 ("Experiment" 플랜) | Mistral Large 3, Mistral Medium 3.5, Codestral, Mistral Small |
-| [Inference.net](https://inference.net/) | 불필요 | 30 RPM (공정 사용) | 공정 사용 범위 내 | 등록된 모델은 무료 | DeepSeek-R1, Llama 3.1 8B/70B |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 가입 필요 | 2 RPM (비인증) / 400 RPM (인증) | 비공개 | 베타 제공 중 | Qwen3-32B, Qwen3.6-27B, 오픈소스 모델 20종 이상 |
-| [Chutes.ai](https://chutes.ai/) | 가입 필요 | 커뮤니티 컴퓨팅 자원에 따라 다름 | 가용성에 따라 다름 | 상한 없음 | DeepSeek-R1, Llama 3.1 70B, Qwen 2.5 72B |
-| [Coze](https://www.coze.com/) | 가입 필요 | 모델별 상이 | 토큰 기반 일일 한도 | 매일 초기화 | GPT-4o (Coze 경유), Gemini 1.5 Pro (Coze 경유) |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 전화번호 인증 필요 | 40 RPM | — | — | Llama 4 Scout, DeepSeek-R1, 다양한 오픈소스 모델 |
-| [Z.AI (GLM)](https://z.ai/) | 가입 필요 | 초당 약 1회 (Flash 등급) | 하루 약 1,000회 (Flash 등급) | 무료 요금제 지속 제공 | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Google AI Studio](https://aistudio.google.com/) | 불필요 | 5-30 RPM (varies by model) | 9000 RPD (Flash) / 25 RPD (3.1 Pro) | 완전 무료 | Gemini 3.1 Pro, Gemini 3.1 Flash, Gemini 3.0 Flash, Gemini 3.0 Flash-Lite |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | 전화번호 인증 필요 | 1 request/second | - | Free | Mistral 7B, Mixtral 8x7B, Mistral Small, Mistral Nemo |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 불필요 | 300 Requests / hour | Dependent on global load | Free Forever (Rate Limited) | Llama 3.2 11B Vision, Llama 3.1 8B Instruct, Qwen 2.5 72B Instruct, Gemma 2 9B Instruct |
+| [Cohere](https://cohere.com/) | 불필요 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 전화번호 인증 필요 | 40 requests/minute | - | - | See provider |
+| [Cerebras](https://cerebras.ai/inference) | 불필요 | 30 RPM | 1,000,000 Tokens / Day | Free Forever | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
+| [Groq](https://console.groq.com/) | 불필요 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Allam 2 7B, Llama 3.1 8B, Llama 3.3 70B, Llama 4 Maverick 17B |
+| [Coze](https://www.coze.com/) | 가입 필요 | 모델별 상이 | 토큰 기반 일일 한도 | 매일 초기화 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 불필요 | 모델별 상이 | 하루 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
+| [Z.AI (GLM)](https://z.ai/) | 가입 필요 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 가입 필요 | 2 RPM (Anonymous) / 400 RPM (Auth) | 비공개 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
+| [Inference.net](https://inference.net/) | 불필요 | 30 RPM (공정 사용) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [Chutes.ai](https://chutes.ai/) | 가입 필요 | Varies (community capacity) | 가용성에 따라 다름 | 상한 없음 | DeepSeek-R1, Llama 3.1 70B Instruct, Qwen 2.5 72B Instruct |
+<!--TABLE:PERMANENT:END-->
 
 ### 💰 갱신형 크레딧
 
 주기적으로 갱신되는 무료 크레딧으로, 일회성 만료가 없습니다.
 
+<!--TABLE:RENEWABLE:START-->
 | 제공업체 | 신용카드? | 속도 제한 | 무료 제공량 | 주요 모델 |
 |:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 불필요 | 20 RPM | 하루 50회 요청 (일회성 $10 충전 시 최대 1,000회) | DeepSeek V4 Flash, Llama 4 Maverick/Scout, GPT-OSS 120B, Gemini 2.0 (무료 모델 29개 이상) |
-| [GitHub Models](https://github.com/marketplace/models) | 불필요 | 10 RPM (상위 등급) | 50 RPD (상위) / 150 RPD (mini 등급) | GPT-5 Chat, GPT-5 Mini, Llama 4 Scout/Maverick, Phi-4, Mistral Medium |
-| [Grok / xAI](https://console.x.ai/) | 가입 필요 | 무료 요금제는 제한적 | 가입 시 일회성 $25 크레딧 (데이터 공유 동의 시 월 $150 옵션) | Grok 4.5, Grok 4.3 |
-| [Venice.ai](https://venice.ai/) ⚠️ *전체 API 사용에는 Pro 구독 필요* | 가입 필요 | 10 RPM (무료 요금제) | 일일 사용량 제한, 매일 초기화 | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [OpenRouter](https://openrouter.ai/) | 불필요 | 20 requests/minute | 50 requests/day (up to 1000 with  topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
+| [Venice.ai](https://venice.ai/) ⚠️ *전체 API 사용에는 Pro 구독 필요* | 가입 필요 | 10 RPM (무료 요금제) | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [GitHub Models](https://github.com/marketplace/models) | 불필요 | 10 RPM (high-tier) / higher for mini-tier | 50 RPD (high-tier models) / 150 RPD (mini-tier models) | GPT-4o, Llama 3.3 70B Instruct, Phi-4, Mistral Large (24.11) |
+| [Grok (xAI)](https://console.x.ai/) | 가입 필요 | 무료 요금제는 제한적 |  one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+<!--TABLE:RENEWABLE:END-->
 
 ### 🎁 일회성 체험 크레딧
 
 가입하면 소진할 때까지 쓸 수 있는 크레딧을 받습니다.
 
+<!--TABLE:TRIAL:START-->
+| 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
+|:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소  입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | 일회성 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 |  | 일회성 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 |  | 일회성 | See provider |
+| [Novita AI](https://novita.ai/) | 가입 필요 | <!--TABLE:TRIAL:START-->
+| 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
+|:---|:---:|:---|:---|:---|
+| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소  입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | 일회성 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 |  | 일회성 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 |  | 일회성 | See provider |
+| [Novita AI](https://novita.ai/) | 가입 필요 | <!--TABLE:TRIAL:START-->
 | 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
 |:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소 $5 입금 필요* | 가입 필요 | 무료 연구용 모델 | 영구 무료 (연구 목적) | Apriel 1.6/1.5 15B Thinker |
@@ -134,6 +159,27 @@ print(response.choices[0].message.content)
 | [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 가입 필요 | 모델당 입력 100만 + 출력 100만 토큰 (국제/싱가포르 계정만 해당) | 90일 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
 | [Scaleway](https://console.scaleway.com/generative-api/models) | 가입 필요 | 무료 100만 토큰 | 일회성 체험 | Mistral, Llama, Qwen (EU 호스팅) |
 | [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | 매월 갱신 | 멀티 프로바이더 라우팅 |
+<!--TABLE:TRIAL:END-->.50 | 일회성 | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 |  | 3개월 | See provider |
+| [Upstage](https://console.upstage.ai/) | 가입 필요 |  | 3개월 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
+| [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 가입 필요 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 가입 필요 |  | 일회성 | See provider |
+<!--TABLE:TRIAL:END-->.50 | 일회성 | See provider |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 |  | 3개월 | See provider |
+| [Upstage](https://console.upstage.ai/) | 가입 필요 |  | 3개월 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
+| [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | Renewing monthly | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 가입 필요 |  | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 가입 필요 |  | 일회성 | See provider |
+<!--TABLE:TRIAL:END-->
 
 ### 🖥️ 로컬 / 셀프호스팅 (무제한, 프라이빗, 영구 무료)
 
@@ -153,40 +199,43 @@ print(response.choices[0].message.content)
 
 ## Quick Reference — Base URL 및 API 키
 
+<!--TABLE:QUICKREF:START-->
 | 제공업체 | Base URL | API 키 발급 |
 |:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | `https://generativelanguage.googleapis.com/v1beta` | [발급 →](https://aistudio.google.com/app/apikey) |
-| [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [발급 →](https://console.groq.com/keys) |
-| [Cerebras](https://inference.cerebras.ai/) | `https://api.cerebras.ai/v1` | [발급 →](https://cloud.cerebras.ai/) |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | `https://router.huggingface.co/v1` | [발급 →](https://huggingface.co/settings/tokens) |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [발급 →](https://dash.cloudflare.com/profile/api-tokens) |
-| [Cohere](https://cohere.com/) | `https://api.cohere.ai/v1` | [발급 →](https://dashboard.cohere.com/api-keys) |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | `https://api.mistral.ai/v1` | [발급 →](https://console.mistral.ai/api-keys) |
-| [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [발급 →](https://inference.net/) |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [발급 →](https://endpoints.ai.cloud.ovh.net/) |
-| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [발급 →](https://chutes.ai/) |
-| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [발급 →](https://www.coze.com/) |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [발급 →](https://build.nvidia.com/settings/api-keys) |
-| [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [발급 →](https://z.ai/) |
-| [OpenRouter](https://openrouter.ai/) | `https://openrouter.ai/api/v1` | [발급 →](https://openrouter.ai/keys) |
-| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [발급 →](https://github.com/marketplace/models) |
-| [Grok / xAI](https://console.x.ai/) | `https://api.x.ai/v1` | [발급 →](https://console.x.ai/) |
-| [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [발급 →](https://venice.ai/) |
+| [OpenRouter](https://openrouter.ai/) | `https://openrouter.ai/api/v1` | [발급 →](https://openrouter.ai/) |
+| [Google AI Studio](https://aistudio.google.com/) | `https://generativelanguage.googleapis.com/v1beta` | [발급 →](https://aistudio.google.com/) |
 | [Together.AI](https://together.ai/) | `https://api.together.xyz/v1` | [발급 →](https://together.ai/) |
-| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [발급 →](https://platform.deepseek.com/api_keys) |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [발급 →](https://cloud.sambanova.ai/apis) |
-| [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [발급 →](https://www.cerebrium.ai/) |
-| [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [발급 →](https://studio.ai21.com/account/api-key) |
-| [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [발급 →](https://fireworks.ai/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [발급 →](https://app.hyperbolic.xyz/) |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [발급 →](https://studio.nebius.com/settings/api-keys) |
-| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [발급 →](https://novita.ai/) |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | `https://api.mistral.ai/v1` | [발급 →](https://console.mistral.ai/) |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | `https://router.huggingface.co/v1` | [발급 →](https://huggingface.co/inference-api/serverless) |
+| [Cohere](https://cohere.com/) | `https://api.cohere.ai/v1` | [발급 →](https://cohere.com/) |
 | [Replicate](https://replicate.com/) | `https://api.replicate.com/v1` | [발급 →](https://replicate.com/) |
+| [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [발급 →](https://fireworks.ai/) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [발급 →](https://build.nvidia.com/explore/discover) |
+| [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [발급 →](https://venice.ai/) |
+| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [발급 →](https://github.com/marketplace/models) |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [발급 →](https://cloud.sambanova.ai/) |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [발급 →](https://app.hyperbolic.xyz/) |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [발급 →](https://tokenfactory.nebius.com/) |
+| [Cerebras](https://cerebras.ai/inference) | `https://api.cerebras.ai/v1` | [발급 →](https://cerebras.ai/inference) |
+| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [발급 →](https://novita.ai/) |
+| [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [발급 →](https://console.groq.com/) |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [발급 →](https://console.scaleway.com/generative-api/models) |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [발급 →](https://bailian.console.alibabacloud.com/) |
+| [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [발급 →](https://docs.ai21.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [발급 →](https://console.upstage.ai/) |
-| [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [발급 →](https://bailian.console.alibabacloud.com/) |
-| [Scaleway](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [발급 →](https://console.scaleway.com/generative-api/models) |
+| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [발급 →](https://platform.deepseek.com/) |
+| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [발급 →](https://www.coze.com/) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [발급 →](https://dash.cloudflare.com/) |
+| [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [발급 →](https://z.ai/) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [발급 →](https://requesty.ai/) |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [발급 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [발급 →](https://www.cerebrium.ai/) |
+| [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [발급 →](https://deepinfra.com/) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
+| [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [발급 →](https://console.x.ai/) |
+| [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [발급 →](https://inference.net/) |
+| [Chutes.ai](https://chutes.ai/) | `https://api.chutes.ai/v1` | [발급 →](https://chutes.ai/) |
+<!--TABLE:QUICKREF:END-->
 
 ---
 
@@ -275,3 +324,7 @@ Free-LLM/
 ## License
 
 MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
+
+---
+
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-07<!--LASTSYNC:END--></sub></p>
