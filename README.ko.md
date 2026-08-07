@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — 무료 AI·LLM API 오픈 디렉터리</h1>
 <!--STATS:START-->
-  <p align="center"><strong>33개 제공업체의 무료 LLM 모델 120개 이상</strong> — 몇 초 만에 무료 모델을 찾고, 비교하고, 설정하세요. 무제한·프라이빗하게 쓸 수 있는 로컬/셀프호스팅 도구도 9종 제공합니다.</p>
+  <p align="center"><strong>34개 제공업체의 무료 LLM 모델 110개 이상</strong> — 몇 초 만에 무료 모델을 찾고, 비교하고, 설정하세요. 무제한·프라이빗하게 쓸 수 있는 로컬/셀프호스팅 도구도 9종 제공합니다.</p>
 <!--STATS:END-->
 </p>
 
@@ -93,15 +93,17 @@ print(response.choices[0].message.content)
 |:---|:---:|:---|:---|:---|:---|
 | [Google AI Studio](https://aistudio.google.com/) | 불필요 | 5-30 RPM (varies by model) | 9000 RPD (Flash) / 25 RPD (3.1 Pro) | 완전 무료 | Gemini 3.1 Pro, Gemini 3.1 Flash, Gemini 3.0 Flash, Gemini 3.0 Flash-Lite |
 | [Mistral (La Plateforme)](https://console.mistral.ai/) | 전화번호 인증 필요 | 1 request/second | - | Free | Mistral 7B, Mixtral 8x7B, Mistral Small, Mistral Nemo |
-| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 불필요 | 300 Requests / hour | Dependent on global load | Free Forever (Rate Limited) | Llama 3.2 11B Vision, Llama 3.1 8B Instruct, Qwen 2.5 72B Instruct, Gemma 2 9B Instruct |
+| [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 불필요 | 300 Requests / hour | Capped by monthly credit, not a flat request count | $0.10/month in free routing credits (PRO: $2/month) | Llama 3.2 11B Vision, Llama 3.1 8B Instruct, Qwen 2.5 72B Instruct, Gemma 2 9B Instruct |
 | [Cohere](https://cohere.com/) | 불필요 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 전화번호 인증 필요 | 40 requests/minute | - | - | See provider |
 | [Cerebras](https://cerebras.ai/inference) | 불필요 | 30 RPM | 1,000,000 Tokens / Day | Free Forever | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
-| [Groq](https://console.groq.com/) | 불필요 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Allam 2 7B, Llama 3.1 8B, Llama 3.3 70B, Llama 4 Maverick 17B |
+| [Groq](https://console.groq.com/) | 불필요 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Qwen3.6 27B, MiniMax M2.7, Llama 3.1 8B, Llama 3.3 70B |
 | [Coze](https://www.coze.com/) | 가입 필요 | 모델별 상이 | 토큰 기반 일일 한도 | 매일 초기화 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 불필요 | 모델별 상이 | 하루 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
 | [Z.AI (GLM)](https://z.ai/) | 가입 필요 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 가입 필요 | 2 RPM (Anonymous) / 400 RPM (Auth) | 비공개 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
+| [Ollama Cloud](https://ollama.com/cloud) | 불필요 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud), Qwen3.5 (Cloud), DeepSeek V4 Flash (Cloud) |
+| [Nous Portal](https://portal.nousresearch.com) | 불필요 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
 | [Inference.net](https://inference.net/) | 불필요 | 30 RPM (공정 사용) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
 <!--TABLE:PERMANENT:END-->
 
@@ -114,7 +116,6 @@ print(response.choices[0].message.content)
 |:---|:---:|:---|:---|:---|
 | [OpenRouter](https://openrouter.ai/) | 불필요 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
 | [Venice.ai](https://venice.ai/) ⚠️ *전체 API 사용에는 Pro 구독 필요* | 가입 필요 | 10 RPM (무료 요금제) | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
-| [GitHub Models](https://github.com/marketplace/models) | 불필요 | 10 RPM (high-tier) / higher for mini-tier | 50 RPD (high-tier models) / 150 RPD (mini-tier models) | GPT-4o, Llama 3.3 70B Instruct, Phi-4, Mistral Large (24.11) |
 | [Grok (xAI)](https://console.x.ai/) | 가입 필요 | 무료 요금제는 제한적 | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
 <!--TABLE:RENEWABLE:END-->
 
@@ -125,16 +126,16 @@ print(response.choices[0].message.content)
 <!--TABLE:TRIAL:START-->
 | 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
 |:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소 $5 입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소 $5 입금 필요* | 가입 필요 | — | — | PrismML Ternary Bonsai 27B (Free) |
 | [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | 일회성 | See provider |
 | [Fireworks AI](https://fireworks.ai/) | 가입 필요 | $1 | 일회성 | See provider |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 | $5 | 일회성 | See provider |
 | [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 | $1 | 일회성 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 | $1 | 일회성 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 | $1 (requires a bank card on file) | 일회성 | See provider |
 | [Novita AI](https://novita.ai/) | 가입 필요 | $0.50 | 일회성 | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 | $10 | 3개월 | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 | $10 | 3개월 | Jamba Large, Jamba Mini |
 | [Upstage](https://console.upstage.ai/) | 가입 필요 | $10 | 3개월 | See provider |
 | [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
 | [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | Renewing monthly | See provider |
@@ -174,7 +175,6 @@ print(response.choices[0].message.content)
 | [Fireworks AI](https://fireworks.ai/) | `https://api.fireworks.ai/inference/v1` | [발급 →](https://fireworks.ai/) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [발급 →](https://build.nvidia.com/explore/discover) |
 | [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [발급 →](https://venice.ai/) |
-| [GitHub Models](https://github.com/marketplace/models) | `https://models.inference.ai.azure.com` | [발급 →](https://github.com/marketplace/models) |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [발급 →](https://cloud.sambanova.ai/) |
 | [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [발급 →](https://app.hyperbolic.xyz/) |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [발급 →](https://tokenfactory.nebius.com/) |
@@ -194,6 +194,8 @@ print(response.choices[0].message.content)
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [발급 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [발급 →](https://deepinfra.com/) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
+| [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [발급 →](https://ollama.com/cloud) |
+| [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [발급 →](https://portal.nousresearch.com) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [발급 →](https://console.x.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [발급 →](https://inference.net/) |
 <!--TABLE:QUICKREF:END-->
