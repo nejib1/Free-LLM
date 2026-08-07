@@ -113,10 +113,10 @@ print(response.choices[0].message.content)
 <!--TABLE:RENEWABLE:START-->
 | 제공업체 | 신용카드? | 속도 제한 | 무료 제공량 | 주요 모델 |
 |:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 불필요 | 20 requests/minute | 50 requests/day (up to 1000 with  topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
+| [OpenRouter](https://openrouter.ai/) | 불필요 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
 | [Venice.ai](https://venice.ai/) ⚠️ *전체 API 사용에는 Pro 구독 필요* | 가입 필요 | 10 RPM (무료 요금제) | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
 | [GitHub Models](https://github.com/marketplace/models) | 불필요 | 10 RPM (high-tier) / higher for mini-tier | 50 RPD (high-tier models) / 150 RPD (mini-tier models) | GPT-4o, Llama 3.3 70B Instruct, Phi-4, Mistral Large (24.11) |
-| [Grok (xAI)](https://console.x.ai/) | 가입 필요 | 무료 요금제는 제한적 |  one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+| [Grok (xAI)](https://console.x.ai/) | 가입 필요 | 무료 요금제는 제한적 | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 일회성 체험 크레딧
@@ -126,78 +126,22 @@ print(response.choices[0].message.content)
 <!--TABLE:TRIAL:START-->
 | 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
 |:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소  입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소 $5 입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
 | [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | 일회성 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 |  | 일회성 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 |  | 일회성 | See provider |
-| [Novita AI](https://novita.ai/) | 가입 필요 | <!--TABLE:TRIAL:START-->
-| 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
-|:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소  입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
-| [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | 일회성 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 |  | 일회성 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 |  | 일회성 | See provider |
-| [Novita AI](https://novita.ai/) | 가입 필요 | <!--TABLE:TRIAL:START-->
-| 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
-|:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소  입금 필요* | 가입 필요 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
-| [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | 일회성 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 |  | 일회성 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 |  | 일회성 | See provider |
-| [Novita AI](https://novita.ai/) | 가입 필요 | <!--TABLE:TRIAL:START-->
-| 제공업체 | 신용카드? | 크레딧 금액 | 유효기간 | 주요 모델 |
-|:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *무료 연구용 모델은 최소 $5 입금 필요* | 가입 필요 | 무료 연구용 모델 | 영구 무료 (연구 목적) | Apriel 1.6/1.5 15B Thinker |
-| [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 500만 토큰 | 30일 | DeepSeek-V4 Flash (채팅 + 추론 모드) |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 | $5 크레딧 | 일회성 | Llama 3.3 70B, DeepSeek-V3.1 |
-| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 | $30 크레딧 | 일회성 | 모든 모델 배포 가능 (서버리스 GPU 플랫폼, 공유 엔드포인트 아님) |
-| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 | $10 크레딧 | 3개월 | Jamba Large, Jamba Mini |
-| [Fireworks AI](https://fireworks.ai/) | 가입 필요 | $1 크레딧 | 일회성 체험 | 다양한 오픈소스 모델 |
-| [Friendli AI](https://friendli.ai/) | 가입 필요 | 가입 시 체험 크레딧 제공 | 일회성 | 주요 오픈소스 모델 |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 | $1 크레딧 | 일회성 체험 | Llama 3.1 405B, DeepSeek V3 |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 | 체험 크레딧 | 일회성 체험 | DeepSeek-R1, 다양한 오픈소스 모델 |
-| [Novita AI](https://novita.ai/) | 가입 필요 | $0.50 크레딧 | 90일 | Llama, Mistral |
-| [Replicate](https://replicate.com/) | 가입 필요 | 소액 체험 크레딧 | — | 1000개 이상의 모델 (LLM, 이미지, 오디오) |
-| [Upstage](https://console.upstage.ai/) | 가입 필요 | $10 크레딧 | 3개월 | Solar Mini, Solar Pro 3 |
-| [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 가입 필요 | 모델당 입력 100만 + 출력 100만 토큰 (국제/싱가포르 계정만 해당) | 90일 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
-| [Scaleway](https://console.scaleway.com/generative-api/models) | 가입 필요 | 무료 100만 토큰 | 일회성 체험 | Mistral, Llama, Qwen (EU 호스팅) |
-| [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | 매월 갱신 | 멀티 프로바이더 라우팅 |
-<!--TABLE:TRIAL:END-->.50 | 일회성 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 가입 필요 | $1 | 일회성 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 | $5 | 일회성 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 | $1 | 일회성 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 | $1 | 일회성 | See provider |
+| [Novita AI](https://novita.ai/) | 가입 필요 | $0.50 | 일회성 | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 |  | 3개월 | See provider |
-| [Upstage](https://console.upstage.ai/) | 가입 필요 |  | 3개월 | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 | $10 | 3개월 | See provider |
+| [Upstage](https://console.upstage.ai/) | 가입 필요 | $10 | 3개월 | See provider |
 | [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
 | [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | Renewing monthly | See provider |
-| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [DeepInfra](https://deepinfra.com/) | 가입 필요 |  | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 가입 필요 |  | 일회성 | See provider |
-<!--TABLE:TRIAL:END-->.50 | 일회성 | See provider |
-| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
-| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 |  | 3개월 | See provider |
-| [Upstage](https://console.upstage.ai/) | 가입 필요 |  | 3개월 | See provider |
-| [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
-| [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | Renewing monthly | See provider |
-| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [DeepInfra](https://deepinfra.com/) | 가입 필요 |  | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 가입 필요 |  | 일회성 | See provider |
-<!--TABLE:TRIAL:END-->.50 | 일회성 | See provider |
-| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
-| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 가입 필요 |  | 3개월 | See provider |
-| [Upstage](https://console.upstage.ai/) | 가입 필요 |  | 3개월 | See provider |
-| [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
-| [Requesty](https://requesty.ai/) | 가입 필요 | 매월 무료 크레딧 | Renewing monthly | See provider |
-| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 |  | 일회성 | See provider |
-| [DeepInfra](https://deepinfra.com/) | 가입 필요 |  | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 가입 필요 |  | 일회성 | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 | $30 | 일회성 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 가입 필요 | $5 | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 가입 필요 | $10 | 일회성 | See provider |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 로컬 / 셀프호스팅 (무제한, 프라이빗, 영구 무료)

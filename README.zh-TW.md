@@ -113,10 +113,10 @@ print(response.choices[0].message.content)
 <!--TABLE:RENEWABLE:START-->
 | 提供商 | 需要信用卡？ | 速率限制 | 免費額度 | 主要模型 |
 |:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with  topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
+| [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
 | [Venice.ai](https://venice.ai/) ⚠️ *完整 API 存取需要 Pro 訂閱* | 需註冊 | 10 RPM（免費檔位） | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
 | [GitHub Models](https://github.com/marketplace/models) | 否 | 10 RPM (high-tier) / higher for mini-tier | 50 RPD (high-tier models) / 150 RPD (mini-tier models) | GPT-4o, Llama 3.3 70B Instruct, Phi-4, Mistral Large (24.11) |
-| [Grok (xAI)](https://console.x.ai/) | 需註冊 | 視額度而定（免費檔位較低） |  one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+| [Grok (xAI)](https://console.x.ai/) | 需註冊 | 視額度而定（免費檔位較低） | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 一次性試用額度
@@ -126,78 +126,22 @@ print(response.choices[0].message.content)
 <!--TABLE:TRIAL:START-->
 | 提供商 | 需要信用卡？ | 額度 | 有效期 | 主要模型 |
 |:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *免費研究模型需先加值最低 * | 需註冊 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
+| [Together.AI](https://together.ai/) ⚠️ *免費研究模型需先加值最低 $5* | 需註冊 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
 | [Replicate](https://replicate.com/) | 需註冊 | 少量試用額度 | 一次性 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 需註冊 |  | 一次性 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需註冊 |  | 一次性 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 需註冊 |  | 一次性 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需註冊 |  | 一次性 | See provider |
-| [Novita AI](https://novita.ai/) | 需註冊 | <!--TABLE:TRIAL:START-->
-| 提供商 | 需要信用卡？ | 額度 | 有效期 | 主要模型 |
-|:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *免費研究模型需先加值最低 * | 需註冊 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
-| [Replicate](https://replicate.com/) | 需註冊 | 少量試用額度 | 一次性 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 需註冊 |  | 一次性 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需註冊 |  | 一次性 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 需註冊 |  | 一次性 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需註冊 |  | 一次性 | See provider |
-| [Novita AI](https://novita.ai/) | 需註冊 | <!--TABLE:TRIAL:START-->
-| 提供商 | 需要信用卡？ | 額度 | 有效期 | 主要模型 |
-|:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *免費研究模型需先加值最低 * | 需註冊 | — | — | Llama 4 Scout Instruct (Free), DeepSeek-R1 (Free), Apriel 1.6 15B Thinker (Free), Apriel 1.5 15B Thinker (Free) |
-| [Replicate](https://replicate.com/) | 需註冊 | 少量試用額度 | 一次性 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 需註冊 |  | 一次性 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需註冊 |  | 一次性 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 需註冊 |  | 一次性 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需註冊 |  | 一次性 | See provider |
-| [Novita AI](https://novita.ai/) | 需註冊 | <!--TABLE:TRIAL:START-->
-| 提供商 | 需要信用卡？ | 額度 | 有效期 | 主要模型 |
-|:---|:---:|:---|:---|:---|
-| [Together.AI](https://together.ai/) ⚠️ *免費研究模型需先加值最低 $5* | 需註冊 | 免費研究模型 | 永久免費（研究用途） | Apriel 1.6/1.5 15B Thinker |
-| [DeepSeek](https://platform.deepseek.com/) | 需註冊 | 500 萬 tokens | 30 天 | DeepSeek-V4 Flash（對話 + 推理模式） |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需註冊 | $5 額度 | 一次性 | Llama 3.3 70B, DeepSeek-V3.1 |
-| [Cerebrium](https://www.cerebrium.ai/) | 需註冊 | $30 額度 | 一次性 | 可部署任意模型（Serverless GPU 平台，非共用端點） |
-| [AI21 Labs](https://docs.ai21.com/) | 需註冊 | $10 額度 | 3 個月 | Jamba Large, Jamba Mini |
-| [Fireworks AI](https://fireworks.ai/) | 需註冊 | $1 額度 | 一次性試用 | 多款開源模型 |
-| [Friendli AI](https://friendli.ai/) | 需註冊 | 註冊即送試用額度 | 一次性 | 主流開源模型 |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 需註冊 | $1 額度 | 一次性試用 | Llama 3.1 405B, DeepSeek V3 |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需註冊 | 試用額度 | 一次性試用 | DeepSeek-R1, 多款開源模型 |
-| [Novita AI](https://novita.ai/) | 需註冊 | $0.50 額度 | 90 天 | Llama, Mistral |
-| [Replicate](https://replicate.com/) | 需註冊 | 少量試用額度 | — | 1000+ 模型（LLM、圖像、音訊） |
-| [Upstage](https://console.upstage.ai/) | 需註冊 | $10 額度 | 3 個月 | Solar Mini, Solar Pro 3 |
-| [Qwen / Alibaba](https://bailian.console.alibabacloud.com/) | 需註冊 | 每個模型 100 萬入 + 100 萬出 tokens（僅限國際/新加坡帳號） | 90 天 | Qwen3.7-Max, Qwen-Plus, Qwen-Flash, Qwen3-Coder-Plus |
-| [Scaleway](https://console.scaleway.com/generative-api/models) | 需註冊 | 100 萬免費 tokens | 一次性試用 | Mistral, Llama, Qwen（歐盟託管） |
-| [Requesty](https://requesty.ai/) | 需註冊 | 每月免費額度 | 每月續期 | 多提供商路由 |
-<!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 需註冊 | $1 | 一次性 | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需註冊 | $5 | 一次性 | See provider |
+| [Hyperbolic](https://app.hyperbolic.xyz/) | 需註冊 | $1 | 一次性 | See provider |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需註冊 | $1 | 一次性 | See provider |
+| [Novita AI](https://novita.ai/) | 需註冊 | $0.50 | 一次性 | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需註冊 | 1M tokens | 一次性 | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需註冊 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 需註冊 |  | 3 個月 | See provider |
-| [Upstage](https://console.upstage.ai/) | 需註冊 |  | 3 個月 | See provider |
+| [AI21 Labs](https://docs.ai21.com/) | 需註冊 | $10 | 3 個月 | See provider |
+| [Upstage](https://console.upstage.ai/) | 需註冊 | $10 | 3 個月 | See provider |
 | [DeepSeek](https://platform.deepseek.com/) | 需註冊 | 5M tokens | 30 天 | See provider |
 | [Requesty](https://requesty.ai/) | 需註冊 | 每月免費額度 | Renewing monthly | See provider |
-| [Cerebrium](https://www.cerebrium.ai/) | 需註冊 |  | 一次性 | See provider |
-| [DeepInfra](https://deepinfra.com/) | 需註冊 |  | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 需註冊 |  | 一次性 | See provider |
-<!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
-| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需註冊 | 1M tokens | 一次性 | See provider |
-| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需註冊 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 需註冊 |  | 3 個月 | See provider |
-| [Upstage](https://console.upstage.ai/) | 需註冊 |  | 3 個月 | See provider |
-| [DeepSeek](https://platform.deepseek.com/) | 需註冊 | 5M tokens | 30 天 | See provider |
-| [Requesty](https://requesty.ai/) | 需註冊 | 每月免費額度 | Renewing monthly | See provider |
-| [Cerebrium](https://www.cerebrium.ai/) | 需註冊 |  | 一次性 | See provider |
-| [DeepInfra](https://deepinfra.com/) | 需註冊 |  | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 需註冊 |  | 一次性 | See provider |
-<!--TABLE:TRIAL:END-->.50 | 一次性 | See provider |
-| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需註冊 | 1M tokens | 一次性 | See provider |
-| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需註冊 | 1M tokens/model | One-time per model | See provider |
-| [AI21 Labs](https://docs.ai21.com/) | 需註冊 |  | 3 個月 | See provider |
-| [Upstage](https://console.upstage.ai/) | 需註冊 |  | 3 個月 | See provider |
-| [DeepSeek](https://platform.deepseek.com/) | 需註冊 | 5M tokens | 30 天 | See provider |
-| [Requesty](https://requesty.ai/) | 需註冊 | 每月免費額度 | Renewing monthly | See provider |
-| [Cerebrium](https://www.cerebrium.ai/) | 需註冊 |  | 一次性 | See provider |
-| [DeepInfra](https://deepinfra.com/) | 需註冊 |  | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 需註冊 |  | 一次性 | See provider |
+| [Cerebrium](https://www.cerebrium.ai/) | 需註冊 | $30 | 一次性 | See provider |
+| [DeepInfra](https://deepinfra.com/) | 需註冊 | $5 | One-time (90 days expiry) | See provider |
+| [Friendli AI](https://friendli.ai/) | 需註冊 | $10 | 一次性 | See provider |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本機 / 自架（無限、私密、永久免費）
