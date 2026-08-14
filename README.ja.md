@@ -196,8 +196,8 @@ print(response.choices[0].message.content)
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得 →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得 →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得 →](https://portal.nousresearch.com) |
-| [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得 →](https://console.x.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得 →](https://inference.net/) |
+| [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得 →](https://console.x.ai/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
@@ -290,4 +290,4 @@ MIT — 詳細は [LICENSE](LICENSE) を参照してください。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-13<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-14<!--LASTSYNC:END--></sub></p>
