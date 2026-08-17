@@ -105,6 +105,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Ollama Cloud](https://ollama.com/cloud) | No | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud), Qwen3.5 (Cloud), DeepSeek V4 Flash (Cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | No | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
 | [Inference.net](https://inference.net/) | No | 30 RPM (fair use) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [Routeway](https://routeway.ai/) | No | 5 RPM | 200 requests/day | Free models ongoing | Step 3.7 Flash, Nemontron Nano, GPT-OSS 120B, Laguna XS.2, Gemma 4 31B, Llama 3.3 70B Instruct |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
@@ -198,6 +199,7 @@ Sign up and receive credits to use until depleted.
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [Get Key →](https://portal.nousresearch.com) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
+| [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [Get Key →](https://routeway.ai/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
