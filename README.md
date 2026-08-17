@@ -117,6 +117,7 @@ Free access that renews periodically, no one-time expiry.
 | [OpenRouter](https://openrouter.ai/) | No | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
 | [Venice.ai](https://venice.ai/) ⚠️ *full API access requires a Pro subscription* | Registration | 10 RPM (free tier) | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
 | [Grok (xAI)](https://console.x.ai/) | Registration | Varies (low for free tier) | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway) | Yes (verification) | Varies by model (free-tier rate limited) | $5/month in free credits | [Free-tier eligible models](https://vercel.com/ai-gateway/models?freeTier=true) |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 One-Time Trial Credits
@@ -198,6 +199,7 @@ Sign up and receive credits to use until depleted.
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [Get Key →](https://portal.nousresearch.com) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [Get Key →](https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys) |
 <!--TABLE:QUICKREF:END-->
 
 ---
