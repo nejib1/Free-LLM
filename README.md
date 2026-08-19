@@ -133,7 +133,7 @@ Sign up and receive credits to use until depleted.
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | Registration | $5 | 3 months | See provider |
 | [Hyperbolic](https://app.hyperbolic.xyz/) | Registration | $1 | One-time | See provider |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | Registration | $1 (requires a bank card on file) | One-time | See provider |
-| [Cerebras](https://cerebras.ai/inference) | Registration | — | — | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
+| [Cerebras](https://cerebras.ai/inference) | Registration | $5 | 30 days | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
 | [Novita AI](https://novita.ai/) | Registration | $0.50 | One-time | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | Registration | 1M tokens | One-time | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | Registration | 1M tokens/model | One-time per model | See provider |

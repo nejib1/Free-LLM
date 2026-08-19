@@ -133,7 +133,7 @@ print(response.choices[0].message.content)
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 登録が必要 | $5 | 3 ヶ月 | See provider |
 | [Hyperbolic](https://app.hyperbolic.xyz/) | 登録が必要 | $1 | 一度きり | See provider |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 登録が必要 | $1 (requires a bank card on file) | 一度きり | See provider |
-| [Cerebras](https://cerebras.ai/inference) | 登録が必要 | — | — | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
+| [Cerebras](https://cerebras.ai/inference) | 登録が必要 | $5 | 30 日間 | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
 | [Novita AI](https://novita.ai/) | 登録が必要 | $0.50 | 一度きり | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 登録が必要 | 1M tokens | 一度きり | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 登録が必要 | 1M tokens/model | One-time per model | See provider |

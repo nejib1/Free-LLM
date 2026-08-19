@@ -133,7 +133,7 @@ print(response.choices[0].message.content)
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 가입 필요 | $5 | 3개월 | See provider |
 | [Hyperbolic](https://app.hyperbolic.xyz/) | 가입 필요 | $1 | 일회성 | See provider |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 가입 필요 | $1 (requires a bank card on file) | 일회성 | See provider |
-| [Cerebras](https://cerebras.ai/inference) | 가입 필요 | — | — | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
+| [Cerebras](https://cerebras.ai/inference) | 가입 필요 | $5 | 30일 | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
 | [Novita AI](https://novita.ai/) | 가입 필요 | $0.50 | 일회성 | See provider |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 가입 필요 | 1M tokens | 일회성 | See provider |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 가입 필요 | 1M tokens/model | One-time per model | See provider |
