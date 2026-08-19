@@ -8,7 +8,7 @@ curl https://api.upstage.ai/v1/solar/chat/completions \
   -H "Authorization: Bearer YOUR_UPSTAGE_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "solar-mini",
+    "model": "solar-pro",
     "messages": [
       {
         "role": "user",

@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'llama-3.1-70b',
+  model: 'mistral-large',
   messages: [
     { role: 'user', content: 'What is GDPR compliance?' }
   ]

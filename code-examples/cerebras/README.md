@@ -4,7 +4,7 @@
 
 ## About
 
-Cerebras Systems offers the world's fastest AI inference service, powered by the Wafer-Scale Engine (WSE-3). It delivers instant speed for Llama and other open-source models, making it ideal for real-time applications and complex reasoning tasks.
+Cerebras Systems offers the world's fastest AI inference service, powered by the Wafer-Scale Engine (WSE-3). It delivers instant speed for open-source models, making it ideal for real-time applications and complex reasoning tasks. As of August 2026, the no-card free tier has ended — new accounts get $5 in free credits after adding a verified payment method, expiring 30 days after they're granted. API access stays inactive until a payment method is added.
 
 **Official Website:** [https://cerebras.ai/inference](https://cerebras.ai/inference)
 

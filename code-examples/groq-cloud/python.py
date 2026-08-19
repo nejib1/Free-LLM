@@ -18,7 +18,7 @@ chat_completion = client.chat.completions.create(
             "content": "Explain the importance of fast language models",
         }
     ],
-    model="allam-2-7b-instruct",
+    model="qwen/qwen3.6-27b",
 )
 
 print(chat_completion.choices[0].message.content)

@@ -8,7 +8,7 @@ curl https://router.huggingface.co/v1/chat/completions \
   -H "Authorization: Bearer YOUR_HF_TOKEN" \
   -H "Content-Type: application/json" \
   -d '"'"'{
-    "model": "black-forest-labs/FLUX.1-dev",
+    "model": "meta-llama/Llama-3.2-11B-Vision-Instruct",
     "messages": [
       {"role": "user", "content": "Explain the benefits of open inference routing"}
     ]

@@ -8,7 +8,7 @@ curl https://models.inference.ai.azure.com/chat/completions \
   -H "Authorization: Bearer YOUR_GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "AI21-Jamba-1.5-Large",
+    "model": "model-name",
     "messages": [
       {
         "role": "user",

@@ -2,9 +2,11 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **Discontinued** — this provider has shut down or is no longer operating. These examples are kept for reference only.
+
 ## About
 
-STATUS UNCONFIRMED: as of July 2026 both glhf.chat and its API return a persistent Cloudflare 522 (origin unreachable) error, and other sources report the free tier may have already ended. Not confirmed shut down like Kluster.ai (no official notice found), but currently unreachable. Original listing: Free serverless inference for open-source models. Access Llama, Mistral, and other models through an OpenAI-compatible API with generous free tier. Simple, developer-friendly platform.
+DISCONTINUED: Glhf.chat rebranded to Synthetic (synthetic.new) on 2026-06-07. Synthetic's current pricing has no free tier ($30/month subscription or usage-based only). The legacy glhf.chat domain itself now returns a persistent Cloudflare 522 (origin unreachable). Original listing: free serverless inference for open-source models via an OpenAI-compatible API.
 
 **Official Website:** [https://glhf.chat/](https://glhf.chat/)
 

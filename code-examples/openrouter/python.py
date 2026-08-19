@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="deepseek/deepseek-r1:free",
+    model="google/gemini-2.0-flash-exp:free",
     messages=[
         {"role": "user", "content": "What is OpenRouter?"}
     ]

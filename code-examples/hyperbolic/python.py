@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="deepseek-ai/DeepSeek-V3",
+    model="meta-llama/Meta-Llama-3.1-405B-Instruct",
     messages=[
         {"role": "user", "content": "What is decentralized AI inference?"}
     ]

@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="meta-llama-3.1-70b-instruct",
+    model="model-name",
     messages=[
         {"role": "user", "content": "What makes your inference fast?"}
     ]

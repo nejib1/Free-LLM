@@ -13,7 +13,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gemma-2-9b-it",
+    model="llama3-8b-instruct",
     messages=[
         {"role": "user", "content": "Write a haiku about local AI"}
     ]

@@ -8,7 +8,7 @@ curl https://api.sambanova.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_SAMBANOVA_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "Meta-Llama-3.1-405B-Instruct",
+    "model": "Meta-Llama-3.3-70B-Instruct",
     "messages": [
       {"role": "user", "content": "Explain quantum computing in one sentence."}
     ],

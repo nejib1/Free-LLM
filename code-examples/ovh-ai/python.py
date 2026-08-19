@@ -16,7 +16,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="nvr-tts-de-de",
+    model="Qwen3Guard-Gen-0.6B",
     messages=[
         {"role": "user", "content": "Hello!"}
     ],

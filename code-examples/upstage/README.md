@@ -4,7 +4,7 @@
 
 ## About
 
-Leading AI company specializing in DUS (Document Understanding) and Solar LLMs. Solar Pro delivers GPT-4 level performance with remarkable speed and efficiency.
+Leading AI company specializing in DUS (Document Understanding) and Solar LLMs. Solar Pro delivers GPT-4 level performance with remarkable speed and efficiency. $10 signup credit for new accounts, plus a running promo: Solar Pro 4 at 90% off through Sep 10 (UTC) — check console.upstage.ai for current terms.
 
 **Official Website:** [https://console.upstage.ai/](https://console.upstage.ai/)
 

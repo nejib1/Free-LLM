@@ -13,7 +13,7 @@ client = openai.OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="Meta-Llama-3.1-405B-Instruct",
+    model="Meta-Llama-3.3-70B-Instruct",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Explain quantum computing in one sentence."}

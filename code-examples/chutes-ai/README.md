@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 Free GPU-powered inference for open-source models. Chutes runs models on donated and idle GPU capacity, offering truly free access to models like Llama 3.1, DeepSeek, and more.

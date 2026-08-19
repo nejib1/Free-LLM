@@ -13,7 +13,7 @@ const client = new Cerebras({
 async function main() {
   const completion = await client.chat.completions.create({
     messages: [{ role: 'user', content: 'Why is fast inference important?' }],
-    model: 'llama3.1-70b',
+    model: 'llama3.1-8b',
   });
 
   console.log(completion.choices[0].message.content);

@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="servicenow/apriel-1.5-15b-thinker",
+    model="Prism-ML/Ternary-Bonsai-27B",
     messages=[
         {"role": "user", "content": "Explain the Apriel model architecture"}
     ]

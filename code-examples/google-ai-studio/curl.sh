@@ -4,7 +4,7 @@
 # Provider URL: https://aistudio.google.com/
 # ===============================================
 
-curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=YOUR_API_KEY" \
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro:generateContent?key=YOUR_API_KEY" \
 -H "Content-Type: application/json" \
 -d '{
   "contents": [{

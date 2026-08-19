@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'deepseek-ai/DeepSeek-V3',
+  model: 'meta-llama/Meta-Llama-3.1-405B-Instruct',
   messages: [
     { role: 'user', content: 'Explain the MoE architecture' }
   ]

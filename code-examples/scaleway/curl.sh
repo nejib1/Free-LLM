@@ -8,7 +8,7 @@ curl https://api.scaleway.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_SCALEWAY_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "llama-3.1-70b",
+    "model": "mistral-large",
     "messages": [
       {
         "role": "user",

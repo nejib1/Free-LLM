@@ -4,7 +4,7 @@
 
 ## About
 
-Enterprise-grade serverless inference with $10 free trial credits. Optimized for latency and throughput with support for popular open-source models. OpenAI-compatible API.
+Enterprise-grade serverless inference with $10 free trial credits. Optimized for latency and throughput. Current model lineup includes GLM-5.2, GLM-5.1, MiniMax-M2.5, DeepSeek-V3.2, the K-EXAONE family, Gemma 4 31B, and Whisper Large v3 (exact API model IDs not published — check friendli.ai/pricing before hardcoding a model string). OpenAI-compatible API.
 
 **Official Website:** [https://friendli.ai/](https://friendli.ai/)
 

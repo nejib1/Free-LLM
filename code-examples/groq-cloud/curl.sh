@@ -8,7 +8,7 @@ curl https://api.groq.com/openai/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
-    "model": "allam-2-7b-instruct",
+    "model": "qwen/qwen3.6-27b",
     "messages": [
       {
         "role": "user",

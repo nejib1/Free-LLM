@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **Discontinued** — this provider has shut down or is no longer operating. These examples are kept for reference only.
+
 ## About
 
 Free access to GPT-4o, Llama, Mistral and more through GitHub's model marketplace. Requires a GitHub account. Limits vary by Copilot tier.

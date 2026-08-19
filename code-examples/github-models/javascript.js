@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'AI21-Jamba-1.5-Large',
+  model: 'model-name',
   messages: [
     { role: 'user', content: 'Explain how GitHub Models works' }
   ]

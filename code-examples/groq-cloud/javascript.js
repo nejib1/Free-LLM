@@ -16,7 +16,7 @@ async function main() {
         content: "Explain the importance of fast language models",
       },
     ],
-    model: "allam-2-7b-instruct",
+    model: "qwen/qwen3.6-27b",
   });
 
   console.log(chatCompletion.choices[0].message.content);

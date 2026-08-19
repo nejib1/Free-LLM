@@ -8,7 +8,7 @@ curl https://api.hyperbolic.xyz/v1/chat/completions \
   -H "Authorization: Bearer YOUR_HYPERBOLIC_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "deepseek-ai/DeepSeek-V3",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
     "messages": [
       {
         "role": "user",

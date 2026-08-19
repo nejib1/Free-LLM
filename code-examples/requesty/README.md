@@ -4,7 +4,7 @@
 
 ## About
 
-AI gateway and router with a built-in free tier. Route requests across multiple providers with automatic fallback, caching, and load balancing. Includes free credits monthly.
+AI gateway and router with a built-in free tier. Route requests across multiple providers with automatic fallback, caching, and load balancing. Free tier: 200 requests/day on free models, no credit card required.
 
 **Official Website:** [https://requesty.ai/](https://requesty.ai/)
 

@@ -8,7 +8,7 @@ curl https://api.cohere.ai/v2/chat \
   -H "Authorization: Bearer YOUR_COHERE_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "c4ai-aya-expanse-32b",
+    "model": "command-r-plus-08-2024",
     "messages": [
       {
         "role": "user",

@@ -9,7 +9,7 @@ from huggingface_hub import InferenceClient
 client = InferenceClient(api_key="YOUR_HF_TOKEN")
 
 completion = client.chat.completions.create(
-    model="black-forest-labs/FLUX.1-dev",
+    model="meta-llama/Llama-3.2-11B-Vision-Instruct",
     messages=[
         {"role": "user", "content": "Explain the benefits of open inference routing"}
     ]

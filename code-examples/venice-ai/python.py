@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="dolphin-mixtral",
+    model="llama-3.1-405b",
     messages=[
         {"role": "user", "content": "What is privacy-first AI?"}
     ]
