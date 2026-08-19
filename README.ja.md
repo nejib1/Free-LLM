@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — 無料 AI・LLM API オープンディレクトリ</h1>
 <!--STATS:START-->
-  <p align="center"><strong>35 プロバイダーから 110 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
+  <p align="center"><strong>41 プロバイダーから 120 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
 <!--STATS:END-->
 </p>
 
@@ -104,6 +104,11 @@ print(response.choices[0].message.content)
 | [Ollama Cloud](https://ollama.com/cloud) | 不要 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud), Qwen3.5 (Cloud), DeepSeek V4 Flash (Cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | 不要 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 不要 | 3M input / 60K output tokens per 60s | 500M input / 5M output tokens per 24h | Free during experimental phase, no billing system yet | Qwen3.6 35B A3B |
+| [LLM7.io](https://llm7.io) | 不要 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
+| [Pollinations.ai](https://pollinations.ai) | 不要 | ~1 request/15s (anonymous) — higher with a free API key | フェアユースの範囲内 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
+| [SiliconFlow](https://siliconflow.com/pricing) | 電話番号認証が必要 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | See provider |
+| [ModelScope](https://modelscope.cn) | 電話番号認証が必要 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
+| [Aion Labs](https://www.aionlabs.ai/pricing/) | 不要 | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
 | [Inference.net](https://inference.net/) | 不要 | 30 RPM（フェアユース） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
 <!--TABLE:PERMANENT:END-->
 
@@ -143,6 +148,7 @@ print(response.choices[0].message.content)
 | [Cerebrium](https://www.cerebrium.ai/) | 登録が必要 | $30 | 一度きり | See provider |
 | [DeepInfra](https://deepinfra.com/) | 登録が必要 | $5 | One-time (90 days expiry) | See provider |
 | [Friendli AI](https://friendli.ai/) | 登録が必要 | $10 | 一度きり | See provider |
+| [Nscale](https://www.nscale.com/product/inference) | 不要 | $5 | 一度きり | See provider |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ ローカル / セルフホスト（無制限・プライベート・永久無料）
@@ -198,6 +204,12 @@ print(response.choices[0].message.content)
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得 →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得 →](https://experiments.hetzner.com/inference) |
+| [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得 →](https://llm7.io) |
+| [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [取得 →](https://pollinations.ai) |
+| [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [取得 →](https://siliconflow.com/pricing) |
+| [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得 →](https://modelscope.cn) |
+| [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [取得 →](https://www.aionlabs.ai/pricing/) |
+| [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [取得 →](https://www.nscale.com/product/inference) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得 →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得 →](https://console.x.ai/) |
 <!--TABLE:QUICKREF:END-->
@@ -238,7 +250,7 @@ Free-LLM は**コミュニティ主導**のプロジェクトです。[free-llm.
 **コーディングアシスタント別:** [Claude Code](code-examples/claude-code.md) · [Cursor](code-examples/cursor.md) · [Codex CLI](code-examples/codex.md)
 
 <!--CODEEX:PROVIDERS:START-->
-**プロバイダー別（34 件）:** [AI21 Labs](code-examples/ai21-labs) · [Cerebras](code-examples/cerebras) · [Cerebrium](code-examples/cerebrium) · [Cloudflare Workers AI](code-examples/cloudflare-workers-ai) · [Cohere](code-examples/cohere) · [Coze](code-examples/coze) · [DeepInfra](code-examples/deepinfra) · [DeepSeek](code-examples/deepseek) · [Fireworks AI](code-examples/fireworks-ai) · [Friendli AI](code-examples/friendli-ai) · [Google AI Studio](code-examples/google-ai-studio) · [Grok (xAI)](code-examples/grok-xai) · [Groq](code-examples/groq-cloud) · [Hetzner Inference API](code-examples/hetzner-inference) · [Hugging Face Inference](code-examples/huggingface-inference) · [Hyperbolic](code-examples/hyperbolic) · [Inference.net](code-examples/inference-net) · [Mistral (La Plateforme)](code-examples/mistral-ai) · [Nebius (Token Factory)](code-examples/nebius) · [Nous Portal](code-examples/nous-portal) · [Novita AI](code-examples/novita-ai) · [NVIDIA NIM](code-examples/nvidia-nim) · [Ollama Cloud](code-examples/ollama-cloud) · [OpenRouter](code-examples/openrouter) · [OVH AI Endpoints](code-examples/ovh-ai) · [Qwen (Alibaba)](code-examples/qwen-alibaba) · [Replicate](code-examples/replicate) · [Requesty](code-examples/requesty) · [SambaNova Cloud](code-examples/sambanova) · [Scaleway Generative APIs](code-examples/scaleway) · [Together.AI](code-examples/together-ai) · [Upstage](code-examples/upstage) · [Venice.ai](code-examples/venice-ai) · [Z.AI (GLM)](code-examples/z-ai)
+**プロバイダー別（40 件）:** [AI21 Labs](code-examples/ai21-labs) · [Aion Labs](code-examples/aion-labs) · [Cerebras](code-examples/cerebras) · [Cerebrium](code-examples/cerebrium) · [Cloudflare Workers AI](code-examples/cloudflare-workers-ai) · [Cohere](code-examples/cohere) · [Coze](code-examples/coze) · [DeepInfra](code-examples/deepinfra) · [DeepSeek](code-examples/deepseek) · [Fireworks AI](code-examples/fireworks-ai) · [Friendli AI](code-examples/friendli-ai) · [Google AI Studio](code-examples/google-ai-studio) · [Grok (xAI)](code-examples/grok-xai) · [Groq](code-examples/groq-cloud) · [Hetzner Inference API](code-examples/hetzner-inference) · [Hugging Face Inference](code-examples/huggingface-inference) · [Hyperbolic](code-examples/hyperbolic) · [Inference.net](code-examples/inference-net) · [LLM7.io](code-examples/llm7-io) · [Mistral (La Plateforme)](code-examples/mistral-ai) · [ModelScope](code-examples/modelscope) · [Nebius (Token Factory)](code-examples/nebius) · [Nous Portal](code-examples/nous-portal) · [Novita AI](code-examples/novita-ai) · [Nscale](code-examples/nscale) · [NVIDIA NIM](code-examples/nvidia-nim) · [Ollama Cloud](code-examples/ollama-cloud) · [OpenRouter](code-examples/openrouter) · [OVH AI Endpoints](code-examples/ovh-ai) · [Pollinations.ai](code-examples/pollinations-ai) · [Qwen (Alibaba)](code-examples/qwen-alibaba) · [Replicate](code-examples/replicate) · [Requesty](code-examples/requesty) · [SambaNova Cloud](code-examples/sambanova) · [Scaleway Generative APIs](code-examples/scaleway) · [SiliconFlow](code-examples/siliconflow) · [Together.AI](code-examples/together-ai) · [Upstage](code-examples/upstage) · [Venice.ai](code-examples/venice-ai) · [Z.AI (GLM)](code-examples/z-ai)
 <!--CODEEX:PROVIDERS:END-->
 
 **ローカル / セルフホスト:** [BentoML](code-examples/bentoml) · [GPT4All](code-examples/gpt4all) · [Jan.ai](code-examples/jan-ai) · [KoboldCpp](code-examples/koboldcpp) · [llama.cpp](code-examples/llama-cpp) · [llamafile](code-examples/llamafile) · [LM Studio](code-examples/lm-studio) · [Ollama](code-examples/ollama) · [Text Gen WebUI](code-examples/text-generation-webui)
