@@ -288,6 +288,12 @@ Free-LLM/
 - 🏆 **榮譽榜**：[free-llm.com/hall-of-fame](https://free-llm.com/hall-of-fame)
 - ➕ **提交提供商**：[free-llm.com/submit](https://free-llm.com/submit)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nejib1/Free-LLM&type=Date)](https://star-history.com/#nejib1/Free-LLM&Date)
+
+---
+
 ## License
 
 MIT — 詳見 [LICENSE](LICENSE)。

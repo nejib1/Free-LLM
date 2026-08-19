@@ -288,6 +288,12 @@ Free-LLM/
 - 🏆 **명예의 전당**: [free-llm.com/hall-of-fame](https://free-llm.com/hall-of-fame)
 - ➕ **제공업체 제출**: [free-llm.com/submit](https://free-llm.com/submit)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nejib1/Free-LLM&type=Date)](https://star-history.com/#nejib1/Free-LLM&Date)
+
+---
+
 ## License
 
 MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
