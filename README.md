@@ -100,11 +100,11 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Coze](https://www.coze.com/) | Registration | Varies by model | Token-based daily limits | Resets daily | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Z.AI (GLM)](https://z.ai/) | Registration | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | No | Varies by model | 10,000 neurons/day | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
+| [LLM7.io](https://llm7.io) | No | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | Registration | 2 RPM (Anonymous) / 400 RPM (Auth) | Unspecified | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
 | [Ollama Cloud](https://ollama.com/cloud) | No | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud), Qwen3.5 (Cloud), DeepSeek V4 Flash (Cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | No | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | No | 3M input / 60K output tokens per 60s | 500M input / 5M output tokens per 24h | Free during experimental phase, no billing system yet | Qwen3.6 35B A3B |
-| [LLM7.io](https://llm7.io) | No | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
 | [Pollinations.ai](https://pollinations.ai) | No | ~1 request/15s (anonymous) — higher with a free API key | Fair use | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
 | [SiliconFlow](https://siliconflow.com/pricing) | Phone verification | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | See provider |
 | [ModelScope](https://modelscope.cn) | Phone verification | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
@@ -197,6 +197,7 @@ Sign up and receive credits to use until depleted.
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [Get Key →](https://z.ai/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [Get Key →](https://dash.cloudflare.com/) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [Get Key →](https://requesty.ai/) |
+| [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [Get Key →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [Get Key →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [Get Key →](https://deepinfra.com/) |
@@ -204,7 +205,6 @@ Sign up and receive credits to use until depleted.
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [Get Key →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [Get Key →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [Get Key →](https://experiments.hetzner.com/inference) |
-| [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [Get Key →](https://pollinations.ai) |
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [Get Key →](https://siliconflow.com/pricing) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [Get Key →](https://modelscope.cn) |
@@ -312,4 +312,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-22<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-23<!--LASTSYNC:END--></sub></p>
