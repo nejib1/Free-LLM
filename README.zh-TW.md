@@ -97,8 +97,8 @@ print(response.choices[0].message.content)
 | [Cohere](https://cohere.com/) | 否 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需電話驗證 | 40 requests/minute | - | - | See provider |
 | [Groq](https://console.groq.com/) | 否 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Qwen3.6 27B, MiniMax M2.7, Whisper Large v3, Whisper Large v3 Turbo |
-| [Coze](https://www.coze.com/) | 需註冊 | 依模型而異 | 依 token 計算的每日額度 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Z.AI (GLM)](https://z.ai/) | 需註冊 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Coze](https://www.coze.com/) | 需註冊 | 依模型而異 | 依 token 計算的每日額度 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 依模型而異 | 每天 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
 | [LLM7.io](https://llm7.io) | 否 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需註冊 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
@@ -193,11 +193,11 @@ print(response.choices[0].message.content)
 | [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [取得金鑰 →](https://docs.ai21.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [取得金鑰 →](https://console.upstage.ai/) |
 | [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [取得金鑰 →](https://platform.deepseek.com/) |
-| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [取得金鑰 →](https://www.coze.com/) |
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [取得金鑰 →](https://z.ai/) |
+| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [取得金鑰 →](https://www.coze.com/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得金鑰 →](https://dash.cloudflare.com/) |
-| [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得金鑰 →](https://requesty.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得金鑰 →](https://llm7.io) |
+| [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得金鑰 →](https://requesty.ai/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得金鑰 →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得金鑰 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [取得金鑰 →](https://deepinfra.com/) |
@@ -312,4 +312,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-25<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-26<!--LASTSYNC:END--></sub></p>

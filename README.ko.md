@@ -97,8 +97,8 @@ print(response.choices[0].message.content)
 | [Cohere](https://cohere.com/) | 불필요 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 전화번호 인증 필요 | 40 requests/minute | - | - | See provider |
 | [Groq](https://console.groq.com/) | 불필요 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Qwen3.6 27B, MiniMax M2.7, Whisper Large v3, Whisper Large v3 Turbo |
-| [Coze](https://www.coze.com/) | 가입 필요 | 모델별 상이 | 토큰 기반 일일 한도 | 매일 초기화 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Z.AI (GLM)](https://z.ai/) | 가입 필요 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Coze](https://www.coze.com/) | 가입 필요 | 모델별 상이 | 토큰 기반 일일 한도 | 매일 초기화 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 불필요 | 모델별 상이 | 하루 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
 | [LLM7.io](https://llm7.io) | 불필요 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 가입 필요 | 2 RPM (Anonymous) / 400 RPM (Auth) | 비공개 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
@@ -193,11 +193,11 @@ print(response.choices[0].message.content)
 | [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [발급 →](https://docs.ai21.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [발급 →](https://console.upstage.ai/) |
 | [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [발급 →](https://platform.deepseek.com/) |
-| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [발급 →](https://www.coze.com/) |
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [발급 →](https://z.ai/) |
+| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [발급 →](https://www.coze.com/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [발급 →](https://dash.cloudflare.com/) |
-| [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [발급 →](https://requesty.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [발급 →](https://llm7.io) |
+| [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [발급 →](https://requesty.ai/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [발급 →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [발급 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [발급 →](https://deepinfra.com/) |
@@ -312,4 +312,4 @@ MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-25<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-26<!--LASTSYNC:END--></sub></p>
