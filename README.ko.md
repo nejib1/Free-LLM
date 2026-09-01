@@ -312,4 +312,4 @@ MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-08-31<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-01<!--LASTSYNC:END--></sub></p>
