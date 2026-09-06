@@ -110,6 +110,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [ModelScope](https://modelscope.cn) | Phone verification | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | No | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
 | [Inference.net](https://inference.net/) | No | 30 RPM (fair use) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [NavyAI](https://api.navy/) | Registration | 20 RPM | 150K tokens/day | Free tier: $0/day, no credit card | See provider |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
@@ -212,6 +213,7 @@ Sign up and receive credits to use until depleted.
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [Get Key →](https://www.nscale.com/product/inference) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
+| [NavyAI](https://api.navy/) | `https://api.navy/v1` | [Get Key →](https://api.navy/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
