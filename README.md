@@ -123,6 +123,7 @@ Free access that renews periodically, no one-time expiry.
 | [Venice.ai](https://venice.ai/) | Registration | 10 RPM (free tier) | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
 | [Requesty](https://requesty.ai/) | No | 60 RPM | 200 requests/day (free models) | See provider |
 | [Grok (xAI)](https://console.x.ai/) | Registration | Varies (low for free tier) | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway) | Yes (verification) | Varies by model (free-tier rate limited) | $5/month in free credits | [Free-tier eligible models](https://vercel.com/ai-gateway/models?freeTier=true) |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 One-Time Trial Credits
@@ -212,6 +213,7 @@ Sign up and receive credits to use until depleted.
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [Get Key →](https://www.nscale.com/product/inference) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [Get Key →](https://vercel.com/ai-gateway/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
