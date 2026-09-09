@@ -33,7 +33,7 @@ This repo — backed by the live directory at **[free-llm.com](https://free-llm.
 
 - ✅ **Community-maintained** — votes, submissions, and edit suggestions from real users, moderated before publishing
 - ✅ **Credit card transparency** — every provider below is labeled with whether it needs a card, phone verification, or nothing at all
-- ✅ **Ready-to-run code** — Python/JavaScript/curl snippets for all 33 providers in [`code-examples/`](code-examples/), plus per-tool configs for Claude Code, Cursor, and Codex
+- ✅ **Ready-to-run code** — Python/JavaScript/curl snippets for all 33 providers in [`code-examples/`](code-examples/), plus per-tool configs for Claude Code, Cursor, Codex, and OpenCode
 - ✅ **Side-by-side comparison** — [free-llm.com/compare](https://free-llm.com/compare) puts two providers head-to-head on limits, models, and pricing
 
 ---
@@ -77,6 +77,7 @@ Point your AI coding tool at a free backend instead of a paid one:
 - **Claude Code** — set `ANTHROPIC_BASE_URL` + `ANTHROPIC_AUTH_TOKEN`. See [`code-examples/claude-code.md`](code-examples/claude-code.md)
 - **Cursor** — Settings → Models → Add Model. See [`code-examples/cursor.md`](code-examples/cursor.md)
 - **Codex CLI** — set `OPENAI_BASE_URL` + `OPENAI_API_KEY`. See [`code-examples/codex.md`](code-examples/codex.md)
+- **OpenCode** — open source AI coding agent, supports multiple providers via `/connect` or env vars. See [`code-examples/opencode.md`](code-examples/opencode.md)
 
 Every other provider has a ready-to-copy snippet in [`code-examples/`](code-examples/) — see [Code Examples](#code-examples) below.
 
@@ -247,7 +248,7 @@ Data syncs back to this repository.
 
 The [`code-examples/`](code-examples/) directory has ready-to-run Python, JavaScript, and curl snippets — just add your API key.
 
-**By coding assistant:** [Claude Code](code-examples/claude-code.md) · [Cursor](code-examples/cursor.md) · [Codex CLI](code-examples/codex.md)
+**By coding assistant:** [Claude Code](code-examples/claude-code.md) · [Cursor](code-examples/cursor.md) · [Codex CLI](code-examples/codex.md) · [OpenCode](code-examples/opencode.md)
 
 <!--CODEEX:PROVIDERS:START-->
 **By provider (40):** [AI21 Labs](code-examples/ai21-labs) · [Aion Labs](code-examples/aion-labs) · [Cerebras](code-examples/cerebras) · [Cerebrium](code-examples/cerebrium) · [Cloudflare Workers AI](code-examples/cloudflare-workers-ai) · [Cohere](code-examples/cohere) · [Coze](code-examples/coze) · [DeepInfra](code-examples/deepinfra) · [DeepSeek](code-examples/deepseek) · [Fireworks AI](code-examples/fireworks-ai) · [Friendli AI](code-examples/friendli-ai) · [Google AI Studio](code-examples/google-ai-studio) · [Grok (xAI)](code-examples/grok-xai) · [Groq](code-examples/groq-cloud) · [Hetzner Inference API](code-examples/hetzner-inference) · [Hugging Face Inference](code-examples/huggingface-inference) · [Hyperbolic](code-examples/hyperbolic) · [Inference.net](code-examples/inference-net) · [LLM7.io](code-examples/llm7-io) · [Mistral (La Plateforme)](code-examples/mistral-ai) · [ModelScope](code-examples/modelscope) · [Nebius (Token Factory)](code-examples/nebius) · [Nous Portal](code-examples/nous-portal) · [Novita AI](code-examples/novita-ai) · [Nscale](code-examples/nscale) · [NVIDIA NIM](code-examples/nvidia-nim) · [Ollama Cloud](code-examples/ollama-cloud) · [OpenRouter](code-examples/openrouter) · [OVH AI Endpoints](code-examples/ovh-ai) · [Pollinations.ai](code-examples/pollinations-ai) · [Qwen (Alibaba)](code-examples/qwen-alibaba) · [Replicate](code-examples/replicate) · [Requesty](code-examples/requesty) · [SambaNova Cloud](code-examples/sambanova) · [Scaleway Generative APIs](code-examples/scaleway) · [SiliconFlow](code-examples/siliconflow) · [Together.AI](code-examples/together-ai) · [Upstage](code-examples/upstage) · [Venice.ai](code-examples/venice-ai) · [Z.AI (GLM)](code-examples/z-ai)
