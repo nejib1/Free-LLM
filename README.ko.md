@@ -147,8 +147,8 @@ print(response.choices[0].message.content)
 | [DeepSeek](https://platform.deepseek.com/) | 가입 필요 | 5M tokens | 30일 | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 | $30 | 일회성 | See provider |
 | [DeepInfra](https://deepinfra.com/) | 가입 필요 | $5 | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 가입 필요 | $10 | 일회성 | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 불필요 | $5 | 일회성 | See provider |
+| [Friendli AI](https://friendli.ai/) | 가입 필요 | $10 | 일회성 | See provider |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 로컬 / 셀프호스팅 (무제한, 프라이빗, 영구 무료)
@@ -201,7 +201,6 @@ print(response.choices[0].message.content)
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [발급 →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [발급 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [발급 →](https://deepinfra.com/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [발급 →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [발급 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [발급 →](https://experiments.hetzner.com/inference) |
@@ -210,6 +209,7 @@ print(response.choices[0].message.content)
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [발급 →](https://modelscope.cn) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [발급 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [발급 →](https://www.nscale.com/product/inference) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [발급 →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [발급 →](https://console.x.ai/) |
 <!--TABLE:QUICKREF:END-->
@@ -312,4 +312,4 @@ MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-09<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-10<!--LASTSYNC:END--></sub></p>
