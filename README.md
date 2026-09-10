@@ -147,8 +147,8 @@ Sign up and receive credits to use until depleted.
 | [DeepSeek](https://platform.deepseek.com/) | Registration | 5M tokens | 30 days | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | Registration | $30 | One-time | See provider |
 | [DeepInfra](https://deepinfra.com/) | Registration | $5 | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | Registration | $10 | One-time | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | No | $5 | One-time | See provider |
+| [Friendli AI](https://friendli.ai/) | Registration | $10 | One-time | See provider |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ Local / Self-Hosted (Unlimited, Private, Free Forever)
@@ -201,7 +201,6 @@ Sign up and receive credits to use until depleted.
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [Get Key →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [Get Key →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [Get Key →](https://deepinfra.com/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [Get Key →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [Get Key →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [Get Key →](https://experiments.hetzner.com/inference) |
@@ -210,6 +209,7 @@ Sign up and receive credits to use until depleted.
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [Get Key →](https://modelscope.cn) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [Get Key →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [Get Key →](https://www.nscale.com/product/inference) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
 <!--TABLE:QUICKREF:END-->
@@ -312,4 +312,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-09<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-10<!--LASTSYNC:END--></sub></p>

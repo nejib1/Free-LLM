@@ -147,8 +147,8 @@ print(response.choices[0].message.content)
 | [DeepSeek](https://platform.deepseek.com/) | 需註冊 | 5M tokens | 30 天 | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | 需註冊 | $30 | 一次性 | See provider |
 | [DeepInfra](https://deepinfra.com/) | 需註冊 | $5 | One-time (90 days expiry) | See provider |
-| [Friendli AI](https://friendli.ai/) | 需註冊 | $10 | 一次性 | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 否 | $5 | 一次性 | See provider |
+| [Friendli AI](https://friendli.ai/) | 需註冊 | $10 | 一次性 | See provider |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本機 / 自架（無限、私密、永久免費）
@@ -201,7 +201,6 @@ print(response.choices[0].message.content)
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得金鑰 →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得金鑰 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [取得金鑰 →](https://deepinfra.com/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得金鑰 →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得金鑰 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得金鑰 →](https://experiments.hetzner.com/inference) |
@@ -210,6 +209,7 @@ print(response.choices[0].message.content)
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得金鑰 →](https://modelscope.cn) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [取得金鑰 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [取得金鑰 →](https://www.nscale.com/product/inference) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得金鑰 →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得金鑰 →](https://console.x.ai/) |
 <!--TABLE:QUICKREF:END-->
@@ -312,4 +312,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-09<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-10<!--LASTSYNC:END--></sub></p>
