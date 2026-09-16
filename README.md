@@ -149,6 +149,7 @@ Sign up and receive credits to use until depleted.
 | [DeepInfra](https://deepinfra.com/) | Registration | $5 | One-time (90 days expiry) | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | No | $5 | One-time | See provider |
 | [Friendli AI](https://friendli.ai/) | Registration | $10 | One-time | See provider |
+| [TokenWorks](https://token8341.com) | Registration | ¥3 (≈$0.4) | One-time | GPT-4o, Claude, Gemini, DeepSeek, Qwen & more |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ Local / Self-Hosted (Unlimited, Private, Free Forever)
