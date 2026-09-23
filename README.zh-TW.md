@@ -101,13 +101,13 @@ print(response.choices[0].message.content)
 | [Z.AI (GLM)](https://z.ai/) | 需註冊 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 依模型而異 | 每天 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需註冊 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
+| [Pollinations.ai](https://pollinations.ai) | 否 | ~1 request/15s (anonymous) — higher with a free API key | 合理使用範圍內 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
+| [ModelScope](https://modelscope.cn) | 需電話驗證 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
 | [Ollama Cloud](https://ollama.com/cloud) | 否 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud), Qwen3.5 (Cloud), DeepSeek V4 Flash (Cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | 否 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 否 | 3M input / 60K output tokens per 60s | 500M input / 5M output tokens per 24h | Free during experimental phase, no billing system yet | Qwen3.6 35B A3B |
 | [LLM7.io](https://llm7.io) | 否 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
-| [Pollinations.ai](https://pollinations.ai) | 否 | ~1 request/15s (anonymous) — higher with a free API key | 合理使用範圍內 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
 | [SiliconFlow](https://siliconflow.com/pricing) | 需電話驗證 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | See provider |
-| [ModelScope](https://modelscope.cn) | 需電話驗證 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
 | [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
 <!--TABLE:PERMANENT:END-->
@@ -197,16 +197,16 @@ print(response.choices[0].message.content)
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [取得金鑰 →](https://z.ai/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得金鑰 →](https://dash.cloudflare.com/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得金鑰 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [取得金鑰 →](https://pollinations.ai) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得金鑰 →](https://requesty.ai/) |
+| [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得金鑰 →](https://modelscope.cn) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得金鑰 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [取得金鑰 →](https://deepinfra.com/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得金鑰 →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得金鑰 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得金鑰 →](https://experiments.hetzner.com/inference) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得金鑰 →](https://llm7.io) |
-| [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [取得金鑰 →](https://pollinations.ai) |
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [取得金鑰 →](https://siliconflow.com/pricing) |
-| [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得金鑰 →](https://modelscope.cn) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [取得金鑰 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [取得金鑰 →](https://www.nscale.com/product/inference) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
@@ -312,4 +312,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-22<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-23<!--LASTSYNC:END--></sub></p>
