@@ -97,8 +97,8 @@ print(response.choices[0].message.content)
 | [Cohere](https://cohere.com/) | 否 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需手机验证 | 40 requests/minute | - | - | See provider |
 | [Groq](https://console.groq.com/) | 否 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Qwen3.6 27B, MiniMax M2.7, Whisper Large v3, Whisper Large v3 Turbo |
-| [Coze](https://www.coze.com/) | 需注册 | 因模型而异 | 按 token 计算的每日限额 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Z.AI (GLM)](https://z.ai/) | 需注册 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Coze](https://www.coze.com/) | 需注册 | 因模型而异 | 按 token 计算的每日限额 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
 | [Pollinations.ai](https://pollinations.ai) | 否 | ~1 request/15s (anonymous) — higher with a free API key | 合理使用范围内 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
@@ -186,15 +186,15 @@ print(response.choices[0].message.content)
 | [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [获取密钥 →](https://app.hyperbolic.xyz/) |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [获取密钥 →](https://tokenfactory.nebius.com/) |
 | [Cerebras](https://cerebras.ai/inference) | `https://api.cerebras.ai/v1` | [获取密钥 →](https://cerebras.ai/inference) |
-| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [获取密钥 →](https://novita.ai/) |
 | [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [获取密钥 →](https://console.groq.com/) |
+| [Novita AI](https://novita.ai/) | `https://api.novita.ai/v3/openai` | [获取密钥 →](https://novita.ai/) |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | `https://api.scaleway.ai/v1` | [获取密钥 →](https://console.scaleway.com/generative-api/models) |
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [获取密钥 →](https://bailian.console.alibabacloud.com/) |
 | [AI21 Labs](https://docs.ai21.com/) | `https://api.ai21.com/studio/v1` | [获取密钥 →](https://docs.ai21.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [获取密钥 →](https://console.upstage.ai/) |
 | [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/v1` | [获取密钥 →](https://platform.deepseek.com/) |
-| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [获取密钥 →](https://www.coze.com/) |
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [获取密钥 →](https://z.ai/) |
+| [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [获取密钥 →](https://www.coze.com/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [获取密钥 →](https://dash.cloudflare.com/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [获取密钥 →](https://endpoints.ai.cloud.ovh.net/) |
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [获取密钥 →](https://pollinations.ai) |
@@ -312,4 +312,4 @@ MIT — 详见 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-24<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-09-25<!--LASTSYNC:END--></sub></p>
