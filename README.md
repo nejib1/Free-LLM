@@ -110,6 +110,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | No | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
 | [LLM7.io](https://llm7.io) | No | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
 | [Inference.net](https://inference.net/) | No | 30 RPM (fair use) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [LLM7.io](https://llm7.io/) | No | 2 RPS / 20 RPM / 100 RPH | 1,000,000 tokens / 24 hours | Free | DeepSeek V4 Flash 0731, GPT-OSS 20B, MiniMax M2.7, Gemini 3.1 Flash-Lite, Codestral Latest, Mistral Nemo Instruct 2407 |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
@@ -212,6 +213,7 @@ Sign up and receive credits to use until depleted.
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
+| [LLM7.io](https://llm7.io/) | `https://api.llm7.io/v1` | [Get Key →](https://token.llm7.io/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
