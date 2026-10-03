@@ -1,0 +1,52 @@
+# ===============================================
+# Damascus - Code Example
+# Free LLM API - https://free-llm.com
+# Project URL: https://github.com/NomaDamas/damascus
+# ===============================================
+# damascus.toml routed to Groq's FREE tier (no credit card, 14,400 req/day).
+# Swap in any OpenAI-compatible base_url from the Free-LLM Quick Reference:
+#   - OpenRouter:    https://openrouter.ai/api/v1          (50 req/day free)
+#   - Google AI St.: https://generativelanguage.googleapis.com/v1beta/openai
+#   - Mistral:       https://api.mistral.ai/v1
+#   - NVIDIA NIM:    https://integrate.api.nvidia.com/v1
+#   - Cerebras:      https://api.cerebras.ai/v1
+#   - DeepInfra:     https://api.deepinfra.com/v1/openai
+# ===============================================
+
+[providers.groq]
+base_url = "https://api.groq.com/openai/v1"
+api_key_env = "GROQ_API_KEY"           # get at console.groq.com/keys — free, no card
+
+[providers.openrouter]                  # optional second backend
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"      # get at openrouter.ai/keys
+
+[providers.google]                      # optional third backend
+base_url = "https://generativelanguage.googleapis.com/v1beta/openai"
+api_key_env = "GEMINI_API_KEY"          # get at aistudio.google.com — free
+
+[providers.local]
+base_url = "http://localhost:11434/v1"  # Ollama / llama.cpp / vLLM — no key needed
+
+# Mix providers freely per role: "provider/model-id"
+[models]
+planner  = "groq/qwen/qwen3.6-27b"
+drafter  = "groq/qwen/qwen3.6-27b"
+judge    = "groq/qwen/qwen3.6-27b"
+repairer = "groq/qwen/qwen3.6-27b"
+
+[scaling]
+candidates = 8          # best-of-N — raise to 16/32 for hard tasks
+repair_rounds = 2       # reflexion retries when nothing passes
+max_recursion = 2
+max_steps = 40
+temperature = 0.3
+temperature_step = 0.2
+explore_temperature = 0.9
+concurrency = 8
+
+[verify]                # objective gates — set for your stack
+build = "cargo build"   # or npm run build / pip install -e .
+test  = "cargo test"    # or npm test / pytest
+lint  = "cargo clippy -- -D warnings"
+timeout_secs = 600
