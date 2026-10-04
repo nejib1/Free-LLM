@@ -33,7 +33,7 @@
 
 - ✅ **社区维护** — 真实用户的投票、提交和编辑建议，发布前经过审核
 - ✅ **信用卡透明** — 下方每个提供商都清楚标注是否需要信用卡、手机验证，或完全无需
-- ✅ **即用代码** — [`code-examples/`](code-examples/) 中包含全部 33 个提供商的 Python / JavaScript / curl 代码片段，还有针对 Claude Code、Cursor、Codex 的专属配置
+- ✅ **即用代码** — [`code-examples/`](code-examples/) 中包含全部 33 个提供商的 Python / JavaScript / curl 代码片段，还有针对 Claude Code、Cursor、Codex 和 OpenCode 的专属配置
 - ✅ **并排对比** — [free-llm.com/compare](https://free-llm.com/compare) 可将两个提供商的限制、模型和定价直接对比
 
 ---
@@ -77,6 +77,7 @@ print(response.choices[0].message.content)
 - **Claude Code** — 设置 `ANTHROPIC_BASE_URL` + `ANTHROPIC_AUTH_TOKEN`，见 [`code-examples/claude-code.md`](code-examples/claude-code.md)
 - **Cursor** — Settings → Models → Add Model，见 [`code-examples/cursor.md`](code-examples/cursor.md)
 - **Codex CLI** — 设置 `OPENAI_BASE_URL` + `OPENAI_API_KEY`，见 [`code-examples/codex.md`](code-examples/codex.md)
+- **OpenCode** — 开源 AI 编程助手，通过 `/connect` 或环境变量支持多个提供商，见 [`code-examples/opencode.md`](code-examples/opencode.md)
 
 其他所有提供商的即用代码片段见下方 [Code Examples](#code-examples)，都在 [`code-examples/`](code-examples/) 目录中。
 
@@ -255,7 +256,7 @@ Free-LLM 是**社区驱动**的项目。访问 [free-llm.com](https://free-llm.c
 
 [`code-examples/`](code-examples/) 目录中有可直接运行的 Python、JavaScript 和 curl 代码片段 — 填入你的 API Key 即可使用。
 
-**按编程助手分类：** [Claude Code](code-examples/claude-code.md) · [Cursor](code-examples/cursor.md) · [Codex CLI](code-examples/codex.md)
+**按编程助手分类：** [Claude Code](code-examples/claude-code.md) · [Cursor](code-examples/cursor.md) · [Codex CLI](code-examples/codex.md) · [OpenCode](code-examples/opencode.md)
 
 <!--CODEEX:PROVIDERS:START-->
 **按提供商分类（39 个）：** [AI21 Labs](code-examples/ai21-labs) · [Aion Labs](code-examples/aion-labs) · [Cerebras](code-examples/cerebras) · [Cerebrium](code-examples/cerebrium) · [Cloudflare Workers AI](code-examples/cloudflare-workers-ai) · [Cohere](code-examples/cohere) · [Coze](code-examples/coze) · [DeepInfra](code-examples/deepinfra) · [DeepSeek](code-examples/deepseek) · [Fireworks AI](code-examples/fireworks-ai) · [Friendli AI](code-examples/friendli-ai) · [Google AI Studio](code-examples/google-ai-studio) · [Grok (xAI)](code-examples/grok-xai) · [Groq](code-examples/groq-cloud) · [Hetzner Inference API](code-examples/hetzner-inference) · [Hugging Face Inference](code-examples/huggingface-inference) · [Inference.net](code-examples/inference-net) · [LLM7.io](code-examples/llm7-io) · [Mistral (La Plateforme)](code-examples/mistral-ai) · [ModelScope](code-examples/modelscope) · [Nebius (Token Factory)](code-examples/nebius) · [Nous Portal](code-examples/nous-portal) · [Novita AI](code-examples/novita-ai) · [Nscale](code-examples/nscale) · [NVIDIA NIM](code-examples/nvidia-nim) · [Ollama Cloud](code-examples/ollama-cloud) · [OpenRouter](code-examples/openrouter) · [OVH AI Endpoints](code-examples/ovh-ai) · [Pollinations.ai](code-examples/pollinations-ai) · [Qwen (Alibaba)](code-examples/qwen-alibaba) · [Replicate](code-examples/replicate) · [Requesty](code-examples/requesty) · [SambaNova Cloud](code-examples/sambanova) · [Scaleway Generative APIs](code-examples/scaleway) · [SiliconFlow](code-examples/siliconflow) · [Together.AI](code-examples/together-ai) · [Upstage](code-examples/upstage) · [Venice.ai](code-examples/venice-ai) · [Z.AI (GLM)](code-examples/z-ai)
