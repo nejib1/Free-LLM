@@ -141,7 +141,7 @@ print(response.choices[0].message.content)
 | [Replicate](https://replicate.com/) | 需注册 | Limited free runs on select models | 一次性 | See provider |
 | [Fireworks AI](https://fireworks.ai/) | 需注册 | $1 | 一次性 | See provider |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 | $5 | 3 个月 | MiniMax M3 (preview), Gemma 4 31B (preview), DeepSeek V3.2 (preview), DeepSeek V3.1 |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 | $1 (requires a bank card on file) | 一次性 | NVIDIA Nemotron 3 Super 120B, Qwen3.5 397B A17B, DeepSeek V4 Flash (0731), MiniMax M3 |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 | $1 (requires a bank card on file) | 一次性 | Qwen3 235B A22B Instruct 2507, GLM 5.3, GPT OSS 120B, Qwen3.8 27B |
 | [Cerebras](https://cerebras.ai/inference) | 需注册 | $5 | 30 天 | Qwen 3.8 27B, GPT OSS 120B |
 | [Novita AI](https://novita.ai/) | 需注册 | $0.50 trial (1 yr) / $10 per referral | 一次性 | GLM 5.3, Kimi K3, DeepSeek V4.1 Flash, Qwen3.8 27B |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | Mistral Medium 3.5 128B, Mistral Small 3.2 24B, Llama 3.3 70B Instruct, Qwen3.5 397B A17B |

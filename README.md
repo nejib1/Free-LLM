@@ -141,7 +141,7 @@ Sign up and receive credits to use until depleted.
 | [Replicate](https://replicate.com/) | Registration | Limited free runs on select models | One-time | See provider |
 | [Fireworks AI](https://fireworks.ai/) | Registration | $1 | One-time | See provider |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | Registration | $5 | 3 months | MiniMax M3 (preview), Gemma 4 31B (preview), DeepSeek V3.2 (preview), DeepSeek V3.1 |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | Registration | $1 (requires a bank card on file) | One-time | NVIDIA Nemotron 3 Super 120B, Qwen3.5 397B A17B, DeepSeek V4 Flash (0731), MiniMax M3 |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | Registration | $1 (requires a bank card on file) | One-time | Qwen3 235B A22B Instruct 2507, GLM 5.3, GPT OSS 120B, Qwen3.8 27B |
 | [Cerebras](https://cerebras.ai/inference) | Registration | $5 | 30 days | Qwen 3.8 27B, GPT OSS 120B |
 | [Novita AI](https://novita.ai/) | Registration | $0.50 trial (1 yr) / $10 per referral | One-time | GLM 5.3, Kimi K3, DeepSeek V4.1 Flash, Qwen3.8 27B |
 | [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | Registration | 1M tokens | One-time | Mistral Medium 3.5 128B, Mistral Small 3.2 24B, Llama 3.3 70B Instruct, Qwen3.5 397B A17B |
