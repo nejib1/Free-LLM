@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — 免费 AI 与 LLM API 开放目录</h1>
 <!--STATS:START-->
-  <p align="center"><strong>来自 41 个提供商的 120+ 免费 LLM 模型</strong> — 几秒钟内发现、对比并配置免费模型，另有 9 款本地/自托管工具供无限私密使用。</p>
+  <p align="center"><strong>来自 40 个提供商的 170+ 免费 LLM 模型</strong> — 几秒钟内发现、对比并配置免费模型，另有 9 款本地/自托管工具供无限私密使用。</p>
 <!--STATS:END-->
 </p>
 
@@ -91,22 +91,22 @@ print(response.choices[0].message.content)
 <!--TABLE:PERMANENT:START-->
 | 提供商 | 需要信用卡？ | 速率限制 | 每日限额 | 每月限额 | 主要模型 |
 |:---|:---:|:---|:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | 否 | 5-30 RPM (varies by model) | 9000 RPD (Flash) / 25 RPD (3.1 Pro) | 完全免费 | Gemini 3.1 Pro, Gemini 3.1 Flash, Gemini 3.0 Flash, Gemini 3.0 Flash-Lite |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | 需手机验证 | 1 request/second | - | Free | Mistral 7B, Mixtral 8x7B, Mistral Small, Mistral Nemo |
+| [Google AI Studio](https://aistudio.google.com/) | 否 | 5-30 RPM (varies by model) | Varies by model (Flash / Flash-Lite only; Pro models are paid) | 完全免费 | Gemini 3.1 Flash-Lite, Gemini 3.5 Flash-Lite, Gemini 3.5 Flash, Gemini 3.6 Flash |
+| [Mistral (La Plateforme)](https://console.mistral.ai/) | 需手机验证 | 1 request/second | - | Free | Codestral 2508, Ministral 3 8B, Ministral 3 14B, Mistral Large 3 |
 | [Hugging Face Inference](https://huggingface.co/inference-api/serverless) | 否 | 300 Requests / hour | Capped by monthly credit, not a flat request count | $0.10/month in free routing credits (PRO: $2/month) | Llama 3.2 11B Vision, Llama 3.1 8B Instruct, Qwen 2.5 72B Instruct, Gemma 2 9B Instruct |
-| [Cohere](https://cohere.com/) | 否 | 20 requests/minute | - | 1,000 requests/month | Command R+ (08-2024), Command R (08-2024), Command R7B (12-2024), Command A (111B) |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需手机验证 | 40 requests/minute | - | - | See provider |
-| [Groq](https://console.groq.com/) | 否 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Qwen3.6 27B, MiniMax M2.7, Whisper Large v3, Whisper Large v3 Turbo |
-| [Z.AI (GLM)](https://z.ai/) | 需注册 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.5-Flash, GLM-4.7-Flash |
+| [Cohere](https://cohere.com/) | 否 | 20 requests/minute | - | 1,000 API calls/month (trial key, non-commercial) | North Mini Code, Command A Reasoning, Command R+ (08-2024), Command R (08-2024) |
+| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需手机验证 | 40 requests/minute | - | - | Nemotron 3 Ultra 550B A55B, Nemotron 3.5 Lightning 30B A3B, DeepSeek V4 Pro (0813), Kimi K3 |
+| [Groq](https://console.groq.com/) | 否 | 30 RPM, 14.4k RPD | 14,400 Requests/Day | Free Forever | Qwen3.8 27B, MiniMax M2.7, Whisper Large v3, Whisper Large v3 Turbo |
+| [Z.AI (GLM)](https://z.ai/) | 需注册 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
 | [Coze](https://www.coze.com/) | 需注册 | 因模型而异 | 按 token 计算的每日限额 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | Llama 3.1 8B Instruct, Llama 3.2 3B Instruct, Mistral 7B Instruct v0.2, Qwen 1.5 7B Chat |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Qwen3Guard-Gen-0.6B (Beta), Qwen3Guard-Gen-8B (Beta), stable-diffusion-xl-base-v10, nvr-tts-es-es |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | GLM 4.7 Flash, Mistral Small 3.1 24B, Qwen3 30B A3B, Gemma 4 26B A4B |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Llama 3.3 70B Instruct, GPT OSS 20B, GPT OSS 120B, Qwen3.5 9B |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 否 | 3M input / 60K output tokens per 60s | 500M input / 5M output tokens per 24h | Free during experimental phase, no billing system yet | Qwen3.6 35B A3B |
 | [Pollinations.ai](https://pollinations.ai) | 否 | ~1 request/15s (anonymous) — higher with a free API key | 合理使用范围内 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
 | [ModelScope](https://modelscope.cn) | 需手机验证 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
-| [Ollama Cloud](https://ollama.com/cloud) | 否 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud), Qwen3.5 (Cloud), DeepSeek V4 Flash (Cloud) |
+| [Ollama Cloud](https://ollama.com/cloud) | 否 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | 否 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
-| [SiliconFlow](https://siliconflow.com/pricing) | 需手机验证 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | See provider |
+| [SiliconFlow](https://siliconflow.com/pricing) | 需手机验证 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | DeepSeek R1 Distill Qwen 7B, Qwen3 8B |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
 | [LLM7.io](https://llm7.io) | 否 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
 | [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
@@ -119,9 +119,9 @@ print(response.choices[0].message.content)
 <!--TABLE:RENEWABLE:START-->
 | 提供商 | 需要信用卡？ | 速率限制 | 免费额度 | 主要模型 |
 |:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Google: Gemini 2.0 Flash (free), Google: Gemini 2.0 Pro (free), Meta: Llama 3.3 70B Instruct (free), NVIDIA: Llama 3.1 Nemotron 70B (free) |
+| [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Apodex 1.1 Mini, Poolside Laguna XS 2.1, Cohere North Mini Code, Qwen3.8 27B |
 | [Venice.ai](https://venice.ai/) | 需注册 | 10 RPM（免费档） | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
-| [Requesty](https://requesty.ai/) | 否 | 60 RPM | 200 requests/day (free models) | See provider |
+| [Requesty](https://requesty.ai/) | 否 | 60 RPM | 50 requests/day (new orgs) / 200 requests/day (paying orgs), shared across all free models | Poolside Laguna M.1, Poolside Laguna XS.2, NVIDIA Nemotron 3 Super, NVIDIA Nemotron 3 Ultra |
 | [Grok (xAI)](https://console.x.ai/) | 需注册 | 视额度而定（免费档较低） | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
 <!--TABLE:RENEWABLE:END-->
 
@@ -133,22 +133,21 @@ print(response.choices[0].message.content)
 | 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
 |:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *免费研究模型需先充值最低 $5* | 需注册 | — | — | PrismML Ternary Bonsai 27B (Free) |
-| [Replicate](https://replicate.com/) | 需注册 | 少量试用额度 | 一次性 | See provider |
+| [Replicate](https://replicate.com/) | 需注册 | Limited free runs on select models | 一次性 | See provider |
 | [Fireworks AI](https://fireworks.ai/) | 需注册 | $1 | 一次性 | See provider |
-| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 | $5 | 3 个月 | See provider |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 需注册 | $1 | 一次性 | See provider |
-| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 | $1 (requires a bank card on file) | 一次性 | See provider |
-| [Cerebras](https://cerebras.ai/inference) | 需注册 | $5 | 30 天 | Llama 3.1 8B (Fast), Llama 3.1 70B (Fast), Llama 4 Scout (Fast), Qwen3 32B (Fast) |
-| [Novita AI](https://novita.ai/) | 需注册 | $0.50 | 一次性 | See provider |
-| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | See provider |
-| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | 1M tokens/model | One-time per model | See provider |
+| [SambaNova Cloud](https://cloud.sambanova.ai/) | 需注册 | $5 | 3 个月 | MiniMax M3 (preview), Gemma 4 31B (preview), DeepSeek V3.2 (preview), DeepSeek V3.1 |
+| [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需注册 | $1 (requires a bank card on file) | 一次性 | NVIDIA Nemotron 3 Super 120B, Qwen3.5 397B A17B, DeepSeek V4 Flash (0731), MiniMax M3 |
+| [Cerebras](https://cerebras.ai/inference) | 需注册 | $5 | 30 天 | Qwen 3.8 27B, GPT OSS 120B |
+| [Novita AI](https://novita.ai/) | 需注册 | $0.50 trial (1 yr) / $10 per referral | 一次性 | GLM 5.3, Kimi K3, DeepSeek V4.1 Flash, Qwen3.8 27B |
+| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens | 一次性 | Mistral Medium 3.5 128B, Mistral Small 3.2 24B, Llama 3.3 70B Instruct, Qwen3.5 397B A17B |
+| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | 1M tokens/model | One-time per model | Qwen3.8 Max, Qwen3.7 Max, Qwen3.6 Plus |
 | [AI21 Labs](https://docs.ai21.com/) | 需注册 | $10 | 3 个月 | Jamba Large, Jamba Mini |
 | [Upstage](https://console.upstage.ai/) | 需注册 | $10 | 3 个月 | See provider |
-| [DeepSeek](https://platform.deepseek.com/) | 需注册 | 5M tokens | 30 天 | See provider |
+| [DeepSeek](https://platform.deepseek.com/) | 需注册 | 5M tokens | 30 天 | DeepSeek Flash (V4.1) |
 | [Cerebrium](https://www.cerebrium.ai/) | 需注册 | $30 | 一次性 | See provider |
 | [DeepInfra](https://deepinfra.com/) | 需注册 | $5 | One-time (90 days expiry) | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 否 | $5 | 一次性 | See provider |
-| [Friendli AI](https://friendli.ai/) | 需注册 | $10 | 一次性 | See provider |
+| [Friendli AI](https://friendli.ai/) | 需注册 | $10 | 一次性 | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本地 / 自托管（无限、私密、永久免费）
@@ -183,7 +182,6 @@ print(response.choices[0].message.content)
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | `https://integrate.api.nvidia.com/v1` | [获取密钥 →](https://build.nvidia.com/explore/discover) |
 | [Venice.ai](https://venice.ai/) | `https://api.venice.ai/api/v1` | [获取密钥 →](https://venice.ai/) |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | `https://api.sambanova.ai/v1` | [获取密钥 →](https://cloud.sambanova.ai/) |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | `https://api.hyperbolic.xyz/v1` | [获取密钥 →](https://app.hyperbolic.xyz/) |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | `https://api.tokenfactory.nebius.com/v1` | [获取密钥 →](https://tokenfactory.nebius.com/) |
 | [Cerebras](https://cerebras.ai/inference) | `https://api.cerebras.ai/v1` | [获取密钥 →](https://cerebras.ai/inference) |
 | [Groq](https://console.groq.com/) | `https://api.groq.com/openai/v1` | [获取密钥 →](https://console.groq.com/) |
@@ -250,7 +248,7 @@ Free-LLM 是**社区驱动**的项目。访问 [free-llm.com](https://free-llm.c
 **按编程助手分类：** [Claude Code](code-examples/claude-code.md) · [Cursor](code-examples/cursor.md) · [Codex CLI](code-examples/codex.md)
 
 <!--CODEEX:PROVIDERS:START-->
-**按提供商分类（40 个）：** [AI21 Labs](code-examples/ai21-labs) · [Aion Labs](code-examples/aion-labs) · [Cerebras](code-examples/cerebras) · [Cerebrium](code-examples/cerebrium) · [Cloudflare Workers AI](code-examples/cloudflare-workers-ai) · [Cohere](code-examples/cohere) · [Coze](code-examples/coze) · [DeepInfra](code-examples/deepinfra) · [DeepSeek](code-examples/deepseek) · [Fireworks AI](code-examples/fireworks-ai) · [Friendli AI](code-examples/friendli-ai) · [Google AI Studio](code-examples/google-ai-studio) · [Grok (xAI)](code-examples/grok-xai) · [Groq](code-examples/groq-cloud) · [Hetzner Inference API](code-examples/hetzner-inference) · [Hugging Face Inference](code-examples/huggingface-inference) · [Hyperbolic](code-examples/hyperbolic) · [Inference.net](code-examples/inference-net) · [LLM7.io](code-examples/llm7-io) · [Mistral (La Plateforme)](code-examples/mistral-ai) · [ModelScope](code-examples/modelscope) · [Nebius (Token Factory)](code-examples/nebius) · [Nous Portal](code-examples/nous-portal) · [Novita AI](code-examples/novita-ai) · [Nscale](code-examples/nscale) · [NVIDIA NIM](code-examples/nvidia-nim) · [Ollama Cloud](code-examples/ollama-cloud) · [OpenRouter](code-examples/openrouter) · [OVH AI Endpoints](code-examples/ovh-ai) · [Pollinations.ai](code-examples/pollinations-ai) · [Qwen (Alibaba)](code-examples/qwen-alibaba) · [Replicate](code-examples/replicate) · [Requesty](code-examples/requesty) · [SambaNova Cloud](code-examples/sambanova) · [Scaleway Generative APIs](code-examples/scaleway) · [SiliconFlow](code-examples/siliconflow) · [Together.AI](code-examples/together-ai) · [Upstage](code-examples/upstage) · [Venice.ai](code-examples/venice-ai) · [Z.AI (GLM)](code-examples/z-ai)
+**按提供商分类（39 个）：** [AI21 Labs](code-examples/ai21-labs) · [Aion Labs](code-examples/aion-labs) · [Cerebras](code-examples/cerebras) · [Cerebrium](code-examples/cerebrium) · [Cloudflare Workers AI](code-examples/cloudflare-workers-ai) · [Cohere](code-examples/cohere) · [Coze](code-examples/coze) · [DeepInfra](code-examples/deepinfra) · [DeepSeek](code-examples/deepseek) · [Fireworks AI](code-examples/fireworks-ai) · [Friendli AI](code-examples/friendli-ai) · [Google AI Studio](code-examples/google-ai-studio) · [Grok (xAI)](code-examples/grok-xai) · [Groq](code-examples/groq-cloud) · [Hetzner Inference API](code-examples/hetzner-inference) · [Hugging Face Inference](code-examples/huggingface-inference) · [Inference.net](code-examples/inference-net) · [LLM7.io](code-examples/llm7-io) · [Mistral (La Plateforme)](code-examples/mistral-ai) · [ModelScope](code-examples/modelscope) · [Nebius (Token Factory)](code-examples/nebius) · [Nous Portal](code-examples/nous-portal) · [Novita AI](code-examples/novita-ai) · [Nscale](code-examples/nscale) · [NVIDIA NIM](code-examples/nvidia-nim) · [Ollama Cloud](code-examples/ollama-cloud) · [OpenRouter](code-examples/openrouter) · [OVH AI Endpoints](code-examples/ovh-ai) · [Pollinations.ai](code-examples/pollinations-ai) · [Qwen (Alibaba)](code-examples/qwen-alibaba) · [Replicate](code-examples/replicate) · [Requesty](code-examples/requesty) · [SambaNova Cloud](code-examples/sambanova) · [Scaleway Generative APIs](code-examples/scaleway) · [SiliconFlow](code-examples/siliconflow) · [Together.AI](code-examples/together-ai) · [Upstage](code-examples/upstage) · [Venice.ai](code-examples/venice-ai) · [Z.AI (GLM)](code-examples/z-ai)
 <!--CODEEX:PROVIDERS:END-->
 
 **本地 / 自托管：** [BentoML](code-examples/bentoml) · [GPT4All](code-examples/gpt4all) · [Jan.ai](code-examples/jan-ai) · [KoboldCpp](code-examples/koboldcpp) · [llama.cpp](code-examples/llama-cpp) · [llamafile](code-examples/llamafile) · [LM Studio](code-examples/lm-studio) · [Ollama](code-examples/ollama) · [Text Gen WebUI](code-examples/text-generation-webui)
