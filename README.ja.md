@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Free-LLM — 無料 AI・LLM API オープンディレクトリ</h1>
 <!--STATS:START-->
-  <p align="center"><strong>40 プロバイダーから 170 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
+  <p align="center"><strong>45 プロバイダーから 190 以上の無料 LLM モデル</strong> — 数秒で無料モデルを見つけ、比較し、設定できます。無制限・プライベートに使えるローカル/セルフホストツールも 9 種類。</p>
 <!--STATS:END-->
 </p>
 
@@ -105,10 +105,13 @@ print(response.choices[0].message.content)
 | [Pollinations.ai](https://pollinations.ai) | 不要 | ~1 request/15s (anonymous) — higher with a free API key | フェアユースの範囲内 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
 | [ModelScope](https://modelscope.cn) | 電話番号認証が必要 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
 | [Ollama Cloud](https://ollama.com/cloud) | 不要 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud) |
-| [Nous Portal](https://portal.nousresearch.com) | 不要 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month, no credit card | Hermes 4 |
+| [Nous Portal](https://portal.nousresearch.com) | 不要 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Hermes 4 |
 | [SiliconFlow](https://siliconflow.com/pricing) | 電話番号認証が必要 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | DeepSeek R1 Distill Qwen 7B, Qwen3 8B |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 不要 | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
-| [LLM7.io](https://llm7.io) | 不要 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | DeepSeek-R1, Qwen 2.5 |
+| [Kilo AI Gateway](https://kilo.ai/gateway) | 不要 | 200 requests/hour per IP (free models, per community submission) | Default free models only | Free plan, no expiry | Kilo Auto Free, StepFun Step 3.7 Flash, Poolside Laguna S 2.1, Poolside Laguna XS 2.1 |
+| [Api.Airforce](https://api.airforce/) | 不要 | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
+| [Routeway](https://routeway.ai/) | 登録が必要 | 5 RPM (community submission) | 200 requests/day | Starter plan free, shared queue | Step 3.7 Flash, GPT OSS 120B, Laguna XS.2, Gemma 4 31B |
+| [LLM7.io](https://llm7.io) | 不要 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | Mistral Nemo Instruct 2407, Codestral Latest, Gemini 3.1 Flash-Lite, MiniMax M2.7 |
 | [Inference.net](https://inference.net/) | 不要 | 30 RPM（フェアユース） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
 <!--TABLE:PERMANENT:END-->
 
@@ -122,6 +125,7 @@ print(response.choices[0].message.content)
 | [OpenRouter](https://openrouter.ai/) | 不要 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Apodex 1.1 Mini, Poolside Laguna XS 2.1, Cohere North Mini Code, Qwen3.8 27B |
 | [Venice.ai](https://venice.ai/) | 登録が必要 | 10 RPM（無料枠） | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
 | [Requesty](https://requesty.ai/) | 不要 | 60 RPM | 50 requests/day (new orgs) / 200 requests/day (paying orgs), shared across all free models | Poolside Laguna M.1, Poolside Laguna XS.2, NVIDIA Nemotron 3 Super, NVIDIA Nemotron 3 Ultra |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway) | 登録が必要 | Rate limited per model (lower than paid tier) | Monthly free credit (~$5, verify) | See provider |
 | [Grok (xAI)](https://console.x.ai/) | 登録が必要 | 無料枠は低め | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
 <!--TABLE:RENEWABLE:END-->
 
@@ -147,6 +151,7 @@ print(response.choices[0].message.content)
 | [Cerebrium](https://www.cerebrium.ai/) | 登録が必要 | $30 | 一度きり | See provider |
 | [DeepInfra](https://deepinfra.com/) | 登録が必要 | $5 | One-time (90 days expiry) | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 不要 | $5 | 一度きり | See provider |
+| [Grokified](https://grokified.com) | 不要 | $5 | 一度きり | grok-4.6, grok-4.3, grok-build-0.1 |
 | [Friendli AI](https://friendli.ai/) | 登録が必要 | $10 | 一度きり | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
 <!--TABLE:TRIAL:END-->
 
@@ -206,6 +211,11 @@ print(response.choices[0].message.content)
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [取得 →](https://siliconflow.com/pricing) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [取得 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [取得 →](https://www.nscale.com/product/inference) |
+| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [取得 →](https://grokified.com) |
+| [Kilo AI Gateway](https://kilo.ai/gateway) | `https://api.kilo.ai/api/gateway` | [取得 →](https://kilo.ai/gateway) |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [取得 →](https://vercel.com/ai-gateway) |
+| [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [取得 →](https://api.airforce/) |
+| [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [取得 →](https://routeway.ai/) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得 →](https://friendli.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得 →](https://llm7.io) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得 →](https://inference.net/) |
