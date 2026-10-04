@@ -114,6 +114,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Routeway](https://routeway.ai/) | Registration | 5 RPM (community submission) | 200 requests/day | Starter plan free, shared queue | Step 3.7 Flash, GPT OSS 120B, Laguna XS.2, Gemma 4 31B |
 | [LLM7.io](https://llm7.io) | No | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | Mistral Nemo Instruct 2407, Codestral Latest, Gemini 3.1 Flash-Lite, MiniMax M2.7 |
 | [Inference.net](https://inference.net/) | No | 30 RPM (fair use) | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [FreeModel](https://freemodel.online/) | No | None set by us — follows the upstream provider | None | Free of charge | fm-v1-lite |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
