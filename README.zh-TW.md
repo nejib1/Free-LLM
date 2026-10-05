@@ -108,12 +108,12 @@ print(response.choices[0].message.content)
 | [Ollama Cloud](https://ollama.com/cloud) | 否 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | 否 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Hermes 4 |
 | [SiliconFlow](https://siliconflow.com/pricing) | 需電話驗證 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | DeepSeek R1 Distill Qwen 7B, Qwen3 8B |
-| [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published — verify on aionlabs.ai/pricing | Daily token allowance (exact quota undisclosed) | Free, no billing | See provider |
+| [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published — verify on aionlabs.ai/pricing | Third-party sources (not confirmed by Aion): free Aion 3.0 / 3.0 Mini at 15 RPM, 20K tokens/day | Free, no billing | See provider |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP (free models, per community submission) | Default free models only | Free plan, no expiry | Kilo Auto Free, StepFun Step 3.7 Flash, Poolside Laguna S 2.1, Poolside Laguna XS 2.1 |
 | [Api.Airforce](https://api.airforce/) | 否 | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | 需註冊 | 5 RPM (community submission) | 200 requests/day | Starter plan free, shared queue | Step 3.7 Flash, GPT OSS 120B, Laguna XS.2, Gemma 4 31B |
 | [LLM7.io](https://llm7.io) | 否 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | Mistral Nemo Instruct 2407, Codestral Latest, Gemini 3.1 Flash-Lite, MiniMax M2.7 |
-| [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Fair use policy | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Verify: Inference.net website now emphasizes Tracing and Gateway products; free LLM inference terms not confirmed | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 可續期額度
@@ -124,10 +124,10 @@ print(response.choices[0].message.content)
 | 提供商 | 需要信用卡？ | 速率限制 | 免費額度 | 主要模型 |
 |:---|:---:|:---|:---|:---|
 | [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Apodex 1.1 Mini, Poolside Laguna XS 2.1, Cohere North Mini Code, Qwen3.8 27B |
-| [Venice.ai](https://venice.ai/) | 需註冊 | 10 RPM（免費檔位） | Limited daily usage | Llama 3.1 405B, Dolphin Mixtral, Stable Diffusion 3 |
+| [Venice.ai](https://venice.ai/) | 需註冊 | 10 RPM（免費檔位） | Limited daily usage | See provider |
 | [Requesty](https://requesty.ai/) | 否 | 60 RPM | 50 requests/day (new orgs) / 200 requests/day (paying orgs), shared across all free models | Poolside Laguna M.1, Poolside Laguna XS.2, NVIDIA Nemotron 3 Super, NVIDIA Nemotron 3 Ultra |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | 需註冊 | Rate limited per model (lower than paid tier) | Monthly free credit (~$5, verify) | See provider |
-| [Grok (xAI)](https://console.x.ai/) | 需註冊 | 視額度而定（免費檔位較低） | $25 one-time signup credit | Grok-2, Grok-2 Mini, Grok-2 Vision |
+| [Grok (xAI)](https://console.x.ai/) | 需註冊 | 視額度而定（免費檔位較低） | $25 signup credit - not confirmed in current xAI docs, verify | See provider |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 一次性試用額度
@@ -139,7 +139,7 @@ print(response.choices[0].message.content)
 |:---|:---:|:---|:---|:---|
 | [Together.AI](https://together.ai/) ⚠️ *免費研究模型需先加值最低 $5* | 需註冊 | — | — | PrismML Ternary Bonsai 27B (Free) |
 | [Replicate](https://replicate.com/) | 需註冊 | Limited free runs on select models | 一次性 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 需註冊 | $1 | 一次性 | See provider |
+| [Fireworks AI](https://fireworks.ai/) | 需註冊 | $1 | 一次性 | GLM 5.3, DeepSeek V4.1 Flash, Kimi K3 |
 | [SambaNova Cloud](https://cloud.sambanova.ai/) | 需註冊 | $5 | 3 個月 | MiniMax M3 (preview), Gemma 4 31B (preview), DeepSeek V3.2 (preview), DeepSeek V3.1 |
 | [Nebius (Token Factory)](https://tokenfactory.nebius.com/) | 需註冊 | $1 (requires a bank card on file) | 一次性 | Qwen3 235B A22B Instruct 2507, GLM 5.3, GPT OSS 120B, Qwen3.8 27B |
 | [Cerebras](https://cerebras.ai/inference) | 需註冊 | $5 | 30 天 | Qwen 3.8 27B, GPT OSS 120B |
@@ -321,4 +321,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-04<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-05<!--LASTSYNC:END--></sub></p>
