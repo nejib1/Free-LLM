@@ -321,4 +321,4 @@ MIT — 詳細は [LICENSE](LICENSE) を参照してください。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-07<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-08<!--LASTSYNC:END--></sub></p>
