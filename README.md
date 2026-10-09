@@ -154,6 +154,7 @@ Sign up and receive credits to use until depleted.
 | [Nscale](https://www.nscale.com/product/inference) | No | $5 | One-time | See provider |
 | [Grokified](https://grokified.com) | No | $5 | One-time | grok-4.6, grok-4.3, grok-build-0.1 |
 | [Friendli AI](https://friendli.ai/) | Registration | $10 | One-time | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
+| [Dahl Inference](https://inference.dahl.global/) | Registration | 100M tokens | One-time | DeepSeek V4-Flash, GLM-5.3-Flash, MiniMax M2.7 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ Local / Self-Hosted (Unlimited, Private, Free Forever)
@@ -221,6 +222,7 @@ Sign up and receive credits to use until depleted.
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [Get Key →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [Get Key →](https://console.x.ai/) |
+| [Dahl Inference](https://inference.dahl.global/) | `https://inference.dahl.global/v1` | [Get Key →](https://inference.dahl.global/) |
 <!--TABLE:QUICKREF:END-->
 
 ---
