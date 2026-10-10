@@ -113,6 +113,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Api.Airforce](https://api.airforce/) | No | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | Registration | 5 RPM (community submission) | 200 requests/day | Starter plan free, shared queue | Step 3.7 Flash, GPT OSS 120B, Laguna XS.2, Gemma 4 31B |
 | [LLM7.io](https://llm7.io) | No | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | Mistral Nemo Instruct 2407, Codestral Latest, Gemini 3.1 Flash-Lite, MiniMax M2.7 |
+| [FreeAIapikey](https://freeaiapikey.com/) | No | 60 RPM | 100K free tokens/day (permanent) | GPT-6 Sol/Astra, GPT-5.5/5.6, Claude Opus 4.7-5.5, Sonnet 5 |
 | [Inference.net](https://inference.net/) | No | 30 RPM (fair use) | Fair use policy | Verify: Inference.net website now emphasizes Tracing and Gateway products; free LLM inference terms not confirmed | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
 <!--TABLE:PERMANENT:END-->
 
