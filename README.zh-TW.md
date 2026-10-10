@@ -102,12 +102,12 @@ print(response.choices[0].message.content)
 | [Coze](https://www.coze.com/) | 需註冊 | 依模型而異 | 依 token 計算的每日額度 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 依模型而異 | 每天 10,000 neurons | ~300,000 neurons/month | GLM 4.7 Flash, Mistral Small 3.1 24B, Qwen3 30B A3B, Gemma 4 26B A4B |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需註冊 | 2 RPM (Anonymous) / 400 RPM (Auth) | 未公布 | Beta Access | Llama 3.3 70B Instruct, GPT OSS 20B, GPT OSS 120B, Qwen3.5 9B |
+| [Nous Portal](https://portal.nousresearch.com) | 否 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Hermes 4 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 否 | 3M input / 60K output tokens per 60s | 500M input / 5M output tokens per 24h | Free during experimental phase, no billing system yet | Qwen3.6 35B A3B |
 | [Pollinations.ai](https://pollinations.ai) | 否 | ~1 request/15s (anonymous) — higher with a free API key | 合理使用範圍內 | Free, no billing system | OpenAI GPT-class (via Pollinations), Mistral-class (via Pollinations) |
 | [SiliconFlow](https://siliconflow.com/pricing) | 需電話驗證 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | DeepSeek R1 Distill Qwen 7B, Qwen3 8B |
 | [ModelScope](https://modelscope.cn) | 需電話驗證 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | See provider |
 | [Ollama Cloud](https://ollama.com/cloud) | 否 | Light usage tier, 1 concurrent model | Session limit resets every few hours | Weekly usage limit resets every 7 days | Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud), GPT-OSS 20B (Cloud) |
-| [Nous Portal](https://portal.nousresearch.com) | 否 | Not fully published — verify on portal.nousresearch.com | Not published | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Hermes 4 |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published — verify on aionlabs.ai/pricing | Third-party sources (not confirmed by Aion): free Aion 3.0 / 3.0 Mini at 15 RPM, 20K tokens/day | Free, no billing | See provider |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP (free models, per community submission) | Default free models only | Free plan, no expiry | Kilo Auto Free, StepFun Step 3.7 Flash, Poolside Laguna S 2.1, Poolside Laguna XS 2.1 |
 | [Api.Airforce](https://api.airforce/) | 否 | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
@@ -152,8 +152,8 @@ print(response.choices[0].message.content)
 | [Cerebrium](https://www.cerebrium.ai/) | 需註冊 | $30 | 一次性 | See provider |
 | [DeepInfra](https://deepinfra.com/) | 需註冊 | $5 | One-time (90 days expiry) | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 否 | $5 | 一次性 | See provider |
-| [Grokified](https://grokified.com) | 否 | $5 | 一次性 | grok-4.6, grok-4.3, grok-build-0.1 |
 | [Friendli AI](https://friendli.ai/) | 需註冊 | $10 | 一次性 | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
+| [Grokified](https://grokified.com) | 否 | $5 | 一次性 | grok-4.6, grok-4.3, grok-build-0.1 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本機 / 自架（無限、私密、永久免費）
@@ -201,6 +201,7 @@ print(response.choices[0].message.content)
 | [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [取得金鑰 →](https://www.coze.com/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得金鑰 →](https://dash.cloudflare.com/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得金鑰 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得金鑰 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得金鑰 →](https://experiments.hetzner.com/inference) |
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [取得金鑰 →](https://pollinations.ai) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得金鑰 →](https://requesty.ai/) |
@@ -209,15 +210,14 @@ print(response.choices[0].message.content)
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得金鑰 →](https://www.cerebrium.ai/) |
 | [DeepInfra](https://deepinfra.com/) | `https://api.deepinfra.com/v1/openai` | [取得金鑰 →](https://deepinfra.com/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得金鑰 →](https://ollama.com/cloud) |
-| [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得金鑰 →](https://portal.nousresearch.com) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [取得金鑰 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [取得金鑰 →](https://www.nscale.com/product/inference) |
-| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [取得金鑰 →](https://grokified.com) |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | `https://api.kilo.ai/api/gateway` | [取得金鑰 →](https://kilo.ai/gateway) |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [取得金鑰 →](https://vercel.com/ai-gateway) |
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [取得金鑰 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [取得金鑰 →](https://routeway.ai/) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
+| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [取得金鑰 →](https://grokified.com) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得金鑰 →](https://llm7.io) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得金鑰 →](https://inference.net/) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得金鑰 →](https://console.x.ai/) |
@@ -321,4 +321,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-09<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-10<!--LASTSYNC:END--></sub></p>
