@@ -112,8 +112,8 @@ print(response.choices[0].message.content)
 | [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP (free models, per community submission) | Default free models only | Free plan, no expiry | Kilo Auto Free, StepFun Step 3.7 Flash, Poolside Laguna S 2.1, Poolside Laguna XS 2.1 |
 | [Api.Airforce](https://api.airforce/) | 否 | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | 需註冊 | 5 RPM (community submission) | 200 requests/day | Starter plan free, shared queue | Step 3.7 Flash, GPT OSS 120B, Laguna XS.2, Gemma 4 31B |
-| [LLM7.io](https://llm7.io) | 否 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | Mistral Nemo Instruct 2407, Codestral Latest, Gemini 3.1 Flash-Lite, MiniMax M2.7 |
 | [Inference.net](https://inference.net/) | 否 | 30 RPM（合理使用） | Fair use policy | Verify: Inference.net website now emphasizes Tracing and Gateway products; free LLM inference terms not confirmed | DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct |
+| [LLM7.io](https://llm7.io) | 否 | 30 RPM (no signup) / 120 RPM (free email token) | Up to 5M tokens/day (rolling 24h, with free token) | Free, no billing | Mistral Nemo Instruct 2407, Codestral Latest, Gemini 3.1 Flash-Lite, MiniMax M2.7 |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 可續期額度
@@ -218,8 +218,8 @@ print(response.choices[0].message.content)
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [取得金鑰 →](https://routeway.ai/) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
 | [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [取得金鑰 →](https://grokified.com) |
-| [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得金鑰 →](https://llm7.io) |
 | [Inference.net](https://inference.net/) | `https://api.inference.net/v1` | [取得金鑰 →](https://inference.net/) |
+| [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得金鑰 →](https://llm7.io) |
 | [Grok (xAI)](https://console.x.ai/) | `https://api.x.ai/v1` | [取得金鑰 →](https://console.x.ai/) |
 <!--TABLE:QUICKREF:END-->
 
@@ -321,4 +321,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-10<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-11<!--LASTSYNC:END--></sub></p>
