@@ -123,9 +123,9 @@ Free access that renews periodically, no one-time expiry.
 |:---|:---:|:---|:---|:---|
 | [OpenRouter](https://openrouter.ai/) | No | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Liquid LFM 2.5 2.6B, Nemotron 3 Nano Omni 30B A3B Reasoning, Gemma 4 26B A4B IT, Gemma 4 31B IT |
 | [Requesty](https://requesty.ai/) | No | Concurrency-limited (no RPM cap published) | 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models | Mistral Leanstral 1.5, Meta Muse Glimmer 30B, inclusionAI Ling 3.1 Flash, Gemma 4 31B IT |
+| [Token Harbor](https://tokenharbor.ai) | Registration | Not published | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | Registration | Rate limited per model (lower than paid tier) | Monthly free credit (~$5, verify) | See provider |
 | [Onomeo](https://onomeo.com) | Registration | 12 requests/minute per key | 30 free-model calls every 5 hours per account | Auto (best free model), DeepSeek V4 Flash, DeepSeek V4 Pro, GLM 5.3 Flash |
-| [Token Harbor](https://tokenharbor.ai) | Registration | Not published | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 One-Time Trial Credits
@@ -195,6 +195,7 @@ Sign up and receive credits to use until depleted.
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [Get Key →](https://pollinations.ai) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [Get Key →](https://requesty.ai/) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [Get Key →](https://modelscope.cn) |
+| [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [Get Key →](https://tokenharbor.ai) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [Get Key →](https://www.cerebrium.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [Get Key →](https://ollama.com/cloud) |
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [Get Key →](https://siliconflow.com/pricing) |
@@ -205,7 +206,6 @@ Sign up and receive credits to use until depleted.
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [Get Key →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [Get Key →](https://routeway.ai/) |
 | [Onomeo](https://onomeo.com) | `https://onomeo.com/v1` | [Get Key →](https://onomeo.com) |
-| [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [Get Key →](https://tokenharbor.ai) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [Get Key →](https://grokified.com) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
@@ -309,4 +309,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-14<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-15<!--LASTSYNC:END--></sub></p>
