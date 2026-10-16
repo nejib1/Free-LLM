@@ -122,8 +122,8 @@ print(response.choices[0].message.content)
 | 提供商 | 需要信用卡？ | 速率限制 | 免费额度 | 主要模型 |
 |:---|:---:|:---|:---|:---|
 | [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Liquid LFM 2.5 2.6B, Nemotron 3 Nano Omni 30B A3B Reasoning, Gemma 4 26B A4B IT, Gemma 4 31B IT |
-| [Requesty](https://requesty.ai/) | 否 | Concurrency-limited (no RPM cap published) | 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models | Mistral Leanstral 1.5, Meta Muse Glimmer 30B, inclusionAI Ling 3.1 Flash, Gemma 4 31B IT |
 | [Token Harbor](https://tokenharbor.ai) | 需注册 | Not published | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
+| [Requesty](https://requesty.ai/) | 否 | Concurrency-limited (no RPM cap published) | 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models | Mistral Leanstral 1.5, Meta Muse Glimmer 30B, inclusionAI Ling 3.1 Flash, Gemma 4 31B IT |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | 需注册 | Rate limited per model (lower than paid tier) | Monthly free credit (~$5, verify) | See provider |
 | [Onomeo](https://onomeo.com) | 需注册 | 12 requests/minute per key | 30 free-model calls every 5 hours per account | Auto (best free model), DeepSeek V4 Flash, DeepSeek V4 Pro, GLM 5.3 Flash |
 <!--TABLE:RENEWABLE:END-->
@@ -146,8 +146,8 @@ print(response.choices[0].message.content)
 | [Upstage](https://console.upstage.ai/) | 需注册 | $10 | 3 个月 | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | 需注册 | $30 | 一次性 | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 否 | Minimum $5 top-up to start (no sign-up credit) | 一次性 | See provider |
-| [Friendli AI](https://friendli.ai/) | 需注册 | Trial credits at onboarding (amount not published) | 一次性 | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
 | [Grokified](https://grokified.com) | 否 | $5 | 一次性 | grok-4.6, grok-4.3, grok-build-0.1 |
+| [Friendli AI](https://friendli.ai/) | 需注册 | Trial credits at onboarding (amount not published) | 一次性 | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本地 / 自托管（无限、私密、永久免费）
@@ -193,11 +193,11 @@ print(response.choices[0].message.content)
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [获取密钥 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [获取密钥 →](https://experiments.hetzner.com/inference) |
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [获取密钥 →](https://pollinations.ai) |
-| [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [获取密钥 →](https://requesty.ai/) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [获取密钥 →](https://modelscope.cn) |
 | [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [获取密钥 →](https://tokenharbor.ai) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [获取密钥 →](https://www.cerebrium.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [获取密钥 →](https://ollama.com/cloud) |
+| [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [获取密钥 →](https://requesty.ai/) |
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [获取密钥 →](https://siliconflow.com/pricing) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [获取密钥 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [获取密钥 →](https://www.nscale.com/product/inference) |
@@ -206,8 +206,8 @@ print(response.choices[0].message.content)
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [获取密钥 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [获取密钥 →](https://routeway.ai/) |
 | [Onomeo](https://onomeo.com) | `https://onomeo.com/v1` | [获取密钥 →](https://onomeo.com) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [获取密钥 →](https://friendli.ai/) |
 | [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [获取密钥 →](https://grokified.com) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [获取密钥 →](https://friendli.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [获取密钥 →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
 
@@ -309,4 +309,4 @@ MIT — 详见 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-15<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-16<!--LASTSYNC:END--></sub></p>
