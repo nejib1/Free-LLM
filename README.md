@@ -112,7 +112,10 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Api.Airforce](https://api.airforce/) | No | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | Registration | 5 RPM on :free models | 200 requests/day | Starter plan free, shared queue | Muse Glimmer 30B, MiniMax M2.7, DeepSeek V4 Flash, Step 3.7 Flash |
 | [LLM7.io](https://llm7.io) | No | 1 req/s, 60/min, 250/hour (free token from dash.llm7.io) | 100,000 tokens per 24h (free token; may be reduced without notice) | Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
+| [IteraCompute](https://iteracompute.com/free/) | No; email/Google account required | 160,000 TPM per account | 30M tokens/month; no daily quota | Recurring monthly free quota, no top-up required | Qwen3.8-27B (`qwen/qwen3.8-27b`); 128K context, 8K max output |
 <!--TABLE:PERMANENT:END-->
+
+IteraCompute limits verified 2026-10-17: [free API and quota policy](https://iteracompute.com/free/). Input and output (including reasoning) count across account keys; reset on the first of each month at 00:00 UTC, with no rollover or automatic paid overage. Shared capacity may queue and has no SLA.
 
 ### 💰 Renewable Credits
 
@@ -209,6 +212,7 @@ Sign up and receive credits to use until depleted.
 | [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [Get Key →](https://grokified.com) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
+| [IteraCompute](https://iteracompute.com/free/) | `https://api.iteracompute.com/v1` | [Get Key →](https://platform.iteracompute.com/api-keys) |
 <!--TABLE:QUICKREF:END-->
 
 ---
