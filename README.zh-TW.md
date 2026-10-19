@@ -146,8 +146,8 @@ print(response.choices[0].message.content)
 | [Upstage](https://console.upstage.ai/) | 需註冊 | $10 | 3 個月 | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | 需註冊 | $30 | 一次性 | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 否 | Minimum $5 top-up to start (no sign-up credit) | 一次性 | See provider |
-| [Grokified](https://grokified.com) | 否 | $5 | 一次性 | grok-4.6, grok-4.3, grok-build-0.1 |
 | [Friendli AI](https://friendli.ai/) | 需註冊 | Trial credits at onboarding (amount not published) | 一次性 | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
+| [Grokified](https://grokified.com) | 否 | $5 | 一次性 | grok-4.6, grok-4.3, grok-build-0.1 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本機 / 自架（無限、私密、永久免費）
@@ -206,8 +206,8 @@ print(response.choices[0].message.content)
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [取得金鑰 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [取得金鑰 →](https://routeway.ai/) |
 | [Onomeo](https://onomeo.com) | `https://onomeo.com/v1` | [取得金鑰 →](https://onomeo.com) |
-| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [取得金鑰 →](https://grokified.com) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得金鑰 →](https://friendli.ai/) |
+| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [取得金鑰 →](https://grokified.com) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [取得金鑰 →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
 
@@ -309,4 +309,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-18<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-19<!--LASTSYNC:END--></sub></p>

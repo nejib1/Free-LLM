@@ -146,8 +146,8 @@ Sign up and receive credits to use until depleted.
 | [Upstage](https://console.upstage.ai/) | Registration | $10 | 3 months | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | Registration | $30 | One-time | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | No | Minimum $5 top-up to start (no sign-up credit) | One-time | See provider |
-| [Grokified](https://grokified.com) | No | $5 | One-time | grok-4.6, grok-4.3, grok-build-0.1 |
 | [Friendli AI](https://friendli.ai/) | Registration | Trial credits at onboarding (amount not published) | One-time | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
+| [Grokified](https://grokified.com) | No | $5 | One-time | grok-4.6, grok-4.3, grok-build-0.1 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ Local / Self-Hosted (Unlimited, Private, Free Forever)
@@ -206,8 +206,8 @@ Sign up and receive credits to use until depleted.
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [Get Key →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [Get Key →](https://routeway.ai/) |
 | [Onomeo](https://onomeo.com) | `https://onomeo.com/v1` | [Get Key →](https://onomeo.com) |
-| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [Get Key →](https://grokified.com) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
+| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [Get Key →](https://grokified.com) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
 
@@ -309,4 +309,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-18<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-19<!--LASTSYNC:END--></sub></p>

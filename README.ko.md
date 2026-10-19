@@ -146,8 +146,8 @@ print(response.choices[0].message.content)
 | [Upstage](https://console.upstage.ai/) | 가입 필요 | $10 | 3개월 | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 | $30 | 일회성 | See provider |
 | [Nscale](https://www.nscale.com/product/inference) | 불필요 | Minimum $5 top-up to start (no sign-up credit) | 일회성 | See provider |
-| [Grokified](https://grokified.com) | 불필요 | $5 | 일회성 | grok-4.6, grok-4.3, grok-build-0.1 |
 | [Friendli AI](https://friendli.ai/) | 가입 필요 | Trial credits at onboarding (amount not published) | 일회성 | DeepSeek V3.2, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
+| [Grokified](https://grokified.com) | 불필요 | $5 | 일회성 | grok-4.6, grok-4.3, grok-build-0.1 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 로컬 / 셀프호스팅 (무제한, 프라이빗, 영구 무료)
@@ -206,8 +206,8 @@ print(response.choices[0].message.content)
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [발급 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [발급 →](https://routeway.ai/) |
 | [Onomeo](https://onomeo.com) | `https://onomeo.com/v1` | [발급 →](https://onomeo.com) |
-| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [발급 →](https://grokified.com) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
+| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [발급 →](https://grokified.com) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [발급 →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
 
@@ -309,4 +309,4 @@ MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-18<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-19<!--LASTSYNC:END--></sub></p>
