@@ -99,16 +99,16 @@ print(response.choices[0].message.content)
 | [Groq](https://console.groq.com/) | 否 | 30 RPM; 8K TPM on most chat models (varies by model) | 1,000 requests/day and 200K tokens/day on gpt-oss / Qwen (varies by model) | Free Forever | Qwen3.8 27B, Whisper Large v3, Whisper Large v3 Turbo, GPT-OSS 120B |
 | [Z.AI (GLM)](https://z.ai/) | 需注册 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
 | [Coze](https://www.coze.com/) | 需注册 | 因模型而异 | 按 token 计算的每日限额 | 每日重置 | GPT-4o (via Coze), Gemini 1.5 Pro (via Coze) |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | Kimi K2.6, GLM-5.3 Flash, Qwen3.8 27B, DeepSeek V4.1 Flash |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go) | 未公布 | Beta Access | Llama 3.3 70B Instruct, GPT OSS 20B, GPT OSS 120B, Qwen3.5 9B |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | Kimi K2.6, GLM-5.3 Flash, Qwen3.8 27B, DeepSeek V4.1 Flash |
 | [Nous Portal](https://portal.nousresearch.com) | 否 | Standard rate limits (figures not published) | Free models only (no monthly credit) | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Ornith 1.5 122B, Reflection Beam 1.0, LongCat 2.5 Preview, Laguna XS 2.1 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 否 | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental) | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
 | [Pollinations.ai](https://pollinations.ai) | 否 | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
 | [ModelScope](https://modelscope.cn) | 需手机验证 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Step 3.7 Flash, MiniMax M3, GLM-5.2, DeepSeek V4.1 Flash |
+| [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3 Nano Omni Reasoning, LFM2.5 2.6B, Dots3-Note Preview, XingChen Xing4.0 29B A4B |
 | [Ollama Cloud](https://ollama.com/cloud) | 否 | Starter usage credits; starter models only (add credits to unlock all models) | Monthly starter allowance (resets monthly from sign-up date) | Weekly usage limit resets every 7 days | Reflection Beam (501B), Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud) |
 | [SiliconFlow](https://siliconflow.com/pricing) | 需手机验证 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published (daily credit allowance) | Daily free credit allowance (amount not published by Aion Labs) | Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
-| [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3 Nano Omni Reasoning, LFM2.5 2.6B, Dots3-Note Preview, XingChen Xing4.0 29B A4B |
 | [Api.Airforce](https://api.airforce/) | 否 | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | 需注册 | 5 RPM on :free models | 200 requests/day | Starter plan free, shared queue | Muse Glimmer 30B, MiniMax M2.7, DeepSeek V4 Flash |
 | [LLM7.io](https://llm7.io) | 否 | 1 req/s, 60/min, 250/hour (free token from dash.llm7.io) | 100,000 tokens per 24h (free token; may be reduced without notice) | Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
@@ -192,12 +192,13 @@ print(response.choices[0].message.content)
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [获取密钥 →](https://console.upstage.ai/) |
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [获取密钥 →](https://z.ai/) |
 | [Coze](https://www.coze.com/) | `https://api.coze.com/v1` | [获取密钥 →](https://www.coze.com/) |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [获取密钥 →](https://dash.cloudflare.com/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [获取密钥 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [获取密钥 →](https://dash.cloudflare.com/) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [获取密钥 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [获取密钥 →](https://experiments.hetzner.com/inference) |
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [获取密钥 →](https://pollinations.ai) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [获取密钥 →](https://modelscope.cn) |
+| [Kilo AI Gateway](https://kilo.ai/gateway) | `https://api.kilo.ai/api/gateway` | [获取密钥 →](https://kilo.ai/gateway) |
 | [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [获取密钥 →](https://tokenharbor.ai) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [获取密钥 →](https://www.cerebrium.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [获取密钥 →](https://ollama.com/cloud) |
@@ -205,7 +206,6 @@ print(response.choices[0].message.content)
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [获取密钥 →](https://siliconflow.com/pricing) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [获取密钥 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [获取密钥 →](https://www.nscale.com/product/inference) |
-| [Kilo AI Gateway](https://kilo.ai/gateway) | `https://api.kilo.ai/api/gateway` | [获取密钥 →](https://kilo.ai/gateway) |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [获取密钥 →](https://vercel.com/ai-gateway) |
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [获取密钥 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [获取密钥 →](https://routeway.ai/) |
@@ -317,4 +317,4 @@ MIT — 详见 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-21<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-22<!--LASTSYNC:END--></sub></p>
