@@ -103,9 +103,9 @@ print(response.choices[0].message.content)
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 依模型而異 | 每天 10,000 neurons | ~300,000 neurons/month | Kimi K2.6, GLM-5.3 Flash, Qwen3.8 27B, DeepSeek V4.1 Flash |
 | [Nous Portal](https://portal.nousresearch.com) | 否 | Standard rate limits (figures not published) | Free models only (no monthly credit) | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Ornith 1.5 122B, Reflection Beam 1.0, LongCat 2.5 Preview, Laguna XS 2.1 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 否 | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental) | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
-| [Pollinations.ai](https://pollinations.ai) | 否 | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3 Nano Omni Reasoning, LFM2.5 2.6B, Dots3-Note Preview, XingChen Xing4.0 29B A4B |
 | [Ollama Cloud](https://ollama.com/cloud) | 否 | Starter usage credits; starter models only (add credits to unlock all models) | Monthly starter allowance (resets monthly from sign-up date) | Weekly usage limit resets every 7 days | Reflection Beam (501B), Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud) |
+| [Pollinations.ai](https://pollinations.ai) | 否 | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
 | [SiliconFlow](https://siliconflow.com/pricing) | 需電話驗證 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | [ModelScope](https://modelscope.cn) | 需電話驗證 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Step 3.7 Flash, MiniMax M3, GLM-5.2, DeepSeek V4.1 Flash |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published (daily credit allowance) | Daily free credit allowance (amount not published by Aion Labs) | Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
@@ -196,11 +196,11 @@ print(response.choices[0].message.content)
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得金鑰 →](https://dash.cloudflare.com/) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得金鑰 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得金鑰 →](https://experiments.hetzner.com/inference) |
-| [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [取得金鑰 →](https://pollinations.ai) |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | `https://api.kilo.ai/api/gateway` | [取得金鑰 →](https://kilo.ai/gateway) |
 | [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [取得金鑰 →](https://tokenharbor.ai) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得金鑰 →](https://www.cerebrium.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得金鑰 →](https://ollama.com/cloud) |
+| [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [取得金鑰 →](https://pollinations.ai) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得金鑰 →](https://requesty.ai/) |
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [取得金鑰 →](https://siliconflow.com/pricing) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得金鑰 →](https://modelscope.cn) |
@@ -317,4 +317,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-30<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-31<!--LASTSYNC:END--></sub></p>
