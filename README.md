@@ -112,6 +112,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Api.Airforce](https://api.airforce/) | No | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | Registration | 5 RPM on :free models | 200 requests/day | Starter plan free, shared queue | Muse Glimmer 30B, MiniMax M2.7, DeepSeek V4 Flash |
 | [LLM7.io](https://llm7.io) | No | 1 req/s, 60/min, 250/hour (free token from dash.llm7.io) | 100,000 tokens per 24h (free token; may be reduced without notice) | Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
+| [Merkium](https://www.merkium.nl) | No | 30 RPM per API key (1 request every 2 seconds) | No daily cap published | Free permanently, no expiry ([pricing](https://www.merkium.nl/pricing)) | Ganymede 1.1 |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
@@ -217,6 +218,7 @@ Sign up and receive credits to use until depleted.
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [Get Key →](https://grokified.com) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
+| [Merkium](https://www.merkium.nl) | `https://chat.merkium.nl/api/v1` | [Get Key →](https://chat.merkium.nl) |
 <!--TABLE:QUICKREF:END-->
 
 ---
