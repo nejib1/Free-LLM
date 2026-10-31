@@ -92,6 +92,7 @@ Ongoing free access with rate-limited quotas that never expire.
 <!--TABLE:PERMANENT:START-->
 | Provider | Credit Card? | Rate Limit | Daily Limit | Monthly Limit | Key Models |
 |:---|:---:|:---|:---|:---|:---|
+| [NovAI](https://aiapi-pro.com/free) | No | 5 requests/min before the first top-up (no NovAI-side cap after) | - | - | glm-4.7-flash, glm-4.6v-flash, glm-4.1v-thinking-flash, cogview-3-flash, cogvideox-flash |
 | [Google AI Studio](https://aistudio.google.com/) | No | Varies by model (per-model limits are now shown only inside AI Studio) | Varies by model. Free: Flash, Flash-Lite and Gemini 2.5 Pro; Gemini 3.x Pro models are paid | Free of charge | Gemini 3 Flash Preview, Gemini 2.5 Flash-Lite, Gemini 3.1 Flash-Lite, Gemini 3.5 Flash-Lite |
 | [Mistral (La Plateforme)](https://console.mistral.ai/) | Phone verification | 1 request/second | - | Free | Codestral 2508, Ministral 3 8B, Ministral 3 14B, Mistral Large 3 |
 | [Cohere](https://cohere.com/) | No | 20 requests/minute | 1,000 API calls/month (trial key) | 1,000 API calls/month (trial key, non-commercial) | North Mini Code, Command A Reasoning, Command R+ (08-2024), Command R (08-2024) |
