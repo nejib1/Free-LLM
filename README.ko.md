@@ -104,10 +104,10 @@ print(response.choices[0].message.content)
 | [Nous Portal](https://portal.nousresearch.com) | 불필요 | Standard rate limits (figures not published) | Free models only (no monthly credit) | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | Ornith 1.5 122B, Reflection Beam 1.0, LongCat 2.5 Preview, Laguna XS 2.1 |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | 불필요 | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental) | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
 | [Pollinations.ai](https://pollinations.ai) | 불필요 | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
+| [ModelScope](https://modelscope.cn) | 전화번호 인증 필요 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Step 3.7 Flash, MiniMax M3, GLM-5.2, DeepSeek V4.1 Flash |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | 불필요 | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3 Nano Omni Reasoning, LFM2.5 2.6B, Dots3-Note Preview, XingChen Xing4.0 29B A4B |
 | [Ollama Cloud](https://ollama.com/cloud) | 불필요 | Starter usage credits; starter models only (add credits to unlock all models) | Monthly starter allowance (resets monthly from sign-up date) | Weekly usage limit resets every 7 days | Reflection Beam (501B), Gemma 4, DeepSeek V4.1 Flash, GPT-OSS 120B (Cloud) |
 | [SiliconFlow](https://siliconflow.com/pricing) | 전화번호 인증 필요 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
-| [ModelScope](https://modelscope.cn) | 전화번호 인증 필요 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Step 3.7 Flash, MiniMax M3, GLM-5.2, DeepSeek V4.1 Flash |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 불필요 | Not published (daily credit allowance) | Daily free credit allowance (amount not published by Aion Labs) | Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
 | [Api.Airforce](https://api.airforce/) | 불필요 | 1 RPM | 1,000 requests/day | Free plan, $0/month | See provider |
 | [Routeway](https://routeway.ai/) | 가입 필요 | 5 RPM on :free models | 200 requests/day | Starter plan free, shared queue | Muse Glimmer 30B, MiniMax M2.7, DeepSeek V4 Flash |
@@ -122,10 +122,10 @@ print(response.choices[0].message.content)
 | 제공업체 | 신용카드? | 속도 제한 | 무료 제공량 | 주요 모델 |
 |:---|:---:|:---|:---|:---|
 | [OpenRouter](https://openrouter.ai/) | 불필요 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Nemotron 3.5 Super VL, XingChen Xing4.0 29B A4B, MiniMax M3.1 Flash, Liquid LFM 2.5 2.6B |
-| [Token Harbor](https://tokenharbor.ai) | 가입 필요 | 60 requests/min and 1,800/hour per account (100/min, 3,000/hour per IP) | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
 | [Requesty](https://requesty.ai/) | 불필요 | 20 RPM on free models (60 RPM for paying orgs) | 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models | Ling 3.0 Tiny, Nemotron 3 Nano Omni Reasoning, Nemotron 3 Nano 30B A3B, Mistral Leanstral 1.5 |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | 가입 필요 | Rate limited per model (lower than paid tier) | Monthly free credit (~$5, verify) | See provider |
 | [Onomeo](https://onomeo.com) | 가입 필요 | 12 requests/minute per key | 30 free-model calls every 5 hours per account | Glyph Cluster (stealth), Gemini 3.5 Flash-Lite, Muse Glimmer 30B, GLM-4.6V Flash |
+| [Token Harbor](https://tokenharbor.ai) | 가입 필요 | 60 requests/min and 1,800/hour per account (100/min, 3,000/hour per IP) | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
 | [IteraCompute](https://iteracompute.com/free/) | 가입 필요 | 160K tokens/minute (fair use, may queue) | No daily cap; 30M tokens per month | Qwen3.8 27B |
 | [BazaarLink](https://bazaarlink.ai/free) | 가입 필요 | 10 RPM (20 RPM with any credit), 2 concurrent requests | 60 weighted units/day (120 with credit), resets 00:00 UTC | Qwen3.7 Flash, Reflection Beam (free), Nemotron 3.5 Lightning (free), Glyph Cluster (stealth) |
 <!--TABLE:RENEWABLE:END-->
@@ -147,11 +147,11 @@ print(response.choices[0].message.content)
 | [AI21 Labs](https://docs.ai21.com/) | 가입 필요 | $10 (valid 7 days, no card) | 3개월 | Jamba Large, Jamba Mini |
 | [Upstage](https://console.upstage.ai/) | 가입 필요 | $10 sign-up credit (announced by Upstage; not shown on the pricing page, verify) | 3개월 | See provider |
 | [Cerebrium](https://www.cerebrium.ai/) | 가입 필요 | No sign-up credit shown on the pricing page (Hobby plan: free platform, compute billed per second) | 일회성 | See provider |
-| [Nscale](https://www.nscale.com/product/inference) | 가입 필요 | No sign-up credit: minimum $5 card top-up (early users may get free credits) | 일회성 | See provider |
-| [Inception Labs](https://www.inceptionlabs.ai/) | 불필요 | — | — | Mercury 3, Mercury 2.5, Mercury 2 |
-| [Dahl Inference](https://inference.dahl.global/) | 가입 필요 | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
 | [Friendli AI](https://friendli.ai/) | 가입 필요 | Trial credits at onboarding (amount not published) | 일회성 | GLM-5.1, DeepSeek V3.2, Gemma 4 31B, GLM 5.2 |
+| [Nscale](https://www.nscale.com/product/inference) | 가입 필요 | No sign-up credit: minimum $5 card top-up (early users may get free credits) | 일회성 | See provider |
+| [Dahl Inference](https://inference.dahl.global/) | 가입 필요 | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
 | [Grokified](https://grokified.com) | 불필요 | $5 | 일회성 | grok-4.6, grok-4.3, grok-build-0.1 |
+| [Inception Labs](https://www.inceptionlabs.ai/) | 불필요 | — | — | Mercury 3, Mercury 2.5, Mercury 2 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 로컬 / 셀프호스팅 (무제한, 프라이빗, 영구 무료)
@@ -197,25 +197,25 @@ print(response.choices[0].message.content)
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [발급 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [발급 →](https://experiments.hetzner.com/inference) |
 | [Pollinations.ai](https://pollinations.ai) | `https://text.pollinations.ai` | [발급 →](https://pollinations.ai) |
+| [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [발급 →](https://modelscope.cn) |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | `https://api.kilo.ai/api/gateway` | [발급 →](https://kilo.ai/gateway) |
-| [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [발급 →](https://tokenharbor.ai) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [발급 →](https://www.cerebrium.ai/) |
+| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [발급 →](https://ollama.com/cloud) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [발급 →](https://requesty.ai/) |
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [발급 →](https://siliconflow.com/pricing) |
-| [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [발급 →](https://modelscope.cn) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [발급 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [발급 →](https://www.nscale.com/product/inference) |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [발급 →](https://vercel.com/ai-gateway) |
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [발급 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [발급 →](https://routeway.ai/) |
 | [Onomeo](https://onomeo.com) | `https://onomeo.com/v1` | [발급 →](https://onomeo.com) |
+| [Token Harbor](https://tokenharbor.ai) | `https://tokenharbor.ai/v1` | [발급 →](https://tokenharbor.ai) |
 | [IteraCompute](https://iteracompute.com/free/) | `https://api.iteracompute.com/v1` | [발급 →](https://iteracompute.com/free/) |
-| [Inception Labs](https://www.inceptionlabs.ai/) | `https://api.inceptionlabs.ai/v1` | [발급 →](https://www.inceptionlabs.ai/) |
 | [BazaarLink](https://bazaarlink.ai/free) | `https://api.bazaarlink.ai/v1` | [발급 →](https://bazaarlink.ai/free) |
 | [Dahl Inference](https://inference.dahl.global/) | `https://inference.dahl.global/v1` | [발급 →](https://inference.dahl.global/) |
-| [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [발급 →](https://friendli.ai/) |
 | [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [발급 →](https://grokified.com) |
+| [Inception Labs](https://www.inceptionlabs.ai/) | `https://api.inceptionlabs.ai/v1` | [발급 →](https://www.inceptionlabs.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [발급 →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
 
@@ -317,4 +317,4 @@ MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-10-29<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-01<!--LASTSYNC:END--></sub></p>
