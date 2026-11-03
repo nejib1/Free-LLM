@@ -149,8 +149,8 @@ print(response.choices[0].message.content)
 | [Cerebrium](https://www.cerebrium.ai/) | 需注册 | No sign-up credit shown on the pricing page (Hobby plan: free platform, compute billed per second) | 一次性 | See provider |
 | [Friendli AI](https://friendli.ai/) | 需注册 | Trial credits at onboarding (amount not published) | 一次性 | GLM-5.1, DeepSeek V3.2, Gemma 4 31B, GLM 5.2 |
 | [Nscale](https://www.nscale.com/product/inference) | 需注册 | No sign-up credit: minimum $5 card top-up (early users may get free credits) | 一次性 | See provider |
-| [Dahl Inference](https://inference.dahl.global/) | 需注册 | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
 | [Grokified](https://grokified.com) | 否 | $5 | 一次性 | grok-4.6, grok-4.3, grok-build-0.1 |
+| [Dahl Inference](https://inference.dahl.global/) | 需注册 | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
 | [Inception Labs](https://www.inceptionlabs.ai/) | 否 | — | — | Mercury 3, Mercury 2.5, Mercury 2 |
 <!--TABLE:TRIAL:END-->
 
@@ -206,6 +206,7 @@ print(response.choices[0].message.content)
 | [SiliconFlow](https://siliconflow.com/pricing) | `https://api.siliconflow.com/v1` | [获取密钥 →](https://siliconflow.com/pricing) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [获取密钥 →](https://www.aionlabs.ai/pricing/) |
 | [Nscale](https://www.nscale.com/product/inference) | `https://inference.api.nscale.com/v1` | [获取密钥 →](https://www.nscale.com/product/inference) |
+| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [获取密钥 →](https://grokified.com) |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | `https://ai-gateway.vercel.sh/v1` | [获取密钥 →](https://vercel.com/ai-gateway) |
 | [Api.Airforce](https://api.airforce/) | `https://api.airforce/v1` | [获取密钥 →](https://api.airforce/) |
 | [Routeway](https://routeway.ai/) | `https://api.routeway.ai/v1` | [获取密钥 →](https://routeway.ai/) |
@@ -214,7 +215,6 @@ print(response.choices[0].message.content)
 | [IteraCompute](https://iteracompute.com/free/) | `https://api.iteracompute.com/v1` | [获取密钥 →](https://iteracompute.com/free/) |
 | [BazaarLink](https://bazaarlink.ai/free) | `https://api.bazaarlink.ai/v1` | [获取密钥 →](https://bazaarlink.ai/free) |
 | [Dahl Inference](https://inference.dahl.global/) | `https://inference.dahl.global/v1` | [获取密钥 →](https://inference.dahl.global/) |
-| [Grokified](https://grokified.com) | `https://api.grokified.com/v1` | [获取密钥 →](https://grokified.com) |
 | [Inception Labs](https://www.inceptionlabs.ai/) | `https://api.inceptionlabs.ai/v1` | [获取密钥 →](https://www.inceptionlabs.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [获取密钥 →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
@@ -317,4 +317,4 @@ MIT — 详见 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-02<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-03<!--LASTSYNC:END--></sub></p>
