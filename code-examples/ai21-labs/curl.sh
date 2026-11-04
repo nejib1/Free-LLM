@@ -8,7 +8,7 @@ curl https://api.ai21.com/studio/v1/chat/completions \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "jamba-large",
+    "model": "model-name",
     "messages": [
       {
         "role": "user",

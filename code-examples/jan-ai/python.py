@@ -13,7 +13,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="prism-ml/Ternary-Bonsai-2-27B-gguf",
+    model="gpt-oss-20b",
     messages=[
         {"role": "user", "content": "Write a haiku about local AI"}
     ]

@@ -1,0 +1,21 @@
+// ===============================================
+// Arli AI - Code Example
+// Free LLM API - https://free-llm.com
+// Provider URL: https://www.arliai.com/pricing
+// ===============================================
+
+import OpenAI from 'openai';
+
+const client = new OpenAI({
+  apiKey: 'YOUR_ARLI_AI_KEY',
+  baseURL: 'https://api.arliai.com/v1'
+});
+
+const response = await client.chat.completions.create({
+  model: 'Qwen3.5-27B-Derestricted',
+  messages: [
+    { role: 'user', content: 'Give me three tips for writing clean code.' }
+  ]
+});
+
+console.log(response.choices[0].message.content);

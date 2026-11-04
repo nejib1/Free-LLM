@@ -4,7 +4,7 @@
 
 ## About
 
-The easiest way to discover, download, and run local LLMs. Features a beautiful UI, GPU offloading, and a built-in local server that mimics OpenAI's API. Perfect for non-technical users.
+The easiest way to discover, download and run local LLMs, with a polished desktop app, GPU offloading and a built-in local server that speaks the OpenAI API and, since version 0.4.22, the Anthropic Messages API (Claude Code can point at http://localhost:1234). Recent versions (0.4.28, October 2026) added speculative decoding drafters and a companion agent app, Bionic. Good choice for non-technical users.
 
 **Official Website:** [https://lmstudio.ai/](https://lmstudio.ai/)
 

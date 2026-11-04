@@ -4,7 +4,7 @@
 
 ## About
 
-The most zero-friction free AI API around — no API key and no signup needed at all for basic text generation, via a simple GET-request URL scheme. Supports Claude, GPT, Gemini, DeepSeek, Llama and Mistral-class text models, plus image and audio generation. A free API key raises the rate limits further.
+Open-source generative AI platform for text, image and audio. Anonymous access was removed: you now need a free secret key from enter.pollinations.ai (no card). Free usage is paid from Quest Pollen earned in the dashboard; the OpenAI-compatible endpoint is https://gen.pollinations.ai/v1 with models such as GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM-5.3 Flash and DeepSeek V4 Flash.
 
 **Official Website:** [https://pollinations.ai](https://pollinations.ai)
 

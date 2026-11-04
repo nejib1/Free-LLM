@@ -4,7 +4,7 @@
 
 ## About
 
-A single-file GGUF inference engine for LLMs. Oriented towards storytelling and roleplay, with rich features for context management and world info.
+A single-file GGUF inference engine built on llama.cpp, aimed at storytelling and roleplay, with rich context management, world info and an OpenAI-compatible API. Recent versions (1.124, October 2026) bundle text-to-speech models and music generation through audio.cpp.
 
 **Official Website:** [https://github.com/LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp)
 

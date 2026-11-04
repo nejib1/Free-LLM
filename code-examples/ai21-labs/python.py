@@ -9,7 +9,7 @@ import ai21
 client = ai21.AI21Client(api_key="YOUR_API_KEY")
 
 response = client.chat.completions.create(
-    model="jamba-large",
+    model="model-name",
     messages=[
         {"role": "user", "content": "Explain the Mamba architecture"}
     ]

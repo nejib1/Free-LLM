@@ -8,7 +8,7 @@ curl https://router.requesty.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_REQUESTY_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "novita/inclusionai/ling-3.0-tiny",
+    "model": "google/gemma-4-31b-it",
     "messages": [
       {"role": "user", "content": "Give me three tips for writing clean code."}
     ]

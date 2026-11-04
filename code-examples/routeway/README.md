@@ -4,7 +4,7 @@
 
 ## About
 
-Unified OpenAI-compatible API to 100+ models. The Starter (free) plan has 200 requests per day on experimental models in a shared queue (a community submission reports 5 RPM and models marked :free such as Step 3.7 Flash, GPT OSS 120B, Laguna XS.2, Gemma 4 31B). Paid plans start at $6.99 per 2 weeks.
+Unified OpenAI-compatible API to 100+ models. Models ending in :free are limited to 5 requests per minute and 200 requests per day; in November 2026 they include DeepSeek V4.1 Flash, MiniMax M3.1 Flash and Muse Glimmer 30B, plus several community Gemma 4 fine-tunes. Paid plans start at $6.99 per 2 weeks.
 
 **Official Website:** [https://routeway.ai/](https://routeway.ai/)
 

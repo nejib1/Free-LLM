@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **Discontinued** — this provider has shut down or is no longer operating. These examples are kept for reference only.
+
 ## About
 
 Creators of the Jamba model family, the world's first production-grade Mamba-based LLMs. Offers massive context windows with high throughput. $10 free credits for new users.

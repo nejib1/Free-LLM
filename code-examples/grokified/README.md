@@ -4,7 +4,7 @@
 
 ## About
 
-Independent OpenAI-compatible reseller of xAI Grok models at 50% of list price (not operated by xAI; run by DEEPORAX AI LTD, UK company 17293947). New accounts get a one-time $5 credit with no credit card. It is a trial credit, not a permanent free tier. Free-credit limits: 32,000 input tokens per request and $3/hour, $8/day of spend; grok-4.7 requires a paid plan.
+Independent OpenAI-compatible reseller of xAI Grok models at about half of list price (not operated by xAI; run by DEEPORAX AI LTD, UK company 17293947). New accounts get a one-time $5 credit with no credit card, usable on all Grok models including Grok 4.7. Grokified applies no rate limit of its own (429 only when the shared upstream pool is busy); when the credit runs out the key returns HTTP 402. It is a trial credit, not a permanent free tier.
 
 **Official Website:** [https://grokified.com](https://grokified.com)
 
