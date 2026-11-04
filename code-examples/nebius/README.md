@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 Efficient AI inference studio. Access a wide range of open-source models with low latency and cost-effective pricing.

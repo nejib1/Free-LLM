@@ -4,7 +4,7 @@
 
 ## About
 
-Serverless GPU infrastructure for AI models. Deploy any model in minutes with automatic scaling. New users receive $30 in free compute credits.
+Serverless GPU infrastructure for deploying your own AI models with per-second billing and autoscaling. The Hobby plan has no monthly fee, but compute is always billed; Cerebrium's pricing page no longer shows a sign-up credit. Useful for hosting a model you choose, not a free shared API.
 
 **Official Website:** [https://www.cerebrium.ai/](https://www.cerebrium.ai/)
 

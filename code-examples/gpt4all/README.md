@@ -4,7 +4,7 @@
 
 ## About
 
-A free-to-use, locally running, privacy-aware chatbot. No GPU or internet required. Runs on popular consumer hardware using CPU quantization.
+A free, locally running, privacy-aware desktop chatbot from Nomic that runs on consumer CPUs. Note: the project looks inactive (last release v3.10.0 in February 2025, no commits since May 2025), so newer model families may not load; LM Studio, Jan or Ollama are better maintained alternatives.
 
 **Official Website:** [https://gpt4all.io/](https://gpt4all.io/)
 

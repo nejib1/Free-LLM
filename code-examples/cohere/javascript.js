@@ -11,7 +11,7 @@ const cohere = new CohereClientV2({
 });
 
 const response = await cohere.chat({
-  model: 'command-r-plus-08-2024',
+  model: 'command-a-03-2025',
   messages: [
     { role: 'user', content: 'What is retrieval augmented generation?' }
   ]

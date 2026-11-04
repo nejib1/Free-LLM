@@ -9,7 +9,7 @@ import cohere
 co = cohere.ClientV2(api_key="YOUR_COHERE_KEY")
 
 response = co.chat(
-    model="command-r-plus-08-2024",
+    model="command-a-03-2025",
     messages=[
         {"role": "user", "content": "What is retrieval augmented generation?"}
     ]

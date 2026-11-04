@@ -4,7 +4,7 @@
 
 ## About
 
-Hetzner (a major EU cloud/hosting company) quietly launched an experimental, OpenAI-compatible inference API in July 2026 to gauge demand before deciding whether to build a full product. Currently serves one model with very generous rate limits, hosted on EU (Germany/Finland) servers, no billing system yet. No SLA — features and availability could change or be pulled at any time.
+Hetzner (a major EU cloud/hosting company) runs an experimental, OpenAI-compatible inference API launched in July 2026 to gauge demand. It is free while experimental and serves two models, Qwen3.6 35B A3B and Qwen3.8 27B (262K context, text and image), on EU servers (Germany/Finland). Limits: 10 requests and 4M input / 100K output tokens per minute per key. No SLA: features and availability could change or be pulled at any time.
 
 **Official Website:** [https://experiments.hetzner.com/inference](https://experiments.hetzner.com/inference)
 

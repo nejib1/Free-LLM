@@ -1,0 +1,64 @@
+name: Add a provider
+description: Suggest a free (or free-trial) LLM API that is missing from the list
+title: "Add provider: "
+labels: ["new provider"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! The provider tables are generated from the database behind free-llm.com, so we add providers there after checking the official pages. You can also use the form at https://free-llm.com/submit.
+  - type: input
+    id: name
+    attributes:
+      label: Provider name and website
+      placeholder: "Example AI - https://example.ai"
+    validations:
+      required: true
+  - type: input
+    id: pricing
+    attributes:
+      label: Official page that shows the free tier or trial
+      description: A link to the provider's own pricing, limits or docs page.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of free access
+      options:
+        - Permanent free tier (rate limited)
+        - Renewable allowance (daily / weekly / monthly)
+        - One-time trial credit
+        - Local / self-hosted tool
+    validations:
+      required: true
+  - type: dropdown
+    id: card
+    attributes:
+      label: What does sign-up require?
+      options:
+        - Email only
+        - Phone verification
+        - Credit card
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: endpoint
+    attributes:
+      label: API base URL (and is it OpenAI-compatible?)
+      placeholder: "https://api.example.ai/v1 (OpenAI-compatible)"
+  - type: textarea
+    id: models
+    attributes:
+      label: Free model IDs
+      description: 3 to 8 model IDs exactly as the API expects them.
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Are you affiliated with this provider?
+      options:
+        - "No"
+        - "Yes, I work for / run it"
+    validations:
+      required: true

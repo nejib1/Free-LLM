@@ -12,9 +12,9 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model="novita/inclusionai/ling-3.0-tiny",
     messages=[
-        {"role": "user", "content": "Explain AI routing"}
+        {"role": "user", "content": "Give me three tips for writing clean code."}
     ]
 )
 

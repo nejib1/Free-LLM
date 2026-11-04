@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'deepseek-r1',
+  model: 'nemotron-3-nano:30b',
   messages: [{ role: 'user', content: 'Hello!' }]
 });
 

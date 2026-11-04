@@ -1,6 +1,6 @@
 # OpenCode — Free LLM API Config
 
-> Last verified: October 2026. Free-tier models change often — check the provider pages on [free-llm.com](https://free-llm.com) before relying on a specific model.
+> Last verified: November 4, 2026. Free-tier models change often — check the provider pages on [free-llm.com](https://free-llm.com) before relying on a specific model.
 
 Point OpenCode at any free OpenAI-compatible backend in 30 seconds.
 
@@ -26,7 +26,7 @@ export GOOGLE_API_KEY="your_google_ai_studio_key"
 
 Get your key at [aistudio.google.com](https://aistudio.google.com/). Recommended model: `gemini-3.8-flash` (Gemini 2.0 was shut down on June 1, 2026; Pro models are no longer on the free tier).
 
-### OpenRouter (~14 free models, single key, no credit card)
+### OpenRouter (~13 free models, single key, no credit card)
 
 ```bash
 export OPENROUTER_API_KEY="sk-or-v1-your_openrouter_key"

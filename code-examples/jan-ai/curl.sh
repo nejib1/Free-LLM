@@ -8,7 +8,7 @@
 curl http://localhost:1337/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "llama3-8b-instruct",
+    "model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
     "messages": [
       {
         "role": "user",

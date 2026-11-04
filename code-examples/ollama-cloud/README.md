@@ -4,7 +4,7 @@
 
 ## About
 
-Ollama's official hosted inference API — the same models you'd run locally, offloaded to Ollama's cloud so you don't need the hardware. Free tier is light usage: one concurrent model, sessions reset every few hours.
+Ollama's hosted API for running large open models without a GPU, using the same Ollama CLI and API. Since early November 2026 the plans are pay-as-you-go ($0 subscription, billed per token), Pro ($20/month) and Max ($100/month); the only cloud model labelled free is Reflection's Beam (beam:cloud, 1M context).
 
 **Official Website:** [https://ollama.com/cloud](https://ollama.com/cloud)
 

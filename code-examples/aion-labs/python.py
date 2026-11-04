@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="model-name",
+    model="aion-labs/aion-2.0",
     messages=[
         {"role": "user", "content": "Hello!"}
     ]

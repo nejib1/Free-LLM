@@ -4,7 +4,7 @@
 
 ## About
 
-The Swiss Army Knife of local LLMs. Highly customizable Gradio interface for running Large Language Models like Llama, GPT-J, OPT, and GALACTICA locally.
+oobabooga's text-generation-webui (now renamed TextGen): a highly customizable Gradio interface for running local LLMs with several back ends (llama.cpp, ExLlama, Transformers) and an OpenAI-compatible API. Development has slowed in 2026 (last release v4.9 in May).
 
 **Official Website:** [https://github.com/oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)
 

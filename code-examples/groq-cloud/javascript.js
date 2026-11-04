@@ -16,7 +16,7 @@ async function main() {
         content: "Explain the importance of fast language models",
       },
     ],
-    model: "qwen/qwen3.6-27b",
+    model: "openai/gpt-oss-120b",
   });
 
   console.log(chatCompletion.choices[0].message.content);

@@ -1,40 +1,39 @@
-# Cursor — Free LLM API Config
+# Cursor with free LLM APIs
 
-Add a free model as a custom OpenAI-compatible model in Cursor.
+Add a free model to Cursor as a custom OpenAI-compatible model.
 
-## How It Works
+> Last checked: November 4, 2026. Free tiers change often, so check [free-llm.com](https://free-llm.com) before relying on one.
 
-Cursor lets you add custom models under **Settings → Models → Add Model**, as long as the provider exposes an OpenAI-compatible `/chat/completions` endpoint.
+## How it works
 
-## Quick Config
+Cursor lets you add your own models under **Settings → Models**, as long as the provider exposes an OpenAI-compatible `/chat/completions` endpoint. You override the OpenAI base URL and add the model name.
+
+## Quick config (Groq example)
 
 1. Open **Settings → Models**
-2. Click **Add Model**
-3. Fill in:
+2. Under **API Keys**, enable **Override OpenAI Base URL** and enter `https://api.groq.com/openai/v1`
+3. Paste your Groq key in the OpenAI API key field (get one at [console.groq.com/keys](https://console.groq.com/keys), no card)
+4. Click **Add model** and type `openai/gpt-oss-120b`
+5. Turn off the built-in models you don't want so Cursor doesn't send their names to Groq
 
-```
-Model name: llama-3.3-70b-versatile
-Base URL:   https://api.groq.com/openai/v1
-API key:    your-groq-key          # get at console.groq.com/keys
-```
+## Other free providers that work the same way
 
-4. Disable "OpenAI API Key" verification if Cursor asks — it only applies to official OpenAI models.
-
-### Other free providers that work the same way
-
-| Provider | Base URL | Get Key | Credit Card? |
-|---|---|---|---|
-| Groq | `https://api.groq.com/openai/v1` | [console.groq.com/keys](https://console.groq.com/keys) | No |
-| NVIDIA NIM | `https://integrate.api.nvidia.com/v1` | [build.nvidia.com](https://build.nvidia.com/settings/api-keys) | Phone verification |
-| OpenRouter | `https://openrouter.ai/api/v1` | [openrouter.ai/keys](https://openrouter.ai/keys) | No |
-| Cerebras | `https://api.cerebras.ai/v1` | [cloud.cerebras.ai](https://cloud.cerebras.ai/) | No |
-| Mistral (La Plateforme) | `https://api.mistral.ai/v1` | [console.mistral.ai/api-keys](https://console.mistral.ai/api-keys) | Phone verification |
+| Provider | Base URL | Model to add | Card? |
+|:---|:---|:---|:---|
+| Groq | `https://api.groq.com/openai/v1` | `openai/gpt-oss-120b`, `qwen/qwen3.8-27b` | No |
+| OpenRouter | `https://openrouter.ai/api/v1` | `nvidia/nemotron-3-ultra-550b-a55b:free`, `cohere/north-mini-code:free` | No |
+| NVIDIA NIM | `https://integrate.api.nvidia.com/v1` | `moonshotai/kimi-k2.6`, `z-ai/glm-5.3-flash` | Phone verification |
+| Mistral | `https://api.mistral.ai/v1` | `codestral-latest`, `mistral-small-latest` | Phone verification |
+| Google AI Studio | `https://generativelanguage.googleapis.com/v1beta/openai` | `gemini-3.8-flash` | No |
+| Kilo Gateway | `https://ai-gateway.kilo.ai/api/v1` | `nvidia/nemotron-3.5-lightning:free` | No |
+| Cerebras | `https://api.cerebras.ai/v1` | `gpt-oss-120b` | Card required for the $5 credit |
 
 ## Caveats
 
-- Cursor's Tab/Composer features are tuned for specific models and may work best with the officially supported ones — free models work great for chat and inline edits, results vary for agentic multi-file edits.
-- Rate limits apply per provider — see the [Provider Directory](../README.md#provider-directory) for details.
+- Only one custom base URL can be active at a time, because it replaces the OpenAI one.
+- Tab completion and some agent features use Cursor's own models and don't go through your key. Custom models work well for chat and inline edits; results vary for long multi-file agent runs.
+- Rate limits apply per provider. See each provider's page on [free-llm.com](https://free-llm.com).
 
-## More Providers
+## More providers
 
-See the full [Provider Directory](../README.md#provider-directory) and [Quick Reference](../README.md#quick-reference--base-urls--api-keys) in the main README for all 33 free providers, or browse [free-llm.com](https://free-llm.com).
+See the [Provider Directory](../README.md#provider-directory) and the [Quick Reference](../README.md#quick-reference--base-urls--api-keys) in the main README, or generate a config at [free-llm.com/setup](https://free-llm.com/setup).

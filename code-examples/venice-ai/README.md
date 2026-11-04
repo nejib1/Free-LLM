@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 Privacy-first AI inference. Venice guarantees 100% privacy with no data logging, running open weights models on decentralized GPU nodes.

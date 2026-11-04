@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'Qwen/Qwen3.6-35B-A3B-FP8',
+  model: 'Qwen3.8-27B',
   messages: [{ role: 'user', content: 'Hello!' }]
 });
 

@@ -4,7 +4,7 @@
 
 ## About
 
-NVIDIA Inference Microservices. Access various open-source models with free credits. Phone verification required.
+NVIDIA's API catalog (build.nvidia.com) offers free, rate-limited trial endpoints for dozens of models, including Nemotron 3.5, Nemotron 3 Ultra and DeepSeek V4.1 Flash, through an OpenAI-compatible API. Phone verification is required. Limits are around 40 requests/minute and are not officially published. NVIDIA retires endpoints often, so check the model page for a deprecation notice.
 
 **Official Website:** [https://build.nvidia.com/explore/discover](https://build.nvidia.com/explore/discover)
 

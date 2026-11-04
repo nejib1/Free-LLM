@@ -8,7 +8,7 @@ curl https://api.novita.ai/v3/openai/chat/completions \
   -H "Authorization: Bearer YOUR_NOVITA_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "meta-llama/llama-3.1-8b-instruct",
+    "model": "zai-org/glm-5.3",
     "messages": [
       {
         "role": "user",

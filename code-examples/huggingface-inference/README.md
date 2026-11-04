@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 The Hugging Face Serverless Inference API allows you to access over 100,000 publicly available machine learning models. It is designed for prototyping and testing, allowing you to run inference on models without managing infrastructure. While not for heavy production, it offers a generous free tier for experimentation.

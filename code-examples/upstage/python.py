@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="solar-pro",
+    model="solar-pro4",
     messages=[
         {"role": "user", "content": "What is document understanding?"}
     ]

@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'open-mistral-7b',
+  model: 'mistral-small-latest',
   messages: [
     { role: 'user', content: 'Explain the Mixture of Experts architecture' }
   ]

@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 SambaNova Cloud delivers the world's fastest inference for open-source models like Llama 3.1 405B and Qwen 2.5, powered by the purpose-built SN40L Reconfigurable Dataflow Unit (RDU). It offers lightning-fast speed and a generous free credit for new users.

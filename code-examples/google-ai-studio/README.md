@@ -4,7 +4,7 @@
 
 ## About
 
-Google AI Studio is a web-based prototyping environment for developers to experiment with Gemini models. It offers a generous free tier that includes access to the latest Gemini 3.1 models. Gemini 3.1 Pro is Google's most capable model to date, with advanced multimodal reasoning, a 2M-token context window, and breakthrough thinking mode. Designed for fast iteration, with a seamless path from prototype to production via the Gemini API.
+Google AI Studio is Google's free prototyping console and API for Gemini models. The free tier covers the current Flash family (Gemini 3.8 Flash, 3.6 Flash, 3.5 Flash-Lite, 3.1 Flash-Lite), Gemini 3 Flash Preview and the Gemini 2.5 models; the newest Pro models (Gemini 3.1 Pro and later) are paid only. Google no longer publishes the free per-model rate limits in its docs: they are shown in AI Studio. Gemini 2.5 models are kept for existing users and Google recommends 3.5 Flash-Lite or 3.8 Flash for new projects. Free-tier prompts may be used to improve Google products.
 
 **Official Website:** [https://aistudio.google.com/](https://aistudio.google.com/)
 
