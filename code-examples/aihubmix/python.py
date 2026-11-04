@@ -1,0 +1,21 @@
+# ===============================================
+# AIHubMix (free models) - Code Example
+# Free LLM API - https://free-llm.com
+# Provider URL: https://aihubmix.com
+# ===============================================
+
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="YOUR_AIHUBMIX_KEY",
+    base_url="https://aihubmix.com/v1"
+)
+
+response = client.chat.completions.create(
+    model="coding-glm-5.3-free",
+    messages=[
+        {"role": "user", "content": "Give me three tips for writing clean code."}
+    ]
+)
+
+print(response.choices[0].message.content)

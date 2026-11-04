@@ -4,7 +4,7 @@
 
 ## About
 
-Run open source AI locally on your desktop. Jan is a ChatGPT-alternative that runs 100% offline, privacy-focused, and provides an OpenAI-compatible local server.
+Jan is an open-source, offline ChatGPT alternative for the desktop with an OpenAI-compatible local server and MCP tool support. Version 0.8.8 (October 2026) added Trusted Hosts origin checks for the local API, opt-in server-side MCP execution and a safer Claude Code integration, with a bundled llama.cpp engine.
 
 **Official Website:** [https://jan.ai/](https://jan.ai/)
 

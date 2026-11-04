@@ -4,7 +4,7 @@
 
 ## About
 
-European cloud provider offering managed generative AI APIs. Host to Mistral, Llama, and Qwen models with full GDPR compliance and data sovereignty.
+European cloud provider with managed, OpenAI-compatible Generative APIs hosted in France. Every account gets 1M free tokens (plus 60 minutes of audio transcription) across all serverless models, including GPT-OSS 120B, DeepSeek V4.1 Flash, GLM-5.3, Gemma 4, Qwen3.8 and Mistral models. GDPR-friendly, data stays in the EU.
 
 **Official Website:** [https://console.scaleway.com/generative-api/models](https://console.scaleway.com/generative-api/models)
 

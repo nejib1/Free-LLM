@@ -6,7 +6,7 @@
 
 ## About
 
-Onomeo is an OpenAI-compatible API gateway and web chat with one key for dozens of models. Its free tier gives 30 free-model calls every 5 hours per account (12 requests per minute per key); after any top-up the cap rises to 90 calls per 5 hours for 35 days. Sign in with an email code, Google, GitHub or Discord, no credit card. Small independent project; most free models run on upstream providers' free tiers, which may use prompts for training, and the free lineup rotates.
+Onomeo is an OpenAI-compatible API gateway and web chat with one key for about 17 models. Until late October 2026 it offered free API models (free-chat, free-code, free-vision) with 30 calls every 5 hours; in early November they were removed and every API model is now paid. Earned rewards still apply to selected models in its web chat only. Kept listed for reference in case free models come back.
 
 **Official Website:** [https://onomeo.com](https://onomeo.com)
 

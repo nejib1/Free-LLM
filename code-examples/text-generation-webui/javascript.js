@@ -1,7 +1,7 @@
 // ===============================================
 // Text Generation WebUI - Code Example
 // Free LLM API - https://free-llm.com
-// Provider URL: https://github.com/oobabooga/text-generation-webui
+// Provider URL: https://github.com/oobabooga/textgen
 // ===============================================
 
 // Enable OpenAI extension first

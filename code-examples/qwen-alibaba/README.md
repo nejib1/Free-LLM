@@ -4,7 +4,7 @@
 
 ## About
 
-The enterprise AI platform from Alibaba Cloud. Home of the Qwen (Tongyi Qianwen) model family, offering state-of-the-art performance in coding and mathematics.
+Alibaba Cloud Model Studio, home of the Qwen model family. New users in the Singapore region get a one-time free quota of typically 1M tokens per model, valid for 90 days. On October 29, 2026 Alibaba removed the free quota from older models (Qwen-Max, Qwen-Plus, Qwen3.6-Plus and others); newer models such as Qwen3.8 Flash, Qwen3.8 Max and Qwen3.7 Plus still get it. OpenAI-compatible endpoint: https://dashscope-intl.aliyuncs.com/compatible-mode/v1.
 
 **Official Website:** [https://bailian.console.alibabacloud.com/](https://bailian.console.alibabacloud.com/)
 

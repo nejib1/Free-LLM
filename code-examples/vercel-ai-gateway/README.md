@@ -4,7 +4,7 @@
 
 ## About
 
-Unified OpenAI-compatible API for hundreds of models with zero token markup. Every Vercel team gets a monthly free-credit allowance (community submission: $5/month) usable on a subset of "free tier" models, rate-limited per model. Buying credits moves the team to the paid tier and the monthly free credit no longer applies.
+Unified OpenAI-compatible API for hundreds of models with no token markup. Every Vercel team gets $5 of free credit per month, usable on Free Tier eligible models with lower per-model rate limits; a few models (Nemotron 3.5 Lightning free, Beam free) are priced $0. Buying AI Gateway credits moves the team to the paid tier and the monthly free credit stops.
 
 **Official Website:** [https://vercel.com/ai-gateway](https://vercel.com/ai-gateway)
 

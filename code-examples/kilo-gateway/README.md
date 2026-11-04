@@ -4,7 +4,7 @@
 
 ## About
 
-Universal OpenAI-compatible AI gateway from the Kilo Code team (500+ models). The Free plan gives access to a set of default free models (rate-limited; a community submission reports 200 requests/hour per IP). Paid options: pay-as-you-go and Kilo Pass.
+Universal OpenAI-compatible AI gateway from the Kilo Code team (380+ models; Kilo was acquired by Anaconda in 2026). Free models such as Nemotron 3.5 Lightning, Nemotron 3 Ultra, Cohere North Mini Code, Beam and kilo-auto/free can be used anonymously or with a key, limited to 200 requests per hour per IP. Base URL: https://ai-gateway.kilo.ai/api/v1. The free list rotates; paid options are pay-as-you-go and Kilo Pass.
 
 **Official Website:** [https://kilo.ai/gateway](https://kilo.ai/gateway)
 

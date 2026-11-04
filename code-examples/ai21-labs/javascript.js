@@ -9,7 +9,7 @@ import { AI21Client } from "@ai21/ai21-js-sdk";
 const client = new AI21Client({ apiKey: "YOUR_API_KEY" });
 
 const response = await client.chat.completions.create({
-  model: "jamba-large",
+  model: "model-name",
   messages: [{ role: "user", content: "Explain the Mamba architecture" }],
 });
 
