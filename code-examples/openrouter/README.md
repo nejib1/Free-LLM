@@ -4,7 +4,7 @@
 
 ## About
 
-A community-focused router for LLMs. Offers a specific list of truly free models with shared quotas.
+OpenRouter is a single OpenAI-compatible API in front of hundreds of models. Models whose id ends in :free cost nothing: 20 requests/minute and 50 requests/day, or 1,000 requests/day once you have bought at least $10 of credits. The free list rotates often; some free models have an announced end date (Poolside Laguna S/XS 2.1 free: October 31, 2026).
 
 **Official Website:** [https://openrouter.ai/](https://openrouter.ai/)
 

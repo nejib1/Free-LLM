@@ -4,7 +4,7 @@
 
 ## About
 
-Run AI models on Cloudflare's global network. Workers AI gives you a generous free tier of 10,000 neurons per day across dozens of open-source models including Llama, Mistral, and more. No credit card required.
+Run open models on Cloudflare's global network. Workers AI includes 10,000 free neurons per day on every account (free and paid plans), no credit card required, shared across its catalog: DeepSeek V4.1 Flash, Qwen3.8 27B, GLM-5.3 Flash, Kimi K2.6, GPT-OSS, Gemma 4, Llama and more. Requests need your account ID in the URL.
 
 **Official Website:** [https://dash.cloudflare.com/](https://dash.cloudflare.com/)
 

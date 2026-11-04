@@ -12,9 +12,9 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'meta/llama-3.1-70b-instruct',
+  model: 'z-ai/glm-5.3-flash',
   messages: [
-    { role: 'user', content: 'What is NVIDIA NIM?' }
+    { role: 'user', content: 'Give me three tips for writing clean code.' }
   ]
 });
 

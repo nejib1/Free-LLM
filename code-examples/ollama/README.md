@@ -4,7 +4,7 @@
 
 ## About
 
-The standard for local AI. Run Llama 3, Mistral, Gemma, and hundreds of other models directly on your Mac, Linux, or Windows machine. Complete privacy, zero cost, and offline capability.
+The standard for local AI. Run Gemma 4, Qwen3.8, Qwen3.6, GPT-OSS, Mistral and hundreds of other open models on Mac, Linux or Windows with one command, with an OpenAI-compatible local API. Complete privacy, zero cost and offline use. Ollama also has an optional hosted service (see Ollama Cloud).
 
 **Official Website:** [https://ollama.com/](https://ollama.com/)
 

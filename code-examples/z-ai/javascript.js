@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'glm-4.5-flash',
+  model: 'glm-4.6v-flash',
   messages: [
     { role: 'user', content: 'What makes the GLM Flash tier fast?' }
   ]

@@ -8,7 +8,7 @@ curl https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions \
   -H "Authorization: Bearer YOUR_DASHSCOPE_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "qwen-max",
+    "model": "qwen3.8-flash",
     "messages": [
       {
         "role": "user",

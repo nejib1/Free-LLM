@@ -4,15 +4,12 @@
 # Provider URL: https://app.hyperbolic.xyz/
 # ===============================================
 
-curl https://api.hyperbolic.xyz/v1/chat/completions \
+curl https://api.hyperbolic.ai/inference/v1/chat/completions \
   -H "Authorization: Bearer YOUR_HYPERBOLIC_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "model": "deepseek-v4-flash-0731",
     "messages": [
-      {
-        "role": "user",
-        "content": "What is decentralized AI inference?"
-      }
+      {"role": "user", "content": "Give me three tips for writing clean code."}
     ]
   }'

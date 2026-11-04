@@ -4,7 +4,7 @@
 
 ## About
 
-ByteDance's AI platform offering free access to build and deploy AI chatbots and agents. Provides free API access with generous limits to multiple models including GPT-4o and Gemini.
+ByteDance's platform for building AI bots and agents, with an API to call the bots you build. Its pricing and model pages could not be verified in November 2026, so the listed models (GPT-4o, Gemini 1.5 Pro) are probably out of date. Check coze.com before relying on it.
 
 **Official Website:** [https://www.coze.com/](https://www.coze.com/)
 

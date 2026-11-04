@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'mistral-large',
+  model: 'gpt-oss-120b',
   messages: [
     { role: 'user', content: 'What is GDPR compliance?' }
   ]

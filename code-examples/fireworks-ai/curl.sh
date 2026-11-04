@@ -8,11 +8,8 @@ curl https://api.fireworks.ai/inference/v1/chat/completions \
   -H "Authorization: Bearer YOUR_FIREWORKS_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+    "model": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
     "messages": [
-      {
-        "role": "user",
-        "content": "Write a Python function to sort a list"
-      }
+      {"role": "user", "content": "Give me three tips for writing clean code."}
     ]
   }'

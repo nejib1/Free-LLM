@@ -4,7 +4,7 @@
 
 ## About
 
-Leading AI company specializing in DUS (Document Understanding) and Solar LLMs. Solar Pro delivers GPT-4 level performance with remarkable speed and efficiency. $10 signup credit for new accounts, plus a running promo: Solar Pro 4 at 90% off through Sep 10 (UTC) — check console.upstage.ai for current terms.
+Upstage builds the Solar LLM family and document AI (Document Parse, OCR). Its OpenAI-compatible console API serves Solar Pro 4 and Solar Mini 4 (512K context). New accounts have received a $10 sign-up credit; check console.upstage.ai for current terms. Solar Pro 2 and the original Solar Mini reach end of service on October 30, 2026.
 
 **Official Website:** [https://console.upstage.ai/](https://console.upstage.ai/)
 

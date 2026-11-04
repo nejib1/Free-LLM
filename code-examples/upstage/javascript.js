@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'solar-pro',
+  model: 'solar-pro4',
   messages: [
     { role: 'user', content: 'What is document understanding?' }
   ]

@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 Cost-effective inference platform with $5 free credits on signup. Hosts 40+ open-source models with OpenAI-compatible API. Known for reliable uptime and competitive pricing after credits.
