@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef2ef">
+  <title>میز تحریریه | رویداد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site-menu.js" defer></script>
+  <script src="/staff.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><div class="topbar-inner"><a href="/">← صفحهٔ خبرها</a><div class="top-links"><a href="/members">حساب من</a><a href="/admin">مدیریت</a></div><div class="menu-control"><button id="site-menu-toggle" class="menu-toggle" type="button" aria-label="بازکردن منو" aria-expanded="false" aria-controls="site-menu-panel"><span></span><span></span><span></span></button><nav id="site-menu-panel" class="site-menu-panel" aria-label="منوی سایت" hidden><a href="/">صفحهٔ اصلی</a><a href="/special">اخبار ویژه</a><a href="/members">عضویت و ورود</a><a href="/staff">میز تحریریه</a><a href="/admin">پنل مدیریت</a></nav></div><button id="theme-toggle" class="icon-button" type="button" aria-label="تغییر حالت نمایش">◐</button></div></header>
+  <main class="page-shell admin-shell">
+    <section class="masthead"><div class="brand-lockup"><span class="brand-mark">ر</span><div><a class="brand" href="/">رویداد</a><span class="brand-caption">میز تحریریه</span></div></div><span id="staff-name" class="masthead-note"></span></section>
+    <section class="admin-title"><p class="eyebrow">انتشار اختصاصی</p><h1>تحریریهٔ رویداد</h1><p>خبر اختصاصی ثبت کن یا نوشته‌های خودت را ویرایش و حذف کن.</p></section>
+    <div id="staff-locked" class="login-panel"><p>برای استفاده از میز تحریریه، ابتدا درخواست دستیار باید توسط مدیر تأیید شده باشد.</p><a class="primary-button staff-link" href="/members">ورود یا درخواست دسترسی</a></div>
+    <div id="staff-console" hidden>
+      <div id="staff-message" class="notice" role="status" hidden></div>
+      <section class="admin-section"><div class="section-heading"><div><p class="eyebrow">خبر تازه</p><h2 id="staff-editor-heading">ثبت خبر اختصاصی</h2></div></div><form id="staff-editor-form" class="exclusive-form"><input id="staff-title" maxlength="300" required placeholder="تیتر خبر"><select id="staff-category" aria-label="دسته‌بندی خبر"><option>اخبار ایران</option><option>اخبار جهان</option><option>سیاست داخلی</option><option>سیاست خارجی</option><option>اقتصاد</option><option>بازار و ارز</option><option>فناوری</option><option>هوش مصنوعی</option><option>اجتماعی</option><option>حوادث</option><option>فرهنگ و هنر</option><option>سینما</option><option>ورزش</option><option>فوتبال</option><option>سلامت</option><option>محیط زیست</option><option>آموزش</option></select><input id="staff-summary" maxlength="1200" placeholder="خلاصهٔ کوتاه"><textarea id="staff-body" maxlength="12000" rows="9" required placeholder="متن خبر اختصاصی"></textarea><div class="form-actions"><button id="staff-submit" class="primary-button" type="submit">انتشار خبر</button><button id="staff-cancel" class="text-button" type="button" hidden>لغو ویرایش</button></div></form></section>
+      <section class="admin-section"><div class="section-heading"><div><p class="eyebrow">مطالب من</p><h2>خبرهای قابل‌مدیریت</h2></div><span id="staff-article-count" class="result-count"></span></div><div id="staff-article-list" class="pending-list"></div></section>
+      <button id="staff-logout" class="text-button" type="button">خروج از میز تحریریه</button>
+    </div>
+  </main>
+  <footer class="site-footer"><span>رویداد</span><a href="/">نمای عمومی</a><a href="/members">حساب اعضا</a></footer>
+</body>
+</html>

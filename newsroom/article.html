@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef2ef">
+  <meta name="description" content="خلاصهٔ خبر و پیوند به گزارش اصلی">
+  <title>خبر | رویداد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site-menu.js" defer></script>
+  <script src="/article.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><div class="topbar-inner"><a href="/">← صفحهٔ اصلی</a><div class="top-links"><a href="/special">اخبار ویژه</a><a href="/members">عضویت تحریریه</a></div><div class="menu-control"><button id="site-menu-toggle" class="menu-toggle" type="button" aria-label="بازکردن منو" aria-expanded="false" aria-controls="site-menu-panel"><span></span><span></span><span></span></button><nav id="site-menu-panel" class="site-menu-panel" aria-label="منوی سایت" hidden><a href="/">صفحهٔ اصلی</a><a href="/special">اخبار ویژه</a><a href="/members">عضویت و ورود</a><a href="/staff">میز تحریریه</a><a href="/admin">پنل مدیریت</a></nav></div><button id="theme-toggle" class="icon-button" type="button" aria-label="تغییر حالت نمایش">◐</button></div></header>
+  <main class="page-shell story-shell">
+    <section class="masthead"><div class="brand-lockup"><span class="brand-mark">ر</span><div><a class="brand" href="/">رویداد</a><span class="brand-caption">خبر را از منبعش بخوان</span></div></div><span class="masthead-note"><span class="live-dot"></span>صفحهٔ خبر</span></section>
+    <nav class="breadcrumbs" aria-label="مسیر صفحه"><a href="/">خبرها</a><span> / </span><span id="story-category">خبر</span></nav>
+    <article id="story" class="story-layout" hidden>
+      <div class="story-main">
+        <div id="story-visual" class="story-visual">
+          <img id="story-image" alt="" decoding="async" referrerpolicy="no-referrer" hidden>
+          <div id="story-cover" class="story-cover"><span id="cover-category"></span><strong id="cover-title"></strong><small>عکس در فید ناشر ارائه نشده</small></div>
+        </div>
+        <div class="story-body">
+          <div class="story-meta"><span id="story-source" class="source-name"></span><time id="story-time"></time><span id="story-featured" class="featured-label" hidden>ویژه</span></div>
+          <h1 id="story-title"></h1>
+          <section class="rss-summary"><p class="eyebrow">خلاصهٔ منتشرشده در RSS</p><p id="story-summary"></p></section>
+          <section id="exclusive-body-section" class="page-excerpt" hidden><p class="eyebrow">خبر اختصاصی رویداد</p><p id="exclusive-body"></p></section>
+          <section id="page-excerpt-section" class="page-excerpt" hidden><p class="eyebrow">گزیده از صفحهٔ اصلی</p><p id="page-excerpt"></p></section>
+          <div id="preview-status" class="preview-status" role="status">در حال خواندن تصویر و گزیدهٔ صفحهٔ اصلی…</div>
+          <section class="ai-panel">
+            <div><p class="eyebrow">خلاصهٔ هوشمند</p><p id="ai-note" class="ai-note">هوش مصنوعی فقط بر اساس متن قابل‌دسترسی صفحه خلاصه می‌کند.</p></div>
+            <button id="ai-button" class="ai-button" type="button" disabled>خلاصه با هوش مصنوعی</button>
+          </section>
+          <div id="ai-result" class="ai-result" hidden></div>
+          <div class="story-actions"><a id="original-link" class="original-button" target="_blank" rel="noopener noreferrer">خواندن گزارش کامل در رسانهٔ اصلی ↗</a><button id="share-story" class="share-button" type="button">اشتراک‌گذاری</button></div>
+        </div>
+      </div>
+      <aside class="story-aside"><p class="eyebrow">اطلاعات گزارش</p><div class="aside-rule"></div><p><span>دسته</span><strong id="aside-category"></strong></p><p><span>منبع</span><strong id="aside-source"></strong></p><p><span>زمان انتشار</span><strong id="aside-time"></strong></p><p id="other-reports-label" class="eyebrow other-reports-label" hidden>گزارش رسانه‌های دیگر</p><div id="other-reports" class="other-reports"></div></aside>
+    </article>
+    <div id="story-error" class="empty-state" hidden><h3>خبر در دسترس نیست</h3><p>ممکن است خبر حذف یا از انتشار خارج شده باشد.</p><a href="/">بازگشت به خبرها ←</a></div>
+  </main>
+  <footer class="site-footer"><span>رویداد</span><span>برای جزئیات و متن کامل، منبع اصلی را ببینید.</span><a href="/">بازگشت به خبرها</a></footer>
+</body>
+</html>

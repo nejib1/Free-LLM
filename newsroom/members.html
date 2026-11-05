@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef2ef">
+  <title>حساب اعضا | رویداد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site-menu.js" defer></script>
+  <script src="/members.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><div class="topbar-inner"><a href="/">← صفحهٔ خبرها</a><div class="top-links"><a href="/special">اخبار ویژه</a><a href="/admin">مدیریت</a></div><div class="menu-control"><button id="site-menu-toggle" class="menu-toggle" type="button" aria-label="بازکردن منو" aria-expanded="false" aria-controls="site-menu-panel"><span></span><span></span><span></span></button><nav id="site-menu-panel" class="site-menu-panel" aria-label="منوی سایت" hidden><a href="/">صفحهٔ اصلی</a><a href="/special">اخبار ویژه</a><a href="/members">عضویت و ورود</a><a href="/staff">میز تحریریه</a><a href="/admin">پنل مدیریت</a></nav></div><button id="theme-toggle" class="icon-button" type="button" aria-label="تغییر حالت نمایش">◐</button></div></header>
+  <main class="page-shell member-shell">
+    <section class="masthead"><div class="brand-lockup"><span class="brand-mark">ر</span><div><a class="brand" href="/">رویداد</a><span class="brand-caption">عضویت تحریریه</span></div></div></section>
+    <section class="member-layout">
+      <div class="member-intro"><p class="eyebrow">حساب کاربری</p><h1>به تحریریه بپیوند.</h1><p>برای درخواست همکاری، حساب بساز و درخواست دستیار مدیر را ثبت کن. دسترسی تحریریه فقط پس از تأیید مدیر فعال می‌شود.</p><div class="member-rule"></div><span>۰۱ / ثبت‌نام</span><span>۰۲ / بررسی مدیر</span><span>۰۳ / انتشار خبر اختصاصی</span></div>
+      <section class="member-panel">
+        <div id="auth-forms">
+          <div class="mode-switch" role="tablist"><button id="show-register" class="mode-tab is-active" type="button" role="tab" aria-selected="true">ساخت حساب</button><button id="show-login" class="mode-tab" type="button" role="tab" aria-selected="false">ورود</button></div>
+          <form id="register-form" class="member-form"><label for="register-username">نام کاربری</label><input id="register-username" autocomplete="username" minlength="3" maxlength="32" required placeholder="۳ تا ۳۲ نویسه، بدون فاصله"><label for="register-password">رمز عبور</label><input id="register-password" type="password" autocomplete="new-password" minlength="12" required placeholder="حداقل ۱۲ نویسه"><button class="primary-button" type="submit">ساخت حساب</button></form>
+          <form id="login-form" class="member-form" hidden><label for="login-username">نام کاربری</label><input id="login-username" autocomplete="username" required><label for="login-password">رمز عبور</label><input id="login-password" type="password" autocomplete="current-password" required><button class="primary-button" type="submit">ورود</button></form>
+        </div>
+        <section id="account-panel" hidden><p class="eyebrow">حساب شما</p><h2 id="account-name"></h2><p id="account-role" class="account-state"></p><form id="assistant-request-form" class="member-form" hidden><label for="request-message">پیام برای مدیر</label><textarea id="request-message" maxlength="500" rows="4" placeholder="تجربه یا توضیح کوتاه دربارهٔ همکاری"></textarea><button class="primary-button" type="submit">درخواست دستیار مدیر</button></form><a id="staff-link" class="primary-button staff-link" href="/staff" hidden>ورود به میز تحریریه</a><button id="member-logout" class="text-button" type="button">خروج از حساب</button></section>
+        <div id="member-message" class="notice" role="status" hidden></div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><span>رویداد</span><span>درخواست‌ها فقط با تأیید مدیر به دسترسی تحریریه تبدیل می‌شوند.</span><a href="/">صفحهٔ اصلی</a></footer>
+</body>
+</html>

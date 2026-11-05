@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f8">
+  <meta name="description" content="خبرخوان فارسی با لینک مستقیم به گزارش رسانه‌های اصلی">
+  <title>رویداد | خبرخوان ایران</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site-menu.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span id="today" class="today"></span>
+      <div class="top-links"><a href="/">تازه‌ها</a><a href="/special">اخبار ویژه</a><a href="/members">عضویت تحریریه</a></div>
+      <div class="menu-control">
+        <button id="site-menu-toggle" class="menu-toggle" type="button" aria-label="بازکردن منو" aria-expanded="false" aria-controls="site-menu-panel"><span></span><span></span><span></span></button>
+        <nav id="site-menu-panel" class="site-menu-panel" aria-label="منوی سایت" hidden>
+          <a href="/">صفحهٔ اصلی</a><a href="/special">اخبار ویژه</a><a href="/members">عضویت و ورود</a><a href="/staff">میز تحریریه</a><a href="/admin">پنل مدیریت</a>
+        </nav>
+      </div>
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="تغییر حالت نمایش" title="تغییر حالت نمایش">◐</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="masthead" aria-label="رویداد">
+      <div class="brand-lockup"><span class="brand-mark">ر</span><div><a class="brand" href="/">رویداد</a><span class="brand-caption">خوانش چندصدایی خبر</span></div></div>
+      <div class="masthead-note"><span class="live-dot"></span><span id="source-status">در حال بررسی وضعیت منابع</span></div>
+    </section>
+
+    <div class="breaking-bar"><span class="breaking-label">روی خط خبر</span><span id="breaking-text">خبرهای رسانه‌های تأییدشده در اینجا به‌روز می‌شوند.</span><span class="breaking-arrow" aria-hidden="true">←</span></div>
+
+    <section class="intro-row">
+      <div><p class="eyebrow">ایران، از نگاه منابع گوناگون</p><h1>خبر را از منبعش بخوان.</h1></div>
+      <div class="intro-actions"><p class="intro-copy">گزارش‌ها را اینجا بخوان؛ پیوند رسانهٔ اصلی و خلاصهٔ صفحه هم در هر خبر هست.</p><button id="refresh-news" class="refresh-button" type="button" title="دریافت آخرین فهرست">↻ <span>تازه‌سازی</span></button></div>
+    </section>
+
+    <section class="controls" aria-label="جست‌وجو و فیلتر خبرها">
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="جست‌وجو در تیتر و چکیده" autocomplete="off"><kbd>/</kbd></label>
+      <select id="source-filter" aria-label="فیلتر بر اساس رسانه"><option value="">همهٔ رسانه‌ها</option></select>
+    </section>
+
+    <nav id="category-list" class="category-list" aria-label="دسته‌بندی خبرها"></nav>
+
+    <section id="latest" class="news-section">
+      <div class="section-heading"><div><p class="eyebrow">پوشش زنده</p><h2 id="section-title">آخرین خبرها</h2></div><span id="result-count" class="result-count"></span></div>
+      <p id="special-fallback" class="special-fallback" hidden>هنوز خبری از پنل انتخاب نشده؛ تازه‌ترین خبرها فعلاً نمایش داده می‌شوند.</p>
+      <div id="news-grid" class="news-grid" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden><span class="empty-index">۰۱</span><h3>هنوز خبری در این بخش نیست</h3><p>برای اخبار ویژه، تحریریه باید خبر را از پنل مدیریت انتخاب کند.</p><a href="/admin">رفتن به مدیریت منابع <span aria-hidden="true">←</span></a></div>
+      <nav id="pagination" class="pagination" aria-label="صفحه‌بندی خبرها" hidden><button id="page-next" class="page-button" type="button">← خبرهای قدیمی‌تر</button><span id="page-indicator"></span><button id="page-prev" class="page-button" type="button">خبرهای جدیدتر →</button></nav>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>رویداد <span id="footer-year"></span></span><span>خلاصهٔ منبع، نه بازنشر متن کامل.</span><a href="/special">اخبار ویژه</a><a href="/admin">وضعیت منابع</a></footer>
+</body>
+</html>

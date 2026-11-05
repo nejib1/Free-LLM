@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+newsroom.sqlite3
+.admin-key
