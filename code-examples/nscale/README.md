@@ -2,9 +2,11 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
-GPU cloud/inference platform offering a one-time $5 signup credit to try their pay-per-token models. No credit card required to claim the trial credit.
+Nscale is a GPU cloud with a serverless, pay-per-token inference API. Getting started now means adding at least $5 of credit by card; Nscale only says early users may be eligible for free credits. There is no general free tier.
 
 **Official Website:** [https://www.nscale.com/product/inference](https://www.nscale.com/product/inference)
 

@@ -8,7 +8,7 @@ curl https://api.01.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_YI_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "yi-large",
+    "model": "model-name",
     "messages": [
       {
         "role": "user",

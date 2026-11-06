@@ -8,11 +8,8 @@ curl https://integrate.api.nvidia.com/v1/chat/completions \
   -H "Authorization: Bearer YOUR_NVIDIA_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "meta/llama-3.1-70b-instruct",
+    "model": "z-ai/glm-5.3-flash",
     "messages": [
-      {
-        "role": "user",
-        "content": "What is NVIDIA NIM?"
-      }
+      {"role": "user", "content": "Give me three tips for writing clean code."}
     ]
   }'

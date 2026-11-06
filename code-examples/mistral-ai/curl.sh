@@ -8,7 +8,7 @@ curl https://api.mistral.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_MISTRAL_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "open-mistral-7b",
+    "model": "mistral-small-latest",
     "messages": [
       {
         "role": "user",

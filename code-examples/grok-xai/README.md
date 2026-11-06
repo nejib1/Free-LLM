@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 xAI's Grok models with a generous free API tier: $25/month in free credits that renew monthly. Access Grok-2 and Grok-2 Mini through an OpenAI-compatible API. Strong reasoning and real-time knowledge.

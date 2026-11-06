@@ -4,7 +4,7 @@
 
 ## About
 
-LPU Inference Engine.
+GroqCloud runs open models on Groq's LPU chips, among the fastest inference available. The free Developer plan needs no card: GPT-OSS 120B/20B and Qwen3.8 27B get 30 requests/minute and 1,000 requests/day, plus Whisper for speech-to-text. Older Llama 3.x models and Compound were retired in August and September 2026.
 
 **Official Website:** [https://console.groq.com/](https://console.groq.com/)
 

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Submit a provider on the website
+    url: https://free-llm.com/submit
+    about: The fastest way to suggest a provider; every submission is reviewed by hand.
+  - name: Report an issue on a provider page
+    url: https://free-llm.com
+    about: Each provider page has a "Report an Issue" button that goes straight to moderation.

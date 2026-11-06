@@ -4,7 +4,7 @@
 
 ## About
 
-An Inference Platform built for speed and control, enabling deployment of any AI/ML model anywhere with tailored optimization, efficient scaling, and streamlined operations. It offers a complete solution to simplify inference infrastructure while giving full control over deployments.
+BentoML is an open-source framework for serving any AI model; self-hosting it is free. BentoCloud, its managed inference platform, offers a free trial on sign-up and then bills for compute, so it is not a permanent free API.
 
 **Official Website:** [https://www.bentoml.com/](https://www.bentoml.com/)
 

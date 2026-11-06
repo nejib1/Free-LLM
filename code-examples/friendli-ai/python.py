@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="model-name",
+    model="zai-org/GLM-5.1",
     messages=[
         {"role": "user", "content": "What makes your inference fast?"}
     ]

@@ -4,7 +4,18 @@
 // Provider URL: https://pollinations.ai
 // ===============================================
 
-// No API key needed for basic use
-const response = await fetch('https://text.pollinations.ai/Hello!');
-const text = await response.text();
-console.log(text);
+import OpenAI from 'openai';
+
+const client = new OpenAI({
+  apiKey: 'YOUR_POLLINATIONS_KEY',
+  baseURL: 'https://gen.pollinations.ai/v1'
+});
+
+const response = await client.chat.completions.create({
+  model: 'openai/gpt-oss-20b',
+  messages: [
+    { role: 'user', content: 'Give me three tips for writing clean code.' }
+  ]
+});
+
+console.log(response.choices[0].message.content);

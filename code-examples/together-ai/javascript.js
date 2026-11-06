@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'Prism-ML/Ternary-Bonsai-27B',
+  model: 'model-name',
   messages: [
     { role: 'user', content: 'Explain the Apriel model architecture' }
   ]

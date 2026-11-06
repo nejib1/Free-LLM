@@ -8,13 +8,13 @@ import OpenAI from 'openai';
 
 const client = new OpenAI({
   apiKey: 'YOUR_HYPERBOLIC_KEY',
-  baseURL: 'https://api.hyperbolic.xyz/v1'
+  baseURL: 'https://api.hyperbolic.ai/inference/v1'
 });
 
 const response = await client.chat.completions.create({
-  model: 'meta-llama/Meta-Llama-3.1-405B-Instruct',
+  model: 'deepseek-v4-flash-0731',
   messages: [
-    { role: 'user', content: 'What is decentralized AI inference?' }
+    { role: 'user', content: 'Give me three tips for writing clean code.' }
   ]
 });
 

@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'yi-large',
+  model: 'model-name',
   messages: [
     { role: 'user', content: 'Explain the Yi model architecture' }
   ]

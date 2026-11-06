@@ -8,7 +8,7 @@ curl https://api.z.ai/api/paas/v4/chat/completions \
   -H "Authorization: Bearer YOUR_ZAI_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "glm-4.5-flash",
+    "model": "glm-4.6v-flash",
     "messages": [
       {
         "role": "user",

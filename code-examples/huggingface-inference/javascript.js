@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: '"'"'meta-llama/Llama-3.2-11B-Vision-Instruct'"'"',
+  model: '"'"'model-name'"'"',
   messages: [
     { role: '"'"'user'"'"', content: '"'"'Explain the benefits of open inference routing'"'"' }
   ]

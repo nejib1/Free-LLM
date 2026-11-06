@@ -14,7 +14,7 @@ const client = new OpenAI({
 async function main() {
   const chatCompletion = await client.chat.completions.create({
     messages: [{ role: 'user', content: 'Explain quantum computing in one sentence.' }],
-    model: 'Meta-Llama-3.3-70B-Instruct',
+    model: 'model-name',
   });
 
   console.log(chatCompletion.choices[0].message.content);

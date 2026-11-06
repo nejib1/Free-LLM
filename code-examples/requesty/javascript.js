@@ -12,9 +12,9 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'gpt-4o',
+  model: 'google/gemma-4-31b-it',
   messages: [
-    { role: 'user', content: 'Explain AI routing' }
+    { role: 'user', content: 'Give me three tips for writing clean code.' }
   ]
 });
 

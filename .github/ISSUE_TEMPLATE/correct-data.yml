@@ -1,0 +1,26 @@
+name: Correct provider data
+description: A limit, model, price or card requirement is wrong, or a model is no longer free
+title: "Correction: "
+labels: ["data correction"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: "Groq"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong?
+      description: For example "model X is no longer free", "now requires a card", "rate limit is 30 RPM, not 60".
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source
+      description: Link to the provider's pricing/docs page, or paste the API error you received.
+    validations:
+      required: true

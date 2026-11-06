@@ -1,7 +1,7 @@
 # ===============================================
 # llamafile - Code Example
 # Free LLM API - https://free-llm.com
-# Provider URL: https://github.com/Mozilla-Ocho/llamafile
+# Provider URL: https://github.com/mozilla-ai/llamafile
 # ===============================================
 
 # Run: ./model.llamafile --server

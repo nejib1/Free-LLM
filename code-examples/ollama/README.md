@@ -4,7 +4,7 @@
 
 ## About
 
-The standard for local AI. Run Llama 3, Mistral, Gemma, and hundreds of other models directly on your Mac, Linux, or Windows machine. Complete privacy, zero cost, and offline capability.
+The standard for local AI. Run Qwen3.8, Gemma 4, GPT-OSS, Nemotron 3.5, Flint, LFM3 and hundreds of other open models on Mac, Linux or Windows with one command, with an OpenAI-compatible and an Anthropic-compatible local API (so Claude Code works with `ollama launch claude`). Version 0.40 (late 2026) uses Apple's MLX by default on Apple Silicon. Complete privacy, zero cost, offline use. Ollama also has an optional hosted service (see Ollama Cloud).
 
 **Official Website:** [https://ollama.com/](https://ollama.com/)
 

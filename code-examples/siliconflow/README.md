@@ -4,9 +4,9 @@
 
 ## About
 
-Inference platform with a mix of free and paid open-source models, plus a small starter credit for new signups. SiliconFlow's own docs confirm free models exist ("$0" calls with fixed rate limits) after identity verification, but the exact free-model list isn't published on the public pricing page and requires a login to view — treat rate limits/model names as unconfirmed until verified in your own dashboard.
+Chinese inference platform. The free ($0) models, such as Qwen3-8B, GLM-4-9B and DeepSeek-R1 distills, are on the China platform (siliconflow.cn, phone verification with a Chinese mobile number). The international site (siliconflow.com) has no $0 models, only a $1 starter credit.
 
-**Official Website:** [https://siliconflow.com/pricing](https://siliconflow.com/pricing)
+**Official Website:** [https://cloud.siliconflow.cn/models](https://cloud.siliconflow.cn/models)
 
 **Full Details:** [https://free-llm.com/api/siliconflow](https://free-llm.com/api/siliconflow)
 
@@ -20,7 +20,7 @@ This directory contains ready-to-use code examples in multiple languages:
 
 ## Usage
 
-1. Get your free API key from [https://siliconflow.com/pricing](https://siliconflow.com/pricing)
+1. Get your free API key from [https://cloud.siliconflow.cn/models](https://cloud.siliconflow.cn/models)
 2. Replace `YOUR_API_KEY` in the code examples
 3. Run the example in your preferred language
 

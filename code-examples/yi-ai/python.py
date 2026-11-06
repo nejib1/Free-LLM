@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="yi-large",
+    model="model-name",
     messages=[
         {"role": "user", "content": "Explain the Yi model architecture"}
     ]

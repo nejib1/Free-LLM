@@ -8,7 +8,7 @@ curl https://inference.friendli.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_FRIENDLI_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "model-name",
+    "model": "zai-org/GLM-5.1",
     "messages": [
       {
         "role": "user",

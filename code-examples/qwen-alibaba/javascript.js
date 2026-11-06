@@ -12,7 +12,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: 'qwen-max',
+  model: 'qwen3.8-flash',
   messages: [
     { role: 'user', content: 'Explain the Qwen model architecture' }
   ]

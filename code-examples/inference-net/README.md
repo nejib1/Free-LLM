@@ -2,6 +2,8 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **No longer free** — this provider used to offer a free tier but doesn't anymore. Check current pricing before using it.
+
 ## About
 
 Decentralized GPU network offering free inference for open-source models. Built on distributed compute, providing reliable access to Llama, DeepSeek, and other models at no cost.

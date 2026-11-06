@@ -8,11 +8,8 @@ curl https://router.requesty.ai/v1/chat/completions \
   -H "Authorization: Bearer YOUR_REQUESTY_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gpt-4o",
+    "model": "google/gemma-4-31b-it",
     "messages": [
-      {
-        "role": "user",
-        "content": "Explain AI routing"
-      }
+      {"role": "user", "content": "Give me three tips for writing clean code."}
     ]
   }'

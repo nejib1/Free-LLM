@@ -4,9 +4,9 @@
 
 ## About
 
-The Swiss Army Knife of local LLMs. Highly customizable Gradio interface for running Large Language Models like Llama, GPT-J, OPT, and GALACTICA locally.
+oobabooga's text-generation-webui (now renamed TextGen): a highly customizable Gradio interface for running local LLMs with several back ends (llama.cpp, ExLlama, Transformers) and an OpenAI-compatible API. Development has slowed in 2026 (last release v4.9 in May).
 
-**Official Website:** [https://github.com/oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)
+**Official Website:** [https://github.com/oobabooga/textgen](https://github.com/oobabooga/textgen)
 
 **Full Details:** [https://free-llm.com/api/text-generation-webui](https://free-llm.com/api/text-generation-webui)
 
@@ -20,7 +20,7 @@ This directory contains ready-to-use code examples in multiple languages:
 
 ## Usage
 
-1. Get your free API key from [https://github.com/oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)
+1. Get your free API key from [https://github.com/oobabooga/textgen](https://github.com/oobabooga/textgen)
 2. Replace `YOUR_API_KEY` in the code examples
 3. Run the example in your preferred language
 

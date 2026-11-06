@@ -12,9 +12,9 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="accounts/fireworks/models/llama-v3p3-70b-instruct",
+    model="accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
     messages=[
-        {"role": "user", "content": "Write a Python function to sort a list"}
+        {"role": "user", "content": "Give me three tips for writing clean code."}
     ]
 )
 

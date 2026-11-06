@@ -8,7 +8,7 @@ curl https://api.deepinfra.com/v1/openai/chat/completions \
   -H "Authorization: Bearer YOUR_DEEPINFRA_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "model": "model-name",
     "messages": [
       {
         "role": "user",

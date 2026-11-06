@@ -4,7 +4,7 @@
 
 ## About
 
-Port of Facebook's LLaMA model in C/C++. The foundational project that enables running LLMs on consumer hardware (Mac, Windows, Linux, Android) with high performance.
+The C/C++ inference engine behind most local AI tools. It runs any GGUF model on CPUs and GPUs (Mac, Windows, Linux, Android) and its llama-server exposes OpenAI- and Anthropic-compatible endpoints. Version 0.9.0 (November 2026) added FP8 quantisation, multi-node tensor parallelism and support for Mistral Large 4.
 
 **Official Website:** [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)
 

@@ -4,7 +4,7 @@
 
 ## About
 
-Inference provider offering a daily free token allowance across both API and browser chat access, with a 131K context window. No credit card required, but the exact daily quota isn't published by Aion Labs — verify current limits before relying on this provider for production use.
+Aion Labs offers its own Aion models through an OpenAI-compatible API and a browser chat. The $0 Free tier gives a daily credit allowance to try agent jobs, the API and chat, with no credit card. Aion Labs does not publish the exact daily amount (third-party sites report about 15 RPM and 20K tokens/day), so verify before relying on it.
 
 **Official Website:** [https://www.aionlabs.ai/pricing/](https://www.aionlabs.ai/pricing/)
 

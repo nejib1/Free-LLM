@@ -2,9 +2,11 @@
 
 > Part of **[Free-LLM](https://free-llm.com)** — Open Directory of Free AI & LLM APIs
 
+> ⚠️ **Discontinued** — this provider has shut down or is no longer operating. These examples are kept for reference only.
+
 ## About
 
-STATUS UNCONFIRMED: As of July 2026 the api.01.ai endpoint no longer resolves; 01.AI appears to have moved to a China-focused platform (platform.lingyiwanwu.com) with unclear international signup availability. Kept here for reference pending confirmation. Original listing: 01.AI flagship open-source models. Yi-Large provides GPT-4 class performance with strong reasoning capabilities and a 200k context window.
+01.AI's Yi models (Yi-Large and others) were offered through the 01.AI / Lingyiwanwu API platform. 01.AI shut the self-serve API down: sign-ups and top-ups stopped on August 3, 2026, API calls ended on September 3, 2026, and refunds are open until December 3, 2026. The API now answers "Model service has been discontinued". Yi open weights remain on Hugging Face for local use.
 
 **Official Website:** [https://www.01.ai/](https://www.01.ai/)
 
