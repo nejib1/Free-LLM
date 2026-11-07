@@ -122,6 +122,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Mixlayer](https://docs.mixlayer.com/credits-and-limits) | Registration | Per-organization, per-model RPM/TPM (values shown in console only) | Not published | — | Qwen3.5 4B (free) |
 | [SenseNova (SenseTime)](https://www.sensenova.cn/token-plan) | Phone verification | Not published | Not published (\"限时放量\" during public beta) | — | SenseNova 6.8 Flash Lite |
 | [LLM7.io](https://llm7.io) | No | 1 req/s, 60/min, 250/hour (free token from dash.llm7.io) | 100,000 tokens per 24h (free token; may be reduced without notice) | Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
+| [Merkium](https://www.merkium.nl) | No | 30 RPM per API key (1 request every 2 seconds) | No daily cap published | Free permanently, no expiry ([pricing](https://www.merkium.nl/pricing)) | Ganymede 1.1 |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 Renewable Credits
@@ -281,6 +282,7 @@ Sign up and receive credits to use until depleted.
 | [Kiosapi.id](https://kiosapi.id/pricing) | `https://api.kiosapi.id/v1` | [Get Key →](https://kiosapi.id/pricing) |
 | [Inception Labs](https://www.inceptionlabs.ai/) | `https://api.inceptionlabs.ai/v1` | [Get Key →](https://www.inceptionlabs.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
+| [Merkium](https://www.merkium.nl) | `https://chat.merkium.nl/api/v1` | [Get Key →](https://chat.merkium.nl) |
 <!--TABLE:QUICKREF:END-->
 
 ---
