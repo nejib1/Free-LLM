@@ -174,7 +174,7 @@ Sign up and receive credits to use until depleted.
 | [Dahl Inference](https://inference.dahl.global/) | Registration | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
 | [Regolo.ai](https://regolo.ai) | No | 30-day trial, 1M tokens/day, no card | 30 days | GPT-OSS 120B, Qwen3.8 27B, Gemma 4 31B, GLM-5.2 |
 | [GonkaRouter](https://gonkarouter.io) | No | 1M free tokens for new users | One-time | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M2.7 |
-| [NovAI](https://aiapi-pro.com) | No | $2 welcome credit, no card | One-time | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash |
+| [NovAI](https://aiapi-pro.com) | No | $2 welcome credit + 5 models free forever (10 calls/day, no card); unlimited on those 5 models after any top-up | Credit: one-time; free tier: permanent | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash, CogView-3 Flash (images), CogVideoX Flash (video) |
 | [Vectoree](https://vectoree.ai) | No | $5 welcome credit after CLI login | One-time | Vectoree Auto (router) |
 | [Sarvam AI](https://www.sarvam.ai/api-pricing) | Phone verification | INR 100 free credits on signup | One-time; credits do not expire (per third-party list) | Sarvam 105B, Sarvam 105B Conversations |
 | [HPC-AI Model APIs](https://www.hpc-ai.com/model-apis) | Registration | $2 free voucher on signup ($4 with an invite code, per third-party list) | One-time | Kimi K2.7 Code |
