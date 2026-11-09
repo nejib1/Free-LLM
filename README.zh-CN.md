@@ -387,4 +387,4 @@ MIT — 详见 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-08<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-09<!--LASTSYNC:END--></sub></p>
