@@ -98,15 +98,14 @@ Ongoing free access with rate-limited quotas that never expire.
 | [NVIDIA NIM](https://build.nvidia.com/explore/discover) | Phone verification | ~40 RPM (varies per model, not published) | - | - | GLM-5.3 Flash, DiffusionGemma 26B A4B, Riva Translate 4B v2, Cosmos Reason 2 8B |
 | [Groq](https://console.groq.com/) | No | 30 RPM; 8K TPM on most chat models (varies by model) | 1,000 requests/day and 200K tokens/day on gpt-oss / Qwen (varies by model) | Free Forever | GPT-OSS 120B, Qwen3.8 27B, Whisper Large v3, Whisper Large v3 Turbo |
 | [Z.AI (GLM)](https://z.ai/) | Registration | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | Registration | 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go) | Unspecified | Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | No | Varies by model | 10,000 neurons/day | ~300,000 neurons/month | GLM-5.3 Flash, FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | Registration | 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go) | Unspecified | Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
+| [Kilo AI Gateway](https://kilo.ai/gateway) | No | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | [Nous Portal](https://portal.nousresearch.com) | Card required | Standard rate limits (figures not published) | Free models only (no monthly credit) | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | StepFun Step 3.7 Flash, Reflection Beam 1.0, Upstage Solar Mini 4, Crouton Alpha (stealth, free) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | Card required | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental); a Hetzner account with billing details is required and Hetzner may ask for a card or ID to verify it | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
 | [ModelScope](https://modelscope.cn) | Phone verification | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
-| [Kilo AI Gateway](https://kilo.ai/gateway) | No | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | [FreeInference](https://freeinference.org) | No | Not published ("generous quota"; HTTP 429 when rate-limited) | No published daily cap | — | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
 | [Ollama Cloud](https://ollama.com/cloud) | No | Pay-as-you-go: 3 concurrent requests; only Beam (beam:cloud) is labelled free | No free monthly allowance any more (starter credits removed); other cloud models are billed per token | Weekly usage limit resets every 7 days | Reflection Beam (501B) |
-| [Pollinations.ai](https://pollinations.ai) | No | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
 | [SiliconFlow](https://cloud.siliconflow.cn/models) | Phone verification | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | No | Not published (daily credit allowance) | Daily free credit allowance (amount not published by Aion Labs) | Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
 | [Api.Airforce](https://api.airforce/) | No | 1 RPM | 1,000 requests/day | Free plan, $0/month | GPT-OSS 20B, GLM-4.7 Flash, Essential AI RNJ 1, Kimi K2.7 Code |
@@ -121,6 +120,7 @@ Ongoing free access with rate-limited quotas that never expire.
 | [Zhipu BigModel (China)](https://docs.bigmodel.cn/cn/guide/start/model-overview) | Phone verification | Low concurrency on free Flash models (GLM-4.7-Flash reported at 1 concurrent request) | Not published | — | GLM-4.7-Flash, GLM-4.5-Flash, GLM-4-Flash-250414, GLM-4.6V-Flash (vision) |
 | [Mixlayer](https://docs.mixlayer.com/credits-and-limits) | Registration | Per-organization, per-model RPM/TPM (values shown in console only) | Not published | — | Qwen3.5 4B (free) |
 | [SenseNova (SenseTime)](https://www.sensenova.cn/token-plan) | Phone verification | Not published | Not published (\"限时放量\" during public beta) | — | SenseNova 6.8 Flash Lite |
+| [Pollinations.ai](https://pollinations.ai) | No | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
 | [LLM7.io](https://llm7.io) | No | 1 req/s, 60/min, 250/hour (free token from dash.llm7.io) | 100,000 tokens per 24h (free token; may be reduced without notice) | Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
 <!--TABLE:PERMANENT:END-->
 
@@ -222,17 +222,16 @@ Sign up and receive credits to use until depleted.
 | [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | `https://dashscope-intl.aliyuncs.com/api/v1` | [Get Key →](https://bailian.console.alibabacloud.com/) |
 | [Upstage](https://console.upstage.ai/) | `https://api.upstage.ai/v1/solar` | [Get Key →](https://console.upstage.ai/) |
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [Get Key →](https://z.ai/) |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [Get Key →](https://endpoints.ai.cloud.ovh.net/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [Get Key →](https://dash.cloudflare.com/) |
+| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [Get Key →](https://endpoints.ai.cloud.ovh.net/) |
+| [Kilo AI Gateway](https://kilo.ai/gateway) | `https://ai-gateway.kilo.ai/api/v1` | [Get Key →](https://kilo.ai/gateway) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [Get Key →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [Get Key →](https://experiments.hetzner.com/inference) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [Get Key →](https://modelscope.cn) |
-| [Kilo AI Gateway](https://kilo.ai/gateway) | `https://ai-gateway.kilo.ai/api/v1` | [Get Key →](https://kilo.ai/gateway) |
 | [FreeInference](https://freeinference.org) | `https://freeinference.org/v1` | [Get Key →](https://freeinference.org) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [Get Key →](https://www.cerebrium.ai/) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [Get Key →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [Get Key →](https://ollama.com/cloud) |
-| [Pollinations.ai](https://pollinations.ai) | `https://gen.pollinations.ai/v1` | [Get Key →](https://pollinations.ai) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [Get Key →](https://requesty.ai/) |
 | [SiliconFlow](https://cloud.siliconflow.cn/models) | `https://api.siliconflow.cn/v1` | [Get Key →](https://cloud.siliconflow.cn/models) |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | `https://api.aionlabs.ai/v1` | [Get Key →](https://www.aionlabs.ai/pricing/) |
@@ -279,6 +278,7 @@ Sign up and receive credits to use until depleted.
 | [SenseNova (SenseTime)](https://www.sensenova.cn/token-plan) | `https://token.sensenova.cn/v1` | [Get Key →](https://www.sensenova.cn/token-plan) |
 | [LLMTR](https://llmtr.com/en/terms) | `https://llmtr.com/v1` | [Get Key →](https://llmtr.com/en/terms) |
 | [Kiosapi.id](https://kiosapi.id/pricing) | `https://api.kiosapi.id/v1` | [Get Key →](https://kiosapi.id/pricing) |
+| [Pollinations.ai](https://pollinations.ai) | `https://gen.pollinations.ai/v1` | [Get Key →](https://pollinations.ai) |
 | [Inception Labs](https://www.inceptionlabs.ai/) | `https://api.inceptionlabs.ai/v1` | [Get Key →](https://www.inceptionlabs.ai/) |
 | [LLM7.io](https://llm7.io) | `https://api.llm7.io/v1` | [Get Key →](https://llm7.io) |
 <!--TABLE:QUICKREF:END-->
@@ -387,4 +387,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-09<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-10<!--LASTSYNC:END--></sub></p>
