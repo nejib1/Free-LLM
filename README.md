@@ -186,6 +186,8 @@ Sign up and receive credits to use until depleted.
 | [Inception Labs](https://www.inceptionlabs.ai/) | No | 100M tokens | One-time (new accounts) | Mercury 3, Mercury 2.5, Mercury 2 |
 <!--TABLE:TRIAL:END-->
 
+During IteraCompute's time-limited promotion, use `Auto` as the recommended free model ID. It routes across available open models without pinning a model, version or precision. Up to 30M input and output tokens (including reasoning) share one monthly account allowance and one queued or running request; no fixed RPM, TPM or daily token cap. The promotion ends November 24, 2026 at 00:00 Pacific Time (08:00 UTC), as stated on the [official free API page](https://iteracompute.com/free/) (source checked 2026-11-11). No rollover or automatic paid overage; shared capacity may queue and has no SLA.
+
 ### 🖥️ Local / Self-Hosted (Unlimited, Private, Free Forever)
 
 | Tool | Type | Highlights |
