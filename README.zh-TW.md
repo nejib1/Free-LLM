@@ -132,6 +132,8 @@ print(response.choices[0].message.content)
 | 提供商 | 需要信用卡？ | 速率限制 | 免費額度 | 主要模型 |
 |:---|:---:|:---|:---|:---|
 | [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Gemma 4 31B IT, NVIDIA Nemotron 3 Ultra, Recursive Flint v1.0 (free), Nemotron 3.5 Super VL |
+| [Gonka Broker](https://gonkabroker.com) | 需電話驗證 | Network limits (see docs.gonkabroker.com Limits & Quotas) | Monthly free token grant after SMS verification (does not accumulate) | GLM-5.3 Flash, DeepSeek V4 Flash 0731, MiniMax M2.7 |
+| [Experiential Labs](https://www.experientiallabs.ai/pricing) | 需綁定信用卡 | 10 RPM and 250K TPM per free core model | 1M input+output tokens/day shared across free core models, reset 00:00 UTC | GPT-6 Luna, DeepSeek V4.1 Flash 1017, Clef Flash (decision endpoint, free promo) |
 | [Requesty](https://requesty.ai/) | 否 | 20 RPM on free models (60 RPM for paying orgs) | 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models | Gemma 4 31B IT, Ling 3.0 Tiny, Nemotron 3 Nano Omni Reasoning, Nemotron 3 Nano 30B A3B |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | 需註冊 | Lower per-model limits than the paid tier (429 on excess) | $5/month | Nemotron 3.5 Lightning (free), Llama 3.3 70B, MiniMax M3.1 Flash, GLM-4.7 Flash |
 | [Token Harbor](https://tokenharbor.ai) | 需註冊 | 60 requests/min and 1,800/hour per account (100/min, 3,000/hour per IP) | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
@@ -139,14 +141,12 @@ print(response.choices[0].message.content)
 | [AnyAPI](https://anyapi.ai) | 否 | Limited API calls on the Free plan (exact RPM not published) | 100K ANY tokens per day, free models only | See provider |
 | [Zro (MoonMath)](https://zro.moonmath.ai) | 需註冊 | Daily usage allowance (amount not published) | Resets every day (Flash models only) | GLM-5.3 Flash, DeepSeek V4.1 Flash |
 | [Inferbase](https://inferbase.ai) | 否 | 100 managed requests per day | $0.50 of managed model usage per day; 5,000 requests per month | GPT-OSS 120B, DeepSeek V4 Flash, Qwen3.6 27B, Gemma 4 31B IT |
-| [Gonka Broker](https://gonkabroker.com) | 需電話驗證 | Network limits (see docs.gonkabroker.com Limits & Quotas) | Monthly free token grant after SMS verification (does not accumulate) | GLM-5.3 Flash, DeepSeek V4 Flash 0731, MiniMax M2.7 |
 | [AIHubMix (free models)](https://aihubmix.com) | 需註冊 | 5 RPM per account on most *-free routes | 100 requests/day and 1M tokens/day per account (500 RPD on some, e.g. glm-4.7-flash-free, coding-minimax-m3-free) | Coding GLM 5.3 (free), Coding GLM 5.3 Flash (free), Coding Kimi K3 (free), Coding MiniMax M3 (free) |
 | [IBM watsonx.ai (Lite plan)](https://www.ibm.com/products/watsonx-ai/pricing) | 需綁定信用卡 | About 2 requests/second (Lite) | 300,000 tokens/month + 20 CUH/month | Granite 4 H Small, Llama 3.3 70B Instruct, Llama 4 Maverick, GPT-OSS 120B |
 | [Bytez](https://docs.bytez.com/model-api/docs/billing) | 需註冊 | 1 concurrent request (open models); 10 requests/second (closed models) | $1 free credits, refreshed every 4 weeks | See provider |
 | [Moark (Gitee AI)](https://moark.com/docs/FAQ) | 需電話驗證 | Not published | 100 free calls/day per user (free experience access token) | DeepSeek V4 Flash 0731, GLM 5.3 Flash, Qwen3.8 27B |
 | [MegaNova AI](https://docs.meganova.ai/tiers) | 否 | Tier 1 (free): 20-200 RPM | Tier 1: 50-500 free-model requests/day (varies by model) | Manta Pro 1.0, Manta Flash 1.0, Manta Mini 1.0, Mistral Small 3.2 24B |
 | [SimpleLLM](https://simplellm.eu/docs/) | 需註冊 | Account-specific (read via GET /v1/rate-limit) | Free-model hourly/daily request and token allowances (values per account, not published) | Llama 3.1 8B Free, Gemma E4B Free, Mistral 7B (tier free, $0), Kode 14B (tier free, $0) |
-| [Experiential Labs](https://www.experientiallabs.ai/pricing) | 需綁定信用卡 | 10 RPM and 250K TPM per free core model | 1M input+output tokens/day shared across free core models, reset 00:00 UTC | GPT-6 Luna, DeepSeek V4.1 Flash 1017, Clef Flash (decision endpoint, free promo) |
 | [Sail Research](https://docs.sailresearch.com/pricing) | 需綁定信用卡 | Not published for Free plan (most relaxed on flex window) | $5 free credits every month (payment method attached) | Kimi K3, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash 1017 |
 | [LLMTR](https://llmtr.com/en/terms) | 需註冊 | Not published; lower allowance in an account's first 24h | Per-model daily allowance (e.g. 200K tokens/day on dated previews) | Nemotron 3 Ultra 550B, Nemotron 3.5 Super VL (free), Qwen3.8 27B (free), Agnes 3.0 Flash |
 | [Kiosapi.id](https://kiosapi.id/pricing) | 需註冊 | 5 requests/minute (free models) | 50 requests/day per account shared across free models, reset 07:00 WIB | GLM 4.7 Flash, Qwen3 30B, Gemma 4 26B, Llama 3.1 8B |
@@ -230,6 +230,8 @@ print(response.choices[0].message.content)
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得金鑰 →](https://portal.nousresearch.com) |
 | [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得金鑰 →](https://experiments.hetzner.com/inference) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得金鑰 →](https://modelscope.cn) |
+| [Gonka Broker](https://gonkabroker.com) | `https://proxy.gonkabroker.com/v1` | [取得金鑰 →](https://gonkabroker.com) |
+| [Experiential Labs](https://www.experientiallabs.ai/pricing) | `https://api.experientiallabs.ai/v1` | [取得金鑰 →](https://www.experientiallabs.ai/pricing) |
 | [Cerebrium](https://www.cerebrium.ai/) | `https://api.cortex.cerebrium.ai/v4` | [取得金鑰 →](https://www.cerebrium.ai/) |
 | [Requesty](https://requesty.ai/) | `https://router.requesty.ai/v1` | [取得金鑰 →](https://requesty.ai/) |
 | [SiliconFlow](https://cloud.siliconflow.cn/models) | `https://api.siliconflow.cn/v1` | [取得金鑰 →](https://cloud.siliconflow.cn/models) |
@@ -247,7 +249,6 @@ print(response.choices[0].message.content)
 | [Zro (MoonMath)](https://zro.moonmath.ai) | `https://zro.moonmath.ai/v1` | [取得金鑰 →](https://zro.moonmath.ai) |
 | [Inferbase](https://inferbase.ai) | `https://api.inferbase.ai/v1` | [取得金鑰 →](https://inferbase.ai) |
 | [OpenTyphoon (Typhoon API)](https://opentyphoon.ai) | `https://api.opentyphoon.ai/v1` | [取得金鑰 →](https://opentyphoon.ai) |
-| [Gonka Broker](https://gonkabroker.com) | `https://proxy.gonkabroker.com/v1` | [取得金鑰 →](https://gonkabroker.com) |
 | [Regolo.ai](https://regolo.ai) | `https://api.regolo.ai/v1` | [取得金鑰 →](https://regolo.ai) |
 | [GonkaRouter](https://gonkarouter.io) | `https://api.gonkarouter.io/v1` | [取得金鑰 →](https://gonkarouter.io) |
 | [NovAI](https://aiapi-pro.com) | `https://aiapi-pro.com/v1` | [取得金鑰 →](https://aiapi-pro.com) |
@@ -270,7 +271,6 @@ print(response.choices[0].message.content)
 | [Moark (Gitee AI)](https://moark.com/docs/FAQ) | `https://api.moark.com/v1` | [取得金鑰 →](https://moark.com/docs/FAQ) |
 | [MegaNova AI](https://docs.meganova.ai/tiers) | `https://api.meganova.ai/v1` | [取得金鑰 →](https://docs.meganova.ai/tiers) |
 | [SimpleLLM](https://simplellm.eu/docs/) | `https://api.simplellm.eu/v1` | [取得金鑰 →](https://simplellm.eu/docs/) |
-| [Experiential Labs](https://www.experientiallabs.ai/pricing) | `https://api.experientiallabs.ai/v1` | [取得金鑰 →](https://www.experientiallabs.ai/pricing) |
 | [Sail Research](https://docs.sailresearch.com/pricing) | `https://api.sailresearch.com/v1` | [取得金鑰 →](https://docs.sailresearch.com/pricing) |
 | [Google Vertex AI express mode (Gemini Enterprise Agent Platform)](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview) | `https://aiplatform.googleapis.com/v1/publishers/google/models/MODEL_ID:generateContent` | [取得金鑰 →](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview) |
 | [Jina AI (Embeddings / Reader API)](https://jina.ai/embeddings/) | `https://api.jina.ai/v1/embeddings` | [取得金鑰 →](https://jina.ai/embeddings/) |
@@ -387,4 +387,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-12<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-13<!--LASTSYNC:END--></sub></p>
