@@ -174,7 +174,7 @@ print(response.choices[0].message.content)
 | [Dahl Inference](https://inference.dahl.global/) | 가입 필요 | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
 | [Regolo.ai](https://regolo.ai) | 불필요 | 30-day trial, 1M tokens/day, no card | 30일 | GPT-OSS 120B, Qwen3.8 27B, Gemma 4 31B, GLM-5.2 |
 | [GonkaRouter](https://gonkarouter.io) | 불필요 | 1M free tokens for new users | 일회성 | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M2.7 |
-| [NovAI](https://aiapi-pro.com) | 불필요 | $2 welcome credit, no card | 일회성 | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash |
+| [NovAI](https://aiapi-pro.com) | No | $2 welcome credit + 5 models free forever (10 calls/day, no card); unlimited on those 5 models after any top-up | 크레딧: 일회성 / 무료 티어: 상시 | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash, CogView-3 Flash (images), CogVideoX Flash (video) |
 | [Vectoree](https://vectoree.ai) | 불필요 | $5 welcome credit after CLI login | 일회성 | Vectoree Auto (router) |
 | [Sarvam AI](https://www.sarvam.ai/api-pricing) | 전화번호 인증 필요 | INR 100 free credits on signup | One-time; credits do not expire (per third-party list) | Sarvam 105B, Sarvam 105B Conversations |
 | [HPC-AI Model APIs](https://www.hpc-ai.com/model-apis) | 가입 필요 | $2 free voucher on signup ($4 with an invite code, per third-party list) | 일회성 | Kimi K2.7 Code |
