@@ -100,10 +100,10 @@ print(response.choices[0].message.content)
 | [Z.AI (GLM)](https://z.ai/) | 登録が必要 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | 不要 | モデルにより異なる | 1 日 10,000 neurons | ~300,000 neurons/month | GLM-5.3 Flash, FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 登録が必要 | 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go) | 非公開 | Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
+| [Hetzner Inference API](https://experiments.hetzner.com/inference) | カード登録が必要 | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental); a Hetzner account with billing details is required and Hetzner may ask for a card or ID to verify it | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | 不要 | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | [Ollama Cloud](https://ollama.com/cloud) | 不要 | Pay-as-you-go: 3 concurrent requests; only Beam (beam:cloud) is labelled free | No free monthly allowance any more (starter credits removed); other cloud models are billed per token | Weekly usage limit resets every 7 days | Reflection Beam (501B) |
 | [Nous Portal](https://portal.nousresearch.com) | カード登録が必要 | Standard rate limits (figures not published) | Free models only (no monthly credit) | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | StepFun Step 3.7 Flash, Reflection Beam 1.0, Upstage Solar Mini 4, Crouton Alpha (stealth, free) |
-| [Hetzner Inference API](https://experiments.hetzner.com/inference) | カード登録が必要 | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental); a Hetzner account with billing details is required and Hetzner may ask for a card or ID to verify it | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
 | [ModelScope](https://modelscope.cn) | 電話番号認証が必要 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
 | [SiliconFlow](https://cloud.siliconflow.cn/models) | 電話番号認証が必要 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | [Aion Labs](https://www.aionlabs.ai/pricing/) | 不要 | Not published (daily credit allowance) | Daily free credit allowance (amount not published by Aion Labs) | Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
@@ -224,11 +224,11 @@ print(response.choices[0].message.content)
 | [Z.AI (GLM)](https://z.ai/) | `https://api.z.ai/api/paas/v4` | [取得 →](https://z.ai/) |
 | [Cloudflare Workers AI](https://dash.cloudflare.com/) | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/` | [取得 →](https://dash.cloudflare.com/) |
 | [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | [取得 →](https://endpoints.ai.cloud.ovh.net/) |
+| [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得 →](https://experiments.hetzner.com/inference) |
 | [Kilo AI Gateway](https://kilo.ai/gateway) | `https://ai-gateway.kilo.ai/api/v1` | [取得 →](https://kilo.ai/gateway) |
 | [Friendli AI](https://friendli.ai/) | `https://inference.friendli.ai/v1` | [取得 →](https://friendli.ai/) |
 | [Ollama Cloud](https://ollama.com/cloud) | `https://ollama.com/v1` | [取得 →](https://ollama.com/cloud) |
 | [Nous Portal](https://portal.nousresearch.com) | `https://inference-api.nousresearch.com/v1` | [取得 →](https://portal.nousresearch.com) |
-| [Hetzner Inference API](https://experiments.hetzner.com/inference) | `https://inference.hetzner.com/api/v1` | [取得 →](https://experiments.hetzner.com/inference) |
 | [ModelScope](https://modelscope.cn) | `https://api-inference.modelscope.cn/v1` | [取得 →](https://modelscope.cn) |
 | [Gonka Broker](https://gonkabroker.com) | `https://proxy.gonkabroker.com/v1` | [取得 →](https://gonkabroker.com) |
 | [Experiential Labs](https://www.experientiallabs.ai/pricing) | `https://api.experientiallabs.ai/v1` | [取得 →](https://www.experientiallabs.ai/pricing) |
@@ -387,4 +387,4 @@ MIT — 詳細は [LICENSE](LICENSE) を参照してください。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-13<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-14<!--LASTSYNC:END--></sub></p>
