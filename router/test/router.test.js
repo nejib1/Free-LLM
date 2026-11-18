@@ -303,3 +303,14 @@ test('agent setup writes and removes Claude Code / Codex config', async () => {
   AGENTS.claude.apply(cfg, { remove: true });
   assert.equal(JSON.parse(fs.readFileSync(AGENTS.claude.file(), 'utf8')).env, undefined);
 });
+
+test('a key is locked to its provider domain and never sent elsewhere', async () => {
+  const { loadConfig, providerKeys, blockedKeys } = await import('../src/config.js');
+  const cfg = loadConfig();
+  const realHost = `127.0.0.1:${mock.port}`;
+  assert.equal(providerKeys(cfg, 'alpha', realHost).length, 1); // pinned on first use
+  assert.equal(providerKeys(cfg, 'alpha', 'attacker.example').length, 0); // catalog tampered → key withheld
+  assert.equal(blockedKeys(cfg, 'alpha', 'attacker.example').length, 1);
+  const stored = fs.readFileSync(path.join(HOME, 'config.json'), 'utf8');
+  assert.ok(!stored.includes('"good"'), 'keys must be encrypted at rest');
+});

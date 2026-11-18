@@ -14,7 +14,7 @@ if (major < 18) {
 }
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const { loadConfig, saveConfig, configExists, addKey, removeKey, providerKeys, providerCfg, providerAccountId, PATHS, STRATEGIES } = await import('../src/config.js');
+const { loadConfig, saveConfig, configExists, addKey, removeKey, providerKeys, providerCfg, providerAccountId, hostOf, PATHS, STRATEGIES } = await import('../src/config.js');
 const { loadCatalog, catalog, catalogStatus, refreshCatalog, recommendScore } = await import('../src/catalog.js');
 const st = await import('../src/state.js');
 const { runChat, allTargets, listModels, PROFILES } = await import('../src/router.js');
@@ -84,7 +84,8 @@ function recommended(cat, n = 10) {
 }
 
 async function testProviderKey(cfg, prov, keyId) {
-  const value = providerKeys(cfg, prov.slug).find((k) => k.id === keyId)?.value;
+  const value = providerKeys(cfg, prov.slug, hostOf(prov.base)).find((k) => k.id === keyId)?.value;
+  if (!value) return { ok: false, ms: 0, error: 'key blocked: the provider address changed since you added it (see free-llm doctor)' };
   const model = prov.models.find((m) => m.kind === 'chat') || prov.models[0];
   return testKey({ provider: prov, model, key: { id: keyId, value, anonymous: false }, accountId: providerAccountId(cfg, prov.slug) });
 }
@@ -141,6 +142,11 @@ a free model that is up, and switches instantly when one is slow, down or out of
 ${dim('It already works right now with no key at all ("guest mode", slower).')}
 ${dim('Each free key you add makes it faster and stronger. Most take 1 minute and no credit card.')}
 `);
+  out(green(bold('🔒 100% local and private')));
+  out(`   • Your keys are stored ${bold('only on this computer')}, encrypted (AES-256-GCM), in ${PATHS.home}`);
+  out(`   • Each key is sent ${bold('only to its own provider')} (your Groq key only to api.groq.com…), and locked to that address`);
+  out('   • Nothing goes through free-llm.com: no account, no telemetry, no tracking');
+  out(`   • Open source — read the code: ${dim('https://github.com/nejib1/Free-LLM/tree/main/router')}\n`);
   const recs = recommended(cat, 8);
   out(bold('Best free providers to start with:'));
   recs.forEach((p, i) => {
@@ -151,7 +157,7 @@ ${dim('Each free key you add makes it faster and stronger. Most take 1 minute an
   for (const p of recs) {
     const has = providerKeys(cfg, p.slug).length;
     if (has) { out(`  ${green('✓')} ${p.name}: key already saved`); continue; }
-    const ans = (await rl.question(`  Paste your ${bold(p.name)} key ${dim('(Enter to skip)')}: `)).trim();
+    const ans = (await rl.question(`  Paste your ${bold(p.name)} key ${dim(`(stays here, only sent to ${hostOf(p.base) || 'the provider'} · Enter to skip)`)}: `)).trim();
     if (!ans) continue;
     if (p.needs.includes('account_id')) {
       const acc = (await rl.question(`    ${p.name} account ID: `)).trim();
@@ -293,6 +299,7 @@ async function cmdKeys() {
       const r = await testProviderKey(cfg, p, id);
       out(r.ok ? green(`works (${fmtMs(r.ms)})`) : red(`problem: ${r.error}`));
     }
+    out(dim(`🔒 Stored encrypted on this computer only; it will only ever be sent to ${hostOf(p.base) || p.name}.`));
     if (await routerRunning(cfg)) out(dim('The running router picks it up within seconds — no restart needed.'));
     return;
   }

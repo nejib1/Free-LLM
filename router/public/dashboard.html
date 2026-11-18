@@ -40,6 +40,8 @@ code,.mono{font-family:var(--mono);font-size:13px}
 pre{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px;overflow:auto;font-size:12.5px;margin:0;white-space:pre-wrap;word-break:break-word}
 .copy{position:relative}.copy .btn{position:absolute;top:8px;right:8px}
 .banner{border-radius:14px;padding:18px 20px;background:linear-gradient(135deg,color-mix(in srgb,var(--brand) 14%,var(--panel)),color-mix(in srgb,var(--brand2) 12%,var(--panel)));border:1px solid var(--line);margin-bottom:18px}
+  .trust{border-radius:14px;padding:16px 18px;margin-bottom:14px;border:1px solid color-mix(in srgb,var(--ok) 35%,var(--line));background:color-mix(in srgb,var(--ok) 9%,var(--panel))}
+.trust h2{margin:0 0 8px;color:var(--ok)}.trust ul{margin:0;padding-left:20px}.trust li{margin:3px 0}.trust small{color:var(--muted)}
 .banner.warn{background:color-mix(in srgb,var(--warn) 12%,var(--panel))}
 .flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0}.flow div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-weight:600}.flow span{color:var(--muted)}
 .bar{height:6px;border-radius:9px;background:var(--panel2);overflow:hidden;min-width:60px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand2))}
@@ -133,12 +135,13 @@ pages.home = async () => {
   const banner = s.guest_mode || !s.providers_with_keys ? `
     <div class="banner warn"><h2 style="margin:0 0 6px">You're in guest mode 👋</h2>
     <p style="margin:0 0 12px">The router already answers with a few no-account free models, but they are slow and limited.
-    <b>Add 2–3 free keys</b> (1 minute each, most without a credit card) and you get dozens of fast, strong models — enough for coding agents like Claude Code.</p>
+    <b>Add 2–3 free keys</b> (1 minute each, most without a credit card — they stay on this computer) and you get dozens of fast, strong models — enough for coding agents like Claude Code.</p>
     <a class="btn p" href="#keys">🔑 Add my first free key</a></div>` : '';
   $('#main').innerHTML = `
     <h1>Your free AI gateway is running</h1>
     <p class="sub">One address for all the free AI models. Point any app at it — the router does the rest.</p>
     ${banner}
+    <p class="muted" style="margin:-8px 0 16px;font-size:13px">🔒 Everything runs on this computer. Your keys and your conversations never go through free-llm.com — requests go straight from here to each provider. <a href="#keys">How your keys are protected</a></p>
     <div class="grid g4" style="margin-bottom:14px">
       <div class="card kpi"><b>${fmt(s.models)}</b><span>free models ready</span></div>
       <div class="card kpi"><b>${fmt(s.providers_with_keys)}</b><span>providers with your keys</span></div>
@@ -194,6 +197,11 @@ function chart(raw) {
     <p class="muted" style="font-size:12px;margin:6px 0 0"><span class="dot" style="background:var(--brand)"></span> requests &nbsp; <span class="dot warn"></span> switched to another provider</p>`;
 }
 
+const TRUST = `<div class="trust"><h2>🔒 100% local — your keys never leave this computer</h2><ul>
+  <li><b>Stored only here</b>, encrypted (AES-256-GCM) in <code>~/.free-llm</code>. Not on free-llm.com, not in any cloud, no account.</li>
+  <li><b>Each key goes only to its own provider</b> (e.g. your Groq key only to <code>api.groq.com</code>) — and is locked to that address: if it ever changed, the router would refuse to send it.</li>
+  <li><b>No telemetry, no analytics, no tracking.</b> The only other thing the router downloads is the public list of free models — it sends nothing about you.</li>
+  <li><b>Open source</b>: every line is on <a href="https://github.com/nejib1/Free-LLM/tree/main/router" target="_blank" rel="noopener">GitHub</a> — anyone can check.</li></ul></div>`;
 const SIGNUP = { no: ['ok', 'No card'], registration: ['', 'Email sign-up'], phone_verification: ['warn', 'Phone check'], credit_card: ['bad', 'Card required'] };
 let provFilter = '';
 let showAll = false;
@@ -207,6 +215,7 @@ pages.keys = async () => {
   $('#main').innerHTML = `
     <h1>Free API keys</h1>
     <p class="sub">Each key unlocks more free models. Click <b>Get a free key</b>, sign up (usually 1 minute), paste the key here — it is tested right away and stored encrypted on <b>this computer only</b>.</p>
+    ${TRUST}
     <div class="card" style="margin-bottom:14px"><div class="row"><input type="text" id="pf" class="grow" placeholder="Search a provider (Groq, Gemini, Mistral…)" value="${esc(provFilter)}">
       <span class="chip ok">${mine.length} connected</span><span class="chip">${usable.length} available</span></div></div>
     <div class="card">${shown.map(provRow).join('')}
@@ -221,7 +230,7 @@ pages.keys = async () => {
 function provRow(p) {
   const [cls, label] = SIGNUP[p.signup] || ['', p.signup || ''];
   const keys = p.keys.map((k) => `<div class="row" style="margin-top:6px;font-size:13px"><span class="dot ${k.invalid ? 'bad' : 'ok'}"></span><code>${esc(k.masked)}</code>
-    ${k.invalid ? `<span class="chip bad">${esc(k.invalid)}</span>` : '<span class="chip ok">active</span>'}
+    ${k.invalid ? `<span class="chip bad">${esc(k.invalid)}</span>` : `<span class="chip ok">active · only sent to ${esc(k.sent_to || '')}</span>`}
     ${k.rate?.remaining_requests != null ? `<span class="muted">${fmt(k.rate.remaining_requests)} requests left in window</span>` : ''}
     <button class="btn s d" data-p="${esc(p.slug)}" data-del="${esc(k.id)}">Remove</button></div>`).join('');
   return `<div class="prov"><div>
@@ -230,6 +239,7 @@ function provRow(p) {
     ${keys}
     ${p.needs.includes('account_id') ? `<div class="keyrow"><input type="text" id="acc-${esc(p.slug)}" placeholder="Account ID${p.has_account_id ? ' (saved)' : ''}"></div>` : ''}
     <div class="keyrow"><input type="password" id="key-${esc(p.slug)}" placeholder="Paste your ${esc(p.name)} API key" autocomplete="off"><button class="btn p" data-add="${esc(p.slug)}">Add</button></div>
+    <p style="margin-top:6px;font-size:12px">🔒 Stays on this computer, encrypted · sent only to <code>${esc(p.sends_to || 'the provider')}</code></p>
     </div><div class="row" style="align-content:start;justify-content:flex-end">
     <a class="btn" href="${esc(p.help_url)}" target="_blank" rel="noopener">Get a free key ↗</a>
     ${p.keys.length ? `<button class="btn s" data-test="${esc(p.slug)}">Test</button>` : ''}

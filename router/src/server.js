@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import crypto from 'node:crypto';
-import { loadConfig, saveConfig, addKey, removeKey, providerCfg, providerKeys, providerAccountId, PATHS, STRATEGIES } from './config.js';
+import { loadConfig, saveConfig, addKey, removeKey, providerCfg, providerKeys, providerAccountId, blockedKeys, hostOf, PATHS, STRATEGIES } from './config.js';
 import { loadCatalog, catalog, catalogStatus, refreshCatalog, startCatalogRefresh, recommendScore } from './catalog.js';
 import * as st from './state.js';
 import { allTargets, listModels, recentRequests, runEmbeddings, PROFILES, cacheStats, cacheClear, probeGuests } from './router.js';
@@ -74,17 +74,21 @@ function errorFor(style, res, status, message, type) {
 
 function providerView(cfg, prov) {
   const pc = cfg.providers[prov.slug] || {};
+  const host = hostOf(prov.base);
+  const blocked = new Map(blockedKeys(cfg, prov.slug, host).map((b) => [b.id, b]));
   const keys = (pc.keys || []).map((k) => {
     let v = '';
     try { v = providerKeys(cfg, prov.slug).find((x) => x.id === k.id)?.value || ''; } catch { /* ignore */ }
     const rate = st.keyRate(prov.slug, k.id);
-    return { id: k.id, label: k.label || '', masked: maskKey(v), added_at: k.added_at, invalid: rate?.invalid_until > Date.now() ? rate.invalid_reason : null, rate: rate?.rl || null };
+    const b = blocked.get(k.id);
+    const invalid = b ? `blocked for your safety: this key is locked to ${b.pinned}, but the provider address is now ${b.now}` : rate?.invalid_until > Date.now() ? rate.invalid_reason : null;
+    return { id: k.id, label: k.label || '', masked: maskKey(v), added_at: k.added_at, sent_to: k.host || host, invalid, rate: rate?.rl || null };
   });
   const chat = prov.models.filter((m) => m.kind === 'chat');
   return {
     slug: prov.slug, name: prov.name, type: prov.type, usable: prov.usable, signup: prov.signup, category: prov.category,
     free_tier: prov.freeTier, verified: prov.verified, rate_limit: prov.rateLimit, daily_limit: prov.dailyLimit, credits: prov.credits,
-    website: prov.website, help_url: prov.helpUrl, needs: prov.needs, has_account_id: Boolean(pc.account_id),
+    website: prov.website, help_url: prov.helpUrl, needs: prov.needs, has_account_id: Boolean(pc.account_id), sends_to: hostOf(prov.base),
     guest: prov.anonymousKey !== null, guest_enabled: pc.guest !== false,
     enabled: pc.enabled !== false, keys,
     models: prov.models.length, chat_models: chat.length, top_quality: Math.max(0, ...chat.map((m) => m.quality)), score: recommendScore(prov),
@@ -154,7 +158,7 @@ async function admin(cfg, req, res, p, body) {
     saveConfig(cfg);
     let test = null;
     if (id && prov.usable) {
-      const value = providerKeys(cfg, slug).find((k) => k.id === id)?.value;
+      const value = providerKeys(cfg, slug, hostOf(prov.base)).find((k) => k.id === id)?.value;
       const model = prov.models.find((x) => x.kind === 'chat') || prov.models[0];
       if (model) test = await testKey({ provider: prov, model, key: { id, value, anonymous: false }, accountId: providerAccountId(cfg, slug) });
       if (test && test.ok) st.clearKeyState(slug, id);
@@ -170,7 +174,7 @@ async function admin(cfg, req, res, p, body) {
   if (p === 'keys/test' && m === 'POST') {
     const prov = catalog()?.providers.get(body.provider);
     if (!prov) throw new HttpError(404, 'Unknown provider');
-    const keys = providerKeys(cfg, prov.slug).filter((k) => !body.id || k.id === body.id);
+    const keys = providerKeys(cfg, prov.slug, hostOf(prov.base)).filter((k) => !body.id || k.id === body.id);
     const model = prov.models.find((x) => x.kind === 'chat') || prov.models[0];
     const results = [];
     for (const k of keys) {

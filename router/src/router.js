@@ -2,7 +2,7 @@
 // transparently, learn from every outcome.
 import fs from 'node:fs';
 import { catalog } from './catalog.js';
-import { PATHS, providerKeys, providerAccountId } from './config.js';
+import { PATHS, providerKeys, providerAccountId, hostOf } from './config.js';
 import * as st from './state.js';
 import { buildBody, callChat, callJson, UpstreamError } from './upstream.js';
 import { thinkStripper, toolRescuer } from './filters.js';
@@ -78,7 +78,7 @@ export function allTargets(cfg, kind = 'chat') {
     if (!prov.usable) continue;
     const pc = cfg.providers[prov.slug];
     if (pc?.enabled === false) continue;
-    let keys = providerKeys(cfg, prov.slug).map((k) => ({ ...k, anonymous: false }));
+    let keys = providerKeys(cfg, prov.slug, hostOf(prov.base)).map((k) => ({ ...k, anonymous: false }));
     if (!keys.length && prov.anonymousKey !== null && pc?.guest !== false) keys = [{ id: 'guest', label: 'guest access', value: prov.anonymousKey, anonymous: true }];
     if (!keys.length) continue;
     const accountId = prov.needs.includes('account_id') ? providerAccountId(cfg, prov.slug) : null;
