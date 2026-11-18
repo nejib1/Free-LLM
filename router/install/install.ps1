@@ -2,7 +2,7 @@
 #   irm https://free-llm.com/install.ps1 | iex
 # Installs into %USERPROFILE%\.free-llm\app and adds `free-llm` to your user PATH. No admin rights.
 $ErrorActionPreference = 'Stop'
-$url = if ($env:FREE_LLM_TARBALL) { $env:FREE_LLM_TARBALL } else { 'https://free-llm.com/downloads/free-llm-latest.tgz' }
+$url = if ($env:FREE_LLM_TARBALL) { $env:FREE_LLM_TARBALL } else { 'https://github.com/nejib1/Free-LLM/releases/latest/download/free-llm.tgz' }
 $home_ = if ($env:FREE_LLM_HOME) { $env:FREE_LLM_HOME } else { Join-Path $env:USERPROFILE '.free-llm' }
 $app = Join-Path $home_ 'app'
 $bin = Join-Path $home_ 'bin'
