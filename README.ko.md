@@ -207,80 +207,80 @@ print(response.choices[0].message.content)
 <!--TABLE:QUICKREF:START-->
 | 제공업체 | OpenAI 호환 Base URL | 가입 조건 | API 키 |
 |:---|:---|:---|:---:|
-| **[OpenRouter](https://free-llm.com/provider/openrouter)** | <code>https://openrouter.ai/<wbr>api/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://openrouter.ai/) |
-| **[Google AI Studio](https://free-llm.com/provider/google-ai-studio)** | <code>https://generativelanguage.googleapis.com/<wbr>v1beta/<wbr>openai</code> | 🟢 카드 불필요 | [발급 →](https://aistudio.google.com/) |
-| **[Cohere](https://free-llm.com/provider/cohere)** | <code>https://api.cohere.ai/<wbr>compatibility/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://cohere.com/) |
-| **[Groq](https://free-llm.com/provider/groq-cloud)** | <code>https://api.groq.com/<wbr>openai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://console.groq.com/) |
-| **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)** | <code>https://api.cloudflare.com/<wbr>client/<wbr>v4/<wbr>accounts/<wbr>{account_id}/<wbr>ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://dash.cloudflare.com/) |
-| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)** | <code>https://ai-gateway.kilo.ai/<wbr>api/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://kilo.ai/gateway) |
-| **[FreeInference](https://free-llm.com/provider/freeinference)** | <code>https://freeinference.org/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://freeinference.org) |
-| **[Ollama Cloud](https://free-llm.com/provider/ollama-cloud)** | <code>https://ollama.com/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://ollama.com/cloud) |
-| **[Requesty](https://free-llm.com/provider/requesty)** | <code>https://router.requesty.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://requesty.ai/) |
-| **[Aion Labs](https://free-llm.com/provider/aion-labs)** | <code>https://api.aionlabs.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://www.aionlabs.ai/pricing/) |
-| **[Grokified](https://free-llm.com/provider/grokified)** | <code>https://api.grokified.com/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://grokified.com) |
-| **[Api.Airforce](https://free-llm.com/provider/api-airforce)** | <code>https://api.airforce/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://api.airforce/) |
-| **[AnyAPI](https://free-llm.com/provider/anyapi)** | <code>https://api.anyapi.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://anyapi.ai) |
-| **[Inferbase](https://free-llm.com/provider/inferbase)** | <code>https://api.inferbase.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://inferbase.ai) |
-| **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)** | <code>https://api.opentyphoon.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://opentyphoon.ai) |
-| **[Regolo.ai](https://free-llm.com/provider/regolo-ai)** | <code>https://api.regolo.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://regolo.ai) |
-| **[GonkaRouter](https://free-llm.com/provider/gonkarouter)** | <code>https://api.gonkarouter.io/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://gonkarouter.io) |
-| **[NovAI](https://free-llm.com/provider/novai)** | <code>https://aiapi-pro.com/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://aiapi-pro.com) |
-| **[Vectoree](https://free-llm.com/provider/vectoree)** | <code>https://vectoree.ai/<wbr>api/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://vectoree.ai) |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)** | <code>https://oai.aihorde.net/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://aihorde.net) |
-| **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)** | <code>https://gateway.vlm.run/<wbr>v1/<wbr>openai</code> | 🟢 카드 불필요 | [발급 →](https://docs.vlm.run/gateway/rate-limits) |
-| **[MegaNova AI](https://free-llm.com/provider/meganova)** | <code>https://api.meganova.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://docs.meganova.ai/tiers) |
-| **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)** | <code>https://api.jina.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://jina.ai/embeddings/) |
-| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)** | <code>https://gen.pollinations.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://pollinations.ai) |
-| **[Inception Labs](https://free-llm.com/provider/inception-labs)** | <code>https://api.inceptionlabs.ai/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://www.inceptionlabs.ai/) |
-| **[LLM7.io](https://free-llm.com/provider/llm7-io)** | <code>https://api.llm7.io/<wbr>v1</code> | 🟢 카드 불필요 | [발급 →](https://llm7.io) |
+| **[OpenRouter](https://free-llm.com/provider/openrouter)** | `https://openrouter.ai/api/v1` | 🟢 카드 불필요 | [발급 →](https://openrouter.ai/) |
+| **[Google AI Studio](https://free-llm.com/provider/google-ai-studio)** | `https://generativelanguage.googleapis.com/v1beta/openai` | 🟢 카드 불필요 | [발급 →](https://aistudio.google.com/) |
+| **[Cohere](https://free-llm.com/provider/cohere)** | `https://api.cohere.ai/compatibility/v1` | 🟢 카드 불필요 | [발급 →](https://cohere.com/) |
+| **[Groq](https://free-llm.com/provider/groq-cloud)** | `https://api.groq.com/openai/v1` | 🟢 카드 불필요 | [발급 →](https://console.groq.com/) |
+| **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)** | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` | 🟢 카드 불필요 | [발급 →](https://dash.cloudflare.com/) |
+| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)** | `https://ai-gateway.kilo.ai/api/v1` | 🟢 카드 불필요 | [발급 →](https://kilo.ai/gateway) |
+| **[FreeInference](https://free-llm.com/provider/freeinference)** | `https://freeinference.org/v1` | 🟢 카드 불필요 | [발급 →](https://freeinference.org) |
+| **[Ollama Cloud](https://free-llm.com/provider/ollama-cloud)** | `https://ollama.com/v1` | 🟢 카드 불필요 | [발급 →](https://ollama.com/cloud) |
+| **[Requesty](https://free-llm.com/provider/requesty)** | `https://router.requesty.ai/v1` | 🟢 카드 불필요 | [발급 →](https://requesty.ai/) |
+| **[Aion Labs](https://free-llm.com/provider/aion-labs)** | `https://api.aionlabs.ai/v1` | 🟢 카드 불필요 | [발급 →](https://www.aionlabs.ai/pricing/) |
+| **[Grokified](https://free-llm.com/provider/grokified)** | `https://api.grokified.com/v1` | 🟢 카드 불필요 | [발급 →](https://grokified.com) |
+| **[Api.Airforce](https://free-llm.com/provider/api-airforce)** | `https://api.airforce/v1` | 🟢 카드 불필요 | [발급 →](https://api.airforce/) |
+| **[AnyAPI](https://free-llm.com/provider/anyapi)** | `https://api.anyapi.ai/v1` | 🟢 카드 불필요 | [발급 →](https://anyapi.ai) |
+| **[Inferbase](https://free-llm.com/provider/inferbase)** | `https://api.inferbase.ai/v1` | 🟢 카드 불필요 | [발급 →](https://inferbase.ai) |
+| **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)** | `https://api.opentyphoon.ai/v1` | 🟢 카드 불필요 | [발급 →](https://opentyphoon.ai) |
+| **[Regolo.ai](https://free-llm.com/provider/regolo-ai)** | `https://api.regolo.ai/v1` | 🟢 카드 불필요 | [발급 →](https://regolo.ai) |
+| **[GonkaRouter](https://free-llm.com/provider/gonkarouter)** | `https://api.gonkarouter.io/v1` | 🟢 카드 불필요 | [발급 →](https://gonkarouter.io) |
+| **[NovAI](https://free-llm.com/provider/novai)** | `https://aiapi-pro.com/v1` | 🟢 카드 불필요 | [발급 →](https://aiapi-pro.com) |
+| **[Vectoree](https://free-llm.com/provider/vectoree)** | `https://vectoree.ai/api/v1` | 🟢 카드 불필요 | [발급 →](https://vectoree.ai) |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)** | `https://oai.aihorde.net/v1` | 🟢 카드 불필요 | [발급 →](https://aihorde.net) |
+| **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)** | `https://gateway.vlm.run/v1/openai` | 🟢 카드 불필요 | [발급 →](https://docs.vlm.run/gateway/rate-limits) |
+| **[MegaNova AI](https://free-llm.com/provider/meganova)** | `https://api.meganova.ai/v1` | 🟢 카드 불필요 | [발급 →](https://docs.meganova.ai/tiers) |
+| **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)** | `https://api.jina.ai/v1` | 🟢 카드 불필요 | [발급 →](https://jina.ai/embeddings/) |
+| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)** | `https://gen.pollinations.ai/v1` | 🟢 카드 불필요 | [발급 →](https://pollinations.ai) |
+| **[Inception Labs](https://free-llm.com/provider/inception-labs)** | `https://api.inceptionlabs.ai/v1` | 🟢 카드 불필요 | [발급 →](https://www.inceptionlabs.ai/) |
+| **[LLM7.io](https://free-llm.com/provider/llm7-io)** | `https://api.llm7.io/v1` | 🟢 카드 불필요 | [발급 →](https://llm7.io) |
 | **[Replicate](https://free-llm.com/provider/replicate)** | <sub>자체 API 전용 — [설정 가이드](https://free-llm.com/provider/replicate)</sub> | ✉️ 이메일 가입 | [발급 →](https://replicate.com/) |
-| **[Fireworks AI](https://free-llm.com/provider/fireworks-ai)** | <code>https://api.fireworks.ai/<wbr>inference/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://fireworks.ai/) |
-| **[Novita AI](https://free-llm.com/provider/novita-ai)** | <code>https://api.novita.ai/<wbr>v3/<wbr>openai</code> | ✉️ 이메일 가입 | [발급 →](https://novita.ai/) |
-| **[Scaleway Generative APIs](https://free-llm.com/provider/scaleway)** | <code>https://api.scaleway.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://console.scaleway.com/generative-api/models) |
-| **[Qwen (Alibaba)](https://free-llm.com/provider/qwen-alibaba)** | <code>https://dashscope-intl.aliyuncs.com/<wbr>compatible-mode/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://bailian.console.alibabacloud.com/) |
-| **[Upstage](https://free-llm.com/provider/upstage)** | <code>https://api.upstage.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://console.upstage.ai/) |
-| **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)** | <code>https://api.z.ai/<wbr>api/<wbr>paas/<wbr>v4</code> | ✉️ 이메일 가입 | [발급 →](https://z.ai/) |
-| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)** | <code>https://oai.endpoints.kepler.ai.cloud.ovh.net/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://endpoints.ai.cloud.ovh.net/) |
-| **[Friendli AI](https://free-llm.com/provider/friendli-ai)** | <code>https://inference.friendli.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://friendli.ai/) |
+| **[Fireworks AI](https://free-llm.com/provider/fireworks-ai)** | `https://api.fireworks.ai/inference/v1` | ✉️ 이메일 가입 | [발급 →](https://fireworks.ai/) |
+| **[Novita AI](https://free-llm.com/provider/novita-ai)** | `https://api.novita.ai/v3/openai` | ✉️ 이메일 가입 | [발급 →](https://novita.ai/) |
+| **[Scaleway Generative APIs](https://free-llm.com/provider/scaleway)** | `https://api.scaleway.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://console.scaleway.com/generative-api/models) |
+| **[Qwen (Alibaba)](https://free-llm.com/provider/qwen-alibaba)** | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1` | ✉️ 이메일 가입 | [발급 →](https://bailian.console.alibabacloud.com/) |
+| **[Upstage](https://free-llm.com/provider/upstage)** | `https://api.upstage.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://console.upstage.ai/) |
+| **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)** | `https://api.z.ai/api/paas/v4` | ✉️ 이메일 가입 | [발급 →](https://z.ai/) |
+| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)** | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | ✉️ 이메일 가입 | [발급 →](https://endpoints.ai.cloud.ovh.net/) |
+| **[Friendli AI](https://free-llm.com/provider/friendli-ai)** | `https://inference.friendli.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://friendli.ai/) |
 | **[Cerebrium](https://free-llm.com/provider/cerebrium)** | <sub>자체 API 전용 — [설정 가이드](https://free-llm.com/provider/cerebrium)</sub> | ✉️ 이메일 가입 | [발급 →](https://www.cerebrium.ai/) |
-| **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)** | <code>https://ai-gateway.vercel.sh/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://vercel.com/ai-gateway) |
-| **[Routeway](https://free-llm.com/provider/routeway)** | <code>https://api.routeway.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://routeway.ai/) |
-| **[Token Harbor](https://free-llm.com/provider/token-harbor)** | <code>https://tokenharbor.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://tokenharbor.ai) |
-| **[IteraCompute](https://free-llm.com/provider/iteracompute)** | <code>https://api.iteracompute.com/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://iteracompute.com/free/) |
-| **[BazaarLink](https://free-llm.com/provider/bazaarlink)** | <code>https://api.bazaarlink.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://bazaarlink.ai/free) |
-| **[Dahl Inference](https://free-llm.com/provider/dahl-inference)** | <code>https://inference.dahl.global/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://inference.dahl.global/) |
-| **[Zro (MoonMath)](https://free-llm.com/provider/zro)** | <code>https://zro.moonmath.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://zro.moonmath.ai) |
-| **[SEA-LION API](https://free-llm.com/provider/sea-lion)** | <code>https://api.sea-lion.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://docs.sea-lion.ai/guides/inferencing/api) |
-| **[AIHubMix (free models)](https://free-llm.com/provider/aihubmix)** | <code>https://aihubmix.com/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://aihubmix.com) |
-| **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)** | <code>https://api.llm.kiwi/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://llm.kiwi/pricing) |
-| **[Agnes AI](https://free-llm.com/provider/agnes-ai)** | <code>https://apihub.agnes-ai.com/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://agnes-ai.com) |
-| **[Arli AI](https://free-llm.com/provider/arli-ai)** | <code>https://api.arliai.com/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://www.arliai.com/pricing) |
-| **[HPC-AI Model APIs](https://free-llm.com/provider/hpc-ai)** | <code>https://api.hpc-ai.com/<wbr>inference/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://www.hpc-ai.com/model-apis) |
-| **[Bytez](https://free-llm.com/provider/bytez)** | <code>https://api.bytez.com/<wbr>models/<wbr>v2/<wbr>openai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://docs.bytez.com/model-api/docs/billing) |
-| **[Mixlayer](https://free-llm.com/provider/mixlayer)** | <code>https://models.mixlayer.ai/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://docs.mixlayer.com/credits-and-limits) |
-| **[SimpleLLM](https://free-llm.com/provider/simplellm)** | <code>https://api.simplellm.eu/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://simplellm.eu/docs/) |
+| **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)** | `https://ai-gateway.vercel.sh/v1` | ✉️ 이메일 가입 | [발급 →](https://vercel.com/ai-gateway) |
+| **[Routeway](https://free-llm.com/provider/routeway)** | `https://api.routeway.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://routeway.ai/) |
+| **[Token Harbor](https://free-llm.com/provider/token-harbor)** | `https://tokenharbor.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://tokenharbor.ai) |
+| **[IteraCompute](https://free-llm.com/provider/iteracompute)** | `https://api.iteracompute.com/v1` | ✉️ 이메일 가입 | [발급 →](https://iteracompute.com/free/) |
+| **[BazaarLink](https://free-llm.com/provider/bazaarlink)** | `https://api.bazaarlink.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://bazaarlink.ai/free) |
+| **[Dahl Inference](https://free-llm.com/provider/dahl-inference)** | `https://inference.dahl.global/v1` | ✉️ 이메일 가입 | [발급 →](https://inference.dahl.global/) |
+| **[Zro (MoonMath)](https://free-llm.com/provider/zro)** | `https://zro.moonmath.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://zro.moonmath.ai) |
+| **[SEA-LION API](https://free-llm.com/provider/sea-lion)** | `https://api.sea-lion.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://docs.sea-lion.ai/guides/inferencing/api) |
+| **[AIHubMix (free models)](https://free-llm.com/provider/aihubmix)** | `https://aihubmix.com/v1` | ✉️ 이메일 가입 | [발급 →](https://aihubmix.com) |
+| **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)** | `https://api.llm.kiwi/v1` | ✉️ 이메일 가입 | [발급 →](https://llm.kiwi/pricing) |
+| **[Agnes AI](https://free-llm.com/provider/agnes-ai)** | `https://apihub.agnes-ai.com/v1` | ✉️ 이메일 가입 | [발급 →](https://agnes-ai.com) |
+| **[Arli AI](https://free-llm.com/provider/arli-ai)** | `https://api.arliai.com/v1` | ✉️ 이메일 가입 | [발급 →](https://www.arliai.com/pricing) |
+| **[HPC-AI Model APIs](https://free-llm.com/provider/hpc-ai)** | `https://api.hpc-ai.com/inference/v1` | ✉️ 이메일 가입 | [발급 →](https://www.hpc-ai.com/model-apis) |
+| **[Bytez](https://free-llm.com/provider/bytez)** | `https://api.bytez.com/models/v2/openai/v1` | ✉️ 이메일 가입 | [발급 →](https://docs.bytez.com/model-api/docs/billing) |
+| **[Mixlayer](https://free-llm.com/provider/mixlayer)** | `https://models.mixlayer.ai/v1` | ✉️ 이메일 가입 | [발급 →](https://docs.mixlayer.com/credits-and-limits) |
+| **[SimpleLLM](https://free-llm.com/provider/simplellm)** | `https://api.simplellm.eu/v1` | ✉️ 이메일 가입 | [발급 →](https://simplellm.eu/docs/) |
 | **[Google Vertex AI express mode (Gemini Enterprise Agent Platform)](https://free-llm.com/provider/vertex-ai-express)** | <sub>자체 API 전용 — [설정 가이드](https://free-llm.com/provider/vertex-ai-express)</sub> | ✉️ 이메일 가입 | [발급 →](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview) |
-| **[Voyage AI (embeddings & rerankers)](https://free-llm.com/provider/voyage-ai)** | <code>https://api.voyageai.com/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://docs.voyageai.com/docs/pricing) |
-| **[LLMTR](https://free-llm.com/provider/llmtr)** | <code>https://llmtr.com/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://llmtr.com/en/terms) |
-| **[Kiosapi.id](https://free-llm.com/provider/kiosapi)** | <code>https://api.kiosapi.id/<wbr>v1</code> | ✉️ 이메일 가입 | [발급 →](https://kiosapi.id/pricing) |
-| **[Mistral (La Plateforme)](https://free-llm.com/provider/mistral-ai)** | <code>https://api.mistral.ai/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://console.mistral.ai/) |
-| **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)** | <code>https://integrate.api.nvidia.com/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://build.nvidia.com/explore/discover) |
-| **[Hyperbolic](https://free-llm.com/provider/hyperbolic)** | <code>https://api.hyperbolic.ai/<wbr>inference/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://app.hyperbolic.xyz/) |
-| **[ModelScope](https://free-llm.com/provider/modelscope)** | <code>https://api-inference.modelscope.cn/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://modelscope.cn) |
-| **[Gonka Broker](https://free-llm.com/provider/gonka-broker)** | <code>https://proxy.gonkabroker.com/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://gonkabroker.com) |
-| **[SiliconFlow](https://free-llm.com/provider/siliconflow)** | <code>https://api.siliconflow.cn/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://cloud.siliconflow.cn/models) |
-| **[Sarvam AI](https://free-llm.com/provider/sarvam-ai)** | <code>https://api.sarvam.ai/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://www.sarvam.ai/api-pricing) |
-| **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)** | <code>https://spark-api-open.xf-yun.com/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://www.xfyun.cn/doc/spark/HTTP调用文档.html) |
-| **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)** | <code>https://open.bigmodel.cn/<wbr>api/<wbr>paas/<wbr>v4</code> | 📱 전화 인증 | [발급 →](https://docs.bigmodel.cn/cn/guide/start/model-overview) |
-| **[Moark (Gitee AI)](https://free-llm.com/provider/moark)** | <code>https://api.moark.com/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://moark.com/docs/FAQ) |
-| **[SenseNova (SenseTime)](https://free-llm.com/provider/sensenova)** | <code>https://token.sensenova.cn/<wbr>v1</code> | 📱 전화 인증 | [발급 →](https://www.sensenova.cn/token-plan) |
-| **[Cerebras](https://free-llm.com/provider/cerebras)** | <code>https://api.cerebras.ai/<wbr>v1</code> | 💳 카드 필요 | [발급 →](https://cerebras.ai/inference) |
-| **[Nous Portal](https://free-llm.com/provider/nous-portal)** | <code>https://inference-api.nousresearch.com/<wbr>v1</code> | 💳 카드 필요 | [발급 →](https://portal.nousresearch.com) |
-| **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)** | <code>https://inference.hetzner.com/<wbr>api/<wbr>v1</code> | 💳 카드 필요 | [발급 →](https://experiments.hetzner.com/inference) |
-| **[Experiential Labs](https://free-llm.com/provider/experiential-labs)** | <code>https://api.experientiallabs.ai/<wbr>v1</code> | 💳 카드 필요 | [발급 →](https://www.experientiallabs.ai/pricing) |
-| **[Tencent Cloud TokenHub](https://free-llm.com/provider/tencent-tokenhub)** | <code>https://tokenhub-intl.tencentmaas.com/<wbr>v1</code> | 💳 카드 필요 | [발급 →](https://www.tencentcloud.com/act/pro/tokenhub) |
+| **[Voyage AI (embeddings & rerankers)](https://free-llm.com/provider/voyage-ai)** | `https://api.voyageai.com/v1` | ✉️ 이메일 가입 | [발급 →](https://docs.voyageai.com/docs/pricing) |
+| **[LLMTR](https://free-llm.com/provider/llmtr)** | `https://llmtr.com/v1` | ✉️ 이메일 가입 | [발급 →](https://llmtr.com/en/terms) |
+| **[Kiosapi.id](https://free-llm.com/provider/kiosapi)** | `https://api.kiosapi.id/v1` | ✉️ 이메일 가입 | [발급 →](https://kiosapi.id/pricing) |
+| **[Mistral (La Plateforme)](https://free-llm.com/provider/mistral-ai)** | `https://api.mistral.ai/v1` | 📱 전화 인증 | [발급 →](https://console.mistral.ai/) |
+| **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)** | `https://integrate.api.nvidia.com/v1` | 📱 전화 인증 | [발급 →](https://build.nvidia.com/explore/discover) |
+| **[Hyperbolic](https://free-llm.com/provider/hyperbolic)** | `https://api.hyperbolic.ai/inference/v1` | 📱 전화 인증 | [발급 →](https://app.hyperbolic.xyz/) |
+| **[ModelScope](https://free-llm.com/provider/modelscope)** | `https://api-inference.modelscope.cn/v1` | 📱 전화 인증 | [발급 →](https://modelscope.cn) |
+| **[Gonka Broker](https://free-llm.com/provider/gonka-broker)** | `https://proxy.gonkabroker.com/v1` | 📱 전화 인증 | [발급 →](https://gonkabroker.com) |
+| **[SiliconFlow](https://free-llm.com/provider/siliconflow)** | `https://api.siliconflow.cn/v1` | 📱 전화 인증 | [발급 →](https://cloud.siliconflow.cn/models) |
+| **[Sarvam AI](https://free-llm.com/provider/sarvam-ai)** | `https://api.sarvam.ai/v1` | 📱 전화 인증 | [발급 →](https://www.sarvam.ai/api-pricing) |
+| **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)** | `https://spark-api-open.xf-yun.com/v1` | 📱 전화 인증 | [발급 →](https://www.xfyun.cn/doc/spark/HTTP调用文档.html) |
+| **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)** | `https://open.bigmodel.cn/api/paas/v4` | 📱 전화 인증 | [발급 →](https://docs.bigmodel.cn/cn/guide/start/model-overview) |
+| **[Moark (Gitee AI)](https://free-llm.com/provider/moark)** | `https://api.moark.com/v1` | 📱 전화 인증 | [발급 →](https://moark.com/docs/FAQ) |
+| **[SenseNova (SenseTime)](https://free-llm.com/provider/sensenova)** | `https://token.sensenova.cn/v1` | 📱 전화 인증 | [발급 →](https://www.sensenova.cn/token-plan) |
+| **[Cerebras](https://free-llm.com/provider/cerebras)** | `https://api.cerebras.ai/v1` | 💳 카드 필요 | [발급 →](https://cerebras.ai/inference) |
+| **[Nous Portal](https://free-llm.com/provider/nous-portal)** | `https://inference-api.nousresearch.com/v1` | 💳 카드 필요 | [발급 →](https://portal.nousresearch.com) |
+| **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)** | `https://inference.hetzner.com/api/v1` | 💳 카드 필요 | [발급 →](https://experiments.hetzner.com/inference) |
+| **[Experiential Labs](https://free-llm.com/provider/experiential-labs)** | `https://api.experientiallabs.ai/v1` | 💳 카드 필요 | [발급 →](https://www.experientiallabs.ai/pricing) |
+| **[Tencent Cloud TokenHub](https://free-llm.com/provider/tencent-tokenhub)** | `https://tokenhub-intl.tencentmaas.com/v1` | 💳 카드 필요 | [발급 →](https://www.tencentcloud.com/act/pro/tokenhub) |
 | **[IBM watsonx.ai (Lite plan)](https://free-llm.com/provider/ibm-watsonx)** | <sub>자체 API 전용 — [설정 가이드](https://free-llm.com/provider/ibm-watsonx)</sub> | 💳 카드 필요 | [발급 →](https://www.ibm.com/products/watsonx-ai/pricing) |
-| **[Sail Research](https://free-llm.com/provider/sail-research)** | <code>https://api.sailresearch.com/<wbr>v1</code> | 💳 카드 필요 | [발급 →](https://docs.sailresearch.com/pricing) |
+| **[Sail Research](https://free-llm.com/provider/sail-research)** | `https://api.sailresearch.com/v1` | 💳 카드 필요 | [발급 →](https://docs.sailresearch.com/pricing) |
 <!--TABLE:QUICKREF:END-->
 
 ---
