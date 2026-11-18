@@ -156,19 +156,38 @@ export function providerCfg(cfg, slug) {
   return p;
 }
 
-/** Decrypted keys for a provider: [{id, label, value}] */
-export function providerKeys(cfg, slug) {
+/**
+ * Decrypted keys for a provider: [{id, label, value, host}].
+ * Safety: each key is pinned to the provider's domain the first time it is used.
+ * Pass the provider's current domain as `host`: keys pinned to another domain are
+ * left out, so a changed (or tampered) catalog can never send a key elsewhere.
+ */
+export function providerKeys(cfg, slug, host = null) {
   const p = cfg.providers[slug];
   if (!p || p.enabled === false) return [];
   const out = [];
+  let pinned = false;
   for (const k of p.keys || []) {
+    if (host && !k.host) { k.host = host; pinned = true; }
+    if (host && k.host !== host) continue;
     try {
-      out.push({ id: k.id, label: k.label || '', value: decrypt(k.value) });
+      out.push({ id: k.id, label: k.label || '', value: decrypt(k.value), host: k.host || null });
     } catch {
       // wrong master key → skip silently, doctor reports it
     }
   }
+  if (pinned) saveConfig(cfg);
   return out;
+}
+
+/** Keys that are blocked because the provider's address no longer matches their pinned domain. */
+export function blockedKeys(cfg, slug, host) {
+  return (cfg.providers[slug]?.keys || []).filter((k) => host && k.host && k.host !== host).map((k) => ({ id: k.id, pinned: k.host, now: host }));
+}
+
+/** Domain a provider's requests go to (what keys are pinned to). */
+export function hostOf(baseUrl) {
+  try { return new URL(String(baseUrl).replace('{account_id}', 'x')).host.toLowerCase(); } catch { return null; }
 }
 
 export function providerAccountId(cfg, slug) {

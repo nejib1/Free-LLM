@@ -51,8 +51,25 @@ Dozens of companies give away AI for free: Google, Groq, Mistral, NVIDIA, Cloudf
 - 📡 **Always up to date — the same day, for everyone.** The list of free providers and models comes live from [free-llm.com](https://free-llm.com), checked by hand against official sources and refreshed automatically every few hours. New free model this morning → in your router this afternoon. No paywall, no 30-day delay.
 - 🚀 **Works in 10 seconds, even with zero keys.** Guest mode answers right away with no-account models (slow and limited — enough to try). Add 2–3 free keys and you get dozens of strong models.
 - 🔌 **One command per tool.** `free-llm setup claude` — Claude Code now runs on free models. Same for Codex, OpenCode, Aider; ready-made recipes for Cursor, Cline, Roo, Kilo, Continue, Zed, JetBrains, Open WebUI, LibreChat…
-- 🔒 **Your keys never leave your computer.** Stored encrypted (AES-256-GCM) in `~/.free-llm`. Requests go straight from your machine to the provider.
+- 🔒 **100% local and private.** Your keys stay on your computer, encrypted, and each one is only ever sent to its own provider — [details below](#-is-it-safe-yes--100-local-and-private).
 - 🪶 **Tiny.** Zero dependencies, a ~100 KB download, Node 18+. No Docker required (but supported).
+
+---
+
+## 🔒 Is it safe? Yes — 100% local and private
+
+The router asks for your API keys, so here is exactly what happens to them:
+
+| | |
+|:---|:---|
+| 🏠 **Runs on your computer** | It's a small program on your own machine (listening on `localhost` only, by default). There is no Free-LLM server in the middle. |
+| 🔐 **Keys stored only on your computer** | In `~/.free-llm/config.json`, encrypted with AES-256-GCM. Never uploaded anywhere — not to free-llm.com, not to any cloud. No account to create. |
+| 🎯 **Each key goes only to its own provider** | Your Groq key is only ever sent to `api.groq.com`, your Gemini key only to Google, and so on. Each key is **locked** to its provider's address the first time it's used: if that address ever changed, the router would refuse to send the key and warn you. |
+| 🙈 **No telemetry, no tracking** | Your prompts and answers go straight from your computer to the provider. The only other download is the public list of free models ([catalog.json](https://free-llm.com/catalog.json)) — the router sends nothing about you to get it. |
+| 🔎 **Open source, MIT** | Every line is here. Every network call is in [`src/upstream.js`](src/upstream.js) (providers) and [`src/catalog.js`](src/catalog.js) (public catalog) — check them, or watch the traffic yourself. |
+| 🧹 **Easy to remove** | Delete a key from the dashboard or with `free-llm keys remove`. Uninstall = delete `~/.free-llm`. |
+
+> Tip: you can revoke any key at any time on the provider's website — the router simply moves on to your other free providers.
 
 ---
 
