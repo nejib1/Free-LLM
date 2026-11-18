@@ -25,6 +25,23 @@
 
 ---
 
+## ⚡ 新功能：Free-LLM Router —— 把所有免费 API 汇聚到一个地址
+
+**原理：** 下面每个提供商都只给一个*小额*免费套餐，各有各的密钥和限额。路由器把它们叠加起来：你的应用（Claude Code、Codex、Cursor 或你自己的代码）只需连接**一个**兼容 OpenAI/Anthropic 的地址，路由器总会把请求发给当前可用的免费模型——某个提供商繁忙或额度用完时**立即**切换到下一个。
+
+**最大优势：** 许多小额免费套餐合在一起，就像一个永不掉线的大额免费套餐；提供商列表每天从 free-llm.com 自动同步，对所有人免费。
+
+```bash
+npm install -g github:nejib1/Free-LLM   # 安装 `free-llm` 命令
+free-llm                                # 引导式设置，然后打开 http://localhost:4000
+free-llm setup claude                   # Claude Code 改用免费模型（也支持 codex、opencode、aider）
+```
+
+无需密钥即可试用（访客模式）· 编程助手一键配置 · 支持 OpenAI、Anthropic、Codex Responses、Ollama 与 MCP 接口 · 零依赖 · 密钥加密保存在你自己的电脑上。
+**→ [了解工作原理](router/README.md)** · [free-llm.com/router](https://free-llm.com/router)
+
+---
+
 ## 为什么需要这个项目
 
 找一个免费 LLM API，不应该翻遍十几个更新日志，为了对比速率限制去注册五个不同平台，或者猜测哪个提供商这个月还有免费额度。

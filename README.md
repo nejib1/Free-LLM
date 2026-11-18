@@ -25,6 +25,23 @@
 
 ---
 
+## ⚡ New: Free-LLM Router — all these free APIs behind one address
+
+**The idea:** every provider below gives a *small* free plan, each with its own key and limits. The router stacks them: your app (Claude Code, Codex, Cursor, your own code…) talks to **one** OpenAI/Anthropic-compatible address, and the router always sends the request to a free model that is up — switching **instantly** when one is busy or out of quota.
+
+**The big advantage:** many small free plans behave like one big free plan that never goes down — and the list of providers updates itself the same day from free-llm.com, for everyone, free.
+
+```bash
+npm install -g github:nejib1/Free-LLM   # installs the `free-llm` command
+free-llm                                # guided setup, then http://localhost:4000
+free-llm setup claude                   # Claude Code now runs on free models (also: codex, opencode, aider)
+```
+
+Works with zero keys to try (guest mode) · one-command setup for coding agents · OpenAI, Anthropic, Codex Responses, Ollama & MCP APIs · zero dependencies · keys stay encrypted on your computer.
+**→ [Read how it works](router/README.md)** · [free-llm.com/router](https://free-llm.com/router)
+
+---
+
 ## Why This Exists
 
 Finding a free LLM API shouldn't mean hunting through a dozen changelogs, signing up for five platforms just to compare rate limits, or guessing which provider still has a free tier this month.
