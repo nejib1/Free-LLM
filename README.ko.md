@@ -40,6 +40,9 @@ free-llm setup claude                   # Claude Code가 무료 모델로 동작
 <p align="center"><a href="router/README.md"><img src="router/docs/dashboard.png" width="760" alt="Free-LLM Router dashboard"></a></p>
 
 키 없이도 체험 가능(게스트 모드) · 코딩 에이전트 명령 한 줄 설정 · OpenAI, Anthropic, Codex Responses, Ollama, MCP API 지원 · 의존성 0개 · 키는 내 컴퓨터에 암호화 저장.
+
+🔒 **100% 로컬, 완전한 프라이버시:** 라우터는 내 컴퓨터에서 실행되며 API 키는 절대 밖으로 나가지 않습니다(암호화 저장). 각 키는 해당 제공업체에만 전송됩니다 — 계정 불필요, 원격 수집 없음, 오픈 소스.
+
 **→ [작동 방식 보기](router/README.md)** · [free-llm.com/router](https://free-llm.com/router)
 
 ---
