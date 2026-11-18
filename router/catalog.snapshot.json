@@ -4,8 +4,8 @@
     "source": "https://free-llm.com",
     "license": "MIT",
     "schema_version": 2,
-    "generated_at": "2026-11-18T19:19:32+01:00",
-    "updated_at": "2026-11-04T18:33:21+01:00",
+    "generated_at": "2026-11-18T20:15:04+01:00",
+    "updated_at": "2026-11-18T20:14:54+01:00",
     "provider_count": 83,
     "model_count": 451,
     "providers": [
@@ -334,15 +334,6 @@
                     "context_tokens": 128000
                 },
                 {
-                    "id": "rnj-1",
-                    "name": "Essential AI RNJ 1",
-                    "context": null,
-                    "key": "essential-ai-rnj-1",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
                     "id": "kimi-k2.7-code",
                     "name": "Kimi K2.7 Code",
                     "context": null,
@@ -416,7 +407,7 @@
             "key_help_url": "https://free-llm.com/provider/bazaarlink",
             "models": [
                 {
-                    "id": "qwen/qwen3.7-flash",
+                    "id": "qwen/qwen3.7-flash:free",
                     "name": "Qwen3.7 Flash",
                     "context": "Unknown",
                     "key": "qwen3.7-flash",
@@ -425,16 +416,7 @@
                     "context_tokens": null
                 },
                 {
-                    "id": "reflection/beam-free",
-                    "name": "Reflection Beam (free)",
-                    "context": "Unknown",
-                    "key": "reflection-beam",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "nvidia/nemotron-3.5-lightning-free",
+                    "id": "nvidia/nemotron-3.5-lightning-free:free",
                     "name": "Nemotron 3.5 Lightning (free)",
                     "context": "Unknown",
                     "key": "nemotron-3.5-lightning",
@@ -443,7 +425,7 @@
                     "context_tokens": null
                 },
                 {
-                    "id": "deepseek/deepseek-v4-flash-0731free",
+                    "id": "deepseek/deepseek-v4-flash-0731free:free",
                     "name": "DeepSeek V4 Flash 0731 (free)",
                     "context": "Unknown",
                     "key": "deepseek-v4-flash-0731",
@@ -452,7 +434,7 @@
                     "context_tokens": null
                 },
                 {
-                    "id": "stealth/glyph-cluster",
+                    "id": "stealth/glyph-cluster:free",
                     "name": "Glyph Cluster (stealth)",
                     "context": "Unknown",
                     "key": "glyph-cluster",
@@ -593,15 +575,6 @@
             "key_help_url": "https://free-llm.com/provider/cloudflare-workers-ai",
             "models": [
                 {
-                    "id": "@cf/zai-org/glm-5.3-flash",
-                    "name": "GLM-5.3 Flash",
-                    "context": "1M",
-                    "key": "glm-5.3-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
                     "id": "@cf/black-forest-labs/flux-2-dev",
                     "name": "FLUX.2 Dev (image)",
                     "context": null,
@@ -719,60 +692,6 @@
                     "context_tokens": 256000
                 },
                 {
-                    "id": "@cf/zai-org/glm-5.2",
-                    "name": "GLM-5.2",
-                    "context": null,
-                    "key": "glm-5.2",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
-                    "name": "DeepSeek V4 Flash 0731",
-                    "context": null,
-                    "key": "deepseek-v4-flash-0731",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
-                    "name": "DeepSeek V4 Pro",
-                    "context": "1M",
-                    "key": "deepseek-v4-pro",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
-                    "id": "@cf/zai-org/glm-5.3",
-                    "name": "GLM-5.3",
-                    "context": "1M",
-                    "key": "glm-5.3",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
-                    "id": "@cf/moonshotai/kimi-k2.7-code",
-                    "name": "Kimi K2.7 Code",
-                    "context": "262K",
-                    "key": "kimi-k2.7-code",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
-                },
-                {
-                    "id": "@cf/moonshotai/kimi-k2.6",
-                    "name": "Kimi K2.6",
-                    "context": "262K",
-                    "key": "kimi-k2.6",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
-                },
-                {
                     "id": "@cf/qwen/qwen3.8-27b",
                     "name": "Qwen3.8 27B",
                     "context": "262K",
@@ -780,15 +699,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 262000
-                },
-                {
-                    "id": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
-                    "name": "DeepSeek V4.1 Flash",
-                    "context": "1M",
-                    "key": "deepseek-v4.1-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
                 },
                 {
                     "id": "@cf/zai-org/glm-4.7-flash",
@@ -1491,6 +1401,15 @@
                     "kind": "chat",
                     "vision": true,
                     "context_tokens": 1000000
+                },
+                {
+                    "id": "gemini-4-hydrogen",
+                    "name": "Gemini 4 Hydrogen",
+                    "context": null,
+                    "key": "gemini-4-hydrogen",
+                    "kind": "chat",
+                    "vision": true,
+                    "context_tokens": null
                 },
                 {
                     "id": "gemini-2.5-flash",
@@ -2432,15 +2351,6 @@
                     "context_tokens": 256000
                 },
                 {
-                    "id": "stealth/crouton-alpha",
-                    "name": "Crouton Alpha (stealth, free)",
-                    "context": "1M",
-                    "key": "crouton-alpha",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
                     "id": "stealth/glyph-cluster",
                     "name": "Glyph Cluster (stealth)",
                     "context": "256K",
@@ -2448,6 +2358,51 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 256000
+                },
+                {
+                    "id": "baidu/ernie-5.5-flash-preview:free",
+                    "name": "ERNIE 5.5 Flash Preview",
+                    "context": "1.02M",
+                    "key": "ernie-5.5-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1020000
+                },
+                {
+                    "id": "inclusionai/ling-3.2-flash:free",
+                    "name": "Ling 3.2 Flash",
+                    "context": "1.05M",
+                    "key": "ling-3.2-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "liquid/lfm-3-1.7b:free",
+                    "name": "LFM3 1.7B",
+                    "context": "262K",
+                    "key": "lfm3-1.7b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": "particle-ai/particle-1:free",
+                    "name": "Particle-1",
+                    "context": "1.05M",
+                    "key": "particle-1",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "recursive/flint-v1.0:free",
+                    "name": "Recursive Flint v1.0",
+                    "context": "262K",
+                    "key": "recursive-flint-v1.0",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
                 }
             ]
         },
@@ -2723,24 +2678,6 @@
             "key_help_url": "https://free-llm.com/provider/llm7-io",
             "models": [
                 {
-                    "id": "nemotron-3-nano:30b",
-                    "name": "Nemotron 3 Nano 30B",
-                    "context": "1M",
-                    "key": "nemotron-3-nano-30b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
-                    "id": "GLM-5.3-Flash",
-                    "name": "GLM 5.3 Flash",
-                    "context": "400K",
-                    "key": "glm-5.3-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 400000
-                },
-                {
                     "id": "mistral-Nemo-Instruct-2407",
                     "name": "Mistral Nemo Instruct 2407",
                     "context": "128K",
@@ -2759,15 +2696,6 @@
                     "context_tokens": 256000
                 },
                 {
-                    "id": "minimax-m2.7",
-                    "name": "MiniMax M2.7",
-                    "context": "Long context",
-                    "key": "minimax-m2.7",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
                     "id": "gpt-oss:20b",
                     "name": "GPT OSS 20B",
                     "context": "128K",
@@ -2775,15 +2703,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 128000
-                },
-                {
-                    "id": "DeepSeek-V4-Flash-0731",
-                    "name": "DeepSeek V4 Flash 0731",
-                    "context": "Long context",
-                    "key": "deepseek-v4-flash-0731",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
                 }
             ]
         },
@@ -2836,24 +2755,6 @@
                     "context_tokens": 131000
                 },
                 {
-                    "id": "agnes/agnes-3.0-flash",
-                    "name": "Agnes 3.0 Flash",
-                    "context": "524K",
-                    "key": "agnes-3.0-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 524000
-                },
-                {
-                    "id": "agnes/agnes-2.5-flash",
-                    "name": "Agnes 2.5 Flash",
-                    "context": "524K",
-                    "key": "agnes-2.5-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 524000
-                },
-                {
                     "id": "openai/gpt-oss-safeguard-20b",
                     "name": "GPT-OSS Safeguard 20B",
                     "context": "131K",
@@ -2861,6 +2762,60 @@
                     "kind": "moderation",
                     "vision": false,
                     "context_tokens": 131000
+                },
+                {
+                    "id": "evren/deepseek-v4.1-flash-tr",
+                    "name": "DeepSeek V4.1 Flash",
+                    "context": "1.05M",
+                    "key": "deepseek-v4.1-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "evren/glm-5.3-fp8",
+                    "name": "GLM-5.3",
+                    "context": "512K",
+                    "key": "glm-5.3",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 512000
+                },
+                {
+                    "id": "evren/mimo-v2.6-pro-tr",
+                    "name": "MiMo V2.6 Pro",
+                    "context": "1.05M",
+                    "key": "mimo-v2.6-pro",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "evren/gemma-4-31b",
+                    "name": "Gemma 4 31B",
+                    "context": "256K",
+                    "key": "gemma-4-31b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 256000
+                },
+                {
+                    "id": "evren/qwen3.8-flash-next",
+                    "name": "Qwen3.8 Flash Next",
+                    "context": "256K",
+                    "key": "qwen3.8-flash-next",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 256000
+                },
+                {
+                    "id": "lgai/k-exaone-2.5",
+                    "name": "K-EXAONE 2.5",
+                    "context": "524K",
+                    "key": "k-exaone-2.5",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 524000
                 }
             ]
         },
@@ -3060,6 +3015,33 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 131000
+                },
+                {
+                    "id": "Sao10K/L3-8B-Stheno-v3.2",
+                    "name": "L3 8B Stheno v3.2",
+                    "context": "8K",
+                    "key": "l3-8b-stheno-v3.2",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 8000
+                },
+                {
+                    "id": "BruhzWater/Sapphira-L3.3-70b-0.1",
+                    "name": "Sapphira L3.3 70B",
+                    "context": "66K",
+                    "key": "sapphira-l3.3-70b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 66000
+                },
+                {
+                    "id": "FallenMerick/MN-Violet-Lotus-12B",
+                    "name": "MN Violet Lotus 12B",
+                    "context": "66K",
+                    "key": "mn-violet-lotus-12b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 66000
                 }
             ]
         },
@@ -3501,15 +3483,6 @@
                     "context_tokens": 262000
                 },
                 {
-                    "id": "reflection/beam-1.0-501b-a23b:free",
-                    "name": "Reflection Beam 1.0",
-                    "context": "262K",
-                    "key": "reflection-beam-1.0",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
-                },
-                {
                     "id": "upstage/solar-mini4:free",
                     "name": "Upstage Solar Mini 4",
                     "context": "524K",
@@ -3519,13 +3492,31 @@
                     "context_tokens": 524000
                 },
                 {
-                    "id": "stealth/crouton-alpha",
-                    "name": "Crouton Alpha (stealth, free)",
+                    "id": "qwen/qwen4-max:free",
+                    "name": "Qwen4 Max",
                     "context": "1M",
-                    "key": "crouton-alpha",
+                    "key": "qwen4-max",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 1000000
+                },
+                {
+                    "id": "meituan/longcat-2.5:free",
+                    "name": "LongCat 2.5",
+                    "context": "1.05M",
+                    "key": "longcat-2.5",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "tencent/hy4-flash:free",
+                    "name": "Hunyuan Hy4 Flash",
+                    "context": "1.05M",
+                    "key": "hunyuan-hy4-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
                 }
             ]
         },
@@ -3678,15 +3669,6 @@
                     "context_tokens": 1000000
                 },
                 {
-                    "id": "google/diffusiongemma-26b-a4b-it",
-                    "name": "DiffusionGemma 26B A4B",
-                    "context": null,
-                    "key": "diffusiongemma-26b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
                     "id": "nvidia/riva-translate-4b-instruct-v2",
                     "name": "Riva Translate 4B v2",
                     "context": null,
@@ -3700,15 +3682,6 @@
                     "name": "Cosmos Reason 2 8B",
                     "context": null,
                     "key": "cosmos-reason-2-8b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "writer/palmyra-creative-122b",
-                    "name": "Palmyra Creative 122B",
-                    "context": null,
-                    "key": "palmyra-creative-122b",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": null
@@ -3732,33 +3705,6 @@
                     "context_tokens": 128000
                 },
                 {
-                    "id": "meta/llama-3.2-90b-vision-instruct",
-                    "name": "Llama 3.2 90B Vision",
-                    "context": "128K",
-                    "key": "llama-3.2-90b-vision",
-                    "kind": "chat",
-                    "vision": true,
-                    "context_tokens": 128000
-                },
-                {
-                    "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-                    "name": "Llama 3.1 Nemotron Ultra 253B",
-                    "context": "128K",
-                    "key": "llama-3.1-nemotron-ultra-253b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
-                },
-                {
-                    "id": "nvidia/nemotron-nano-3-30b-a3b",
-                    "name": "Nemotron Nano 3 30B A3B",
-                    "context": null,
-                    "key": "nemotron-nano-3-30b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
                     "id": "nvidia/nemotron-3.5-bolt-e4b",
                     "name": "Nemotron 3.5 Bolt E4B (vision)",
                     "context": "128K",
@@ -3777,24 +3723,6 @@
                     "context_tokens": 256000
                 },
                 {
-                    "id": "nvidia/nemotron-3-super-120b-a12b",
-                    "name": "Nemotron 3 Super 120B A12B",
-                    "context": "1M",
-                    "key": "nemotron-3-super-120b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
-                    "id": "openai/gpt-oss-20b",
-                    "name": "GPT-OSS 20B",
-                    "context": "128K",
-                    "key": "gpt-oss-20b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
-                },
-                {
                     "id": "google/gemma-4-31b-it",
                     "name": "Gemma 4 31B IT",
                     "context": "262K",
@@ -3811,15 +3739,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 1000000
-                },
-                {
-                    "id": "moonshotai/kimi-k2.6",
-                    "name": "Kimi K2.6",
-                    "context": "262K",
-                    "key": "kimi-k2.6",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
                 },
                 {
                     "id": "mistralai/mistral-large-4-1t-a52b",
@@ -3849,15 +3768,6 @@
                     "context_tokens": 1000000
                 },
                 {
-                    "id": "deepseek-ai/deepseek-v4.1-flash",
-                    "name": "DeepSeek V4.1 Flash",
-                    "context": "1M",
-                    "key": "deepseek-v4.1-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
                     "id": "nvidia/nemotron-3-ultra-550b-a55b",
                     "name": "Nemotron 3 Ultra 550B A55B",
                     "context": "1M",
@@ -3874,6 +3784,24 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 1000000
+                },
+                {
+                    "id": "moonshotai/kimi-k3.1-pro",
+                    "name": "Kimi K3.1 Pro",
+                    "context": null,
+                    "key": "kimi-k3.1-pro",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": "poolside/laguna-xs-2.1",
+                    "name": "Laguna XS 2.1",
+                    "context": null,
+                    "key": "laguna-xs-2.1",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
                 }
             ]
         },
@@ -4084,7 +4012,7 @@
             "key_help_url": "https://free-llm.com/provider/ollama-cloud",
             "models": [
                 {
-                    "id": "beam:cloud",
+                    "id": "beam",
                     "name": "Reflection Beam (501B)",
                     "context": "1M",
                     "key": "reflection-beam",
@@ -4152,24 +4080,6 @@
                     "context_tokens": 1000000
                 },
                 {
-                    "id": "xingchen-agi/xing4.0-29b-a4b:free",
-                    "name": "XingChen Xing4.0 29B A4B",
-                    "context": "262K",
-                    "key": "xingchen-xing4.0-29b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
-                },
-                {
-                    "id": "liquid/lfm-2.5-2.6b:free",
-                    "name": "Liquid LFM 2.5 2.6B",
-                    "context": "65K",
-                    "key": "liquid-lfm-2.5-2.6b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 65000
-                },
-                {
                     "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
                     "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
                     "context": "256K",
@@ -4215,13 +4125,49 @@
                     "context_tokens": 1000000
                 },
                 {
-                    "id": "stealth/crouton-alpha",
-                    "name": "Crouton Alpha (stealth, free)",
-                    "context": "1M",
-                    "key": "crouton-alpha",
+                    "id": "baidu/ernie-5.5-flash-preview:free",
+                    "name": "ERNIE 5.5 Flash Preview",
+                    "context": "1.02M",
+                    "key": "ernie-5.5-flash",
                     "kind": "chat",
                     "vision": false,
-                    "context_tokens": 1000000
+                    "context_tokens": 1020000
+                },
+                {
+                    "id": "inclusionai/ling-3.2-flash:free",
+                    "name": "Ling 3.2 Flash",
+                    "context": "1.05M",
+                    "key": "ling-3.2-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "liquid/lfm-3-1.7b:free",
+                    "name": "LFM3 1.7B",
+                    "context": "262K",
+                    "key": "lfm3-1.7b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": "particle-ai/particle-1:free",
+                    "name": "Particle-1",
+                    "context": "1.05M",
+                    "key": "particle-1",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "thinkingmachines/inkling-2-small:free",
+                    "name": "Inkling 2 Small",
+                    "context": "1.05M",
+                    "key": "inkling-2-small",
+                    "kind": "video",
+                    "vision": false,
+                    "context_tokens": 1050000
                 }
             ]
         },
@@ -4448,6 +4394,78 @@
                     "kind": "speech",
                     "vision": false,
                     "context_tokens": null
+                },
+                {
+                    "id": "DeepSeek-V4.1-Flash-1017",
+                    "name": "DeepSeek V4.1 Flash 1017",
+                    "context": "1.05M",
+                    "key": "deepseek-v4.1-flash-1017",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1050000
+                },
+                {
+                    "id": "qwen3.6-35b-a3b",
+                    "name": "Qwen3.6 35B A3B",
+                    "context": "262K",
+                    "key": "qwen3.6-35b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": "gemma-4-26b-a4b",
+                    "name": "Gemma 4 26B A4B",
+                    "context": "262K",
+                    "key": "gemma-4-26b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": "qwen3-vl-30b-a3b",
+                    "name": "Qwen3 VL 30B A3B",
+                    "context": "33K",
+                    "key": "qwen3-vl-30b",
+                    "kind": "chat",
+                    "vision": true,
+                    "context_tokens": 33000
+                },
+                {
+                    "id": "nemotron3-nano-30b",
+                    "name": "Nemotron 3 Nano 30B",
+                    "context": "262K",
+                    "key": "nemotron-3-nano-30b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": "nemotron3-omni-30b",
+                    "name": "Nemotron 3 Nano Omni 30B",
+                    "context": "131K",
+                    "key": "nemotron-3-nano-omni-30b",
+                    "kind": "chat",
+                    "vision": true,
+                    "context_tokens": 131000
+                },
+                {
+                    "id": "laguna-xs-2.1",
+                    "name": "Laguna XS 2.1",
+                    "context": "131K",
+                    "key": "laguna-xs-2.1",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 131000
+                },
+                {
+                    "id": "solaria-3",
+                    "name": "Solaria 3",
+                    "context": null,
+                    "key": "solaria-3",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
                 }
             ]
         },
@@ -4516,15 +4534,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 1000000
-                },
-                {
-                    "id": "openai",
-                    "name": "OpenAI GPT-class (via Pollinations)",
-                    "context": "See provider",
-                    "key": "openai-gpt-class",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
                 }
             ]
         },
@@ -4717,15 +4726,6 @@
                     "context_tokens": 262000
                 },
                 {
-                    "id": "novita/inclusionai/ling-3.0-tiny",
-                    "name": "Ling 3.0 Tiny",
-                    "context": "262K",
-                    "key": "ling-3.0-tiny",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
-                },
-                {
                     "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
                     "name": "Nemotron 3 Nano Omni Reasoning",
                     "context": "131K",
@@ -4778,33 +4778,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 1000000
-                },
-                {
-                    "id": "poolside/laguna-m.1",
-                    "name": "Poolside Laguna M.1",
-                    "context": "Long context",
-                    "key": "poolside-laguna-m.1",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "poolside/laguna-xs.2",
-                    "name": "Poolside Laguna XS.2",
-                    "context": "Long context",
-                    "key": "poolside-laguna-xs.2",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "nvidia/nemotron-3-super-120b-a12b",
-                    "name": "NVIDIA Nemotron 3 Super",
-                    "context": "262K",
-                    "key": "nvidia-nemotron-3-super",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 262000
                 },
                 {
                     "id": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -5656,6 +5629,33 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 1000000
+                },
+                {
+                    "id": "humansand/ampersand-v0.1",
+                    "name": "Ampersand v0.1",
+                    "context": "1M",
+                    "key": "ampersand-v0.1",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 1000000
+                },
+                {
+                    "id": "recursive/flint-v1.0",
+                    "name": "Recursive Flint v1.0",
+                    "context": "262K",
+                    "key": "recursive-flint-v1.0",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": "stealth/glyph-cluster",
+                    "name": "Glyph Cluster",
+                    "context": "256K",
+                    "key": "glyph-cluster",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 256000
                 }
             ]
         },
