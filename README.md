@@ -205,82 +205,82 @@ Sign up and receive credits to use until depleted.
 ## Quick Reference — Base URLs & API Keys
 
 <!--TABLE:QUICKREF:START-->
-| Provider | OpenAI-compatible base URL | Sign-up | API key |
-|:---|:---|:---|:---:|
-| **[OpenRouter](https://free-llm.com/provider/openrouter)** | `https://openrouter.ai/api/v1` | 🟢 No card | [Get Key →](https://openrouter.ai/) |
-| **[Google AI Studio](https://free-llm.com/provider/google-ai-studio)** | `https://generativelanguage.googleapis.com/v1beta/openai` | 🟢 No card | [Get Key →](https://aistudio.google.com/) |
-| **[Cohere](https://free-llm.com/provider/cohere)** | `https://api.cohere.ai/compatibility/v1` | 🟢 No card | [Get Key →](https://cohere.com/) |
-| **[Groq](https://free-llm.com/provider/groq-cloud)** | `https://api.groq.com/openai/v1` | 🟢 No card | [Get Key →](https://console.groq.com/) |
-| **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)** | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` | 🟢 No card | [Get Key →](https://dash.cloudflare.com/) |
-| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)** | `https://ai-gateway.kilo.ai/api/v1` | 🟢 No card | [Get Key →](https://kilo.ai/gateway) |
-| **[FreeInference](https://free-llm.com/provider/freeinference)** | `https://freeinference.org/v1` | 🟢 No card | [Get Key →](https://freeinference.org) |
-| **[Ollama Cloud](https://free-llm.com/provider/ollama-cloud)** | `https://ollama.com/v1` | 🟢 No card | [Get Key →](https://ollama.com/cloud) |
-| **[Requesty](https://free-llm.com/provider/requesty)** | `https://router.requesty.ai/v1` | 🟢 No card | [Get Key →](https://requesty.ai/) |
-| **[Aion Labs](https://free-llm.com/provider/aion-labs)** | `https://api.aionlabs.ai/v1` | 🟢 No card | [Get Key →](https://www.aionlabs.ai/pricing/) |
-| **[Grokified](https://free-llm.com/provider/grokified)** | `https://api.grokified.com/v1` | 🟢 No card | [Get Key →](https://grokified.com) |
-| **[Api.Airforce](https://free-llm.com/provider/api-airforce)** | `https://api.airforce/v1` | 🟢 No card | [Get Key →](https://api.airforce/) |
-| **[AnyAPI](https://free-llm.com/provider/anyapi)** | `https://api.anyapi.ai/v1` | 🟢 No card | [Get Key →](https://anyapi.ai) |
-| **[Inferbase](https://free-llm.com/provider/inferbase)** | `https://api.inferbase.ai/v1` | 🟢 No card | [Get Key →](https://inferbase.ai) |
-| **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)** | `https://api.opentyphoon.ai/v1` | 🟢 No card | [Get Key →](https://opentyphoon.ai) |
-| **[Regolo.ai](https://free-llm.com/provider/regolo-ai)** | `https://api.regolo.ai/v1` | 🟢 No card | [Get Key →](https://regolo.ai) |
-| **[GonkaRouter](https://free-llm.com/provider/gonkarouter)** | `https://api.gonkarouter.io/v1` | 🟢 No card | [Get Key →](https://gonkarouter.io) |
-| **[NovAI](https://free-llm.com/provider/novai)** | `https://aiapi-pro.com/v1` | 🟢 No card | [Get Key →](https://aiapi-pro.com) |
-| **[Vectoree](https://free-llm.com/provider/vectoree)** | `https://vectoree.ai/api/v1` | 🟢 No card | [Get Key →](https://vectoree.ai) |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)** | `https://oai.aihorde.net/v1` | 🟢 No card | [Get Key →](https://aihorde.net) |
-| **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)** | `https://gateway.vlm.run/v1/openai` | 🟢 No card | [Get Key →](https://docs.vlm.run/gateway/rate-limits) |
-| **[MegaNova AI](https://free-llm.com/provider/meganova)** | `https://api.meganova.ai/v1` | 🟢 No card | [Get Key →](https://docs.meganova.ai/tiers) |
-| **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)** | `https://api.jina.ai/v1` | 🟢 No card | [Get Key →](https://jina.ai/embeddings/) |
-| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)** | `https://gen.pollinations.ai/v1` | 🟢 No card | [Get Key →](https://pollinations.ai) |
-| **[Inception Labs](https://free-llm.com/provider/inception-labs)** | `https://api.inceptionlabs.ai/v1` | 🟢 No card | [Get Key →](https://www.inceptionlabs.ai/) |
-| **[LLM7.io](https://free-llm.com/provider/llm7-io)** | `https://api.llm7.io/v1` | 🟢 No card | [Get Key →](https://llm7.io) |
-| **[Replicate](https://free-llm.com/provider/replicate)** | <sub>native API only — [setup guide](https://free-llm.com/provider/replicate)</sub> | ✉️ Email sign-up | [Get Key →](https://replicate.com/) |
-| **[Fireworks AI](https://free-llm.com/provider/fireworks-ai)** | `https://api.fireworks.ai/inference/v1` | ✉️ Email sign-up | [Get Key →](https://fireworks.ai/) |
-| **[Novita AI](https://free-llm.com/provider/novita-ai)** | `https://api.novita.ai/v3/openai` | ✉️ Email sign-up | [Get Key →](https://novita.ai/) |
-| **[Scaleway Generative APIs](https://free-llm.com/provider/scaleway)** | `https://api.scaleway.ai/v1` | ✉️ Email sign-up | [Get Key →](https://console.scaleway.com/generative-api/models) |
-| **[Qwen (Alibaba)](https://free-llm.com/provider/qwen-alibaba)** | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1` | ✉️ Email sign-up | [Get Key →](https://bailian.console.alibabacloud.com/) |
-| **[Upstage](https://free-llm.com/provider/upstage)** | `https://api.upstage.ai/v1` | ✉️ Email sign-up | [Get Key →](https://console.upstage.ai/) |
-| **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)** | `https://api.z.ai/api/paas/v4` | ✉️ Email sign-up | [Get Key →](https://z.ai/) |
-| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)** | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | ✉️ Email sign-up | [Get Key →](https://endpoints.ai.cloud.ovh.net/) |
-| **[Friendli AI](https://free-llm.com/provider/friendli-ai)** | `https://inference.friendli.ai/v1` | ✉️ Email sign-up | [Get Key →](https://friendli.ai/) |
-| **[Cerebrium](https://free-llm.com/provider/cerebrium)** | <sub>native API only — [setup guide](https://free-llm.com/provider/cerebrium)</sub> | ✉️ Email sign-up | [Get Key →](https://www.cerebrium.ai/) |
-| **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)** | `https://ai-gateway.vercel.sh/v1` | ✉️ Email sign-up | [Get Key →](https://vercel.com/ai-gateway) |
-| **[Routeway](https://free-llm.com/provider/routeway)** | `https://api.routeway.ai/v1` | ✉️ Email sign-up | [Get Key →](https://routeway.ai/) |
-| **[Token Harbor](https://free-llm.com/provider/token-harbor)** | `https://tokenharbor.ai/v1` | ✉️ Email sign-up | [Get Key →](https://tokenharbor.ai) |
-| **[IteraCompute](https://free-llm.com/provider/iteracompute)** | `https://api.iteracompute.com/v1` | ✉️ Email sign-up | [Get Key →](https://iteracompute.com/free/) |
-| **[BazaarLink](https://free-llm.com/provider/bazaarlink)** | `https://api.bazaarlink.ai/v1` | ✉️ Email sign-up | [Get Key →](https://bazaarlink.ai/free) |
-| **[Dahl Inference](https://free-llm.com/provider/dahl-inference)** | `https://inference.dahl.global/v1` | ✉️ Email sign-up | [Get Key →](https://inference.dahl.global/) |
-| **[Zro (MoonMath)](https://free-llm.com/provider/zro)** | `https://zro.moonmath.ai/v1` | ✉️ Email sign-up | [Get Key →](https://zro.moonmath.ai) |
-| **[SEA-LION API](https://free-llm.com/provider/sea-lion)** | `https://api.sea-lion.ai/v1` | ✉️ Email sign-up | [Get Key →](https://docs.sea-lion.ai/guides/inferencing/api) |
-| **[AIHubMix (free models)](https://free-llm.com/provider/aihubmix)** | `https://aihubmix.com/v1` | ✉️ Email sign-up | [Get Key →](https://aihubmix.com) |
-| **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)** | `https://api.llm.kiwi/v1` | ✉️ Email sign-up | [Get Key →](https://llm.kiwi/pricing) |
-| **[Agnes AI](https://free-llm.com/provider/agnes-ai)** | `https://apihub.agnes-ai.com/v1` | ✉️ Email sign-up | [Get Key →](https://agnes-ai.com) |
-| **[Arli AI](https://free-llm.com/provider/arli-ai)** | `https://api.arliai.com/v1` | ✉️ Email sign-up | [Get Key →](https://www.arliai.com/pricing) |
-| **[HPC-AI Model APIs](https://free-llm.com/provider/hpc-ai)** | `https://api.hpc-ai.com/inference/v1` | ✉️ Email sign-up | [Get Key →](https://www.hpc-ai.com/model-apis) |
-| **[Bytez](https://free-llm.com/provider/bytez)** | `https://api.bytez.com/models/v2/openai/v1` | ✉️ Email sign-up | [Get Key →](https://docs.bytez.com/model-api/docs/billing) |
-| **[Mixlayer](https://free-llm.com/provider/mixlayer)** | `https://models.mixlayer.ai/v1` | ✉️ Email sign-up | [Get Key →](https://docs.mixlayer.com/credits-and-limits) |
-| **[SimpleLLM](https://free-llm.com/provider/simplellm)** | `https://api.simplellm.eu/v1` | ✉️ Email sign-up | [Get Key →](https://simplellm.eu/docs/) |
-| **[Google Vertex AI express mode (Gemini Enterprise Agent Platform)](https://free-llm.com/provider/vertex-ai-express)** | <sub>native API only — [setup guide](https://free-llm.com/provider/vertex-ai-express)</sub> | ✉️ Email sign-up | [Get Key →](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview) |
-| **[Voyage AI (embeddings & rerankers)](https://free-llm.com/provider/voyage-ai)** | `https://api.voyageai.com/v1` | ✉️ Email sign-up | [Get Key →](https://docs.voyageai.com/docs/pricing) |
-| **[LLMTR](https://free-llm.com/provider/llmtr)** | `https://llmtr.com/v1` | ✉️ Email sign-up | [Get Key →](https://llmtr.com/en/terms) |
-| **[Kiosapi.id](https://free-llm.com/provider/kiosapi)** | `https://api.kiosapi.id/v1` | ✉️ Email sign-up | [Get Key →](https://kiosapi.id/pricing) |
-| **[Mistral (La Plateforme)](https://free-llm.com/provider/mistral-ai)** | `https://api.mistral.ai/v1` | 📱 Phone check | [Get Key →](https://console.mistral.ai/) |
-| **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)** | `https://integrate.api.nvidia.com/v1` | 📱 Phone check | [Get Key →](https://build.nvidia.com/explore/discover) |
-| **[Hyperbolic](https://free-llm.com/provider/hyperbolic)** | `https://api.hyperbolic.ai/inference/v1` | 📱 Phone check | [Get Key →](https://app.hyperbolic.xyz/) |
-| **[ModelScope](https://free-llm.com/provider/modelscope)** | `https://api-inference.modelscope.cn/v1` | 📱 Phone check | [Get Key →](https://modelscope.cn) |
-| **[Gonka Broker](https://free-llm.com/provider/gonka-broker)** | `https://proxy.gonkabroker.com/v1` | 📱 Phone check | [Get Key →](https://gonkabroker.com) |
-| **[SiliconFlow](https://free-llm.com/provider/siliconflow)** | `https://api.siliconflow.cn/v1` | 📱 Phone check | [Get Key →](https://cloud.siliconflow.cn/models) |
-| **[Sarvam AI](https://free-llm.com/provider/sarvam-ai)** | `https://api.sarvam.ai/v1` | 📱 Phone check | [Get Key →](https://www.sarvam.ai/api-pricing) |
-| **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)** | `https://spark-api-open.xf-yun.com/v1` | 📱 Phone check | [Get Key →](https://www.xfyun.cn/doc/spark/HTTP调用文档.html) |
-| **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)** | `https://open.bigmodel.cn/api/paas/v4` | 📱 Phone check | [Get Key →](https://docs.bigmodel.cn/cn/guide/start/model-overview) |
-| **[Moark (Gitee AI)](https://free-llm.com/provider/moark)** | `https://api.moark.com/v1` | 📱 Phone check | [Get Key →](https://moark.com/docs/FAQ) |
-| **[SenseNova (SenseTime)](https://free-llm.com/provider/sensenova)** | `https://token.sensenova.cn/v1` | 📱 Phone check | [Get Key →](https://www.sensenova.cn/token-plan) |
-| **[Cerebras](https://free-llm.com/provider/cerebras)** | `https://api.cerebras.ai/v1` | 💳 Card required | [Get Key →](https://cerebras.ai/inference) |
-| **[Nous Portal](https://free-llm.com/provider/nous-portal)** | `https://inference-api.nousresearch.com/v1` | 💳 Card required | [Get Key →](https://portal.nousresearch.com) |
-| **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)** | `https://inference.hetzner.com/api/v1` | 💳 Card required | [Get Key →](https://experiments.hetzner.com/inference) |
-| **[Experiential Labs](https://free-llm.com/provider/experiential-labs)** | `https://api.experientiallabs.ai/v1` | 💳 Card required | [Get Key →](https://www.experientiallabs.ai/pricing) |
-| **[Tencent Cloud TokenHub](https://free-llm.com/provider/tencent-tokenhub)** | `https://tokenhub-intl.tencentmaas.com/v1` | 💳 Card required | [Get Key →](https://www.tencentcloud.com/act/pro/tokenhub) |
-| **[IBM watsonx.ai (Lite plan)](https://free-llm.com/provider/ibm-watsonx)** | <sub>native API only — [setup guide](https://free-llm.com/provider/ibm-watsonx)</sub> | 💳 Card required | [Get Key →](https://www.ibm.com/products/watsonx-ai/pricing) |
-| **[Sail Research](https://free-llm.com/provider/sail-research)** | `https://api.sailresearch.com/v1` | 💳 Card required | [Get Key →](https://docs.sailresearch.com/pricing) |
+| Provider · sign-up · API key | OpenAI-compatible base URL |
+|:---|:---|
+| **[OpenRouter](https://free-llm.com/provider/openrouter)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://openrouter.ai/)</sub> | `https://openrouter.ai/api/v1` |
+| **[Google AI Studio](https://free-llm.com/provider/google-ai-studio)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://aistudio.google.com/)</sub> | `https://generativelanguage.googleapis.com/v1beta/openai` |
+| **[Cohere](https://free-llm.com/provider/cohere)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://cohere.com/)</sub> | `https://api.cohere.ai/compatibility/v1` |
+| **[Groq](https://free-llm.com/provider/groq-cloud)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://console.groq.com/)</sub> | `https://api.groq.com/openai/v1` |
+| **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://dash.cloudflare.com/)</sub> | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` |
+| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://kilo.ai/gateway)</sub> | `https://ai-gateway.kilo.ai/api/v1` |
+| **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://freeinference.org)</sub> | `https://freeinference.org/v1` |
+| **[Ollama Cloud](https://free-llm.com/provider/ollama-cloud)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://ollama.com/cloud)</sub> | `https://ollama.com/v1` |
+| **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://requesty.ai/)</sub> | `https://router.requesty.ai/v1` |
+| **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://www.aionlabs.ai/pricing/)</sub> | `https://api.aionlabs.ai/v1` |
+| **[Grokified](https://free-llm.com/provider/grokified)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://grokified.com)</sub> | `https://api.grokified.com/v1` |
+| **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://api.airforce/)</sub> | `https://api.airforce/v1` |
+| **[AnyAPI](https://free-llm.com/provider/anyapi)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://anyapi.ai)</sub> | `https://api.anyapi.ai/v1` |
+| **[Inferbase](https://free-llm.com/provider/inferbase)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://inferbase.ai)</sub> | `https://api.inferbase.ai/v1` |
+| **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://opentyphoon.ai)</sub> | `https://api.opentyphoon.ai/v1` |
+| **[Regolo.ai](https://free-llm.com/provider/regolo-ai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://regolo.ai)</sub> | `https://api.regolo.ai/v1` |
+| **[GonkaRouter](https://free-llm.com/provider/gonkarouter)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://gonkarouter.io)</sub> | `https://api.gonkarouter.io/v1` |
+| **[NovAI](https://free-llm.com/provider/novai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://aiapi-pro.com)</sub> | `https://aiapi-pro.com/v1` |
+| **[Vectoree](https://free-llm.com/provider/vectoree)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://vectoree.ai)</sub> | `https://vectoree.ai/api/v1` |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
+| **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://docs.vlm.run/gateway/rate-limits)</sub> | `https://gateway.vlm.run/v1/openai` |
+| **[MegaNova AI](https://free-llm.com/provider/meganova)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://docs.meganova.ai/tiers)</sub> | `https://api.meganova.ai/v1` |
+| **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://jina.ai/embeddings/)</sub> | `https://api.jina.ai/v1` |
+| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://pollinations.ai)</sub> | `https://gen.pollinations.ai/v1` |
+| **[Inception Labs](https://free-llm.com/provider/inception-labs)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://www.inceptionlabs.ai/)</sub> | `https://api.inceptionlabs.ai/v1` |
+| **[LLM7.io](https://free-llm.com/provider/llm7-io)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://llm7.io)</sub> | `https://api.llm7.io/v1` |
+| **[Replicate](https://free-llm.com/provider/replicate)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://replicate.com/)</sub> | <sub>native API only — [setup guide](https://free-llm.com/provider/replicate)</sub> |
+| **[Fireworks AI](https://free-llm.com/provider/fireworks-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://fireworks.ai/)</sub> | `https://api.fireworks.ai/inference/v1` |
+| **[Novita AI](https://free-llm.com/provider/novita-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://novita.ai/)</sub> | `https://api.novita.ai/v3/openai` |
+| **[Scaleway Generative APIs](https://free-llm.com/provider/scaleway)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://console.scaleway.com/generative-api/models)</sub> | `https://api.scaleway.ai/v1` |
+| **[Qwen (Alibaba)](https://free-llm.com/provider/qwen-alibaba)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://bailian.console.alibabacloud.com/)</sub> | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1` |
+| **[Upstage](https://free-llm.com/provider/upstage)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://console.upstage.ai/)</sub> | `https://api.upstage.ai/v1` |
+| **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://z.ai/)</sub> | `https://api.z.ai/api/paas/v4` |
+| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://endpoints.ai.cloud.ovh.net/)</sub> | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` |
+| **[Friendli AI](https://free-llm.com/provider/friendli-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://friendli.ai/)</sub> | `https://inference.friendli.ai/v1` |
+| **[Cerebrium](https://free-llm.com/provider/cerebrium)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://www.cerebrium.ai/)</sub> | <sub>native API only — [setup guide](https://free-llm.com/provider/cerebrium)</sub> |
+| **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://vercel.com/ai-gateway)</sub> | `https://ai-gateway.vercel.sh/v1` |
+| **[Routeway](https://free-llm.com/provider/routeway)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://routeway.ai/)</sub> | `https://api.routeway.ai/v1` |
+| **[Token Harbor](https://free-llm.com/provider/token-harbor)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://tokenharbor.ai)</sub> | `https://tokenharbor.ai/v1` |
+| **[IteraCompute](https://free-llm.com/provider/iteracompute)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://iteracompute.com/free/)</sub> | `https://api.iteracompute.com/v1` |
+| **[BazaarLink](https://free-llm.com/provider/bazaarlink)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://bazaarlink.ai/free)</sub> | `https://api.bazaarlink.ai/v1` |
+| **[Dahl Inference](https://free-llm.com/provider/dahl-inference)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://inference.dahl.global/)</sub> | `https://inference.dahl.global/v1` |
+| **[Zro (MoonMath)](https://free-llm.com/provider/zro)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://zro.moonmath.ai)</sub> | `https://zro.moonmath.ai/v1` |
+| **[SEA-LION API](https://free-llm.com/provider/sea-lion)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://docs.sea-lion.ai/guides/inferencing/api)</sub> | `https://api.sea-lion.ai/v1` |
+| **[AIHubMix (free models)](https://free-llm.com/provider/aihubmix)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://aihubmix.com)</sub> | `https://aihubmix.com/v1` |
+| **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://llm.kiwi/pricing)</sub> | `https://api.llm.kiwi/v1` |
+| **[Agnes AI](https://free-llm.com/provider/agnes-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://agnes-ai.com)</sub> | `https://apihub.agnes-ai.com/v1` |
+| **[Arli AI](https://free-llm.com/provider/arli-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://www.arliai.com/pricing)</sub> | `https://api.arliai.com/v1` |
+| **[HPC-AI Model APIs](https://free-llm.com/provider/hpc-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://www.hpc-ai.com/model-apis)</sub> | `https://api.hpc-ai.com/inference/v1` |
+| **[Bytez](https://free-llm.com/provider/bytez)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://docs.bytez.com/model-api/docs/billing)</sub> | `https://api.bytez.com/models/v2/openai/v1` |
+| **[Mixlayer](https://free-llm.com/provider/mixlayer)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://docs.mixlayer.com/credits-and-limits)</sub> | `https://models.mixlayer.ai/v1` |
+| **[SimpleLLM](https://free-llm.com/provider/simplellm)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://simplellm.eu/docs/)</sub> | `https://api.simplellm.eu/v1` |
+| **[Google Vertex AI express mode (Gemini Enterprise Agent Platform)](https://free-llm.com/provider/vertex-ai-express)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview)</sub> | <sub>native API only — [setup guide](https://free-llm.com/provider/vertex-ai-express)</sub> |
+| **[Voyage AI (embeddings & rerankers)](https://free-llm.com/provider/voyage-ai)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://docs.voyageai.com/docs/pricing)</sub> | `https://api.voyageai.com/v1` |
+| **[LLMTR](https://free-llm.com/provider/llmtr)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://llmtr.com/en/terms)</sub> | `https://llmtr.com/v1` |
+| **[Kiosapi.id](https://free-llm.com/provider/kiosapi)**<br><sub>✉️ Email sign-up · [🔑&nbsp;Get&nbsp;key](https://kiosapi.id/pricing)</sub> | `https://api.kiosapi.id/v1` |
+| **[Mistral (La Plateforme)](https://free-llm.com/provider/mistral-ai)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://console.mistral.ai/)</sub> | `https://api.mistral.ai/v1` |
+| **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://build.nvidia.com/explore/discover)</sub> | `https://integrate.api.nvidia.com/v1` |
+| **[Hyperbolic](https://free-llm.com/provider/hyperbolic)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://app.hyperbolic.xyz/)</sub> | `https://api.hyperbolic.ai/inference/v1` |
+| **[ModelScope](https://free-llm.com/provider/modelscope)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://modelscope.cn)</sub> | `https://api-inference.modelscope.cn/v1` |
+| **[Gonka Broker](https://free-llm.com/provider/gonka-broker)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://gonkabroker.com)</sub> | `https://proxy.gonkabroker.com/v1` |
+| **[SiliconFlow](https://free-llm.com/provider/siliconflow)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://cloud.siliconflow.cn/models)</sub> | `https://api.siliconflow.cn/v1` |
+| **[Sarvam AI](https://free-llm.com/provider/sarvam-ai)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://www.sarvam.ai/api-pricing)</sub> | `https://api.sarvam.ai/v1` |
+| **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://www.xfyun.cn/doc/spark/HTTP调用文档.html)</sub> | `https://spark-api-open.xf-yun.com/v1` |
+| **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://docs.bigmodel.cn/cn/guide/start/model-overview)</sub> | `https://open.bigmodel.cn/api/paas/v4` |
+| **[Moark (Gitee AI)](https://free-llm.com/provider/moark)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://moark.com/docs/FAQ)</sub> | `https://api.moark.com/v1` |
+| **[SenseNova (SenseTime)](https://free-llm.com/provider/sensenova)**<br><sub>📱 Phone check · [🔑&nbsp;Get&nbsp;key](https://www.sensenova.cn/token-plan)</sub> | `https://token.sensenova.cn/v1` |
+| **[Cerebras](https://free-llm.com/provider/cerebras)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://cerebras.ai/inference)</sub> | `https://api.cerebras.ai/v1` |
+| **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://portal.nousresearch.com)</sub> | `https://inference-api.nousresearch.com/v1` |
+| **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://experiments.hetzner.com/inference)</sub> | `https://inference.hetzner.com/api/v1` |
+| **[Experiential Labs](https://free-llm.com/provider/experiential-labs)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://www.experientiallabs.ai/pricing)</sub> | `https://api.experientiallabs.ai/v1` |
+| **[Tencent Cloud TokenHub](https://free-llm.com/provider/tencent-tokenhub)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://www.tencentcloud.com/act/pro/tokenhub)</sub> | `https://tokenhub-intl.tencentmaas.com/v1` |
+| **[IBM watsonx.ai (Lite plan)](https://free-llm.com/provider/ibm-watsonx)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://www.ibm.com/products/watsonx-ai/pricing)</sub> | <sub>native API only — [setup guide](https://free-llm.com/provider/ibm-watsonx)</sub> |
+| **[Sail Research](https://free-llm.com/provider/sail-research)**<br><sub>💳 Card required · [🔑&nbsp;Get&nbsp;key](https://docs.sailresearch.com/pricing)</sub> | `https://api.sailresearch.com/v1` |
 <!--TABLE:QUICKREF:END-->
 
 ---
