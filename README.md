@@ -37,6 +37,8 @@ free-llm                                # guided setup, then http://localhost:40
 free-llm setup claude                   # Claude Code now runs on free models (also: codex, opencode, aider)
 ```
 
+<p align="center"><a href="router/README.md"><img src="router/docs/dashboard.png" width="760" alt="Free-LLM Router dashboard"></a></p>
+
 Works with zero keys to try (guest mode) · one-command setup for coding agents · OpenAI, Anthropic, Codex Responses, Ollama & MCP APIs · zero dependencies · keys stay encrypted on your computer.
 **→ [Read how it works](router/README.md)** · [free-llm.com/router](https://free-llm.com/router)
 

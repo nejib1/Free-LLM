@@ -37,6 +37,8 @@ free-llm                                # 引導式設定，然後開啟 http://
 free-llm setup claude                   # Claude Code 改用免費模型（也支援 codex、opencode、aider）
 ```
 
+<p align="center"><a href="router/README.md"><img src="router/docs/dashboard.png" width="760" alt="Free-LLM Router dashboard"></a></p>
+
 不需金鑰即可試用（訪客模式）· 程式助手一鍵設定 · 支援 OpenAI、Anthropic、Codex Responses、Ollama 與 MCP 介面 · 零相依套件 · 金鑰加密保存在你自己的電腦上。
 **→ [了解運作原理](router/README.md)** · [free-llm.com/router](https://free-llm.com/router)
 
