@@ -1,0 +1,30 @@
+{
+  "name": "free-llm",
+  "version": "1.0.0",
+  "description": "Free-LLM Router — every free LLM API behind one OpenAI- and Anthropic-compatible endpoint. Automatic failover, live catalog from free-llm.com, works with Claude Code, Codex, Cursor, OpenCode, Aider and any OpenAI SDK.",
+  "type": "module",
+  "bin": {
+    "free-llm": "router/bin/free-llm.js",
+    "free-llm-router": "router/bin/free-llm.js"
+  },
+  "files": [
+    "router/bin/",
+    "router/src/",
+    "router/public/",
+    "router/catalog.snapshot.json",
+    "router/README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node router/bin/free-llm.js start",
+    "test": "node --test router/test/router.test.js"
+  },
+  "keywords": ["llm", "free", "openai", "anthropic", "router", "gateway", "proxy", "claude-code", "codex", "cursor", "groq", "gemini", "openrouter", "failover", "free-llm-api"],
+  "homepage": "https://free-llm.com/router",
+  "repository": { "type": "git", "url": "git+https://github.com/nejib1/Free-LLM.git" },
+  "bugs": { "url": "https://github.com/nejib1/Free-LLM/issues" },
+  "license": "MIT"
+}

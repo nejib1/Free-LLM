@@ -1,0 +1,7 @@
+*
+!package.json
+!LICENSE
+!router/bin
+!router/src
+!router/public
+!router/catalog.snapshot.json
