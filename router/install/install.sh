@@ -5,7 +5,7 @@
 # No sudo, no npm, no global changes. Uninstall: rm -rf ~/.free-llm ~/.local/bin/free-llm
 set -e
 
-URL="${FREE_LLM_TARBALL:-https://free-llm.com/downloads/free-llm-latest.tgz}"
+URL="${FREE_LLM_TARBALL:-https://github.com/nejib1/Free-LLM/releases/latest/download/free-llm.tgz}"
 APP="${FREE_LLM_HOME:-$HOME/.free-llm}/app"
 BIN="$HOME/.local/bin"
 
