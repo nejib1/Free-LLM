@@ -90,38 +90,38 @@ print(response.choices[0].message.content)
 持续免费访问，限速但永不过期。
 
 <!--TABLE:PERMANENT:START-->
-| 提供商 | 需要信用卡？ | 速率限制 | 每日限额 | 每月限额 | 主要模型 |
-|:---|:---:|:---|:---|:---|:---|
-| [Google AI Studio](https://aistudio.google.com/) | 否 | Varies by model (per-model limits are now shown only inside AI Studio) | Varies by model. Free: Gemini 3.x Flash / Flash-Lite and Gemini 2.5 Pro/Flash (2.5 redirect to 3.x on Dec 1, 2026); Gemini 3.x Pro and Gemini 4 are paid | 完全免费 | Gemini 3.8 Flash, Gemma 4 26B A4B IT, Gemma 4 31B IT, Gemini 3 Flash Preview |
-| [Mistral (La Plateforme)](https://console.mistral.ai/) | 需手机验证 | 1 request/second | - | Free | Mistral Small, Mistral Large 4 (Preview), Codestral 2508, Ministral 3 8B |
-| [Cohere](https://cohere.com/) | 否 | 20 requests/minute | 1,000 API calls/month (trial key) | 1,000 API calls/month (trial key, non-commercial) | Command A (111B), Command A Translate, Command A Vision, North Mini Code |
-| [NVIDIA NIM](https://build.nvidia.com/explore/discover) | 需手机验证 | ~40 RPM (varies per model, not published) | - | - | GLM-5.3 Flash, DiffusionGemma 26B A4B, Riva Translate 4B v2, Cosmos Reason 2 8B |
-| [Groq](https://console.groq.com/) | 否 | 30 RPM; 8K TPM on most chat models (varies by model) | 1,000 requests/day and 200K tokens/day on gpt-oss / Qwen (varies by model) | Free Forever | GPT-OSS 120B, Qwen3.8 27B, Whisper Large v3, Whisper Large v3 Turbo |
-| [Z.AI (GLM)](https://z.ai/) | 需注册 | ~1 request/second (Flash models) | ~1,000 requests/day (Flash tier) | Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
-| [OVH AI Endpoints](https://endpoints.ai.cloud.ovh.net/) | 需注册 | 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go) | 未公布 | Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/) | 否 | 因模型而异 | 每天 10,000 neurons | ~300,000 neurons/month | GLM-5.3 Flash, FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B |
-| [Kilo AI Gateway](https://kilo.ai/gateway) | 否 | 200 requests/hour per IP on free models (anonymous use allowed) | Default free models only | Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
-| [Nous Portal](https://portal.nousresearch.com) | 需绑定银行卡 | Standard rate limits (figures not published) | Free models only (no monthly credit) | Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 charge) is required to get a key - verify | StepFun Step 3.7 Flash, Reflection Beam 1.0, Upstage Solar Mini 4, Crouton Alpha (stealth, free) |
-| [Hetzner Inference API](https://experiments.hetzner.com/inference) | 需绑定银行卡 | 10 requests, 4M input / 100K output tokens per 60s (per API key) | No daily cap published (free while the API is experimental); a Hetzner account with billing details is required and Hetzner may ask for a card or ID to verify it | Free during experimental phase, no billing system yet | Qwen3.8 27B, Qwen3.6 35B A3B |
-| [ModelScope](https://modelscope.cn) | 需手机验证 | 500 requests/day per model | 2,000 requests/day total | Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
-| [FreeInference](https://freeinference.org) | 否 | Not published ("generous quota"; HTTP 429 when rate-limited) | No published daily cap | — | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
-| [Ollama Cloud](https://ollama.com/cloud) | 否 | Pay-as-you-go: 3 concurrent requests; only Beam (beam:cloud) is labelled free | No free monthly allowance any more (starter credits removed); other cloud models are billed per token | Weekly usage limit resets every 7 days | Reflection Beam (501B) |
-| [SiliconFlow](https://cloud.siliconflow.cn/models) | 需手机验证 | Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/models | Not fully published — verify on docs.siliconflow.cn | Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
-| [Aion Labs](https://www.aionlabs.ai/pricing/) | 否 | Not published (daily credit allowance) | Daily free credit allowance (amount not published by Aion Labs) | Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
-| [Api.Airforce](https://api.airforce/) | 否 | 1 RPM | 1,000 requests/day | Free plan, $0/month | GPT-OSS 20B, GLM-4.7 Flash, Essential AI RNJ 1, Kimi K2.7 Code |
-| [Routeway](https://routeway.ai/) | 需注册 | 5 RPM on :free models | 200 requests/day | Starter plan free, shared queue | DeepSeek V4.1 Flash (free), MiniMax M3.1 Flash (free), Muse Glimmer 30B |
-| [OpenTyphoon (Typhoon API)](https://opentyphoon.ai) | 否 | 5 requests/second, 200 RPM (text models); 20 RPM for OCR | No daily cap published | — | Typhoon 2.5 30B A3B Instruct, Typhoon OCR 1.5 |
-| [SEA-LION API](https://docs.sea-lion.ai/guides/inferencing/api) | 需注册 | 10 requests/minute per user (increase on request: sealion@aisingapore.org) | Not published | — | Qwen SEA-LION v4.5 27B Instruct, Llama SEA-LION v3.5 70B Reasoning, SEA-Guard (safety), SEA-LION Embedding 600M |
-| [LLM.kiwi](https://llm.kiwi/pricing) | 需注册 | Baseline rate limits (figures not published) | Not published | — | Auto router, MiniMax M3, Nemotron 3 Ultra, Nemotron 3 Super |
-| [Agnes AI](https://agnes-ai.com) | 需注册 | About 30 RPM per account (video 2 RPM), per third-party listings | Not published | — | Agnes 3.0 Flash, Agnes 2.5 Flash, Agnes Image 2.1 Flash (image) |
-| [AI Horde (OpenAI-compatible front)](https://aihorde.net) | 否 | Queue-based; anonymous requests have the lowest priority, registered users earn kudos for priority | No fixed cap (volunteer capacity) | — | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
-| [Arli AI](https://www.arliai.com/pricing) | 需注册 | 1 request at a time; max 12K context tokens | Limited trial uses per model (about 5 requests per 2 days, per third-party list) | — | Qwen3.5 27B Derestricted |
-| [iFlytek Spark Lite](https://www.xfyun.cn/doc/spark/HTTP调用文档.html) | 需手机验证 | Not published on the HTTP doc | Not published (Lite is free) | — | Spark Lite |
-| [Zhipu BigModel (China)](https://docs.bigmodel.cn/cn/guide/start/model-overview) | 需手机验证 | Low concurrency on free Flash models (GLM-4.7-Flash reported at 1 concurrent request) | Not published | — | GLM-4.7-Flash, GLM-4.5-Flash, GLM-4-Flash-250414, GLM-4.6V-Flash (vision) |
-| [Mixlayer](https://docs.mixlayer.com/credits-and-limits) | 需注册 | Per-organization, per-model RPM/TPM (values shown in console only) | Not published | — | Qwen3.5 4B (free) |
-| [SenseNova (SenseTime)](https://www.sensenova.cn/token-plan) | 需手机验证 | Not published | Not published (\"限时放量\" during public beta) | — | SenseNova 6.8 Flash Lite |
-| [Pollinations.ai](https://pollinations.ai) | 否 | API key required (anonymous access removed); no card | Free usage paid from Quest Pollen earned in the dashboard | Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
-| [LLM7.io](https://llm7.io) | 否 | 1 req/s, 60/min, 250/hour (free token from dash.llm7.io) | 100,000 tokens per 24h (free token; may be reduced without notice) | Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
+| 提供商 · 注册要求 | 免费额度与限制 | 主要模型 |
+|:---|:---|:---|
+| **[Google AI Studio](https://free-llm.com/provider/google-ai-studio)**<br><sub>🟢 无需绑卡</sub> | ⏱️ Varies by model (per-model limits are now shown only inside AI Studio)<br>📅 Varies by model. Free: Gemini 3.x Flash / Flash-Lite and Gemini 2.5 Pro/Flash (2.5 redirect to…<br>🗓️ 完全免费<br><sub>[详情 →](https://free-llm.com/provider/google-ai-studio)</sub> | Gemini 3.8 Flash, Gemma 4 26B A4B IT, Gemma 4 31B IT, Gemini 3 Flash Preview |
+| **[Mistral (La Plateforme)](https://free-llm.com/provider/mistral-ai)**<br><sub>📱 手机验证</sub> | ⏱️ 1 request/second<br>🗓️ Free | Mistral Small, Mistral Large 4 (Preview), Codestral 2508, Ministral 3 8B |
+| **[Cohere](https://free-llm.com/provider/cohere)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 20 requests/minute<br>📅 1,000 API calls/month (trial key)<br>🗓️ 1,000 API calls/month (trial key, non-commercial) | Command A (111B), Command A Translate, Command A Vision, North Mini Code |
+| **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)**<br><sub>📱 手机验证</sub> | ⏱️ ~40 RPM (varies per model, not published) | GLM-5.3 Flash, DiffusionGemma 26B A4B, Riva Translate 4B v2, Cosmos Reason 2 8B |
+| **[Groq](https://free-llm.com/provider/groq-cloud)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 30 RPM; 8K TPM on most chat models (varies by model)<br>📅 1,000 requests/day and 200K tokens/day on gpt-oss / Qwen (varies by model)<br>🗓️ Free Forever | GPT-OSS 120B, Qwen3.8 27B, Whisper Large v3, Whisper Large v3 Turbo |
+| **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ ~1 request/second (Flash models)<br>📅 ~1,000 requests/day (Flash tier)<br>🗓️ Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
+| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go)<br>🗓️ Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
+| **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 因模型而异<br>📅 每天 10,000 neurons<br>🗓️ ~300,000 neurons/month | GLM-5.3 Flash, FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B |
+| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
+| **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 需绑卡</sub> | ⏱️ Standard rate limits (figures not published)<br>📅 Free models only (no monthly credit)<br>🗓️ Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 ch…<br><sub>[详情 →](https://free-llm.com/provider/nous-portal)</sub> | StepFun Step 3.7 Flash, Reflection Beam 1.0, Upstage Solar Mini 4, Crouton Alpha (stealth, free) |
+| **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 需绑卡</sub> | ⏱️ 10 requests, 4M input / 100K output tokens per 60s (per API key)<br>📅 No daily cap published (free while the API is experimental); a Hetzner account with billing de…<br>🗓️ Free during experimental phase, no billing system yet<br><sub>[详情 →](https://free-llm.com/provider/hetzner-inference)</sub> | Qwen3.8 27B, Qwen3.6 35B A3B |
+| **[ModelScope](https://free-llm.com/provider/modelscope)**<br><sub>📱 手机验证</sub> | ⏱️ 500 requests/day per model<br>📅 2,000 requests/day total<br>🗓️ Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
+| **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 无需绑卡</sub> | ⏱️ Not published ("generous quota"; HTTP 429 when rate-limited)<br>📅 No published daily cap | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
+| **[Ollama Cloud](https://free-llm.com/provider/ollama-cloud)**<br><sub>🟢 无需绑卡</sub> | ⏱️ Pay-as-you-go: 3 concurrent requests; only Beam (beam:cloud) is labelled free<br>📅 No free monthly allowance any more (starter credits removed); other cloud models are billed pe…<br>🗓️ Weekly usage limit resets every 7 days<br><sub>[详情 →](https://free-llm.com/provider/ollama-cloud)</sub> | Reflection Beam (501B) |
+| **[SiliconFlow](https://free-llm.com/provider/siliconflow)**<br><sub>📱 手机验证</sub> | ⏱️ Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/mod…<br>📅 Not fully published — verify on docs.siliconflow.cn<br>🗓️ Free models available after identity verification<br><sub>[详情 →](https://free-llm.com/provider/siliconflow)</sub> | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
+| **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 无需绑卡</sub> | ⏱️ Not published (daily credit allowance)<br>📅 Daily free credit allowance (amount not published by Aion Labs)<br>🗓️ Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
+| **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 1 RPM<br>📅 1,000 requests/day<br>🗓️ Free plan, $0/month | GPT-OSS 20B, GLM-4.7 Flash, Essential AI RNJ 1, Kimi K2.7 Code |
+| **[Routeway](https://free-llm.com/provider/routeway)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ 5 RPM on :free models<br>📅 200 requests/day<br>🗓️ Starter plan free, shared queue | DeepSeek V4.1 Flash (free), MiniMax M3.1 Flash (free), Muse Glimmer 30B |
+| **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 5 requests/second, 200 RPM (text models); 20 RPM for OCR<br>📅 No daily cap published | Typhoon 2.5 30B A3B Instruct, Typhoon OCR 1.5 |
+| **[SEA-LION API](https://free-llm.com/provider/sea-lion)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ 10 requests/minute per user (increase on request: sealion@aisingapore.org) | Qwen SEA-LION v4.5 27B Instruct, Llama SEA-LION v3.5 70B Reasoning, SEA-Guard (safety), SEA-LION Embedding 600M |
+| **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ Baseline rate limits (figures not published) | Auto router, MiniMax M3, Nemotron 3 Ultra, Nemotron 3 Super |
+| **[Agnes AI](https://free-llm.com/provider/agnes-ai)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ About 30 RPM per account (video 2 RPM), per third-party listings | Agnes 3.0 Flash, Agnes 2.5 Flash, Agnes Image 2.1 Flash (image) |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 无需绑卡</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[详情 →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
+| **[Arli AI](https://free-llm.com/provider/arli-ai)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ 1 request at a time; max 12K context tokens<br>📅 Limited trial uses per model (about 5 requests per 2 days, per third-party list) | Qwen3.5 27B Derestricted |
+| **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)**<br><sub>📱 手机验证</sub> | ⏱️ Not published on the HTTP doc<br>📅 Not published (Lite is free) | Spark Lite |
+| **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)**<br><sub>📱 手机验证</sub> | ⏱️ Low concurrency on free Flash models (GLM-4.7-Flash reported at 1 concurrent request) | GLM-4.7-Flash, GLM-4.5-Flash, GLM-4-Flash-250414, GLM-4.6V-Flash (vision) |
+| **[Mixlayer](https://free-llm.com/provider/mixlayer)**<br><sub>✉️ 邮箱注册</sub> | ⏱️ Per-organization, per-model RPM/TPM (values shown in console only) | Qwen3.5 4B (free) |
+| **[SenseNova (SenseTime)](https://free-llm.com/provider/sensenova)**<br><sub>📱 手机验证</sub> | 📅 Not published (\"限时放量\" during public beta) | SenseNova 6.8 Flash Lite |
+| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)**<br><sub>🟢 无需绑卡</sub> | ⏱️ API key required (anonymous access removed); no card<br>📅 Free usage paid from Quest Pollen earned in the dashboard<br>🗓️ Free, no billing system | GPT-OSS 20B, Mistral Large 3, Kimi K2.6, GLM 5.3 Flash |
+| **[LLM7.io](https://free-llm.com/provider/llm7-io)**<br><sub>🟢 无需绑卡</sub> | ⏱️ 1 req/s, 60/min, 250/hour (free token from dash.llm7.io)<br>📅 100,000 tokens per 24h (free token; may be reduced without notice)<br>🗓️ Free, no billing | Nemotron 3 Nano 30B, GLM 5.3 Flash, Mistral Nemo Instruct 2407, Codestral Latest |
 <!--TABLE:PERMANENT:END-->
 
 ### 💰 可续期额度
@@ -129,27 +129,27 @@ print(response.choices[0].message.content)
 定期续期的免费额度，没有一次性到期问题。
 
 <!--TABLE:RENEWABLE:START-->
-| 提供商 | 需要信用卡？ | 速率限制 | 免费额度 | 主要模型 |
-|:---|:---:|:---|:---|:---|
-| [OpenRouter](https://openrouter.ai/) | 否 | 20 requests/minute | 50 requests/day (up to 1000 with $10 topup) | Gemma 4 31B IT, NVIDIA Nemotron 3 Ultra, Recursive Flint v1.0 (free), Nemotron 3.5 Super VL |
-| [Gonka Broker](https://gonkabroker.com) | 需手机验证 | Network limits (see docs.gonkabroker.com Limits & Quotas) | Monthly free token grant after SMS verification (does not accumulate) | GLM-5.3 Flash, DeepSeek V4 Flash 0731, MiniMax M2.7 |
-| [Experiential Labs](https://www.experientiallabs.ai/pricing) | 需绑定银行卡 | 10 RPM and 250K TPM per free core model | 1M input+output tokens/day shared across free core models, reset 00:00 UTC | GPT-6 Luna, DeepSeek V4.1 Flash 1017, Clef Flash (decision endpoint, free promo) |
-| [Requesty](https://requesty.ai/) | 否 | 20 RPM on free models (60 RPM for paying orgs) | 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models | Gemma 4 31B IT, Ling 3.0 Tiny, Nemotron 3 Nano Omni Reasoning, Nemotron 3 Nano 30B A3B |
-| [Vercel AI Gateway](https://vercel.com/ai-gateway) | 需注册 | Lower per-model limits than the paid tier (429 on excess) | $5/month | Nemotron 3.5 Lightning (free), Llama 3.3 70B, MiniMax M3.1 Flash, GLM-4.7 Flash |
-| [Token Harbor](https://tokenharbor.ai) | 需注册 | 60 requests/min and 1,800/hour per account (100/min, 3,000/hour per IP) | Free allowance, resets on a rolling 7-day period | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
-| [BazaarLink](https://bazaarlink.ai/free) | 需注册 | 10 RPM (20 RPM with any credit), 2 concurrent requests | 60 weighted units/day (120 with credit), resets 00:00 UTC | Qwen3.7 Flash, Reflection Beam (free), Nemotron 3.5 Lightning (free), DeepSeek V4 Flash 0731 (free) |
-| [AnyAPI](https://anyapi.ai) | 否 | Limited API calls on the Free plan (exact RPM not published) | 100K ANY tokens per day, free models only | See provider |
-| [Zro (MoonMath)](https://zro.moonmath.ai) | 需注册 | Daily usage allowance (amount not published) | Resets every day (Flash models only) | GLM-5.3 Flash, DeepSeek V4.1 Flash |
-| [Inferbase](https://inferbase.ai) | 否 | 100 managed requests per day | $0.50 of managed model usage per day; 5,000 requests per month | GPT-OSS 120B, DeepSeek V4 Flash, Qwen3.6 27B, Gemma 4 31B IT |
-| [AIHubMix (free models)](https://aihubmix.com) | 需注册 | 5 RPM per account on most *-free routes | 100 requests/day and 1M tokens/day per account (500 RPD on some, e.g. glm-4.7-flash-free, coding-minimax-m3-free) | Coding GLM 5.3 (free), Coding GLM 5.3 Flash (free), Coding Kimi K3 (free), Coding MiniMax M3 (free) |
-| [IBM watsonx.ai (Lite plan)](https://www.ibm.com/products/watsonx-ai/pricing) | 需绑定银行卡 | About 2 requests/second (Lite) | 300,000 tokens/month + 20 CUH/month | Granite 4 H Small, Llama 3.3 70B Instruct, Llama 4 Maverick, GPT-OSS 120B |
-| [Bytez](https://docs.bytez.com/model-api/docs/billing) | 需注册 | 1 concurrent request (open models); 10 requests/second (closed models) | $1 free credits, refreshed every 4 weeks | See provider |
-| [Moark (Gitee AI)](https://moark.com/docs/FAQ) | 需手机验证 | Not published | 100 free calls/day per user (free experience access token) | DeepSeek V4 Flash 0731, GLM 5.3 Flash, Qwen3.8 27B |
-| [MegaNova AI](https://docs.meganova.ai/tiers) | 否 | Tier 1 (free): 20-200 RPM | Tier 1: 50-500 free-model requests/day (varies by model) | Manta Pro 1.0, Manta Flash 1.0, Manta Mini 1.0, Mistral Small 3.2 24B |
-| [SimpleLLM](https://simplellm.eu/docs/) | 需注册 | Account-specific (read via GET /v1/rate-limit) | Free-model hourly/daily request and token allowances (values per account, not published) | Llama 3.1 8B Free, Gemma E4B Free, Mistral 7B (tier free, $0), Kode 14B (tier free, $0) |
-| [Sail Research](https://docs.sailresearch.com/pricing) | 需绑定银行卡 | Not published for Free plan (most relaxed on flex window) | $5 free credits every month (payment method attached) | Kimi K3, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash 1017 |
-| [LLMTR](https://llmtr.com/en/terms) | 需注册 | Not published; lower allowance in an account's first 24h | Per-model daily allowance (e.g. 200K tokens/day on dated previews) | Nemotron 3 Ultra 550B, Nemotron 3.5 Super VL (free), Qwen3.8 27B (free), Agnes 3.0 Flash |
-| [Kiosapi.id](https://kiosapi.id/pricing) | 需注册 | 5 requests/minute (free models) | 50 requests/day per account shared across free models, reset 07:00 WIB | GLM 4.7 Flash, Qwen3 30B, Gemma 4 26B, Llama 3.1 8B |
+| 提供商 · 注册要求 | 免费额度与限制 | 主要模型 |
+|:---|:---|:---|
+| **[OpenRouter](https://free-llm.com/provider/openrouter)**<br><sub>🟢 无需绑卡</sub> | 🎁 50 requests/day (up to 1000 with $10 topup)<br>⏱️ 20 requests/minute | Gemma 4 31B IT, NVIDIA Nemotron 3 Ultra, Recursive Flint v1.0 (free), Nemotron 3.5 Super VL |
+| **[Gonka Broker](https://free-llm.com/provider/gonka-broker)**<br><sub>📱 手机验证</sub> | 🎁 Monthly free token grant after SMS verification (does not accumulate)<br>⏱️ Network limits (see docs.gonkabroker.com Limits & Quotas) | GLM-5.3 Flash, DeepSeek V4 Flash 0731, MiniMax M2.7 |
+| **[Experiential Labs](https://free-llm.com/provider/experiential-labs)**<br><sub>💳 需绑卡</sub> | 🎁 1M input+output tokens/day shared across free core models, reset 00:00 UTC<br>⏱️ 10 RPM and 250K TPM per free core model | GPT-6 Luna, DeepSeek V4.1 Flash 1017, Clef Flash (decision endpoint, free promo) |
+| **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 无需绑卡</sub> | 🎁 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models<br>⏱️ 20 RPM on free models (60 RPM for paying orgs) | Gemma 4 31B IT, Ling 3.0 Tiny, Nemotron 3 Nano Omni Reasoning, Nemotron 3 Nano 30B A3B |
+| **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)**<br><sub>✉️ 邮箱注册</sub> | 🎁 $5/month<br>⏱️ Lower per-model limits than the paid tier (429 on excess) | Nemotron 3.5 Lightning (free), Llama 3.3 70B, MiniMax M3.1 Flash, GLM-4.7 Flash |
+| **[Token Harbor](https://free-llm.com/provider/token-harbor)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Free allowance, resets on a rolling 7-day period<br>⏱️ 60 requests/min and 1,800/hour per account (100/min, 3,000/hour per IP) | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
+| **[BazaarLink](https://free-llm.com/provider/bazaarlink)**<br><sub>✉️ 邮箱注册</sub> | 🎁 60 weighted units/day (120 with credit), resets 00:00 UTC<br>⏱️ 10 RPM (20 RPM with any credit), 2 concurrent requests | Qwen3.7 Flash, Reflection Beam (free), Nemotron 3.5 Lightning (free), DeepSeek V4 Flash 0731 (free) |
+| **[AnyAPI](https://free-llm.com/provider/anyapi)**<br><sub>🟢 无需绑卡</sub> | 🎁 100K ANY tokens per day, free models only<br>⏱️ Limited API calls on the Free plan (exact RPM not published) | See provider |
+| **[Zro (MoonMath)](https://free-llm.com/provider/zro)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Resets every day (Flash models only)<br>⏱️ Daily usage allowance (amount not published) | GLM-5.3 Flash, DeepSeek V4.1 Flash |
+| **[Inferbase](https://free-llm.com/provider/inferbase)**<br><sub>🟢 无需绑卡</sub> | 🎁 $0.50 of managed model usage per day; 5,000 requests per month<br>⏱️ 100 managed requests per day | GPT-OSS 120B, DeepSeek V4 Flash, Qwen3.6 27B, Gemma 4 31B IT |
+| **[AIHubMix (free models)](https://free-llm.com/provider/aihubmix)**<br><sub>✉️ 邮箱注册</sub> | 🎁 100 requests/day and 1M tokens/day per account (500 RPD on some, e.g. glm-4.7-flash-free, codi…<br>⏱️ 5 RPM per account on most *-free routes<br><sub>[详情 →](https://free-llm.com/provider/aihubmix)</sub> | Coding GLM 5.3 (free), Coding GLM 5.3 Flash (free), Coding Kimi K3 (free), Coding MiniMax M3 (free) |
+| **[IBM watsonx.ai (Lite plan)](https://free-llm.com/provider/ibm-watsonx)**<br><sub>💳 需绑卡</sub> | 🎁 300,000 tokens/month + 20 CUH/month<br>⏱️ About 2 requests/second (Lite) | Granite 4 H Small, Llama 3.3 70B Instruct, Llama 4 Maverick, GPT-OSS 120B |
+| **[Bytez](https://free-llm.com/provider/bytez)**<br><sub>✉️ 邮箱注册</sub> | 🎁 $1 free credits, refreshed every 4 weeks<br>⏱️ 1 concurrent request (open models); 10 requests/second (closed models) | See provider |
+| **[Moark (Gitee AI)](https://free-llm.com/provider/moark)**<br><sub>📱 手机验证</sub> | 🎁 100 free calls/day per user (free experience access token) | DeepSeek V4 Flash 0731, GLM 5.3 Flash, Qwen3.8 27B |
+| **[MegaNova AI](https://free-llm.com/provider/meganova)**<br><sub>🟢 无需绑卡</sub> | 🎁 Tier 1: 50-500 free-model requests/day (varies by model)<br>⏱️ Tier 1 (free): 20-200 RPM | Manta Pro 1.0, Manta Flash 1.0, Manta Mini 1.0, Mistral Small 3.2 24B |
+| **[SimpleLLM](https://free-llm.com/provider/simplellm)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Free-model hourly/daily request and token allowances (values per account, not published)<br>⏱️ Account-specific (read via GET /v1/rate-limit) | Llama 3.1 8B Free, Gemma E4B Free, Mistral 7B (tier free, $0), Kode 14B (tier free, $0) |
+| **[Sail Research](https://free-llm.com/provider/sail-research)**<br><sub>💳 需绑卡</sub> | 🎁 $5 free credits every month (payment method attached)<br>⏱️ Not published for Free plan (most relaxed on flex window) | Kimi K3, GLM 5.3, GLM 5.3 Flash, DeepSeek V4.1 Flash 1017 |
+| **[LLMTR](https://free-llm.com/provider/llmtr)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Per-model daily allowance (e.g. 200K tokens/day on dated previews)<br>⏱️ Not published; lower allowance in an account's first 24h | Nemotron 3 Ultra 550B, Nemotron 3.5 Super VL (free), Qwen3.8 27B (free), Agnes 3.0 Flash |
+| **[Kiosapi.id](https://free-llm.com/provider/kiosapi)**<br><sub>✉️ 邮箱注册</sub> | 🎁 50 requests/day per account shared across free models, reset 07:00 WIB<br>⏱️ 5 requests/minute (free models) | GLM 4.7 Flash, Qwen3 30B, Gemma 4 26B, Llama 3.1 8B |
 <!--TABLE:RENEWABLE:END-->
 
 ### 🎁 一次性试用额度
@@ -157,33 +157,33 @@ print(response.choices[0].message.content)
 注册后获得一次性额度，用完为止。
 
 <!--TABLE:TRIAL:START-->
-| 提供商 | 需要信用卡？ | 额度 | 有效期 | 主要模型 |
-|:---|:---:|:---|:---|:---|
-| [Replicate](https://replicate.com/) | 需注册 | Limited free runs on select models | 一次性 | See provider |
-| [Fireworks AI](https://fireworks.ai/) | 需注册 | Free starter credit for new accounts (amount no longer stated by Fireworks; historically $1) | 一次性 | Nemotron 3.5 Lightning 30B A3B, MiniMax M3, GPT-OSS 120B, GLM 5.3 Flash |
-| [Hyperbolic](https://app.hyperbolic.xyz/) | 需手机验证 | $1 after phone verification (Free Tier) | 一次性 | DeepSeek V4 Flash 0731, Qwen3.8 27B, MiMo V2.6 Flash, GLM-5.3 Flash |
-| [Cerebras](https://cerebras.ai/inference) | 需绑定银行卡 | $5 after adding a verified payment method (expires after 30 days) | 30 天 | GPT OSS 120B, Qwen 3.8 27B |
-| [Novita AI](https://novita.ai/) | 需注册 | No automatic sign-up credit; $10 per referral (both sides) | 一次性 | GLM 5.3, Kimi K3, DeepSeek V4.1 Flash, Qwen3.8 27B |
-| [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models) | 需注册 | 1M tokens (+60 min audio transcription), all serverless models | 一次性 | GPT-OSS 120B, Whisper Large v3, Voxtral Small 24B, Holo2 30B A3B |
-| [Qwen (Alibaba)](https://bailian.console.alibabacloud.com/) | 需注册 | ~1M tokens per model, 90 days (Singapore; newer models only since Oct 29, 2026) | One-time per model | Qwen3.8 Flash, Qwen3.7 Plus, Qwen3.8 Max, Qwen3.7 Max |
-| [Upstage](https://console.upstage.ai/) | 需注册 | $10 sign-up credit (announced by Upstage; not shown on the pricing page, verify) | 3 个月 | See provider |
-| [Friendli AI](https://friendli.ai/) | 需注册 | Trial credits at onboarding (amount not published) | 一次性 | GLM-5.1, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
-| [Cerebrium](https://www.cerebrium.ai/) | 需注册 | No sign-up credit shown on the pricing page (Hobby plan: free platform, compute billed per second) | 一次性 | See provider |
-| [Grokified](https://grokified.com) | 否 | $5 | 一次性 | Grok 4.7, grok-4.6, grok-4.3, grok-build-0.1 |
-| [IteraCompute](https://iteracompute.com/free/) | 需注册 | 30M tokens/month on Qwen3.8-27B (promotion, no card) | Until Nov 24, 2026 00:00 PT | Qwen3.8 27B |
-| [Dahl Inference](https://inference.dahl.global/) | 需注册 | — | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
-| [Regolo.ai](https://regolo.ai) | 否 | 30-day trial, 1M tokens/day, no card | 30 天 | GPT-OSS 120B, Qwen3.8 27B, Gemma 4 31B, GLM-5.2 |
-| [GonkaRouter](https://gonkarouter.io) | 否 | 1M free tokens for new users | 一次性 | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M2.7 |
-| [NovAI](https://aiapi-pro.com) | 否 | $2 welcome credit, no card | 一次性 | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash |
-| [Vectoree](https://vectoree.ai) | 否 | $5 welcome credit after CLI login | 一次性 | Vectoree Auto (router) |
-| [Sarvam AI](https://www.sarvam.ai/api-pricing) | 需手机验证 | INR 100 free credits on signup | One-time; credits do not expire (per third-party list) | Sarvam 105B, Sarvam 105B Conversations |
-| [HPC-AI Model APIs](https://www.hpc-ai.com/model-apis) | 需注册 | $2 free voucher on signup ($4 with an invite code, per third-party list) | 一次性 | Kimi K2.7 Code |
-| [VLM Run Gateway](https://docs.vlm.run/gateway/rate-limits) | 否 | 100 free credits on sign-up (~$1, at $0.01/credit) | One-time, then pay-as-you-go | Qwen3.8 27B, Gemma 4 26B A4B IT, Qwen3.5 0.8B, DiffusionGemma 26B A4B |
-| [Tencent Cloud TokenHub](https://www.tencentcloud.com/act/pro/tokenhub) | 需绑定银行卡 | 1M free tokens per language model, once per account per model | 90 days after claim (intl promo page; docs say 1 year); campaign ends 2026-12-31" - DeepSeek-V4-Pro | See provider |
-| [Google Vertex AI express mode (Gemini Enterprise Agent Platform)](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview) | 需注册 | Free-tier quota access, no billing account | Up to 90 days for new Google Cloud users | Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash |
-| [Jina AI (Embeddings / Reader API)](https://jina.ai/embeddings/) | 否 | Free tokens on an auto-generated key (amount not stated on page) | Keys do not expire | Jina Embeddings v5 Text Small, Jina Embeddings v5 Text Nano, Jina Embeddings v5 Omni Small, Jina Embeddings v3 |
-| [Voyage AI (embeddings & rerankers)](https://docs.voyageai.com/docs/pricing) | 需注册 | First 200M tokens free per model (voyage-4 family, rerank-2.5); 50M on domain models | One-time per account per model | Voyage 4 Large, Voyage 4, Voyage 4 Lite, Voyage Code 3 |
-| [Inception Labs](https://www.inceptionlabs.ai/) | 否 | 100M tokens | One-time (new accounts) | Mercury 3, Mercury 2.5, Mercury 2 |
+| 提供商 · 注册要求 | 免费额度 | 主要模型 |
+|:---|:---|:---|
+| **[Replicate](https://free-llm.com/provider/replicate)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Limited free runs on select models<br>⌛ 一次性 | See provider |
+| **[Fireworks AI](https://free-llm.com/provider/fireworks-ai)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Free starter credit for new accounts (amount no longer stated by Fireworks; historically $1)<br>⌛ 一次性 | Nemotron 3.5 Lightning 30B A3B, MiniMax M3, GPT-OSS 120B, GLM 5.3 Flash |
+| **[Hyperbolic](https://free-llm.com/provider/hyperbolic)**<br><sub>📱 手机验证</sub> | 🎁 $1 after phone verification (Free Tier)<br>⌛ 一次性 | DeepSeek V4 Flash 0731, Qwen3.8 27B, MiMo V2.6 Flash, GLM-5.3 Flash |
+| **[Cerebras](https://free-llm.com/provider/cerebras)**<br><sub>💳 需绑卡</sub> | 🎁 $5 after adding a verified payment method (expires after 30 days)<br>⌛ 30 天 | GPT OSS 120B, Qwen 3.8 27B |
+| **[Novita AI](https://free-llm.com/provider/novita-ai)**<br><sub>✉️ 邮箱注册</sub> | 🎁 No automatic sign-up credit; $10 per referral (both sides)<br>⌛ 一次性 | GLM 5.3, Kimi K3, DeepSeek V4.1 Flash, Qwen3.8 27B |
+| **[Scaleway Generative APIs](https://free-llm.com/provider/scaleway)**<br><sub>✉️ 邮箱注册</sub> | 🎁 1M tokens (+60 min audio transcription), all serverless models<br>⌛ 一次性 | GPT-OSS 120B, Whisper Large v3, Voxtral Small 24B, Holo2 30B A3B |
+| **[Qwen (Alibaba)](https://free-llm.com/provider/qwen-alibaba)**<br><sub>✉️ 邮箱注册</sub> | 🎁 ~1M tokens per model, 90 days (Singapore; newer models only since Oct 29, 2026)<br>⌛ One-time per model | Qwen3.8 Flash, Qwen3.7 Plus, Qwen3.8 Max, Qwen3.7 Max |
+| **[Upstage](https://free-llm.com/provider/upstage)**<br><sub>✉️ 邮箱注册</sub> | 🎁 $10 sign-up credit (announced by Upstage; not shown on the pricing page, verify)<br>⌛ 3 个月 | See provider |
+| **[Friendli AI](https://free-llm.com/provider/friendli-ai)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Trial credits at onboarding (amount not published)<br>⌛ 一次性 | GLM-5.1, Gemma 4 31B, GLM 5.2, GLM 5.3 Flash |
+| **[Cerebrium](https://free-llm.com/provider/cerebrium)**<br><sub>✉️ 邮箱注册</sub> | 🎁 No sign-up credit shown on the pricing page (Hobby plan: free platform, compute billed per sec…<br>⌛ 一次性<br><sub>[详情 →](https://free-llm.com/provider/cerebrium)</sub> | See provider |
+| **[Grokified](https://free-llm.com/provider/grokified)**<br><sub>🟢 无需绑卡</sub> | 🎁 $5<br>⌛ 一次性 | Grok 4.7, grok-4.6, grok-4.3, grok-build-0.1 |
+| **[IteraCompute](https://free-llm.com/provider/iteracompute)**<br><sub>✉️ 邮箱注册</sub> | 🎁 30M tokens/month on Qwen3.8-27B (promotion, no card)<br>⌛ Until Nov 24, 2026 00:00 PT | Qwen3.8 27B |
+| **[Dahl Inference](https://free-llm.com/provider/dahl-inference)**<br><sub>✉️ 邮箱注册</sub> | — | GLM-5.3 Flash, MiniMax M2.7, DeepSeek V4 Flash 0731 |
+| **[Regolo.ai](https://free-llm.com/provider/regolo-ai)**<br><sub>🟢 无需绑卡</sub> | 🎁 30-day trial, 1M tokens/day, no card<br>⌛ 30 天 | GPT-OSS 120B, Qwen3.8 27B, Gemma 4 31B, GLM-5.2 |
+| **[GonkaRouter](https://free-llm.com/provider/gonkarouter)**<br><sub>🟢 无需绑卡</sub> | 🎁 1M free tokens for new users<br>⌛ 一次性 | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M2.7 |
+| **[NovAI](https://free-llm.com/provider/novai)**<br><sub>🟢 无需绑卡</sub> | 🎁 $2 welcome credit, no card<br>⌛ 一次性 | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash |
+| **[Vectoree](https://free-llm.com/provider/vectoree)**<br><sub>🟢 无需绑卡</sub> | 🎁 $5 welcome credit after CLI login<br>⌛ 一次性 | Vectoree Auto (router) |
+| **[Sarvam AI](https://free-llm.com/provider/sarvam-ai)**<br><sub>📱 手机验证</sub> | 🎁 INR 100 free credits on signup<br>⌛ One-time; credits do not expire (per third-party list) | Sarvam 105B, Sarvam 105B Conversations |
+| **[HPC-AI Model APIs](https://free-llm.com/provider/hpc-ai)**<br><sub>✉️ 邮箱注册</sub> | 🎁 $2 free voucher on signup ($4 with an invite code, per third-party list)<br>⌛ 一次性 | Kimi K2.7 Code |
+| **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)**<br><sub>🟢 无需绑卡</sub> | 🎁 100 free credits on sign-up (~$1, at $0.01/credit)<br>⌛ One-time, then pay-as-you-go | Qwen3.8 27B, Gemma 4 26B A4B IT, Qwen3.5 0.8B, DiffusionGemma 26B A4B |
+| **[Tencent Cloud TokenHub](https://free-llm.com/provider/tencent-tokenhub)**<br><sub>💳 需绑卡</sub> | 🎁 1M free tokens per language model, once per account per model<br>⌛ 90 days after claim (intl promo page; docs say 1 year); campaign ends 2026-12-31" - DeepSeek-V…<br><sub>[详情 →](https://free-llm.com/provider/tencent-tokenhub)</sub> | See provider |
+| **[Google Vertex AI express mode (Gemini Enterprise Agent Platform)](https://free-llm.com/provider/vertex-ai-express)**<br><sub>✉️ 邮箱注册</sub> | 🎁 Free-tier quota access, no billing account<br>⌛ Up to 90 days for new Google Cloud users | Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash |
+| **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)**<br><sub>🟢 无需绑卡</sub> | 🎁 Free tokens on an auto-generated key (amount not stated on page)<br>⌛ Keys do not expire | Jina Embeddings v5 Text Small, Jina Embeddings v5 Text Nano, Jina Embeddings v5 Omni Small, Jina Embeddings v3 |
+| **[Voyage AI (embeddings & rerankers)](https://free-llm.com/provider/voyage-ai)**<br><sub>✉️ 邮箱注册</sub> | 🎁 First 200M tokens free per model (voyage-4 family, rerank-2.5); 50M on domain models<br>⌛ One-time per account per model | Voyage 4 Large, Voyage 4, Voyage 4 Lite, Voyage Code 3 |
+| **[Inception Labs](https://free-llm.com/provider/inception-labs)**<br><sub>🟢 无需绑卡</sub> | 🎁 100M tokens<br>⌛ One-time (new accounts) | Mercury 3, Mercury 2.5, Mercury 2 |
 <!--TABLE:TRIAL:END-->
 
 ### 🖥️ 本地 / 自托管（无限、私密、永久免费）
