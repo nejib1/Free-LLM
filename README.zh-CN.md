@@ -40,6 +40,9 @@ free-llm setup claude                   # Claude Code 改用免费模型（也�
 <p align="center"><a href="router/README.md"><img src="router/docs/dashboard.png" width="760" alt="Free-LLM Router dashboard"></a></p>
 
 无需密钥即可试用（访客模式）· 编程助手一键配置 · 支持 OpenAI、Anthropic、Codex Responses、Ollama 与 MCP 接口 · 零依赖 · 密钥加密保存在你自己的电脑上。
+
+🔒 **100% 本地、完全私密：** 路由器运行在你自己的电脑上，API 密钥从不离开本机（加密保存），每个密钥只会发送给它自己的提供商——无需账号、无遥测、完全开源。
+
 **→ [了解工作原理](router/README.md)** · [free-llm.com/router](https://free-llm.com/router)
 
 ---
