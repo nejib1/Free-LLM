@@ -41,6 +41,8 @@ Dozens of companies give away AI for free: Google, Groq, Mistral, NVIDIA, Cloudf
   Gemini  Groq  Mistral  OpenRouter  NVIDIA  …60+ more
 ```
 
+<p align="center"><img src="docs/dashboard.png" width="820" alt="Free-LLM Router dashboard: guest mode, connection details and how it works"></p>
+
 ### The big advantage
 
 > **Many small free plans, stacked together, behave like one big free plan — that never goes down.**
