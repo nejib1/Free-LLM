@@ -4,10 +4,10 @@
     "source": "https://free-llm.com",
     "license": "MIT",
     "schema_version": 2,
-    "generated_at": "2026-11-20T03:58:44+01:00",
-    "updated_at": "2026-11-18T20:14:54+01:00",
-    "provider_count": 83,
-    "model_count": 451,
+    "generated_at": "2026-11-21T03:51:42+01:00",
+    "updated_at": "2026-11-21T03:49:00+01:00",
+    "provider_count": 88,
+    "model_count": 466,
     "providers": [
         {
             "slug": "agnes-ai",
@@ -269,6 +269,92 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 262000
+                }
+            ]
+        },
+        {
+            "slug": "amd-radeon-cloud-china",
+            "name": "AMD Radeon Cloud (Token Factory)",
+            "type": "API",
+            "url": "https://free-llm.com/provider/amd-radeon-cloud-china",
+            "website": "https://developer.amd.com.cn/radeon/tokenfactory",
+            "base_url": "https://developer.amd.com.cn/radeon/api/v1",
+            "free_tier": "truly_free",
+            "category": "renewable",
+            "signup_requirement": "registration",
+            "verified": true,
+            "rate_limit": "20 RPM per account, 30 RPM per API key, 120 RPM per IP, 8 concurrent requests per key",
+            "daily_limit": "Daily cap in points (pts), per account; resets 00:00 UTC+8",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://developer.amd.com.cn/radeon/api/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/amd-radeon-cloud-china",
+            "models": [
+                {
+                    "id": null,
+                    "name": "GLM-5.3-Flash",
+                    "context": "See provider",
+                    "key": "glm-5.3-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "MiMo-V2.6-Flash",
+                    "context": "See provider",
+                    "key": "mimo-v2.6-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Qwen3.8-Flash-Next",
+                    "context": "See provider",
+                    "key": "qwen3.8-flash-next",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "DeepSeek-V4.1-Flash",
+                    "context": "See provider",
+                    "key": "deepseek-v4.1-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "MiniCPM-V-4.7-35B-A3B",
+                    "context": "See provider",
+                    "key": "minicpm-v-4.7-35b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Gemma-4-31B-IT",
+                    "context": "See provider",
+                    "key": "gemma-4-31b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Qwen3.8-27B",
+                    "context": "See provider",
+                    "key": "qwen3.8-27b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
                 }
             ]
         },
@@ -550,6 +636,38 @@
             "anonymous_key": null,
             "key_help_url": "https://free-llm.com/provider/cerebrium",
             "models": []
+        },
+        {
+            "slug": "cheapllm",
+            "name": "CheapLLM",
+            "type": "API",
+            "url": "https://free-llm.com/provider/cheapllm",
+            "website": "https://cheapllm.shop/",
+            "base_url": "https://cheapllm.shop/v1",
+            "free_tier": "truly_free",
+            "category": "renewable",
+            "signup_requirement": "registration",
+            "verified": true,
+            "rate_limit": "No per-key RPM/TPM cap; one request at a time per account",
+            "daily_limit": "See provider",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://cheapllm.shop/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/cheapllm",
+            "models": [
+                {
+                    "id": null,
+                    "name": "DeepSeek V4.1 Flash 1017",
+                    "context": "131,072",
+                    "key": "deepseek-v4.1-flash-1017",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
         },
         {
             "slug": "cloudflare-workers-ai",
@@ -1142,6 +1260,56 @@
             ]
         },
         {
+            "slug": "freemodel",
+            "name": "FreeModel",
+            "type": "Proxy",
+            "url": "https://free-llm.com/provider/freemodel",
+            "website": "https://freemodel.online/",
+            "base_url": "https://freemodel.online/v1 (OpenAI-compatible) · https://freemodel.online/api/gateway (Anthropic-compatible)",
+            "free_tier": "truly_free",
+            "category": "permanent",
+            "signup_requirement": "no",
+            "verified": true,
+            "rate_limit": "30 requests/day on the free plan; effective upstream rate limits also apply",
+            "daily_limit": "30 requests/day",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://freemodel.online/v1 (OpenAI-compatible) · https://freemodel.online/api/gateway (Anthropic-compatible)",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/freemodel",
+            "models": [
+                {
+                    "id": null,
+                    "name": "fm-v1-lite (free tier alias, default model)",
+                    "context": "Varies — alias over a pool of upstream models",
+                    "key": "fm-v1-lite",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "fm-v1-standard (paid, Standard plan only)",
+                    "context": "Varies",
+                    "key": "fm-v1-standard",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "fm-v1-pro (paid, Pro plan only)",
+                    "context": "Varies",
+                    "key": "fm-v1-pro",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
+        },
+        {
             "slug": "friendli-ai",
             "name": "Friendli AI",
             "type": "Trial Credits",
@@ -1416,15 +1584,6 @@
                     "name": "Gemini 2.5 Flash",
                     "context": "1M",
                     "key": "gemini-2.5-flash",
-                    "kind": "chat",
-                    "vision": true,
-                    "context_tokens": 1000000
-                },
-                {
-                    "id": "gemini-2.5-pro",
-                    "name": "Gemini 2.5 Pro",
-                    "context": "1M",
-                    "key": "gemini-2.5-pro",
                     "kind": "chat",
                     "vision": true,
                     "context_tokens": 1000000
@@ -1727,6 +1886,92 @@
             ]
         },
         {
+            "slug": "hiapi",
+            "name": "HiAPI",
+            "type": "Trial Credits",
+            "url": "https://free-llm.com/provider/hiapi",
+            "website": "https://hiapi.ai/",
+            "base_url": "https://api.hiapi.ai/v1",
+            "free_tier": "trial_credits",
+            "category": "trial_credit",
+            "signup_requirement": "registration",
+            "verified": true,
+            "rate_limit": "See provider",
+            "daily_limit": "None (one-time credit)",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://api.hiapi.ai/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/hiapi",
+            "models": [
+                {
+                    "id": null,
+                    "name": "DeepSeek V4.1 Flash",
+                    "context": "See provider",
+                    "key": "deepseek-v4.1-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "GPT-6.1 Sol",
+                    "context": "See provider",
+                    "key": "gpt-6.1-sol",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Claude Opus 5.5",
+                    "context": "See provider",
+                    "key": "claude-opus-5.5",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Gemini 3.8 Flash",
+                    "context": "See provider",
+                    "key": "gemini-3.8-flash",
+                    "kind": "chat",
+                    "vision": true,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "GLM 5.3",
+                    "context": "See provider",
+                    "key": "glm-5.3",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "GPT Image 2.5 Flare",
+                    "context": "See provider",
+                    "key": "gpt-image-2.5-flare",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Nano Banana 2",
+                    "context": "See provider",
+                    "key": "nano-banana-2",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
+        },
+        {
             "slug": "hpc-ai",
             "name": "HPC-AI Model APIs",
             "type": "Trial Credits",
@@ -1977,6 +2222,38 @@
             ]
         },
         {
+            "slug": "inferaft",
+            "name": "Inferaft",
+            "type": "Trial Credits",
+            "url": "https://free-llm.com/provider/inferaft",
+            "website": "https://inferaft.com/",
+            "base_url": "https://inferaft.com/v1",
+            "free_tier": "trial_credits",
+            "category": "trial_credit",
+            "signup_requirement": "no",
+            "verified": true,
+            "rate_limit": "Not published for the free grant; usage is drawn at the published per-token rates",
+            "daily_limit": null,
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://inferaft.com/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/inferaft",
+            "models": [
+                {
+                    "id": null,
+                    "name": "glm-5.3-flash",
+                    "context": "1,048,560",
+                    "key": "glm-5.3-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
+        },
+        {
             "slug": "inferbase",
             "name": "Inferbase",
             "type": "Proxy",
@@ -2079,6 +2356,15 @@
                     "name": "Qwen3.8 27B",
                     "context": "128K",
                     "key": "qwen3.8-27b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 128000
+                },
+                {
+                    "id": "Auto",
+                    "name": "Auto",
+                    "context": "128K",
+                    "key": "auto",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 128000
@@ -2657,56 +2943,6 @@
             ]
         },
         {
-            "slug": "llm7-io",
-            "name": "LLM7.io",
-            "type": "API",
-            "url": "https://free-llm.com/provider/llm7-io",
-            "website": "https://llm7.io",
-            "base_url": "https://api.llm7.io/v1",
-            "free_tier": "truly_free",
-            "category": "permanent",
-            "signup_requirement": "no",
-            "verified": false,
-            "rate_limit": "1 req/s, 60/min, 250/hour (free token from dash.llm7.io)",
-            "daily_limit": "100,000 tokens per 24h (free token; may be reduced without notice)",
-            "credits": null,
-            "credits_duration": null,
-            "openai_compatible": true,
-            "openai_base_url": "https://api.llm7.io/v1",
-            "needs": [],
-            "anonymous_key": "unused",
-            "key_help_url": "https://free-llm.com/provider/llm7-io",
-            "models": [
-                {
-                    "id": "mistral-Nemo-Instruct-2407",
-                    "name": "Mistral Nemo Instruct 2407",
-                    "context": "128K",
-                    "key": "mistral-nemo-2407",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
-                },
-                {
-                    "id": "codestral-latest",
-                    "name": "Codestral Latest",
-                    "context": "256K",
-                    "key": "codestral-latest",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 256000
-                },
-                {
-                    "id": "gpt-oss:20b",
-                    "name": "GPT OSS 20B",
-                    "context": "128K",
-                    "key": "gpt-oss-20b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
-                }
-            ]
-        },
-        {
             "slug": "llmtr",
             "name": "LLMTR",
             "type": "Proxy",
@@ -3046,115 +3282,52 @@
             ]
         },
         {
-            "slug": "mistral-ai",
-            "name": "Mistral (La Plateforme)",
+            "slug": "merkium",
+            "name": "Merkium",
             "type": "API",
-            "url": "https://free-llm.com/provider/mistral-ai",
-            "website": "https://console.mistral.ai/",
-            "base_url": "https://api.mistral.ai/v1",
+            "url": "https://free-llm.com/provider/merkium",
+            "website": "https://www.merkium.nl/",
+            "base_url": "https://chat.merkium.nl/api/v1",
             "free_tier": "truly_free",
             "category": "permanent",
-            "signup_requirement": "phone_verification",
+            "signup_requirement": "registration",
             "verified": true,
-            "rate_limit": "1 request/second",
-            "daily_limit": "-",
+            "rate_limit": "30 requests per minute per API key, enforced as one request every 2 seconds (429 with Retry-After)",
+            "daily_limit": "None published",
             "credits": null,
             "credits_duration": null,
             "openai_compatible": true,
-            "openai_base_url": "https://api.mistral.ai/v1",
+            "openai_base_url": "https://chat.merkium.nl/api/v1",
             "needs": [],
             "anonymous_key": null,
-            "key_help_url": "https://free-llm.com/provider/mistral-ai",
+            "key_help_url": "https://free-llm.com/provider/merkium",
             "models": [
                 {
-                    "id": "mistral-small-latest",
-                    "name": "Mistral Small",
-                    "context": "32k",
-                    "key": "mistral-small",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 32000
-                },
-                {
-                    "id": "mistral-large-4",
-                    "name": "Mistral Large 4 (Preview)",
-                    "context": "1M",
-                    "key": "mistral-large-4",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
-                },
-                {
-                    "id": "codestral-2508",
-                    "name": "Codestral 2508",
-                    "context": "256K",
-                    "key": "codestral-2508",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 256000
-                },
-                {
-                    "id": "ministral-8b-2512",
-                    "name": "Ministral 3 8B",
-                    "context": "256K",
-                    "key": "ministral-3-8b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 256000
-                },
-                {
-                    "id": "ministral-14b-2512",
-                    "name": "Ministral 3 14B",
-                    "context": "256K",
-                    "key": "ministral-3-14b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 256000
-                },
-                {
-                    "id": "mistral-large-2512",
-                    "name": "Mistral Large 3",
-                    "context": "Long context",
-                    "key": "mistral-large-3",
+                    "id": null,
+                    "name": "Ganymede 1.1 (now Neptune)",
+                    "context": "1,000,000",
+                    "key": "ganymede-1.1",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": null
                 },
                 {
-                    "id": "mistral-small-2603",
-                    "name": "Mistral Small 4",
-                    "context": "Long context",
-                    "key": "mistral-small-4",
+                    "id": null,
+                    "name": "Pluto 1.2 Pro (now Ceres)",
+                    "context": "Not listed",
+                    "key": "pluto-1.2-pro",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": null
                 },
                 {
-                    "id": "mistral-medium-3-5",
-                    "name": "Mistral Medium 3.5",
-                    "context": "256K",
-                    "key": "mistral-medium-3.5",
+                    "id": null,
+                    "name": "Pluto 1.2 Flash (now Ceres)",
+                    "context": "Not listed",
+                    "key": "pluto-1.2-flash",
                     "kind": "chat",
                     "vision": false,
-                    "context_tokens": 256000
-                },
-                {
-                    "id": "mistral-large-latest",
-                    "name": "Mistral Large",
-                    "context": "128k",
-                    "key": "mistral-large",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
-                },
-                {
-                    "id": "codestral-latest",
-                    "name": "Codestral",
-                    "context": "256k",
-                    "key": "codestral",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 256000
+                    "context_tokens": null
                 }
             ]
         },
@@ -3527,8 +3700,8 @@
             "url": "https://free-llm.com/provider/novai",
             "website": "https://aiapi-pro.com",
             "base_url": "https://aiapi-pro.com/v1",
-            "free_tier": "trial_credits",
-            "category": "trial_credit",
+            "free_tier": "truly_free",
+            "category": "permanent",
             "signup_requirement": "no",
             "verified": true,
             "rate_limit": "5 requests/min before the first top-up",
@@ -3566,6 +3739,24 @@
                     "key": "glm-4.1v-thinking-flash",
                     "kind": "chat",
                     "vision": true,
+                    "context_tokens": null
+                },
+                {
+                    "id": "cogview-3-flash",
+                    "name": "CogView-3 Flash",
+                    "context": null,
+                    "key": "cogview-3-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": "cogvideox-flash",
+                    "name": "CogVideoX Flash",
+                    "context": null,
+                    "key": "cogvideox-flash",
+                    "kind": "video",
+                    "vision": false,
                     "context_tokens": null
                 }
             ]
@@ -3605,15 +3796,6 @@
                     "name": "Kimi K3",
                     "context": "Long context",
                     "key": "kimi-k3",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
-                },
-                {
-                    "id": "deepseek/deepseek-v4.1-flash",
-                    "name": "DeepSeek V4.1 Flash",
-                    "context": "Long context",
-                    "key": "deepseek-v4.1-flash",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": null
@@ -3987,38 +4169,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 64000
-                }
-            ]
-        },
-        {
-            "slug": "ollama-cloud",
-            "name": "Ollama Cloud",
-            "type": "API",
-            "url": "https://free-llm.com/provider/ollama-cloud",
-            "website": "https://ollama.com/cloud",
-            "base_url": "https://ollama.com/v1",
-            "free_tier": "truly_free",
-            "category": "permanent",
-            "signup_requirement": "no",
-            "verified": true,
-            "rate_limit": "Pay-as-you-go: 3 concurrent requests; only Beam (beam:cloud) is labelled free",
-            "daily_limit": "No free monthly allowance any more (starter credits removed); other cloud models are billed per token",
-            "credits": null,
-            "credits_duration": null,
-            "openai_compatible": true,
-            "openai_base_url": "https://ollama.com/v1",
-            "needs": [],
-            "anonymous_key": null,
-            "key_help_url": "https://free-llm.com/provider/ollama-cloud",
-            "models": [
-                {
-                    "id": "beam",
-                    "name": "Reflection Beam (501B)",
-                    "context": "1M",
-                    "key": "reflection-beam",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 1000000
                 }
             ]
         },
@@ -4841,6 +4991,74 @@
             ]
         },
         {
+            "slug": "runcrate",
+            "name": "Runcrate (free inference)",
+            "type": "API",
+            "url": "https://free-llm.com/provider/runcrate",
+            "website": "https://www.runcrate.ai/inference/free",
+            "base_url": "https://api.runcrate.ai/v1",
+            "free_tier": "truly_free",
+            "category": "renewable",
+            "signup_requirement": "no",
+            "verified": true,
+            "rate_limit": "See provider",
+            "daily_limit": "See provider",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://api.runcrate.ai/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/runcrate",
+            "models": [
+                {
+                    "id": null,
+                    "name": "DeepSeek V4.1 Flash (deepseek-ai/DeepSeek-V4.1-Flash)",
+                    "context": "See provider",
+                    "key": "deepseek-v4.1-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "GLM 5.3 Flash (zai-org/GLM-5.3-Flash)",
+                    "context": "See provider",
+                    "key": "glm-5.3-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "GLM 5.3 (zai-org/GLM-5.3)",
+                    "context": "See provider",
+                    "key": "glm-5.3",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "gpt-oss 120B (openai/gpt-oss-120b)",
+                    "context": "See provider",
+                    "key": "gpt-oss-120b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Qwen3.8 Flash (Qwen/Qwen3.8-Flash)",
+                    "context": "See provider",
+                    "key": "qwen3.8-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
+        },
+        {
             "slug": "sail-research",
             "name": "Sail Research",
             "type": "Trial Credits",
@@ -5385,6 +5603,38 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 32000
+                }
+            ]
+        },
+        {
+            "slug": "synap",
+            "name": "Synap",
+            "type": "API",
+            "url": "https://free-llm.com/provider/synap",
+            "website": "https://synap402.com/",
+            "base_url": "https://synap402.com/v1",
+            "free_tier": "truly_free",
+            "category": "renewable",
+            "signup_requirement": "registration",
+            "verified": true,
+            "rate_limit": "10 requests/minute per key",
+            "daily_limit": "50 requests/day (first 7 days), then 10 requests/day",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://synap402.com/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/synap",
+            "models": [
+                {
+                    "id": null,
+                    "name": "qwen3-coder-30b",
+                    "context": "98,304 tokens",
+                    "key": "qwen3-coder-30b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
                 }
             ]
         },
