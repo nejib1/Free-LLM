@@ -48,7 +48,7 @@ node router/bin/free-llm.js start        # run it from source
 npm test                                 # node --test router/test/router.test.js
 ```
 
-- The tests use a local mock provider (`router/test/mock-provider.js`), so they need no API key and no network. CI runs them on Node.js 18, 20 and 22 for every pull request.
+- The tests use a local mock provider (`router/test/mock-provider.js`), so they need no API key and no network. Please run them before opening a pull request.
 - A bug fix should come with a test that fails without it. For a new feature, open a [feature request](https://github.com/nejib1/Free-LLM/issues/new?template=router-feature.yml) first so we can agree on the shape before you write code.
 - Keep it dependency-free. That is a feature: the whole router is a ~100 KB download.
 - `router/catalog.snapshot.json` is refreshed by the daily sync. Don't edit it by hand.
