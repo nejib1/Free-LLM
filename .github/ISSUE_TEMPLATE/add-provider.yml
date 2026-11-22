@@ -1,7 +1,7 @@
 name: Add a provider
 description: Suggest a free (or free-trial) LLM API that is missing from the list
 title: "Add provider: "
-labels: ["new provider"]
+labels: ["provider: new"]
 body:
   - type: markdown
     attributes:

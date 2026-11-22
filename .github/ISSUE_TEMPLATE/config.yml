@@ -1,8 +1,14 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Ask a question
+    url: https://github.com/nejib1/Free-LLM/discussions
+    about: How to use a provider, a free model or the router. Questions get answered faster in Discussions.
   - name: Submit a provider on the website
     url: https://free-llm.com/submit
     about: The fastest way to suggest a provider; every submission is reviewed by hand.
   - name: Report an issue on a provider page
     url: https://free-llm.com
     about: Each provider page has a "Report an Issue" button that goes straight to moderation.
+  - name: Report a security problem
+    url: https://github.com/nejib1/Free-LLM/security/policy
+    about: Please report vulnerabilities privately, not in a public issue.
