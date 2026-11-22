@@ -15,7 +15,6 @@
   <a href="https://free-llm.com" target="_blank" rel="noopener"><img alt="Website" src="https://img.shields.io/badge/Website-free--llm.com-blue?style=for-the-badge" /></a>
   <a href="https://github.com/nejib1/Free-LLM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nejib1/Free-LLM?style=for-the-badge&color=f5b301" /></a>
   <a href="https://github.com/nejib1/Free-LLM/commits/main"><img alt="Data updated" src="https://img.shields.io/github/last-commit/nejib1/Free-LLM?style=for-the-badge&label=data%20updated&color=2ea44f" /></a>
-  <a href="https://github.com/nejib1/Free-LLM/actions/workflows/ci.yml"><img alt="Router tests" src="https://img.shields.io/github/actions/workflow/status/nejib1/Free-LLM/ci.yml?branch=main&style=for-the-badge&label=router%20tests" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" /></a>
 </p>
 
@@ -401,7 +400,7 @@ Free-LLM/
 ├── package.json               ← Router 的 npm 包
 ├── Dockerfile                 ← 用 Docker 运行 Router
 ├── code-examples/             ← 即用代码片段（按提供商 + 按工具）
-├── .github/                   ← Issue / PR 模板、CI
+├── .github/                   ← Issue / PR 模板
 └── LICENSE                    ← MIT
 ```
 

@@ -13,7 +13,6 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ### Added
 
-- Continuous integration: the router test suite runs on Node.js 18, 20 and 22 for every push and pull request.
 - `CHANGELOG.md`, `SECURITY.md`, `SUPPORT.md` and a code of conduct.
 
 ## [1.0.1] - 2026-11-18
