@@ -59,7 +59,7 @@ free-llm setup claude                   # Claude Code が無料モデルで動�
 
 <p align="center"><a href="router/README.md"><img src="router/docs/dashboard.png" width="760" alt="Free-LLM Router dashboard"></a></p>
 
-キーなしでお試し可能（ゲストモード）· コーディングエージェントはコマンド 1 つで設定 · OpenAI / Anthropic / Codex Responses / Ollama / MCP API 対応 · 依存パッケージなし · キーは自分の PC に暗号化して保存。
+1 分のガイド付きセットアップ · コーディングエージェントはコマンド 1 つで設定 · OpenAI / Anthropic / Codex Responses / Ollama / MCP API 対応 · 依存パッケージなし · キーは自分の PC に暗号化して保存。
 
 🔒 **100% ローカル・完全プライベート：** ルーターはあなたの PC 上で動作し、API キーが外に出ることはありません（暗号化して保存）。各キーはそのプロバイダーにだけ送信されます。アカウント不要・テレメトリなし・オープンソース。
 

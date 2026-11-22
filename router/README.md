@@ -4,7 +4,7 @@
 
 **All the free AI APIs behind one address. If one is busy, the next one answers — instantly.**
 
-Use Claude Code, Codex, Cursor, OpenCode, Aider, Open WebUI or your own code on **free** models from Google Gemini, Groq, Mistral, OpenRouter, NVIDIA, Cloudflare, Cohere and 60+ other providers — without juggling keys, limits and errors.
+Use Claude Code, Codex, Cursor, OpenCode, Aider, Open WebUI or your own code on **free** models from Google Gemini, Groq, OpenRouter, NVIDIA, Cloudflare, Cohere and 60+ other providers — without juggling keys, limits and errors.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE)
 ![Node 18+](https://img.shields.io/badge/node-18%2B-brightgreen)
@@ -23,7 +23,7 @@ npx github:nejib1/Free-LLM
 
 ## The idea, in plain words
 
-Dozens of companies give away AI for free: Google, Groq, Mistral, NVIDIA, Cloudflare… But each free plan is **small** (a few requests per minute, a daily cap) and each one has its **own key, own address, own rules**. When a free plan runs out in the middle of your work, your tool just stops.
+Dozens of companies give away AI for free: Google, Groq, NVIDIA, Cloudflare, Cohere… But each free plan is **small** (a few requests per minute, a daily cap) and each one has its **own key, own address, own rules**. When a free plan runs out in the middle of your work, your tool just stops.
 
 **Free-LLM Router puts them all behind one address.** Your app talks to the router as if it were OpenAI or Anthropic. For every request, the router:
 
@@ -38,10 +38,10 @@ Dozens of companies give away AI for free: Google, Groq, Mistral, NVIDIA, Cloudf
         ⚡ Free-LLM Router  (on your computer)
      ┌──────┬──────┬───────┬──────────┬─────────┐
      ▼      ▼      ▼       ▼          ▼         ▼
-  Gemini  Groq  Mistral  OpenRouter  NVIDIA  …60+ more
+  Gemini  Groq  OpenRouter  NVIDIA  Cohere  …60+ more
 ```
 
-<p align="center"><img src="docs/dashboard.png" width="820" alt="Free-LLM Router dashboard: guest mode, connection details and how it works"></p>
+<p align="center"><img src="docs/dashboard.png" width="820" alt="Free-LLM Router dashboard: models ready, connection details and how it works"></p>
 
 ### The big advantage
 
@@ -49,10 +49,10 @@ Dozens of companies give away AI for free: Google, Groq, Mistral, NVIDIA, Cloudf
 
 - 🆓 **Free, for real.** Open source (MIT). No premium tier, no account, no telemetry.
 - 📡 **Always up to date — the same day, for everyone.** The list of free providers and models comes live from [free-llm.com](https://free-llm.com), checked by hand against official sources and refreshed automatically every few hours. New free model this morning → in your router this afternoon. No paywall, no 30-day delay.
-- 🚀 **Works in 10 seconds, even with zero keys.** Guest mode answers right away with no-account models (slow and limited — enough to try). Add 2–3 free keys and you get dozens of strong models.
+- 🚀 **Running in a minute.** One command installs it, a guided setup shows where to get the best free keys (most need no credit card), tests each one, and connects your tools. 2–3 keys already give you dozens of strong models.
 - 🔌 **One command per tool.** `free-llm setup claude` — Claude Code now runs on free models. Same for Codex, OpenCode, Aider; ready-made recipes for Cursor, Cline, Roo, Kilo, Continue, Zed, JetBrains, Open WebUI, LibreChat…
 - 🔒 **100% local and private.** Your keys stay on your computer, encrypted, and each one is only ever sent to its own provider — [details below](#-is-it-safe-yes--100-local-and-private).
-- 🪶 **Tiny.** Zero dependencies, a ~100 KB download, Node 18+. No Docker required (but supported).
+- 🪶 **Tiny.** Zero dependencies, a download under 200 KB, Node 18+. No Docker required (but supported).
 
 ---
 
@@ -115,7 +115,7 @@ free-llm keys add groq gsk_xxx          # paste a key — tested immediately
 | [Google AI Studio](https://free-llm.com/provider/google-ai-studio) | 🟢 no card | Gemini models, big context, images |
 | [Groq](https://free-llm.com/provider/groq-cloud) | 🟢 no card | extremely fast |
 | [OpenRouter](https://free-llm.com/provider/openrouter) | 🟢 no card | many `:free` models in one key |
-| [Cerebras](https://free-llm.com/provider/cerebras) · [Mistral](https://free-llm.com/provider/mistral-ai) · [NVIDIA](https://free-llm.com/provider/nvidia-nim) | 📱/💳 | strong models, generous limits |
+| [NVIDIA](https://free-llm.com/provider/nvidia-nim) · [Cloudflare](https://free-llm.com/provider/cloudflare-workers-ai) · [Cohere](https://free-llm.com/provider/cohere) | 📱/🟢 | strong open models, generous limits |
 
 The more keys you add, the more capacity and the fewer interruptions. Several keys for the same provider are rotated automatically.
 
@@ -221,7 +221,7 @@ free-llm update              refresh the catalog now
 
 **Is it really free?** Yes. The router is MIT-licensed and has no paid tier. The models are the providers' own free plans — the router doesn't resell anything and never sees your traffic.
 
-**Do I need keys?** No to try (guest mode), yes for real work. Guest models are shared by everyone and capped (for example ~100K tokens/day), which is not enough for a coding agent. 2–3 free keys change everything.
+**Do I need keys?** Yes, at least one — the router uses *your* free accounts, it has none of its own. 2–3 free keys take about a minute each, most without a credit card, and `free-llm providers` shows where to get them.
 
 **Is it as good as Claude or GPT-5?** Free models are very good today (DeepSeek V4, Kimi K2, GLM-5, Qwen 3.x, Gemini Flash, gpt-oss…), but they are not the paid frontier models. For many tasks you won't notice; for the hardest ones, `auto:smart` and `auto:fusion` help.
 

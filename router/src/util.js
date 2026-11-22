@@ -1,7 +1,7 @@
 // Small shared helpers. No dependencies.
 import crypto from 'node:crypto';
 
-export const VERSION = '1.0.1';
+export const VERSION = '1.0.2';
 export const USER_AGENT = `free-llm-router/${VERSION} (+https://free-llm.com/router)`;
 
 export const now = () => Date.now();

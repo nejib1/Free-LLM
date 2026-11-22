@@ -27,6 +27,8 @@ const color = process.stdout.isTTY && !process.env.NO_COLOR;
 const c = (code) => (s) => (color ? `\x1b[${code}m${s}\x1b[0m` : String(s));
 const bold = c('1'), dim = c('2'), green = c('32'), yellow = c('33'), red = c('31'), cyan = c('36'), magenta = c('35');
 const out = (...a) => console.log(...a);
+// `free-llm … | head` closes the pipe early: stop quietly instead of crashing.
+process.stdout.on('error', (e) => { if (e.code === 'EPIPE') process.exit(0); });
 
 const argv = process.argv.slice(2);
 const flags = {};
@@ -71,6 +73,21 @@ function findProvider(cat, q) {
   const alias = { groq: 'groq-cloud', gemini: 'google-ai-studio', google: 'google-ai-studio', mistral: 'mistral-ai', nvidia: 'nvidia-nim', cloudflare: 'cloudflare-workers-ai', zai: 'z-ai', glm: 'z-ai', hf: 'huggingface-inference', huggingface: 'huggingface-inference', qwen: 'qwen-alibaba', together: 'together-ai', fireworks: 'fireworks-ai', llm7: 'llm7-io', kilo: 'kilo-gateway', vercel: 'vercel-ai-gateway', ovh: 'ovh-ai' };
   if (alias[s] && cat.providers.has(alias[s])) return cat.providers.get(alias[s]);
   return [...cat.providers.values()].find((p) => p.slug.startsWith(s) || p.name.toLowerCase().startsWith(s)) || null;
+}
+
+/** Providers whose slug or name looks like what was typed (for "did you mean"). */
+function suggestProviders(cat, q) {
+  const s = String(q).toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (s.length < 2) return [];
+  const norm = (x) => x.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return [...cat.providers.values()]
+    .filter((p) => p.usable && (norm(p.slug).includes(s) || norm(p.name).includes(s) || s.includes(norm(p.slug)) || norm(p.slug).slice(0, 3) === s.slice(0, 3)))
+    .slice(0, 5);
+}
+
+/** Show enough of a key to recognise it, never the whole thing. */
+function maskKey(v) {
+  return v.length > 12 ? `${v.slice(0, 4)}…${v.slice(-4)}` : `${v.slice(0, 2)}…`;
 }
 
 /** Best providers to sign up for first (same score as the dashboard). */
@@ -132,6 +149,7 @@ async function onboarding() {
   const cfg = loadConfig();
   const cat = await ensureCatalog(cfg);
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  const hasGuest = [...cat.providers.values()].some((p) => p.usable && p.anonymousKey !== null);
   out(`
 ${bold('⚡ Welcome to Free-LLM Router')}
 
@@ -139,8 +157,8 @@ ${bold('What it does, in one sentence:')} you give it a few ${green('free')} API
 ${bold('one')} address that works like the OpenAI / Anthropic API. Behind it, it always picks
 a free model that is up, and switches instantly when one is slow, down or out of quota.
 
-${dim('It already works right now with no key at all ("guest mode", slower).')}
-${dim('Each free key you add makes it faster and stronger. Most take 1 minute and no credit card.')}
+${dim(hasGuest ? 'It already works right now with no key at all ("guest mode", slower).' : 'It needs at least one free key to answer. Most take 1 minute and no credit card.')}
+${dim('Each free key you add makes it faster and stronger.')}
 `);
   out(green(bold('🔒 100% local and private')));
   out(`   • Your keys are stored ${bold('only on this computer')}, encrypted (AES-256-GCM), in ${PATHS.home}`);
@@ -266,7 +284,7 @@ async function cmdProviders() {
   for (const p of list) {
     const has = providerKeys(cfg, p.slug).length ? green(' ✓ key saved') : p.anonymousKey !== null ? dim(' (guest access)') : '';
     const chat = p.models.filter((m) => m.kind === 'chat').length;
-    out(`  ${bold(p.name.padEnd(28))} ${(SIGNUP[p.signup] || p.signup || '').padEnd(color ? 24 : 15)} ${String(chat).padStart(3)} models  ${dim(p.helpUrl)}${has}`);
+    out(`  ${bold(p.name.padEnd(28))} ${(SIGNUP[p.signup] || p.signup || '').padEnd(color ? 24 : 15)} ${String(chat).padStart(3)} ${chat === 1 ? 'model ' : 'models'}  ${dim(p.helpUrl)}${has}`);
   }
   out(dim(`\nAdd one:  free-llm keys add <provider> <key>     (e.g. free-llm keys add groq gsk_…)`));
   if (!flags.all) out(dim('More:     free-llm providers --all'));
@@ -281,13 +299,21 @@ async function cmdKeys() {
     if (!rows.length) { out('No keys yet. Run ' + bold('free-llm providers') + ' to see where to get free ones.'); return; }
     for (const [slug, v] of rows) {
       const name = cat.providers.get(slug)?.name || slug;
-      for (const k of providerKeys(cfg, slug)) out(`  ${bold(name.padEnd(26))} ${dim(k.id)}  ${k.value.slice(0, 4)}…${k.value.slice(-4)}  ${dim(k.label)}${v.enabled === false ? red(' (disabled)') : ''}`);
+      for (const k of providerKeys(cfg, slug)) out(`  ${bold(name.padEnd(26))} ${dim(k.id)}  ${maskKey(k.value)}  ${dim(k.label)}${v.enabled === false ? red(' (disabled)') : ''}`);
     }
     return;
   }
   if (sub === 'add') {
-    const p = findProvider(cat, pos.shift());
+    const name = pos.shift();
+    const p = findProvider(cat, name);
     const key = pos.shift();
+    if (name && !p) {
+      out(red(`Unknown provider "${name}".`));
+      const near = suggestProviders(cat, name);
+      if (near.length) out(`Did you mean: ${near.map((x) => bold(x.slug)).join(', ')}?`);
+      out(dim('See the list: free-llm providers --all'));
+      process.exit(1);
+    }
     if (!p || (!key && !flags['account-id'])) { out(red('Usage: free-llm keys add <provider> <key> [--account-id id]')); process.exit(1); }
     if (flags['account-id']) providerCfg(cfg, p.slug).account_id = String(flags['account-id']);
     let id = null;
@@ -298,6 +324,14 @@ async function cmdKeys() {
       process.stdout.write(dim('Testing… '));
       const r = await testProviderKey(cfg, p, id);
       out(r.ok ? green(`works (${fmtMs(r.ms)})`) : red(`problem: ${r.error}`));
+      if (!r.ok && !flags.force) {
+        // A key the provider refuses would only cost a failed attempt on every request.
+        removeKey(cfg, p.slug, id);
+        saveConfig(cfg);
+        out(yellow(`Not kept: ${p.name} refused this key. Check it for a missing character, or create a new one: ${p.helpUrl}`));
+        out(dim('(to keep it anyway: add --force)'));
+        process.exit(1);
+      }
     }
     out(dim(`🔒 Stored encrypted on this computer only; it will only ever be sent to ${hostOf(p.base) || p.name}.`));
     if (await routerRunning(cfg)) out(dim('The running router picks it up within seconds — no restart needed.'));
@@ -436,7 +470,7 @@ async function cmdDoctor() {
       try { providerKeys(cfg, slug); } catch { line(false, `Key ${k.id} for ${slug} cannot be decrypted`, 'master.key changed?'); }
     }
   }
-  line(keys > 0, `${keys} API key(s) saved`, keys ? '' : 'guest mode only — run: free-llm providers');
+  line(keys > 0, `${keys} API key(s) saved`, keys ? '' : 'the router needs at least one free key — run: free-llm providers');
   if (cat) {
     for (const [slug, v] of Object.entries(cfg.providers)) {
       const p = cat.providers.get(slug);
@@ -463,7 +497,12 @@ async function cmdDoctor() {
 
 async function cmdService() {
   const cfg = loadConfig();
-  const sub = pos.shift() || 'install';
+  const sub = pos.shift();
+  if (sub !== 'install' && sub !== 'uninstall') {
+    out(`Usage: free-llm service install     ${dim('start the router automatically at login')}
+       free-llm service uninstall   ${dim('stop doing that')}`);
+    return;
+  }
   const node = process.execPath;
   const script = path.join(HERE, 'free-llm.js');
   if (process.platform === 'linux') {

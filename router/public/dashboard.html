@@ -11,14 +11,14 @@
 :root[data-theme=dark]{--bg:#0b1020;--panel:#121a2e;--panel2:#18223a;--text:#e5e9f2;--muted:#94a3b8;--line:#243049;--chip:#1e2a48;--shadow:none}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--brand)}button,input,select,textarea{font:inherit;color:inherit}
-.app{display:grid;grid-template-columns:232px 1fr;min-height:100vh}
+.app{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:100vh}
 nav{background:var(--panel);border-right:1px solid var(--line);padding:18px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;padding:4px 8px 16px}
 .logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#fff;font-style:normal}
 nav a{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:9px;color:var(--text);text-decoration:none;font-weight:550}
 nav a:hover{background:var(--panel2)}nav a.on{background:var(--chip);color:var(--brand2)}
 nav .sp{flex:1}nav small{color:var(--muted);padding:0 10px}
-main{padding:28px clamp(16px,3vw,40px);max-width:1180px;width:100%}
+main{padding:28px clamp(16px,3vw,40px);max-width:1180px;width:100%;min-width:0}
 h1{font-size:26px;margin:0 0 4px}h2{font-size:18px;margin:0 0 12px}.sub{color:var(--muted);margin:0 0 22px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
 .grid{display:grid;gap:14px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
@@ -55,7 +55,7 @@ pre{background:var(--panel2);border:1px solid var(--line);border-radius:10px;pad
 .opt{border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;display:block}.opt:has(input:checked){border-color:var(--brand);background:var(--chip)}.opt input{margin-right:6px}.opt p{margin:4px 0 0;color:var(--muted);font-size:13px}
 .svgchart{width:100%;height:140px}.muted{color:var(--muted)}.hide{display:none!important}
 .steps{counter-reset:s;display:grid;gap:10px;margin:0;padding:0;list-style:none}.steps li{counter-increment:s;display:flex;gap:10px}.steps li:before{content:counter(s);width:24px;height:24px;flex:none;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700}
-@media (max-width:900px){.app{grid-template-columns:1fr}nav{position:static;height:auto;flex-direction:row;overflow-x:auto;padding:10px;border-right:0;border-bottom:1px solid var(--line)}nav .logo,nav .sp,nav small{display:none}nav a{white-space:nowrap}.g4{grid-template-columns:repeat(2,1fr)}.g3,.g2{grid-template-columns:1fr}.prov{grid-template-columns:1fr}}
+@media (max-width:900px){.app{grid-template-columns:minmax(0,1fr)}nav{position:static;height:auto;flex-direction:row;overflow-x:auto;padding:10px;border-right:0;border-bottom:1px solid var(--line)}nav .logo,nav .sp,nav small{display:none}nav a{white-space:nowrap}.g4{grid-template-columns:repeat(2,1fr)}.g3,.g2{grid-template-columns:1fr}.prov{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -133,8 +133,8 @@ pages.home = async () => {
   const t = s.today;
   const rate = t.requests ? Math.round((t.ok / t.requests) * 100) : null;
   const banner = s.guest_mode || !s.providers_with_keys ? `
-    <div class="banner warn"><h2 style="margin:0 0 6px">You're in guest mode 👋</h2>
-    <p style="margin:0 0 12px">The router already answers with a few no-account free models, but they are slow and limited.
+    <div class="banner warn"><h2 style="margin:0 0 6px">${s.guest_mode ? "You're in guest mode 👋" : 'One step left: add a free key 🔑'}</h2>
+    <p style="margin:0 0 12px">${s.guest_mode ? 'The router already answers with a few no-account free models, but they are slow and limited.' : 'The router is running, but it needs at least one provider key before it can answer.'}
     <b>Add 2–3 free keys</b> (1 minute each, most without a credit card — they stay on this computer) and you get dozens of fast, strong models — enough for coding agents like Claude Code.</p>
     <a class="btn p" href="#keys">🔑 Add my first free key</a></div>` : '';
   $('#main').innerHTML = `
@@ -151,7 +151,7 @@ pages.home = async () => {
     <div class="grid g2">
       <div class="card">
         <h2>How it works</h2>
-        <div class="flow"><div>Your app or agent</div><span>→</span><div style="border-color:var(--brand)">⚡ Router</div><span>→</span><div>Groq · Gemini · Mistral · OpenRouter · …</div></div>
+        <div class="flow"><div>Your app or agent</div><span>→</span><div style="border-color:var(--brand)">⚡ Router</div><span>→</span><div>Gemini · Groq · OpenRouter · NVIDIA · …</div></div>
         <ol class="steps" style="margin-top:14px">
           <li><span>Your app sends a normal OpenAI- or Anthropic-style request to <b>one</b> address.</span></li>
           <li><span>The router picks the best free model that is up right now (speed, quality, quota left).</span></li>
@@ -216,7 +216,7 @@ pages.keys = async () => {
     <h1>Free API keys</h1>
     <p class="sub">Each key unlocks more free models. Click <b>Get a free key</b>, sign up (usually 1 minute), paste the key here — it is tested right away and stored encrypted on <b>this computer only</b>.</p>
     ${TRUST}
-    <div class="card" style="margin-bottom:14px"><div class="row"><input type="text" id="pf" class="grow" placeholder="Search a provider (Groq, Gemini, Mistral…)" value="${esc(provFilter)}">
+    <div class="card" style="margin-bottom:14px"><div class="row"><input type="text" id="pf" class="grow" placeholder="Search a provider (Gemini, Groq, OpenRouter…)" value="${esc(provFilter)}">
       <span class="chip ok">${mine.length} connected</span><span class="chip">${usable.length} available</span></div></div>
     <div class="card">${shown.map(provRow).join('')}
     ${shown.length < list.length ? `<div style="text-align:center;padding-top:12px"><button class="btn" id="more">Show all ${list.length} providers</button></div>` : ''}</div>`;

@@ -15,6 +15,20 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 - `CHANGELOG.md`, `SECURITY.md`, `SUPPORT.md` and a code of conduct.
 
+## [1.0.2] - 2026-11-23
+
+### Changed
+- No more "guest mode" promise: the last provider that answered without an account has ended its free tier, so the router now says clearly that it needs at least one free key (start banner, dashboard, guided setup, `doctor`). Guest access still switches itself on if the catalog lists a no-account provider again.
+- `free-llm keys add` no longer keeps a key the provider refuses (use `--force` to keep it anyway), and an unknown provider name gets a "did you mean" instead of the usage line.
+- `free-llm service` without `install` / `uninstall` prints its usage instead of installing.
+- Provider examples in the dashboard and docs follow the current catalog.
+
+### Fixed
+- The CLI crashed with `EPIPE` when its output was piped into a command that stops early (`free-llm providers | head`).
+- Dashboard: the Models and Activity tables no longer overflow on a phone.
+- `free-llm update` reported a custom catalog address as "GitHub mirror".
+- `free-llm keys` showed short keys in full; "1 models" is now "1 model".
+
 ## [1.0.1] - 2026-11-18
 
 ### Security
@@ -44,6 +58,7 @@ First public release.
 - Installers for macOS/Linux (`install.sh`) and Windows (`install.ps1`), `npx`/`npm` install from GitHub, and a Dockerfile.
 - Zero runtime dependencies, Node.js 18+.
 
-[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.1...HEAD
+[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.2...HEAD
+[1.0.2]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.1...router-v1.0.2
 [1.0.1]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.0...router-v1.0.1
 [1.0.0]: https://github.com/nejib1/Free-LLM/releases/tag/router-v1.0.0
