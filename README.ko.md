@@ -1,9 +1,7 @@
-<p align="center">
-  <h1 align="center">Free-LLM — 무료 AI·LLM API 오픈 디렉터리</h1>
+<h1 align="center">Free-LLM — 무료 AI·LLM API 오픈 디렉터리</h1>
 <!--STATS:START-->
-  <p align="center"><strong>94개 제공업체의 무료 LLM 모델 460개 이상</strong> — 몇 초 만에 무료 모델을 찾고, 비교하고, 설정하세요. 무제한·프라이빗하게 쓸 수 있는 로컬/셀프호스팅 도구도 9종 제공합니다.</p>
+  <p align="center"><strong>79개 제공업체의 무료 LLM 모델 460개 이상</strong> — 몇 초 만에 무료 모델을 찾고, 비교하고, 설정하세요. 무제한·프라이빗하게 쓸 수 있는 로컬/셀프호스팅 도구도 9종 제공합니다.</p>
 <!--STATS:END-->
-</p>
 
 <p align="center">
   <a href="https://free-llm.com" target="_blank" rel="noopener"><strong>🌐 free-llm.com 바로가기</strong></a> —
@@ -15,13 +13,36 @@
 
 <p align="center">
   <a href="https://free-llm.com" target="_blank" rel="noopener"><img alt="Website" src="https://img.shields.io/badge/Website-free--llm.com-blue?style=for-the-badge" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nejib1/Free-LLM?style=for-the-badge&color=f5b301" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/commits/main"><img alt="Data updated" src="https://img.shields.io/github/last-commit/nejib1/Free-LLM?style=for-the-badge&label=data%20updated&color=2ea44f" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/actions/workflows/ci.yml"><img alt="Router tests" src="https://img.shields.io/github/actions/workflow/status/nejib1/Free-LLM/ci.yml?branch=main&style=for-the-badge&label=router%20tests" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" /></a>
-  <a href="https://free-llm.com/submit" target="_blank" rel="noopener"><img alt="Community Driven" src="https://img.shields.io/badge/Community-Driven-orange?style=for-the-badge" /></a>
 </p>
 
 <p align="center">
   🌐 <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a>
 </p>
+
+<details>
+<summary><strong>목차</strong></summary>
+
+- [⚡ 신기능: Free-LLM Router — 모든 무료 API를 하나의 주소로](#-신기능-free-llm-router--모든-무료-api를-하나의-주소로)
+- [이 프로젝트가 필요한 이유](#이-프로젝트가-필요한-이유)
+- [사용 방법 — 3단계](#사용-방법--3단계)
+- [Quick Start — 30초 만에 무료 API 사용하기](#quick-start--30초-만에-무료-api-사용하기)
+- [Provider Directory](#provider-directory)
+- [Quick Reference — Base URL 및 API 키](#quick-reference--base-url-및-api-키)
+- [가이드 및 튜토리얼](#가이드-및-튜토리얼)
+- [커뮤니티 기능](#커뮤니티-기능)
+- [Code Examples](#code-examples)
+- [저장소 구조](#저장소-구조)
+- [Contributing (기여 방법)](#contributing-기여-방법)
+- [Links](#links)
+- [커뮤니티 및 지원](#커뮤니티-및-지원)
+- [Star History](#star-history)
+- [License](#license)
+
+</details>
 
 ---
 
@@ -63,10 +84,10 @@ free-llm setup claude                   # Claude Code가 무료 모델로 동작
 ## 사용 방법 — 3단계
 
 1. **제공업체 선택** — 아래 [Provider Directory](#provider-directory) 참고. 처음이라면 **Groq**로 시작하세요 (신용카드 불필요, 약 30 RPM / 모델당 하루 1,000회 요청, 영구 무료).
-2. **API 키 발급** — [Quick Reference](#quick-reference--base-urls--api-keys) 의 각 행이 해당 제공업체의 키 발급 페이지로 바로 연결됩니다. 대부분 이메일만 있으면 됩니다.
-3. **코드에 연결** — 아래 표의 base URL과 모델 ID를 [Quick Start](#quick-start--use-any-free-api-in-30-seconds) 예제 코드에 붙여넣으세요.
+2. **API 키 발급** — [Quick Reference](#quick-reference--base-url-및-api-키) 의 각 행이 해당 제공업체의 키 발급 페이지로 바로 연결됩니다. 대부분 이메일만 있으면 됩니다.
+3. **코드에 연결** — 아래 표의 base URL과 모델 ID를 [Quick Start](#quick-start--30초-만에-무료-api-사용하기) 예제 코드에 붙여넣으세요.
 
-각 제공업체의 상세 정보, 실시간 상태, 커뮤니티 코멘트는 free-llm.com의 제공업체 페이지에서 확인할 수 있습니다: **free-llm.com/provider/&lt;slug&gt;** (예: [free-llm.com/provider/groq](https://free-llm.com/provider/groq)).
+각 제공업체의 상세 정보, 실시간 상태, 커뮤니티 코멘트는 free-llm.com의 제공업체 페이지에서 확인할 수 있습니다: **free-llm.com/provider/&lt;slug&gt;** (예: [free-llm.com/provider/groq-cloud](https://free-llm.com/provider/groq-cloud)).
 
 ---
 
@@ -121,11 +142,12 @@ print(response.choices[0].message.content)
 | **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)**<br><sub>✉️ 이메일 가입</sub> | ⏱️ ~1 request/second (Flash models)<br>📅 ~1,000 requests/day (Flash tier)<br>🗓️ Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
 | **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ 이메일 가입</sub> | ⏱️ 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go)<br>🗓️ Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 카드 불필요</sub> | ⏱️ 모델별 상이<br>📅 하루 10,000 neurons<br>🗓️ ~300,000 neurons/month | FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B, Apertus v1.5 8B |
+| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 카드 불필요</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 카드 필요</sub> | ⏱️ Standard rate limits (figures not published)<br>📅 Free models only (no monthly credit)<br>🗓️ Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 ch…<br><sub>[자세히 →](https://free-llm.com/provider/nous-portal)</sub> | StepFun Step 3.7 Flash, Upstage Solar Mini 4, Qwen4 Max, LongCat 2.5 |
 | **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 카드 필요</sub> | ⏱️ 10 requests, 4M input / 100K output tokens per 60s (per API key)<br>📅 No daily cap published (free while the API is experimental); a Hetzner account with billing de…<br>🗓️ Free during experimental phase, no billing system yet<br><sub>[자세히 →](https://free-llm.com/provider/hetzner-inference)</sub> | Qwen3.8 27B, Qwen3.6 35B A3B |
-| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 카드 불필요</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | **[ModelScope](https://free-llm.com/provider/modelscope)**<br><sub>📱 전화 인증</sub> | ⏱️ 500 requests/day per model<br>📅 2,000 requests/day total<br>🗓️ Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
 | **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 카드 불필요</sub> | ⏱️ Not published ("generous quota"; HTTP 429 when rate-limited)<br>📅 No published daily cap | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 카드 불필요</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[자세히 →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[SiliconFlow](https://free-llm.com/provider/siliconflow)**<br><sub>📱 전화 인증</sub> | ⏱️ Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/mod…<br>📅 Not fully published — verify on docs.siliconflow.cn<br>🗓️ Free models available after identity verification<br><sub>[자세히 →](https://free-llm.com/provider/siliconflow)</sub> | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 카드 불필요</sub> | ⏱️ Not published (daily credit allowance)<br>📅 Daily free credit allowance (amount not published by Aion Labs)<br>🗓️ Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
 | **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 카드 불필요</sub> | ⏱️ 1 RPM<br>📅 1,000 requests/day<br>🗓️ Free plan, $0/month | GPT-OSS 20B, GLM-4.7 Flash, Kimi K2.7 Code, Llama Instant |
@@ -135,7 +157,6 @@ print(response.choices[0].message.content)
 | **[SEA-LION API](https://free-llm.com/provider/sea-lion)**<br><sub>✉️ 이메일 가입</sub> | ⏱️ 10 requests/minute per user (increase on request: sealion@aisingapore.org) | Qwen SEA-LION v4.5 27B Instruct, Llama SEA-LION v3.5 70B Reasoning, SEA-Guard (safety), SEA-LION Embedding 600M |
 | **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)**<br><sub>✉️ 이메일 가입</sub> | ⏱️ Baseline rate limits (figures not published) | Auto router, MiniMax M3, Nemotron 3 Ultra, Nemotron 3 Super |
 | **[Agnes AI](https://free-llm.com/provider/agnes-ai)**<br><sub>✉️ 이메일 가입</sub> | ⏱️ About 30 RPM per account (video 2 RPM), per third-party listings | Agnes 3.0 Flash, Agnes 2.5 Flash, Agnes Image 2.1 Flash (image) |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 카드 불필요</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[자세히 →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[Arli AI](https://free-llm.com/provider/arli-ai)**<br><sub>✉️ 이메일 가입</sub> | ⏱️ 1 request at a time; max 12K context tokens<br>📅 Limited trial uses per model (about 5 requests per 2 days, per third-party list) | Qwen3.5 27B Derestricted |
 | **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)**<br><sub>📱 전화 인증</sub> | ⏱️ Not published on the HTTP doc<br>📅 Not published (Lite is free) | Spark Lite |
 | **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)**<br><sub>📱 전화 인증</sub> | ⏱️ Low concurrency on free Flash models (GLM-4.7-Flash reported at 1 concurrent request) | GLM-4.7-Flash, GLM-4.5-Flash, GLM-4-Flash-250414, GLM-4.6V-Flash (vision) |
@@ -241,6 +262,7 @@ print(response.choices[0].message.content)
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://dash.cloudflare.com/)</sub> | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` |
 | **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://kilo.ai/gateway)</sub> | `https://ai-gateway.kilo.ai/api/v1` |
 | **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://freeinference.org)</sub> | `https://freeinference.org/v1` |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://requesty.ai/)</sub> | `https://router.requesty.ai/v1` |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://www.aionlabs.ai/pricing/)</sub> | `https://api.aionlabs.ai/v1` |
 | **[Grokified](https://free-llm.com/provider/grokified)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://grokified.com)</sub> | `https://api.grokified.com/v1` |
@@ -252,7 +274,6 @@ print(response.choices[0].message.content)
 | **[GonkaRouter](https://free-llm.com/provider/gonkarouter)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://gonkarouter.io)</sub> | `https://api.gonkarouter.io/v1` |
 | **[NovAI](https://free-llm.com/provider/novai)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://aiapi-pro.com)</sub> | `https://aiapi-pro.com/v1` |
 | **[Vectoree](https://free-llm.com/provider/vectoree)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://vectoree.ai)</sub> | `https://vectoree.ai/api/v1` |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://docs.vlm.run/gateway/rate-limits)</sub> | `https://gateway.vlm.run/v1/openai` |
 | **[MegaNova AI](https://free-llm.com/provider/meganova)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://docs.meganova.ai/tiers)</sub> | `https://api.meganova.ai/v1` |
 | **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)**<br><sub>🟢 카드 불필요 · [🔑&nbsp;키](https://jina.ai/embeddings/)</sub> | `https://api.jina.ai/v1` |
@@ -321,16 +342,16 @@ print(response.choices[0].message.content)
 
 [free-llm.com/guides](https://free-llm.com/guides/) 에서 확인하세요:
 
-- **2026년 최고의 무료 LLM API** — 주요 선택지 비교
-- **Gemini vs ChatGPT (무료 요금제)** — $0로 실제 무엇을 쓸 수 있는지
-- **OpenRouter 사용법** — 코드가 포함된 설정 가이드
-- **OpenRouter 대안** — 시도해볼 만한 다른 애그리게이터
-- **Ollama로 로컬 LLM 시작하기** — 5분 안에 시작
-- **궁극의 무료 LLM API 가이드** — 가장 자세한 심층 분석
-- **코딩용 최고의 무료 LLM** — 무료 코딩 모델 + Claude Code / Codex / Cursor 설정
-- **무료 OpenRouter 대안** — 무료 한도가 더 큰 게이트웨이와 API
-- **무료 LLM 폴백 시스템** — 여러 제공업체를 연결해 속도 제한을 피하기
-- **월간 리포트: 2026년 11월** — 새 무료 제공업체, 서비스 종료, 모델 변경
+- **[2026년 최고의 무료 LLM API](https://free-llm.com/guides/best-free-llm-apis-2026)** — 주요 선택지 비교
+- **[Gemini vs ChatGPT (무료 요금제)](https://free-llm.com/guides/gemini-vs-chatgpt-free)** — $0로 실제 무엇을 쓸 수 있는지
+- **[OpenRouter 사용법](https://free-llm.com/guides/how-to-use-openrouter)** — 코드가 포함된 설정 가이드
+- **[OpenRouter 대안](https://free-llm.com/guides/openrouter-alternatives)** — 시도해볼 만한 다른 애그리게이터
+- **[Ollama로 로컬 LLM 시작하기](https://free-llm.com/guides/local-llm-ollama-guide)** — 5분 안에 시작
+- **[궁극의 무료 LLM API 가이드](https://free-llm.com/guides/ultimate-free-llm-api-guide)** — 가장 자세한 심층 분석
+- **[코딩용 최고의 무료 LLM](https://free-llm.com/guides/best-free-llm-for-coding)** — 무료 코딩 모델 + Claude Code / Codex / Cursor 설정
+- **[Claude Code 무료로 쓰기](https://free-llm.com/guides/claude-code-free)** — 무료 모델로 Claude Code를 실행하는 단계별 안내
+- **[무료 LLM 폴백 시스템](https://free-llm.com/guides/free-llm-fallback-system)** — 여러 제공업체를 연결해 속도 제한을 피하기
+- **[월간 리포트: 2026년 11월](https://free-llm.com/guides/free-llm-apis-november-2026-what-changed)** — 새 무료 제공업체, 서비스 종료, 모델 변경
 
 ---
 
@@ -372,8 +393,15 @@ Free-LLM/
 ├── README.ja.md               ← 日本語
 ├── README.ko.md                ← 한국어
 ├── CONTRIBUTING.md            ← 기여 가이드
+├── CODE_OF_CONDUCT.md         ← 커뮤니티 행동 강령
+├── SECURITY.md                ← 취약점 신고 방법
+├── SUPPORT.md                 ← 도움 받는 방법
+├── CHANGELOG.md               ← Router 릴리스 노트
+├── router/                    ← Free-LLM Router (소스, 테스트, 문서)
+├── package.json               ← Router npm 패키지
+├── Dockerfile                 ← Docker로 Router 실행
 ├── code-examples/             ← 바로 쓰는 예제 (제공업체별 + 도구별)
-├── .github/                   ← Issue / PR 템플릿
+├── .github/                   ← Issue / PR 템플릿, CI
 └── LICENSE                    ← MIT
 ```
 
@@ -405,7 +433,16 @@ Free-LLM/
 - 📚 **가이드**: [free-llm.com/guides](https://free-llm.com/guides/)
 - 🏆 **명예의 전당**: [free-llm.com/hall-of-fame](https://free-llm.com/hall-of-fame)
 - 🧩 **JSON catalog**: [free-llm.com/catalog.json](https://free-llm.com/catalog.json)
+- ⚡ **Free-LLM Router**: [free-llm.com/router](https://free-llm.com/router) · [문서](router/README.md) · [릴리스 노트](CHANGELOG.md)
+- 📰 **디렉터리 변경 내역**: [free-llm.com/changelog](https://free-llm.com/changelog)
 - ➕ **제공업체 제출**: [free-llm.com/submit](https://free-llm.com/submit)
+
+## 커뮤니티 및 지원
+
+- 💬 **질문과 아이디어**: [GitHub Discussions](https://github.com/nejib1/Free-LLM/discussions)
+- 🐛 **버그 및 데이터 수정**: [issue 열기](https://github.com/nejib1/Free-LLM/issues/new/choose) — 어떤 양식을 쓸지는 [SUPPORT.md](SUPPORT.md) 참고
+- 🔒 **보안**: 비공개로 신고해 주세요. [SECURITY.md](SECURITY.md) 참고
+- 🤝 **행동 강령**: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ## Star History
 
@@ -419,4 +456,4 @@ MIT — 자세한 내용은 [LICENSE](LICENSE) 를 참고하세요.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-22<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-23<!--LASTSYNC:END--></sub></p>

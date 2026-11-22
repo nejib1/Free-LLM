@@ -1,9 +1,7 @@
-<p align="center">
-  <h1 align="center">Free-LLM — Open Directory of Free AI &amp; LLM APIs</h1>
+<h1 align="center">Free-LLM — Open Directory of Free AI &amp; LLM APIs</h1>
 <!--STATS:START-->
-  <p align="center"><strong>460+ free LLM models from 94 providers</strong> — find, compare &amp; configure free models in seconds, plus 9 local/self-hosted tools for unlimited private use.</p>
+  <p align="center"><strong>460+ free LLM models from 79 free API providers</strong> — find, compare &amp; configure free models in seconds, plus 9 local/self-hosted tools for unlimited private use.</p>
 <!--STATS:END-->
-</p>
 
 <p align="center">
   <a href="https://free-llm.com" target="_blank" rel="noopener"><strong>🌐 Live at free-llm.com</strong></a> —
@@ -15,13 +13,36 @@
 
 <p align="center">
   <a href="https://free-llm.com" target="_blank" rel="noopener"><img alt="Website" src="https://img.shields.io/badge/Website-free--llm.com-blue?style=for-the-badge" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nejib1/Free-LLM?style=for-the-badge&color=f5b301" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/commits/main"><img alt="Data updated" src="https://img.shields.io/github/last-commit/nejib1/Free-LLM?style=for-the-badge&label=data%20updated&color=2ea44f" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/actions/workflows/ci.yml"><img alt="Router tests" src="https://img.shields.io/github/actions/workflow/status/nejib1/Free-LLM/ci.yml?branch=main&style=for-the-badge&label=router%20tests" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" /></a>
-  <a href="https://free-llm.com/submit" target="_blank" rel="noopener"><img alt="Community Driven" src="https://img.shields.io/badge/Community-Driven-orange?style=for-the-badge" /></a>
 </p>
 
 <p align="center">
   🌐 <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a>
 </p>
+
+<details>
+<summary><strong>Contents</strong></summary>
+
+- [⚡ New: Free-LLM Router — all these free APIs behind one address](#-new-free-llm-router--all-these-free-apis-behind-one-address)
+- [Why This Exists](#why-this-exists)
+- [How to Use — 3 Steps](#how-to-use--3-steps)
+- [Quick Start — Use Any Free API in 30 Seconds](#quick-start--use-any-free-api-in-30-seconds)
+- [Provider Directory](#provider-directory)
+- [Quick Reference — Base URLs & API Keys](#quick-reference--base-urls--api-keys)
+- [Guides & Tutorials](#guides--tutorials)
+- [Community Features](#community-features)
+- [Code Examples](#code-examples)
+- [Repository Structure](#repository-structure)
+- [Contributing](#contributing)
+- [Links](#links)
+- [Community & Support](#community--support)
+- [Star History](#star-history)
+- [License](#license)
+
+</details>
 
 ---
 
@@ -66,7 +87,7 @@ This repo — backed by the live directory at **[free-llm.com](https://free-llm.
 2. **Get your API key** — every row links straight to the provider's key page in [Quick Reference](#quick-reference--base-urls--api-keys). Most only need an email address.
 3. **Plug it in** — copy the base URL + a model ID from the tables below into the snippets in [Quick Start](#quick-start--use-any-free-api-in-30-seconds).
 
-Full details, live status, and community notes for each provider live on its page at **free-llm.com/provider/&lt;slug&gt;** (e.g. [free-llm.com/provider/groq](https://free-llm.com/provider/groq)).
+Full details, live status, and community notes for each provider live on its page at **free-llm.com/provider/&lt;slug&gt;** (e.g. [free-llm.com/provider/groq-cloud](https://free-llm.com/provider/groq-cloud)).
 
 ---
 
@@ -121,11 +142,12 @@ Ongoing free access with rate-limited quotas that never expire.
 | **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)**<br><sub>✉️ Email sign-up</sub> | ⏱️ ~1 request/second (Flash models)<br>📅 ~1,000 requests/day (Flash tier)<br>🗓️ Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
 | **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ Email sign-up</sub> | ⏱️ 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go)<br>🗓️ Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 No card</sub> | ⏱️ Varies by model<br>📅 10,000 neurons/day<br>🗓️ ~300,000 neurons/month | FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B, Apertus v1.5 8B |
+| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 No card</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 Card required</sub> | ⏱️ Standard rate limits (figures not published)<br>📅 Free models only (no monthly credit)<br>🗓️ Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 ch…<br><sub>[details →](https://free-llm.com/provider/nous-portal)</sub> | StepFun Step 3.7 Flash, Upstage Solar Mini 4, Qwen4 Max, LongCat 2.5 |
 | **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 Card required</sub> | ⏱️ 10 requests, 4M input / 100K output tokens per 60s (per API key)<br>📅 No daily cap published (free while the API is experimental); a Hetzner account with billing de…<br>🗓️ Free during experimental phase, no billing system yet<br><sub>[details →](https://free-llm.com/provider/hetzner-inference)</sub> | Qwen3.8 27B, Qwen3.6 35B A3B |
-| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 No card</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | **[ModelScope](https://free-llm.com/provider/modelscope)**<br><sub>📱 Phone check</sub> | ⏱️ 500 requests/day per model<br>📅 2,000 requests/day total<br>🗓️ Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
 | **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 No card</sub> | ⏱️ Not published ("generous quota"; HTTP 429 when rate-limited)<br>📅 No published daily cap | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 No card</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[details →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[SiliconFlow](https://free-llm.com/provider/siliconflow)**<br><sub>📱 Phone check</sub> | ⏱️ Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/mod…<br>📅 Not fully published — verify on docs.siliconflow.cn<br>🗓️ Free models available after identity verification<br><sub>[details →](https://free-llm.com/provider/siliconflow)</sub> | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 No card</sub> | ⏱️ Not published (daily credit allowance)<br>📅 Daily free credit allowance (amount not published by Aion Labs)<br>🗓️ Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
 | **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 No card</sub> | ⏱️ 1 RPM<br>📅 1,000 requests/day<br>🗓️ Free plan, $0/month | GPT-OSS 20B, GLM-4.7 Flash, Kimi K2.7 Code, Llama Instant |
@@ -135,7 +157,6 @@ Ongoing free access with rate-limited quotas that never expire.
 | **[SEA-LION API](https://free-llm.com/provider/sea-lion)**<br><sub>✉️ Email sign-up</sub> | ⏱️ 10 requests/minute per user (increase on request: sealion@aisingapore.org) | Qwen SEA-LION v4.5 27B Instruct, Llama SEA-LION v3.5 70B Reasoning, SEA-Guard (safety), SEA-LION Embedding 600M |
 | **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)**<br><sub>✉️ Email sign-up</sub> | ⏱️ Baseline rate limits (figures not published) | Auto router, MiniMax M3, Nemotron 3 Ultra, Nemotron 3 Super |
 | **[Agnes AI](https://free-llm.com/provider/agnes-ai)**<br><sub>✉️ Email sign-up</sub> | ⏱️ About 30 RPM per account (video 2 RPM), per third-party listings | Agnes 3.0 Flash, Agnes 2.5 Flash, Agnes Image 2.1 Flash (image) |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 No card</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[details →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[Arli AI](https://free-llm.com/provider/arli-ai)**<br><sub>✉️ Email sign-up</sub> | ⏱️ 1 request at a time; max 12K context tokens<br>📅 Limited trial uses per model (about 5 requests per 2 days, per third-party list) | Qwen3.5 27B Derestricted |
 | **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)**<br><sub>📱 Phone check</sub> | ⏱️ Not published on the HTTP doc<br>📅 Not published (Lite is free) | Spark Lite |
 | **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)**<br><sub>📱 Phone check</sub> | ⏱️ Low concurrency on free Flash models (GLM-4.7-Flash reported at 1 concurrent request) | GLM-4.7-Flash, GLM-4.5-Flash, GLM-4-Flash-250414, GLM-4.6V-Flash (vision) |
@@ -241,6 +262,7 @@ Sign up and receive credits to use until depleted.
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://dash.cloudflare.com/)</sub> | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` |
 | **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://kilo.ai/gateway)</sub> | `https://ai-gateway.kilo.ai/api/v1` |
 | **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://freeinference.org)</sub> | `https://freeinference.org/v1` |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://requesty.ai/)</sub> | `https://router.requesty.ai/v1` |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://www.aionlabs.ai/pricing/)</sub> | `https://api.aionlabs.ai/v1` |
 | **[Grokified](https://free-llm.com/provider/grokified)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://grokified.com)</sub> | `https://api.grokified.com/v1` |
@@ -252,7 +274,6 @@ Sign up and receive credits to use until depleted.
 | **[GonkaRouter](https://free-llm.com/provider/gonkarouter)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://gonkarouter.io)</sub> | `https://api.gonkarouter.io/v1` |
 | **[NovAI](https://free-llm.com/provider/novai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://aiapi-pro.com)</sub> | `https://aiapi-pro.com/v1` |
 | **[Vectoree](https://free-llm.com/provider/vectoree)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://vectoree.ai)</sub> | `https://vectoree.ai/api/v1` |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://docs.vlm.run/gateway/rate-limits)</sub> | `https://gateway.vlm.run/v1/openai` |
 | **[MegaNova AI](https://free-llm.com/provider/meganova)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://docs.meganova.ai/tiers)</sub> | `https://api.meganova.ai/v1` |
 | **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)**<br><sub>🟢 No card · [🔑&nbsp;Get&nbsp;key](https://jina.ai/embeddings/)</sub> | `https://api.jina.ai/v1` |
@@ -321,16 +342,16 @@ Sign up and receive credits to use until depleted.
 
 Published at [free-llm.com/guides](https://free-llm.com/guides/):
 
-- **Best Free LLM APIs in 2026** — side-by-side comparison of top picks
-- **Gemini vs ChatGPT (Free Tier)** — what you actually get for $0
-- **How to Use OpenRouter** — setup walkthrough with code
-- **OpenRouter Alternatives** — other aggregators worth trying
-- **Local LLMs with Ollama** — get started in under 5 minutes
-- **Ultimate Free LLM API Guide** — the comprehensive deep-dive
-- **Best Free LLMs for Coding** — free coding models + Claude Code, Codex & Cursor setup
-- **Free OpenRouter Alternatives** — gateways and APIs with bigger free tiers
-- **Free LLM Fallback System** — chain providers so you never hit a rate limit
-- **Monthly report: November 2026** — new free providers, shutdowns, model changes
+- **[Best Free LLM APIs in 2026](https://free-llm.com/guides/best-free-llm-apis-2026)** — side-by-side comparison of top picks
+- **[Gemini vs ChatGPT (Free Tier)](https://free-llm.com/guides/gemini-vs-chatgpt-free)** — what you actually get for $0
+- **[How to Use OpenRouter](https://free-llm.com/guides/how-to-use-openrouter)** — setup walkthrough with code
+- **[OpenRouter Alternatives](https://free-llm.com/guides/openrouter-alternatives)** — other aggregators worth trying
+- **[Local LLMs with Ollama](https://free-llm.com/guides/local-llm-ollama-guide)** — get started in under 5 minutes
+- **[Ultimate Free LLM API Guide](https://free-llm.com/guides/ultimate-free-llm-api-guide)** — the comprehensive deep-dive
+- **[Best Free LLMs for Coding](https://free-llm.com/guides/best-free-llm-for-coding)** — free coding models + Claude Code, Codex & Cursor setup
+- **[Claude Code for Free](https://free-llm.com/guides/claude-code-free)** — run Claude Code on free models, step by step
+- **[Free LLM Fallback System](https://free-llm.com/guides/free-llm-fallback-system)** — chain providers so you never hit a rate limit
+- **[Monthly report: November 2026](https://free-llm.com/guides/free-llm-apis-november-2026-what-changed)** — new free providers, shutdowns, model changes
 
 ---
 
@@ -372,8 +393,15 @@ Free-LLM/
 ├── README.ja.md               ← 日本語
 ├── README.ko.md                ← 한국어
 ├── CONTRIBUTING.md            ← Contribution guidelines
+├── CODE_OF_CONDUCT.md         ← Community rules
+├── SECURITY.md                ← How to report a vulnerability
+├── SUPPORT.md                 ← Where to get help
+├── CHANGELOG.md               ← Router release notes
+├── router/                    ← Free-LLM Router (source, tests, docs)
+├── package.json               ← npm package for the router
+├── Dockerfile                 ← Run the router in Docker
 ├── code-examples/             ← Ready-to-use snippets (per-provider + per-tool)
-├── .github/                   ← Issue/PR templates
+├── .github/                   ← Issue/PR templates, CI
 └── LICENSE                    ← MIT
 ```
 
@@ -384,7 +412,7 @@ Free-LLM/
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick version:
 
 1. **Add a provider** — use the [submit form](https://free-llm.com/submit) on the website, or open an [issue](https://github.com/nejib1/Free-LLM/issues/new/choose)/PR here.
-2. **Fix inaccurate data** — rate limits change, providers graduate or shut down. Open an issue with a link to the official source (the tables below are regenerated daily from the live database, so table edits in PRs get overwritten).
+2. **Fix inaccurate data** — rate limits change, providers graduate or shut down. Open an issue with a link to the official source (the tables above are regenerated daily from the live database, so table edits in PRs get overwritten).
 3. **Add a config snippet** — have a working config for a tool we don't cover? Add it to [`code-examples/`](code-examples/).
 4. **Vote & discuss** — help the community surface the best options at [free-llm.com](https://free-llm.com).
 
@@ -405,7 +433,16 @@ A provider belongs in this list if:
 - 📚 **Guides**: [free-llm.com/guides](https://free-llm.com/guides/)
 - 🏆 **Hall of Fame**: [free-llm.com/hall-of-fame](https://free-llm.com/hall-of-fame)
 - 🧩 **JSON catalog**: [free-llm.com/catalog.json](https://free-llm.com/catalog.json)
+- ⚡ **Free-LLM Router**: [free-llm.com/router](https://free-llm.com/router) · [docs](router/README.md) · [release notes](CHANGELOG.md)
+- 📰 **Directory changelog**: [free-llm.com/changelog](https://free-llm.com/changelog)
 - ➕ **Submit a provider**: [free-llm.com/submit](https://free-llm.com/submit)
+
+## Community & Support
+
+- 💬 **Questions and ideas**: [GitHub Discussions](https://github.com/nejib1/Free-LLM/discussions)
+- 🐛 **Bugs and data corrections**: [open an issue](https://github.com/nejib1/Free-LLM/issues/new/choose) — see [SUPPORT.md](SUPPORT.md) for which form to use
+- 🔒 **Security**: report privately, see [SECURITY.md](SECURITY.md)
+- 🤝 **Code of conduct**: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ## Star History
 
@@ -419,4 +456,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-22<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-23<!--LASTSYNC:END--></sub></p>

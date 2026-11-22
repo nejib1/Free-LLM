@@ -1,9 +1,7 @@
-<p align="center">
-  <h1 align="center">Free-LLM — 免費 AI 與 LLM API 開放目錄</h1>
+<h1 align="center">Free-LLM — 免費 AI 與 LLM API 開放目錄</h1>
 <!--STATS:START-->
-  <p align="center"><strong>來自 94 個提供商的 460+ 個免費 LLM 模型</strong> — 幾秒鐘內發現、比較並設定免費模型，另有 9 款本機/自架工具可無限私密使用。</p>
+  <p align="center"><strong>來自 79 個提供商的 460+ 個免費 LLM 模型</strong> — 幾秒鐘內發現、比較並設定免費模型，另有 9 款本機/自架工具可無限私密使用。</p>
 <!--STATS:END-->
-</p>
 
 <p align="center">
   <a href="https://free-llm.com" target="_blank" rel="noopener"><strong>🌐 前往 free-llm.com</strong></a> —
@@ -15,13 +13,36 @@
 
 <p align="center">
   <a href="https://free-llm.com" target="_blank" rel="noopener"><img alt="Website" src="https://img.shields.io/badge/Website-free--llm.com-blue?style=for-the-badge" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nejib1/Free-LLM?style=for-the-badge&color=f5b301" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/commits/main"><img alt="Data updated" src="https://img.shields.io/github/last-commit/nejib1/Free-LLM?style=for-the-badge&label=data%20updated&color=2ea44f" /></a>
+  <a href="https://github.com/nejib1/Free-LLM/actions/workflows/ci.yml"><img alt="Router tests" src="https://img.shields.io/github/actions/workflow/status/nejib1/Free-LLM/ci.yml?branch=main&style=for-the-badge&label=router%20tests" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" /></a>
-  <a href="https://free-llm.com/submit" target="_blank" rel="noopener"><img alt="Community Driven" src="https://img.shields.io/badge/Community-Driven-orange?style=for-the-badge" /></a>
 </p>
 
 <p align="center">
   🌐 <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a>
 </p>
+
+<details>
+<summary><strong>目錄</strong></summary>
+
+- [⚡ 新功能：Free-LLM Router —— 把所有免費 API 匯聚到一個位址](#-新功能free-llm-router--把所有免費-api-匯聚到一個位址)
+- [為什麼需要這個專案](#為什麼需要這個專案)
+- [三步驟上手](#三步驟上手)
+- [Quick Start — 30 秒接上免費 API](#quick-start--30-秒接上免費-api)
+- [Provider Directory](#provider-directory)
+- [Quick Reference — Base URL 與 API Key](#quick-reference--base-url-與-api-key)
+- [使用指南](#使用指南)
+- [社群功能](#社群功能)
+- [Code Examples](#code-examples)
+- [儲存庫結構](#儲存庫結構)
+- [貢獻指南](#貢獻指南)
+- [Links](#links)
+- [社群與支援](#社群與支援)
+- [Star History](#star-history)
+- [License](#license)
+
+</details>
 
 ---
 
@@ -63,10 +84,10 @@ free-llm setup claude                   # Claude Code 改用免費模型（也�
 ## 三步驟上手
 
 1. **選一個提供商** — 見下方 [Provider Directory](#provider-directory)。新手建議從 **Groq** 開始（免信用卡，約 30 RPM / 每個模型每天 1,000 次請求，永久免費）。
-2. **取得 API Key** — [Quick Reference](#quick-reference--base-urls--api-keys) 中每一列都直接連到該提供商的金鑰取得頁面，大多只需一個電子郵件。
-3. **接上程式碼** — 把下方表格中的 base URL + 模型 ID 複製到 [Quick Start](#quick-start--use-any-free-api-in-30-seconds) 的範例程式碼中。
+2. **取得 API Key** — [Quick Reference](#quick-reference--base-url-與-api-key) 中每一列都直接連到該提供商的金鑰取得頁面，大多只需一個電子郵件。
+3. **接上程式碼** — 把下方表格中的 base URL + 模型 ID 複製到 [Quick Start](#quick-start--30-秒接上免費-api) 的範例程式碼中。
 
-每個提供商的完整詳情、即時狀態與社群備註都在其 free-llm.com 頁面：**free-llm.com/provider/&lt;slug&gt;**（例如 [free-llm.com/provider/groq](https://free-llm.com/provider/groq)）。
+每個提供商的完整詳情、即時狀態與社群備註都在其 free-llm.com 頁面：**free-llm.com/provider/&lt;slug&gt;**（例如 [free-llm.com/provider/groq-cloud](https://free-llm.com/provider/groq-cloud)）。
 
 ---
 
@@ -121,11 +142,12 @@ print(response.choices[0].message.content)
 | **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ ~1 request/second (Flash models)<br>📅 ~1,000 requests/day (Flash tier)<br>🗓️ Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
 | **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go)<br>🗓️ Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 免綁卡</sub> | ⏱️ 依模型而異<br>📅 每天 10,000 neurons<br>🗓️ ~300,000 neurons/month | FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B, Apertus v1.5 8B |
+| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 免綁卡</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 需綁卡</sub> | ⏱️ Standard rate limits (figures not published)<br>📅 Free models only (no monthly credit)<br>🗓️ Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 ch…<br><sub>[詳情 →](https://free-llm.com/provider/nous-portal)</sub> | StepFun Step 3.7 Flash, Upstage Solar Mini 4, Qwen4 Max, LongCat 2.5 |
 | **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 需綁卡</sub> | ⏱️ 10 requests, 4M input / 100K output tokens per 60s (per API key)<br>📅 No daily cap published (free while the API is experimental); a Hetzner account with billing de…<br>🗓️ Free during experimental phase, no billing system yet<br><sub>[詳情 →](https://free-llm.com/provider/hetzner-inference)</sub> | Qwen3.8 27B, Qwen3.6 35B A3B |
-| **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 免綁卡</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Dots3-Note Preview, Reflection Beam 1.0 |
 | **[ModelScope](https://free-llm.com/provider/modelscope)**<br><sub>📱 手機驗證</sub> | ⏱️ 500 requests/day per model<br>📅 2,000 requests/day total<br>🗓️ Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
 | **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 免綁卡</sub> | ⏱️ Not published ("generous quota"; HTTP 429 when rate-limited)<br>📅 No published daily cap | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 免綁卡</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[詳情 →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[SiliconFlow](https://free-llm.com/provider/siliconflow)**<br><sub>📱 手機驗證</sub> | ⏱️ Fixed limits for free models — exact figures require login, verify on cloud.siliconflow.cn/mod…<br>📅 Not fully published — verify on docs.siliconflow.cn<br>🗓️ Free models available after identity verification<br><sub>[詳情 →](https://free-llm.com/provider/siliconflow)</sub> | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 免綁卡</sub> | ⏱️ Not published (daily credit allowance)<br>📅 Daily free credit allowance (amount not published by Aion Labs)<br>🗓️ Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
 | **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 免綁卡</sub> | ⏱️ 1 RPM<br>📅 1,000 requests/day<br>🗓️ Free plan, $0/month | GPT-OSS 20B, GLM-4.7 Flash, Kimi K2.7 Code, Llama Instant |
@@ -135,7 +157,6 @@ print(response.choices[0].message.content)
 | **[SEA-LION API](https://free-llm.com/provider/sea-lion)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ 10 requests/minute per user (increase on request: sealion@aisingapore.org) | Qwen SEA-LION v4.5 27B Instruct, Llama SEA-LION v3.5 70B Reasoning, SEA-Guard (safety), SEA-LION Embedding 600M |
 | **[LLM.kiwi](https://free-llm.com/provider/llm-kiwi)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ Baseline rate limits (figures not published) | Auto router, MiniMax M3, Nemotron 3 Ultra, Nemotron 3 Super |
 | **[Agnes AI](https://free-llm.com/provider/agnes-ai)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ About 30 RPM per account (video 2 RPM), per third-party listings | Agnes 3.0 Flash, Agnes 2.5 Flash, Agnes Image 2.1 Flash (image) |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 免綁卡</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[詳情 →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[Arli AI](https://free-llm.com/provider/arli-ai)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ 1 request at a time; max 12K context tokens<br>📅 Limited trial uses per model (about 5 requests per 2 days, per third-party list) | Qwen3.5 27B Derestricted |
 | **[iFlytek Spark Lite](https://free-llm.com/provider/iflytek-spark)**<br><sub>📱 手機驗證</sub> | ⏱️ Not published on the HTTP doc<br>📅 Not published (Lite is free) | Spark Lite |
 | **[Zhipu BigModel (China)](https://free-llm.com/provider/zhipu-bigmodel)**<br><sub>📱 手機驗證</sub> | ⏱️ Low concurrency on free Flash models (GLM-4.7-Flash reported at 1 concurrent request) | GLM-4.7-Flash, GLM-4.5-Flash, GLM-4-Flash-250414, GLM-4.6V-Flash (vision) |
@@ -241,6 +262,7 @@ print(response.choices[0].message.content)
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://dash.cloudflare.com/)</sub> | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` |
 | **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://kilo.ai/gateway)</sub> | `https://ai-gateway.kilo.ai/api/v1` |
 | **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://freeinference.org)</sub> | `https://freeinference.org/v1` |
+| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://requesty.ai/)</sub> | `https://router.requesty.ai/v1` |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://www.aionlabs.ai/pricing/)</sub> | `https://api.aionlabs.ai/v1` |
 | **[Grokified](https://free-llm.com/provider/grokified)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://grokified.com)</sub> | `https://api.grokified.com/v1` |
@@ -252,7 +274,6 @@ print(response.choices[0].message.content)
 | **[GonkaRouter](https://free-llm.com/provider/gonkarouter)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://gonkarouter.io)</sub> | `https://api.gonkarouter.io/v1` |
 | **[NovAI](https://free-llm.com/provider/novai)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://aiapi-pro.com)</sub> | `https://aiapi-pro.com/v1` |
 | **[Vectoree](https://free-llm.com/provider/vectoree)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://vectoree.ai)</sub> | `https://vectoree.ai/api/v1` |
-| **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[VLM Run Gateway](https://free-llm.com/provider/vlm-run)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://docs.vlm.run/gateway/rate-limits)</sub> | `https://gateway.vlm.run/v1/openai` |
 | **[MegaNova AI](https://free-llm.com/provider/meganova)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://docs.meganova.ai/tiers)</sub> | `https://api.meganova.ai/v1` |
 | **[Jina AI (Embeddings / Reader API)](https://free-llm.com/provider/jina-ai)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://jina.ai/embeddings/)</sub> | `https://api.jina.ai/v1` |
@@ -321,16 +342,16 @@ print(response.choices[0].message.content)
 
 發布於 [free-llm.com/guides](https://free-llm.com/guides/)：
 
-- **2026 年最佳免費 LLM API** — 主流選擇的橫向比較
-- **Gemini vs ChatGPT（免費版）** — $0 究竟能用到什麼
-- **如何使用 OpenRouter** — 附程式碼的設定教學
-- **OpenRouter 替代方案** — 其他值得嘗試的整合平台
-- **用 Ollama 跑本機模型** — 5 分鐘內上手
-- **終極免費 LLM API 指南** — 最完整的深度解析
-- **最佳免費程式設計 LLM** — 免費程式模型 + Claude Code / Codex / Cursor 設定
-- **免費 OpenRouter 替代方案** — 免費額度更大的閘道與 API
-- **免費 LLM 備援系統** — 串接多個提供商，避免觸發限流
-- **月度報告：2026 年 11 月** — 新增免費提供商、停止服務與模型異動
+- **[2026 年最佳免費 LLM API](https://free-llm.com/guides/best-free-llm-apis-2026)** — 主流選擇的橫向比較
+- **[Gemini vs ChatGPT（免費版）](https://free-llm.com/guides/gemini-vs-chatgpt-free)** — $0 究竟能用到什麼
+- **[如何使用 OpenRouter](https://free-llm.com/guides/how-to-use-openrouter)** — 附程式碼的設定教學
+- **[OpenRouter 替代方案](https://free-llm.com/guides/openrouter-alternatives)** — 其他值得嘗試的整合平台
+- **[用 Ollama 跑本機模型](https://free-llm.com/guides/local-llm-ollama-guide)** — 5 分鐘內上手
+- **[終極免費 LLM API 指南](https://free-llm.com/guides/ultimate-free-llm-api-guide)** — 最完整的深度解析
+- **[最佳免費程式設計 LLM](https://free-llm.com/guides/best-free-llm-for-coding)** — 免費程式模型 + Claude Code / Codex / Cursor 設定
+- **[免費使用 Claude Code](https://free-llm.com/guides/claude-code-free)** — 用免費模型執行 Claude Code 的逐步教學
+- **[免費 LLM 備援系統](https://free-llm.com/guides/free-llm-fallback-system)** — 串接多個提供商，避免觸發限流
+- **[月度報告：2026 年 11 月](https://free-llm.com/guides/free-llm-apis-november-2026-what-changed)** — 新增免費提供商、停止服務與模型異動
 
 ---
 
@@ -372,8 +393,15 @@ Free-LLM/
 ├── README.ja.md               ← 日本語
 ├── README.ko.md                ← 한국어
 ├── CONTRIBUTING.md            ← 貢獻指南
+├── CODE_OF_CONDUCT.md         ← 社群行為準則
+├── SECURITY.md                ← 如何回報安全漏洞
+├── SUPPORT.md                 ← 取得協助
+├── CHANGELOG.md               ← Router 更新日誌
+├── router/                    ← Free-LLM Router（原始碼、測試、文件）
+├── package.json               ← Router 的 npm 套件
+├── Dockerfile                 ← 用 Docker 執行 Router
 ├── code-examples/             ← 即用程式碼片段（依提供商 + 依工具）
-├── .github/                   ← Issue / PR 範本
+├── .github/                   ← Issue / PR 範本、CI
 └── LICENSE                    ← MIT
 ```
 
@@ -405,7 +433,16 @@ Free-LLM/
 - 📚 **使用指南**：[free-llm.com/guides](https://free-llm.com/guides/)
 - 🏆 **榮譽榜**：[free-llm.com/hall-of-fame](https://free-llm.com/hall-of-fame)
 - 🧩 **JSON catalog**: [free-llm.com/catalog.json](https://free-llm.com/catalog.json)
+- ⚡ **Free-LLM Router**：[free-llm.com/router](https://free-llm.com/router) · [文件](router/README.md) · [更新日誌](CHANGELOG.md)
+- 📰 **目錄變更記錄**：[free-llm.com/changelog](https://free-llm.com/changelog)
 - ➕ **提交提供商**：[free-llm.com/submit](https://free-llm.com/submit)
+
+## 社群與支援
+
+- 💬 **提問與建議**：[GitHub Discussions](https://github.com/nejib1/Free-LLM/discussions)
+- 🐛 **Bug 與資料更正**：[提交 issue](https://github.com/nejib1/Free-LLM/issues/new/choose) — 該用哪個表單請見 [SUPPORT.md](SUPPORT.md)
+- 🔒 **安全問題**：請私下回報，見 [SECURITY.md](SECURITY.md)
+- 🤝 **行為準則**：[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ## Star History
 
@@ -419,4 +456,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-22<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-23<!--LASTSYNC:END--></sub></p>
