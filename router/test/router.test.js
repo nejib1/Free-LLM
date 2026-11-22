@@ -314,3 +314,31 @@ test('a key is locked to its provider domain and never sent elsewhere', async ()
   const stored = fs.readFileSync(path.join(HOME, 'config.json'), 'utf8');
   assert.ok(!stored.includes('"good"'), 'keys must be encrypted at rest');
 });
+
+// ---------- CLI ----------
+test('cli: a key the provider refuses is not kept, an unknown provider gets a clear error', async () => {
+  const { spawn } = await import('node:child_process');
+  const { fileURLToPath } = await import('node:url');
+  const bin = fileURLToPath(new URL('../bin/free-llm.js', import.meta.url));
+  // async on purpose: the mock provider lives in this process, a sync spawn would freeze it
+  const run = (...args) => new Promise((resolve) => {
+    const child = spawn(process.execPath, [bin, ...args], { env: { ...process.env, FREE_LLM_HOME: HOME, HOME, FREE_LLM_NO_ENV_IMPORT: '1', NO_COLOR: '1' } });
+    let stdout = '';
+    child.stdout.on('data', (d) => { stdout += d; });
+    child.on('close', (status) => resolve({ status, stdout }));
+  });
+  const { loadConfig, providerKeys } = await import('../src/config.js');
+  const before = providerKeys(loadConfig(), 'beta').length;
+
+  const bad = await run('keys', 'add', 'beta', 'definitely-wrong');
+  assert.equal(bad.status, 1);
+  assert.match(bad.stdout, /Not kept/);
+  assert.equal(providerKeys(loadConfig(), 'beta').length, before);
+
+  const unknown = await run('keys', 'add', 'no-such-provider', 'x');
+  assert.equal(unknown.status, 1);
+  assert.match(unknown.stdout, /Unknown provider "no-such-provider"/);
+
+  const service = await run('service');
+  assert.match(service.stdout, /Usage: free-llm service install/);
+});

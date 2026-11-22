@@ -375,7 +375,9 @@ function printBanner(cfg) {
     `  API key     ${cfg.api_key}`,
     '',
     `  Catalog     ${c.providers} providers · ${c.models} models (${c.source})`,
-    guest
+    !targets.length
+      ? `  Next step   add your first free key (1 minute, most need no card): ${u.root}/#keys  or  free-llm providers`
+      : guest
       ? '  Mode        guest — works now with no keys, but slowly. Add free keys in the dashboard for real speed.'
       : `  Your keys   ${provs} provider${provs === 1 ? '' : 's'} · ${new Set(targets.map((t) => t.model.key)).size} models ready`,
     '',

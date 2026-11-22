@@ -167,7 +167,7 @@ export async function refreshCatalog(cfg) {
     try {
       const raw = await fetchJson(url);
       fs.writeFileSync(PATHS.catalog, JSON.stringify(raw));
-      current = buildIndex(raw, url.includes('free-llm.com') ? 'free-llm.com (live)' : 'GitHub mirror');
+      current = buildIndex(raw, url.includes('free-llm.com') ? 'free-llm.com (live)' : url === MIRROR ? 'GitHub mirror' : 'custom catalog');
       lastError = null;
       return current;
     } catch (e) {
