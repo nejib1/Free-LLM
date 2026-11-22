@@ -1,0 +1,21 @@
+# Dependencies and package output
+node_modules/
+*.tgz
+npm-debug.log*
+
+# Local router state (never commit keys or settings)
+.free-llm/
+.env
+.env.*
+
+# Python caches from code-examples
+__pycache__/
+*.pyc
+.venv/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

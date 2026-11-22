@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+
+# Keep the language bar honest: the router is the code, the rest is data and docs
+router/catalog.snapshot.json linguist-generated=true
+code-examples/** linguist-documentation=true
+README.*.md linguist-documentation=true
