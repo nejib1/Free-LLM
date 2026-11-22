@@ -38,6 +38,23 @@ Use the report button next to the model on free-llm.com, or open a "Correct prov
 - Read the key from an environment variable or a clear placeholder (`YOUR_..._KEY`), never a real key
 - Test it once before opening the PR
 
+### 5. Improve Free-LLM Router
+
+The router lives in [`router/`](router/): plain Node.js (18+), no dependencies, no build step.
+
+```bash
+git clone https://github.com/nejib1/Free-LLM.git && cd Free-LLM
+node router/bin/free-llm.js start        # run it from source
+npm test                                 # node --test router/test/router.test.js
+```
+
+- The tests use a local mock provider (`router/test/mock-provider.js`), so they need no API key and no network. CI runs them on Node.js 18, 20 and 22 for every pull request.
+- A bug fix should come with a test that fails without it. For a new feature, open a [feature request](https://github.com/nejib1/Free-LLM/issues/new?template=router-feature.yml) first so we can agree on the shape before you write code.
+- Keep it dependency-free. That is a feature: the whole router is a ~100 KB download.
+- `router/catalog.snapshot.json` is refreshed by the daily sync. Don't edit it by hand.
+- User-facing changes get a line under **Unreleased** in [`CHANGELOG.md`](CHANGELOG.md).
+- Anything that touches how keys are stored or where they are sent needs extra care: read [SECURITY.md](SECURITY.md), and never weaken the rule that a key only goes to the provider that issued it.
+
 ## What we list (and what we don't)
 
 We list:
@@ -67,6 +84,21 @@ Every addition and correction is checked against the provider's own pricing page
 2. Keep the change focused (one provider or one topic per PR)
 3. Don't edit the generated table sections in the READMEs
 4. Fill in the PR template and link your sources
+
+## Issue labels
+
+| Label | Used for |
+|:---|:---|
+| `provider: new` | a provider that is missing from the directory |
+| `provider: update` | a limit, model, price or sign-up requirement to correct |
+| `provider: no longer free` | a free tier or free model that ended |
+| `router` | anything about Free-LLM Router (combined with `bug` or `enhancement`) |
+| `documentation` | README, guides, translations, code examples |
+| `good first issue` / `help wanted` | good places to start |
+
+## Community
+
+Be kind and stay on topic: see the [Code of Conduct](CODE_OF_CONDUCT.md). Questions go to [Discussions](https://github.com/nejib1/Free-LLM/discussions); security problems are reported privately ([SECURITY.md](SECURITY.md)).
 
 ## Translations
 
