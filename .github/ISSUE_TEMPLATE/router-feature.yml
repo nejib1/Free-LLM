@@ -1,0 +1,28 @@
+name: Router feature request
+description: Suggest an improvement to Free-LLM Router
+title: "Router: "
+labels: ["router", "enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation you're in, not the solution yet. "When X happens I have to Y."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What do you do today instead?
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I could open a pull request for this

@@ -1,0 +1,65 @@
+name: Router bug report
+description: Free-LLM Router does something wrong (crash, wrong answer format, a tool that can't connect)
+title: "Router: "
+labels: ["router", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please **remove API keys** from anything you paste (logs, config, screenshots).
+        For a security problem, do not open an issue: see [SECURITY.md](https://github.com/nejib1/Free-LLM/blob/main/SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: The command or request that triggers it. A curl call against http://localhost:4000 is ideal.
+      render: shell
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `free-llm doctor`
+      description: It checks Node.js, the catalog and each saved key. The keys themselves are not printed.
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: Which tool talks to the router?
+      options:
+        - Claude Code
+        - Codex CLI
+        - Cursor
+        - OpenCode
+        - Aider
+        - Open WebUI / LibreChat
+        - My own code (OpenAI SDK)
+        - My own code (Anthropic SDK)
+        - Dashboard playground
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - install.sh (macOS / Linux)
+        - install.ps1 (Windows)
+        - npm install -g
+        - npx
+        - Docker
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 15, Ubuntu 24.04, Windows 11…"

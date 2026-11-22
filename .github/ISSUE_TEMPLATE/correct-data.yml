@@ -1,7 +1,7 @@
 name: Correct provider data
 description: A limit, model, price or card requirement is wrong, or a model is no longer free
 title: "Correction: "
-labels: ["data correction"]
+labels: ["provider: update"]
 body:
   - type: input
     id: provider
