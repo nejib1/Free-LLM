@@ -13,6 +13,7 @@
     "router/public/",
     "router/catalog.snapshot.json",
     "router/README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "engines": {
@@ -26,5 +27,6 @@
   "homepage": "https://free-llm.com/router",
   "repository": { "type": "git", "url": "git+https://github.com/nejib1/Free-LLM.git" },
   "bugs": { "url": "https://github.com/nejib1/Free-LLM/issues" },
+  "author": "Free-LLM (https://free-llm.com)",
   "license": "MIT"
 }
