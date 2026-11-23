@@ -123,7 +123,7 @@ export function buildIndex(raw, source) {
         kind: m.kind || 'chat',
         vision: Boolean(m.vision),
         ctx: m.context_tokens || null,
-        reasoning: REASONING.test(`${m.id} ${m.name}`.toLowerCase()),
+        reasoning: /(?:^|\/)minimax-m3\.1-flash(?::free)?$/i.test(m.id) || REASONING.test(`${m.id} ${m.name}`.toLowerCase()),
         quality: qualityPrior(m.id, m.name || ''),
         coding: codingPrior(m.id, m.name || ''),
       };

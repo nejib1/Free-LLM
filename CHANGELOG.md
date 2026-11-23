@@ -15,6 +15,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 - `CHANGELOG.md`, `SECURITY.md`, `SUPPORT.md` and a code of conduct.
 
+### Fixed
+
+- `auto:reasoning` now recognizes MiniMax-M3.1-Flash across its catalog IDs.
+
 ## [1.0.2] - 2026-11-23
 
 ### Changed
