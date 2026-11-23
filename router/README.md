@@ -221,7 +221,7 @@ free-llm update              refresh the catalog now
 
 **Is it really free?** Yes. The router is MIT-licensed and has no paid tier. The models are the providers' own free plans — the router doesn't resell anything and never sees your traffic.
 
-**Do I need keys?** Yes, at least one — the router uses *your* free accounts, it has none of its own. 2–3 free keys take about a minute each, most without a credit card, and `free-llm providers` shows where to get them.
+**Do I need keys?** For real work, yes: the router uses *your* free accounts. 2–3 free keys take about a minute each, most without a credit card, and `free-llm providers` shows where to get them. With no key at all, the router falls back to "guest mode" whenever the catalog lists a provider that answers without an account (a few models, tightly limited) — enough to see it work.
 
 **Is it as good as Claude or GPT-5?** Free models are very good today (DeepSeek V4, Kimi K2, GLM-5, Qwen 3.x, Gemini Flash, gpt-oss…), but they are not the paid frontier models. For many tasks you won't notice; for the hardest ones, `auto:smart` and `auto:fusion` help.
 
