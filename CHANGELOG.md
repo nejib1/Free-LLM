@@ -11,6 +11,8 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-11-24
+
 ### Added
 
 - `CHANGELOG.md`, `SECURITY.md`, `SUPPORT.md` and a code of conduct.
@@ -66,7 +68,8 @@ First public release.
 - Installers for macOS/Linux (`install.sh`) and Windows (`install.ps1`), `npx`/`npm` install from GitHub, and a Dockerfile.
 - Zero runtime dependencies, Node.js 18+.
 
-[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.2...HEAD
+[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.3...HEAD
+[1.0.3]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.2...router-v1.0.3
 [1.0.2]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.1...router-v1.0.2
 [1.0.1]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.0...router-v1.0.1
 [1.0.0]: https://github.com/nejib1/Free-LLM/releases/tag/router-v1.0.0
