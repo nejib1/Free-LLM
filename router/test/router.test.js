@@ -76,6 +76,14 @@ after(() => {
   setTimeout(() => process.exit(0), 50).unref();
 });
 
+test('marks MiniMax-M3.1-Flash catalog IDs as reasoning models', async () => {
+  const { buildIndex } = await import('../src/catalog.js');
+  const named = ['MiniMax-M3.1-Flash', 'minimaxai/minimax-m3.1-flash', 'minimax-m3.1-flash:free', 'minimax/minimax-m3.1-flash'];
+  const ids = [...named, 'minimax-m3.1-flashlight'];
+  const index = buildIndex({ providers: [{ slug: 'test', models: ids.map((id) => ({ id })) }] }, 'test');
+  assert.deepEqual(index.models.filter((m) => m.reasoning).map((m) => m.id), named);
+});
+
 test('rejects requests without the router key', async () => {
   const r = await fetch(base + '/v1/chat/completions', { method: 'POST', body: '{}' });
   assert.equal(r.status, 401);
