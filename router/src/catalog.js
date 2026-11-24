@@ -69,7 +69,17 @@ export function codingPrior(id, name) {
   return qualityPrior(id, name) + (CODING_BONUS.test(s) ? 10 : 0);
 }
 
+// Reasoning models: a keyword in the id/name, or a known always-thinking model
+// whose ids carry no keyword (add those to ALWAYS_THINKING, matched on any
+// provider prefix and with or without a `:free` / `-free` suffix).
 const REASONING = /reason|think|r1\b|-r2\b|qwq|magistral|gpt-oss|deepseek-?v[4-9]|kimi-?k2\.?[5-9]?-?thinking|nemotron.*reasoning/;
+const ALWAYS_THINKING = [
+  'minimax-m3.1-flash', // adaptive, always-on thinking (MiniMax model guide)
+];
+export function isReasoning(id, name = '') {
+  const base = String(id).toLowerCase().split('/').pop().replace(/[:-]free$/, '');
+  return ALWAYS_THINKING.includes(base) || REASONING.test(`${id} ${name}`.toLowerCase());
+}
 
 // ---------- loading ----------
 
@@ -123,7 +133,7 @@ export function buildIndex(raw, source) {
         kind: m.kind || 'chat',
         vision: Boolean(m.vision),
         ctx: m.context_tokens || null,
-        reasoning: /(?:^|\/)minimax-m3\.1-flash(?::free)?$/i.test(m.id) || REASONING.test(`${m.id} ${m.name}`.toLowerCase()),
+        reasoning: isReasoning(m.id, m.name || ''),
         quality: qualityPrior(m.id, m.name || ''),
         coding: codingPrior(m.id, m.name || ''),
       };
