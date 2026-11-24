@@ -166,12 +166,12 @@ print(response.choices[0].message.content)
 | **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 需綁卡</sub> | ⏱️ Standard rate limits (figures not published)<br>📅 Free models only (no monthly credit)<br>🗓️ Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 ch…<br><sub>[詳情 →](https://free-llm.com/provider/nous-portal)</sub> | StepFun Step 3.7 Flash, Upstage Solar Mini 4, Qwen4 Max, LongCat 2.5 |
 | **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 需綁卡</sub> | ⏱️ 10 requests, 4M input / 100K output tokens per 60s (per API key)<br>📅 No daily cap published (free while the API is experimental); a Hetzner account with billing de…<br>🗓️ Free during experimental phase, no billing system yet<br><sub>[詳情 →](https://free-llm.com/provider/hetzner-inference)</sub> | Qwen3.8 27B, Qwen3.6 35B A3B |
 | **[ModelScope](https://free-llm.com/provider/modelscope)**<br><sub>📱 手機驗證</sub> | ⏱️ Concurrency limited dynamically according to platform load<br>📅 Counted in Magicubes: about 0.5, 1 or 2 per call depending on model size<br>🗓️ Free, no billing | Qwen3.8 27B, Nex N2.5 Pro, LongCat Flash Lite, ERNIE 4.5 300B A47B |
-| **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 免綁卡</sub> | ⏱️ Not published ("generous quota"; HTTP 429 when rate-limited)<br>📅 No published daily cap | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
 | **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 免綁卡</sub> | ⏱️ Queue-based; anonymous requests have the lowest priority, registered users earn kudos for prio…<br>📅 No fixed cap (volunteer capacity)<br><sub>[詳情 →](https://free-llm.com/provider/ai-horde)</sub> | Gemma 4 E4B IT, Qwen3 4B, Llama 3.2 1B Instruct, L3 8B Stheno v3.2 |
 | **[SiliconFlow](https://free-llm.com/provider/siliconflow)**<br><sub>📱 手機驗證</sub> | ⏱️ Fixed limits on free models, shown in the console after login<br>📅 Not published on the public site<br>🗓️ Free models available after identity verification | GLM-Z1 9B, Qwen2.5 7B Instruct, Xing4.0 29B A4B, GLM-4 9B 0414 |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 免綁卡</sub> | ⏱️ Not published (daily credit allowance)<br>📅 Daily free credit allowance (amount not published by Aion Labs)<br>🗓️ Free, no billing | Aion 2.0, Aion 3.0 Mini, Aion 3.5 Mini |
 | **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 免綁卡</sub> | ⏱️ 1 RPM<br>📅 1,000 requests/day<br>🗓️ Free plan, $0/month | GPT-OSS 20B, Kimi K2.7 Code, Llama Instant |
 | **[Routeway](https://free-llm.com/provider/routeway)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ 5 RPM on :free models<br>📅 200 requests/day<br>🗓️ Starter plan free, shared queue | MiniMax M3.1 Flash (free), Muse Glimmer 30B |
+| **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 免綁卡</sub> | ⏱️ Not published ("generous quota"; HTTP 429 when rate-limited)<br>📅 No published daily cap | GLM-5.3 Flash, DeepSeek V4 Flash, MiniMax M3, Qwen3.6 35B A3B |
 | **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)**<br><sub>🟢 免綁卡</sub> | ⏱️ 5 requests/second, 200 RPM (text models); 20 RPM for OCR<br>📅 No daily cap published | Typhoon 2.5 30B A3B Instruct, Typhoon OCR 1.5 |
 | **[NovAI](https://free-llm.com/provider/novai)**<br><sub>🟢 免綁卡</sub> | ⏱️ 5 requests/min before the first top-up<br>📅 Free Flash models with no daily cap published; $2 welcome credit for paid models | GLM-4.7 Flash, GLM-4.6V Flash, GLM-4.1V Thinking Flash, CogView-3 Flash |
 | **[SEA-LION API](https://free-llm.com/provider/sea-lion)**<br><sub>✉️ 信箱註冊</sub> | ⏱️ 10 requests/minute per user (increase on request: sealion@aisingapore.org) | Qwen SEA-LION v4.5 27B Instruct, Llama SEA-LION v3.5 70B Reasoning, SEA-Guard (safety), SEA-LION Embedding 600M |
@@ -198,6 +198,7 @@ print(response.choices[0].message.content)
 | **[Gonka Broker](https://free-llm.com/provider/gonka-broker)**<br><sub>📱 手機驗證</sub> | 🎁 Monthly free token grant after SMS verification (does not accumulate)<br>⏱️ Network limits (see docs.gonkabroker.com Limits & Quotas) | GLM-5.3 Flash, DeepSeek V4 Flash 0731, MiniMax M2.7 |
 | **[Experiential Labs](https://free-llm.com/provider/experiential-labs)**<br><sub>💳 需綁卡</sub> | 🎁 1M input+output tokens/day shared across free core models, reset 00:00 UTC<br>⏱️ 10 RPM and 250K TPM per free core model | GPT-6 Luna, DeepSeek V4.1 Flash 1017, Clef Flash (decision endpoint, free promo) |
 | **[CheapLLM](https://free-llm.com/provider/cheapllm)**<br><sub>✉️ 信箱註冊</sub> | 🎁 See provider<br>⏱️ No per-key RPM/TPM cap; one request at a time per account | DeepSeek V4.1 Flash 1017 |
+| **[AMD Radeon Cloud (Token Factory)](https://free-llm.com/provider/amd-radeon-cloud-china)**<br><sub>✉️ 信箱註冊</sub> | 🎁 Daily cap in points (pts), per account; resets 00:00 UTC+8<br>⏱️ 20 RPM per account, 30 RPM per API key, 120 RPM per IP, 8 concurrent requests per key | GLM-5.3-Flash, MiMo-V2.6-Flash, Qwen3.8-Flash-Next, DeepSeek-V4.1-Flash |
 | **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 免綁卡</sub> | 🎁 200 requests/day (new orgs) / 1,000/day (paying orgs), shared across free models<br>⏱️ 20 RPM on free models (60 RPM for paying orgs) | Gemma 4 31B IT, Nemotron 3 Nano Omni Reasoning, Nemotron 3 Nano 30B A3B, Mistral Leanstral 1.5 |
 | **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)**<br><sub>✉️ 信箱註冊</sub> | 🎁 $5/month<br>⏱️ Lower per-model limits than the paid tier (429 on excess) | Nemotron 3.5 Lightning (free), Llama 3.3 70B, MiniMax M3.1 Flash, GLM-4.7 Flash |
 | **[Token Harbor](https://free-llm.com/provider/token-harbor)**<br><sub>✉️ 信箱註冊</sub> | 🎁 Free allowance, resets on a rolling 7-day period<br>⏱️ 60 requests/min and 1,800/hour per account (100/min, 3,000/hour per IP) | DeepSeek V4.1 Flash, MiMo V2.6 Flash, TH-Rudder |
@@ -215,7 +216,6 @@ print(response.choices[0].message.content)
 | **[LLMTR](https://free-llm.com/provider/llmtr)**<br><sub>✉️ 信箱註冊</sub> | 🎁 Per-model daily allowance (e.g. 200K tokens/day on dated previews)<br>⏱️ Not published; lower allowance in an account's first 24h | Nemotron 3 Ultra 550B, Nemotron 3.5 Super VL (free), Qwen3.8 27B (free), GPT-OSS Safeguard 20B |
 | **[Synap](https://free-llm.com/provider/synap)**<br><sub>✉️ 信箱註冊</sub> | 🎁 50 requests/day (first 7 days), then 10 requests/day<br>⏱️ 10 requests/minute per key | qwen3-coder-30b |
 | **[Runcrate (free inference)](https://free-llm.com/provider/runcrate)**<br><sub>🟢 免綁卡</sub> | 🎁 See provider<br>⏱️ See provider | DeepSeek V4.1 Flash (deepseek-ai/DeepSeek-V4.1-Flash), GLM 5.3 Flash (zai-org/GLM-5.3-Flash), GLM 5.3 (zai-org/GLM-5.3), gpt-oss 120B (openai/gpt-oss-120b) |
-| **[AMD Radeon Cloud (Token Factory)](https://free-llm.com/provider/amd-radeon-cloud-china)**<br><sub>✉️ 信箱註冊</sub> | 🎁 Daily cap in points (pts), per account; resets 00:00 UTC+8<br>⏱️ 20 RPM per account, 30 RPM per API key, 120 RPM per IP, 8 concurrent requests per key | GLM-5.3-Flash, MiMo-V2.6-Flash, Qwen3.8-Flash-Next, DeepSeek-V4.1-Flash |
 | **[Kiosapi.id](https://free-llm.com/provider/kiosapi)**<br><sub>✉️ 信箱註冊</sub> | 🎁 50 requests/day per account shared across free models, reset 07:00 WIB<br>⏱️ 5 requests/minute (free models) | GLM 4.7 Flash, Qwen3 30B, Gemma 4 26B, Llama 3.1 8B |
 <!--TABLE:RENEWABLE:END-->
 
@@ -281,12 +281,12 @@ print(response.choices[0].message.content)
 | **[Groq](https://free-llm.com/provider/groq-cloud)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://console.groq.com/)</sub> | `https://api.groq.com/openai/v1` |
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://dash.cloudflare.com/)</sub> | `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` |
 | **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://kilo.ai/gateway)</sub> | `https://ai-gateway.kilo.ai/api/v1` |
-| **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://freeinference.org)</sub> | `https://freeinference.org/v1` |
 | **[AI Horde (OpenAI-compatible front)](https://free-llm.com/provider/ai-horde)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://aihorde.net)</sub> | `https://oai.aihorde.net/v1` |
 | **[Requesty](https://free-llm.com/provider/requesty)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://requesty.ai/)</sub> | `https://router.requesty.ai/v1` |
 | **[Aion Labs](https://free-llm.com/provider/aion-labs)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://www.aionlabs.ai/pricing/)</sub> | `https://api.aionlabs.ai/v1` |
 | **[Grokified](https://free-llm.com/provider/grokified)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://grokified.com)</sub> | `https://api.grokified.com/v1` |
 | **[Api.Airforce](https://free-llm.com/provider/api-airforce)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://api.airforce/)</sub> | `https://api.airforce/v1` |
+| **[FreeInference](https://free-llm.com/provider/freeinference)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://freeinference.org)</sub> | `https://freeinference.org/v1` |
 | **[AnyAPI](https://free-llm.com/provider/anyapi)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://anyapi.ai)</sub> | `https://api.anyapi.ai/v1` |
 | **[Inferbase](https://free-llm.com/provider/inferbase)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://inferbase.ai)</sub> | `https://api.inferbase.ai/v1` |
 | **[OpenTyphoon (Typhoon API)](https://free-llm.com/provider/opentyphoon)**<br><sub>🟢 免綁卡 · [🔑&nbsp;金鑰](https://opentyphoon.ai)</sub> | `https://api.opentyphoon.ai/v1` |
@@ -312,6 +312,7 @@ print(response.choices[0].message.content)
 | **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://endpoints.ai.cloud.ovh.net/)</sub> | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` |
 | **[Friendli AI](https://free-llm.com/provider/friendli-ai)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://friendli.ai/)</sub> | `https://inference.friendli.ai/v1` |
 | **[CheapLLM](https://free-llm.com/provider/cheapllm)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://cheapllm.shop/)</sub> | `https://cheapllm.shop/v1` |
+| **[AMD Radeon Cloud (Token Factory)](https://free-llm.com/provider/amd-radeon-cloud-china)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://developer.amd.com.cn/radeon/tokenfactory)</sub> | `https://developer.amd.com.cn/radeon/api/v1` |
 | **[Cerebrium](https://free-llm.com/provider/cerebrium)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://www.cerebrium.ai/)</sub> | <sub>僅原生 API — [接入說明](https://free-llm.com/provider/cerebrium)</sub> |
 | **[Vercel AI Gateway](https://free-llm.com/provider/vercel-ai-gateway)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://vercel.com/ai-gateway)</sub> | `https://ai-gateway.vercel.sh/v1` |
 | **[Routeway](https://free-llm.com/provider/routeway)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://routeway.ai/)</sub> | `https://api.routeway.ai/v1` |
@@ -334,7 +335,6 @@ print(response.choices[0].message.content)
 | **[LLMTR](https://free-llm.com/provider/llmtr)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://llmtr.com/en/terms)</sub> | `https://llmtr.com/v1` |
 | **[Merkium](https://free-llm.com/provider/merkium)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://www.merkium.nl/)</sub> | `https://chat.merkium.nl/api/v1` |
 | **[Synap](https://free-llm.com/provider/synap)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://synap402.com/)</sub> | `https://synap402.com/v1` |
-| **[AMD Radeon Cloud (Token Factory)](https://free-llm.com/provider/amd-radeon-cloud-china)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://developer.amd.com.cn/radeon/tokenfactory)</sub> | `https://developer.amd.com.cn/radeon/api/v1` |
 | **[HiAPI](https://free-llm.com/provider/hiapi)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://hiapi.ai/)</sub> | `https://api.hiapi.ai/v1` |
 | **[Kiosapi.id](https://free-llm.com/provider/kiosapi)**<br><sub>✉️ 信箱註冊 · [🔑&nbsp;金鑰](https://kiosapi.id/pricing)</sub> | `https://api.kiosapi.id/v1` |
 | **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)**<br><sub>📱 手機驗證 · [🔑&nbsp;金鑰](https://build.nvidia.com/explore/discover)</sub> | `https://integrate.api.nvidia.com/v1` |
@@ -476,4 +476,4 @@ MIT — 詳見 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-23<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-24<!--LASTSYNC:END--></sub></p>
