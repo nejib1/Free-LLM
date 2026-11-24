@@ -15,6 +15,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 - `CHANGELOG.md`, `SECURITY.md`, `SUPPORT.md` and a code of conduct.
 
+### Fixed
+
+- `auto:reasoning` now recognizes MiniMax-M3.1-Flash across its catalog IDs (#40, thanks @octo-patch). Always-thinking models without a keyword in their id now go in one `ALWAYS_THINKING` list.
+
 ### Documentation
 
 - A requested model or `provider/model` is a preference: with `fallback_to_auto` on (the default) another free model may answer. Thanks to the Open Agent API test in discussion #39.
