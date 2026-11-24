@@ -164,7 +164,9 @@ Send one of these as the **model name**:
 | `auto:spread` | rotate across providers to stretch free quotas |
 | `auto:fusion` | asks **3 different models**, then merges the best answer |
 | `deepseek-v4-flash` | that model, on whichever provider serves it for free (falls back to `auto`) |
-| `groq-cloud/openai/gpt-oss-120b` | exactly this provider + model |
+| `groq-cloud/openai/gpt-oss-120b` | this provider + model first (falls back to `auto`) |
+
+A specific model or `provider/model` is a **preference, not a guarantee**: if it is rate-limited, down or fails before any text is sent, the router answers with another free model so your app keeps working. The dashboard’s *Recent requests* table shows which model actually answered (“Answered by”). To get an error instead of a substitute, turn off *“If the exact model asked for is unavailable, use another free model”* in Settings (`"fallback_to_auto": false` in `~/.free-llm/config.json`). As with any streaming API, check the final event (`response.completed` or `response.failed`), not only the HTTP 200 that opens the stream.
 
 Unknown names (`claude-sonnet-4-5`, `gpt-5-codex`…) are mapped to a sensible profile, so tools work out of the box. You can change the mapping in Settings.
 

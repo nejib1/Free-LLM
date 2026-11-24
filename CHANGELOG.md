@@ -15,6 +15,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 - `CHANGELOG.md`, `SECURITY.md`, `SUPPORT.md` and a code of conduct.
 
+### Documentation
+
+- A requested model or `provider/model` is a preference: with `fallback_to_auto` on (the default) another free model may answer. Thanks to the Open Agent API test in discussion #39.
+
 ## [1.0.2] - 2026-11-23
 
 ### Changed
