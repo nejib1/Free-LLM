@@ -8,6 +8,11 @@ Which LLM APIs and models became free, and which stopped being free. This file i
 
 ## November 2026
 
+### November 25, 2026
+
+- ⛔ **[IteraCompute](https://free-llm.com/provider/iteracompute)** — free tier ended  
+  <sub>The free promotion has ended: the official page now says so, and Qwen3.8-27B has been retired.</sub>
+
 ### November 23, 2026
 
 - ➖ **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)** — no longer free: Dots3-Note Preview, Cohere North Mini Code  
@@ -352,12 +357,6 @@ Which LLM APIs and models became free, and which stopped being free. This file i
 - ➕ **[AI21 Labs](https://free-llm.com/provider/ai21-labs)** — free models added: Jamba Mini, Jamba Large
 - ➕ **[Groq](https://free-llm.com/provider/groq-cloud)** — free models added: MiniMax M2.7, Qwen3.6 27B
 - ➕ **[Together.AI](https://free-llm.com/provider/together-ai)** — free models added: PrismML Ternary Bonsai 27B (Free)
-
-## July 2026
-
-### July 27, 2026
-
-- ➕ **[Inference.net](https://free-llm.com/provider/inference-net)** — free models added: DeepSeek-R1, Llama 3.1 8B Instruct, Llama 3.1 70B Instruct
 
 ---
 
