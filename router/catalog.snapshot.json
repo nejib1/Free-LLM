@@ -4,10 +4,10 @@
     "source": "https://free-llm.com",
     "license": "MIT",
     "schema_version": 2,
-    "generated_at": "2026-11-24T04:00:04+01:00",
-    "updated_at": "2026-11-23T02:08:53+01:00",
-    "provider_count": 88,
-    "model_count": 460,
+    "generated_at": "2026-11-25T03:51:42+01:00",
+    "updated_at": "2026-11-25T00:38:57+01:00",
+    "provider_count": 87,
+    "model_count": 458,
     "providers": [
         {
             "slug": "agnes-ai",
@@ -2300,47 +2300,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 200000
-                }
-            ]
-        },
-        {
-            "slug": "iteracompute",
-            "name": "IteraCompute",
-            "type": "API",
-            "url": "https://free-llm.com/provider/iteracompute",
-            "website": "https://iteracompute.com/free/",
-            "base_url": "https://api.iteracompute.com/v1",
-            "free_tier": "trial_credits",
-            "category": "trial_credit",
-            "signup_requirement": "registration",
-            "verified": true,
-            "rate_limit": "160K tokens/minute (fair use, may queue); 128K context, 8K output",
-            "daily_limit": "No daily cap; 30M tokens per month until the promotion ends",
-            "credits": "30M tokens/month on Qwen3.8-27B (promotion, no card)",
-            "credits_duration": "Until Nov 24, 2026 00:00 PT",
-            "openai_compatible": true,
-            "openai_base_url": "https://api.iteracompute.com/v1",
-            "needs": [],
-            "anonymous_key": null,
-            "key_help_url": "https://free-llm.com/provider/iteracompute",
-            "models": [
-                {
-                    "id": "qwen/qwen3.8-27b",
-                    "name": "Qwen3.8 27B",
-                    "context": "128K",
-                    "key": "qwen3.8-27b",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
-                },
-                {
-                    "id": "Auto",
-                    "name": "Auto",
-                    "context": "128K",
-                    "key": "auto",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": 128000
                 }
             ]
         },
