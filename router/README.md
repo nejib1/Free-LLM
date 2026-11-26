@@ -259,4 +259,25 @@ Environment: `FREE_LLM_HOME`, `FREE_LLM_PORT`, `FREE_LLM_HOST`, `FREE_LLM_API_KE
 
 The catalog format is public: [free-llm.com/catalog.json](https://free-llm.com/catalog.json). Found a new free provider or a wrong limit? [Submit it on free-llm.com](https://free-llm.com/submit) — once checked, it reaches every router the same day.
 
-Contributions welcome — see [CONTRIBUTING.md](../CONTRIBUTING.md).
+---
+
+## 🙌 Help build the router
+
+The router is small (plain Node.js, no dependencies, no build step) and easy to get into: clone, `npm test`, and you have a working copy with a mock provider, no API key needed.
+
+**Good places to start**
+- 🟢 [`good first issue`](https://github.com/nejib1/Free-LLM/labels/good%20first%20issue): small, well-scoped tasks with pointers to the code
+- 🙋 [`help wanted`](https://github.com/nejib1/Free-LLM/labels/help%20wanted): bigger pieces we'd love a hand with
+- 🧩 A setup recipe for your favourite tool, a provider quirk you hit, a dashboard improvement, a translation, a test for an untested file: all welcome, no need to ask first for small things
+
+**What you get:** your name and avatar below and in [CONTRIBUTORS.md](../CONTRIBUTORS.md), a mention in the [release notes](../CHANGELOG.md) of the version that ships your change, and your commits kept under your name when the pull request is merged.
+
+### Router contributors
+
+<!--ROUTERCONTRIB:START-->
+<table>
+  <tr><td align="center" valign="top" width="14%"><a href="https://github.com/octo-patch"><img src="https://avatars.githubusercontent.com/u/266937838?v=4&s=80" width="64" height="64" alt="octo-patch"><br><sub><b>octo-patch</b></sub></a><br><sub title="MiniMax-M3.1-Flash in auto:reasoning routes, with a regression test">⚡ Router <a href="https://github.com/nejib1/Free-LLM/issues/40">#40</a></sub></td></tr>
+</table>
+<!--ROUTERCONTRIB:END-->
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md#5-improve-free-llm-router) for the details.
