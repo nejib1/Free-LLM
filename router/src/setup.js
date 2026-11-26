@@ -15,6 +15,24 @@ export function urls(cfg) {
   return { root, v1: `${root}/v1`, key: cfg.api_key };
 }
 
+/**
+ * When the router runs on a machine reached over SSH and listens on localhost only,
+ * the dashboard can't be opened from the user's own computer. Returns the ssh tunnel
+ * command to run there (or null when it doesn't apply).
+ */
+export function sshTunnelHint(cfg, env = process.env, user = os.userInfo().username) {
+  const conn = String(env.SSH_CONNECTION || '').trim().split(/\s+/);
+  if (conn.length < 4 && !env.SSH_CLIENT) return null;
+  if (!['127.0.0.1', 'localhost', '::1'].includes(cfg.host)) return null; // already reachable (--host 0.0.0.0)
+  const server = conn.length >= 4 ? conn[2] : os.hostname();
+  const sshPort = conn.length >= 4 ? conn[3] : '22';
+  const target = `${user}@${server.includes(':') ? server.replace(/%.*$/, '') : server}`;
+  return {
+    command: `ssh -L ${cfg.port}:127.0.0.1:${cfg.port}${sshPort && sshPort !== '22' ? ` -p ${sshPort}` : ''} ${target}`,
+    url: `http://localhost:${cfg.port}`,
+  };
+}
+
 function readJson(file) {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { return null; }
 }

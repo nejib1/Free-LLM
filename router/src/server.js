@@ -14,7 +14,7 @@ import { handleResponses, handleGetResponse } from './adapters/responses.js';
 import { handleOllama } from './adapters/ollama.js';
 import { handleMcp } from './mcp.js';
 import { testKey } from './upstream.js';
-import { snippets, urls } from './setup.js';
+import { snippets, urls, sshTunnelHint } from './setup.js';
 import { readJson, sendJson, HttpError, VERSION, uid } from './util.js';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -384,5 +384,14 @@ function printBanner(cfg) {
     '  Use it with:  free-llm setup claude | codex | opencode | aider   (or see the dashboard → Connect)',
     '',
   ];
+  const tunnel = sshTunnelHint(cfg);
+  if (tunnel) {
+    lines.push(
+      '  Over SSH?    the dashboard only answers on this machine. On your own computer, run:',
+      `              ${tunnel.command}`,
+      `              then open ${tunnel.url}   (or share it on your network: free-llm start --host 0.0.0.0)`,
+      '',
+    );
+  }
   console.log(lines.join('\n'));
 }

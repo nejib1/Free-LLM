@@ -11,6 +11,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+### Added
+
+- When the router is started in an SSH session and listens on localhost only, the startup message prints the `ssh -L` command to run on your own computer to open the dashboard.
+
 ## [1.1.0] - 2026-11-26
 
 ### Added

@@ -385,3 +385,15 @@ test('cli: --json prints only JSON for status, models and providers', async () =
   assert.equal(alpha.has_key, true);
   assert.equal(alpha.chat_models, MODELS.length);
 });
+
+test('ssh tunnel hint: shown over SSH on localhost only, with the right port and user', async () => {
+  const { sshTunnelHint } = await import('../src/setup.js');
+  const cfg = { host: '127.0.0.1', port: 4000 };
+  assert.equal(sshTunnelHint(cfg, {}, 'me'), null, 'no SSH session: no hint');
+  const h = sshTunnelHint(cfg, { SSH_CONNECTION: '192.168.1.20 51022 192.168.1.171 22' }, 'root');
+  assert.equal(h.command, 'ssh -L 4000:127.0.0.1:4000 root@192.168.1.171');
+  assert.equal(h.url, 'http://localhost:4000');
+  assert.equal(sshTunnelHint({ host: '127.0.0.1', port: 4100 }, { SSH_CONNECTION: '10.0.0.2 5000 10.0.0.9 2222' }, 'ana').command,
+    'ssh -L 4100:127.0.0.1:4100 -p 2222 ana@10.0.0.9');
+  assert.equal(sshTunnelHint({ host: '0.0.0.0', port: 4000 }, { SSH_CONNECTION: '1.1.1.1 1 2.2.2.2 22' }, 'x'), null, 'already shared on the network');
+});

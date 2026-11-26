@@ -232,7 +232,9 @@ free-llm update              refresh the catalog now
 
 **What leaves my computer?** Your requests (to the provider that answers them) and one download of the public catalog every few hours. Nothing else: no telemetry, no account.
 
-**Can I share it on my network / a server?** `free-llm start --host 0.0.0.0` — every request then needs the router key. Needed for Cursor, which calls custom endpoints from its own servers.
+**Installed it on a server or a machine you reach over SSH?** The dashboard only answers on that machine by default. Open a tunnel from your own computer, `ssh -L 4000:127.0.0.1:4000 you@server`, then browse to http://localhost:4000 (the router prints this command for you when it starts in an SSH session).
+
+**Can I share it on my network / a server?** `free-llm start --host 0.0.0.0` — every request then needs the router key, and the dashboard asks for it. Needed for Cursor, which calls custom endpoints from its own servers.
 
 **Terms of service?** Each provider's free plan has its own rules (personal use, rate limits, data use). The router only uses *your* keys at *your* request — read the terms of the providers you sign up for. Don't use it to dodge limits on a single account with fake identities.
 
