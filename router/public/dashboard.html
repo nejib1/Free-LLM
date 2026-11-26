@@ -4,92 +4,244 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Free-LLM Router</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230ea5e9'/%3E%3Cpath d='M18 4 8 18h7l-2 10 11-15h-7z' fill='white'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2306b6d4'/%3E%3Cstop offset='1' stop-color='%234f46e5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cpath d='M18 5 9 18h6l-2 9 10-14h-6z' fill='white'/%3E%3C/svg%3E">
 <style>
-:root{--bg:#f6f7fb;--panel:#fff;--panel2:#f1f4f9;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--brand:#0ea5e9;--brand2:#6366f1;--ok:#16a34a;--warn:#d97706;--bad:#dc2626;--chip:#eef2ff;--shadow:0 1px 2px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.05);--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1020;--panel:#121a2e;--panel2:#18223a;--text:#e5e9f2;--muted:#94a3b8;--line:#243049;--chip:#1e2a48;--shadow:none}}
-:root[data-theme=dark]{--bg:#0b1020;--panel:#121a2e;--panel2:#18223a;--text:#e5e9f2;--muted:#94a3b8;--line:#243049;--chip:#1e2a48;--shadow:none}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:var(--brand)}button,input,select,textarea{font:inherit;color:inherit}
-.app{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:100vh}
-nav{background:var(--panel);border-right:1px solid var(--line);padding:18px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;padding:4px 8px 16px}
-.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#fff;font-style:normal}
-nav a{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:9px;color:var(--text);text-decoration:none;font-weight:550}
-nav a:hover{background:var(--panel2)}nav a.on{background:var(--chip);color:var(--brand2)}
-nav .sp{flex:1}nav small{color:var(--muted);padding:0 10px}
-main{padding:28px clamp(16px,3vw,40px);max-width:1180px;width:100%;min-width:0}
-h1{font-size:26px;margin:0 0 4px}h2{font-size:18px;margin:0 0 12px}.sub{color:var(--muted);margin:0 0 22px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
-.grid{display:grid;gap:14px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
-.kpi b{display:block;font-size:26px;letter-spacing:-.02em}.kpi span{color:var(--muted);font-size:13px}
-.btn{text-decoration:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:8px 13px;cursor:pointer;font-weight:600}
-.btn:hover{border-color:var(--brand)}.btn.p{background:var(--brand);border-color:var(--brand);color:#fff}.btn.p:hover{filter:brightness(1.07)}
-.btn.s{padding:5px 10px;font-size:13px}.btn.d{color:var(--bad)}
-input[type=text],input[type=password],input[type=number],select,textarea{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:8px 11px;width:100%}
-textarea{font-family:var(--mono);font-size:13px}
-input:focus,select:focus,textarea:focus{outline:2px solid color-mix(in srgb,var(--brand) 40%,transparent);border-color:var(--brand)}
+:root{
+  --bg:#f6f7f9;--panel:#fff;--panel2:#f3f4f7;--hover:#f0f2f6;--text:#0d1424;--text2:#344054;--muted:#667085;--line:#e6e8ee;--line2:#d9dce4;
+  --accent:#4f46e5;--accent2:#06b6d4;--accentsoft:#eef0ff;--ok:#12a150;--oksoft:#e8f7ee;--warn:#c47a06;--warnsoft:#fdf4e3;--bad:#d92d20;--badsoft:#fdecea;
+  --shadow:0 1px 2px rgba(16,24,40,.05);--shadow2:0 1px 3px rgba(16,24,40,.06),0 8px 24px -12px rgba(16,24,40,.12);
+  --code:#0f1729;--codetext:#e2e8f0;--r:12px;--mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0d14;--panel:#10141d;--panel2:#161b26;--hover:#181e2a;--text:#eef1f6;--text2:#c6ccd8;--muted:#8a93a6;--line:#1f2633;--line2:#2a3242;--accentsoft:#1c1f3d;--oksoft:#0f2a1c;--warnsoft:#2b2210;--badsoft:#2d1414;--shadow:none;--shadow2:0 8px 28px -14px rgba(0,0,0,.6);--code:#0b0f17;--accent:#7c74ff}}
+:root[data-theme=dark]{--bg:#0a0d14;--panel:#10141d;--panel2:#161b26;--hover:#181e2a;--text:#eef1f6;--text2:#c6ccd8;--muted:#8a93a6;--line:#1f2633;--line2:#2a3242;--accentsoft:#1c1f3d;--oksoft:#0f2a1c;--warnsoft:#2b2210;--badsoft:#2d1414;--shadow:none;--shadow2:0 8px 28px -14px rgba(0,0,0,.6);--code:#0b0f17;--accent:#7c74ff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:14.5px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+button,input,select,textarea{font:inherit;color:inherit}
+svg.i{width:16px;height:16px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.app{display:grid;grid-template-columns:252px minmax(0,1fr);min-height:100vh}
+
+/* sidebar */
+nav{background:var(--panel);border-right:1px solid var(--line);padding:18px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:2px;overflow-y:auto}
+.logo{display:flex;align-items:center;gap:11px;padding:2px 8px 18px}
+.logo .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent2),var(--accent));display:grid;place-items:center;color:#fff;box-shadow:0 6px 16px -6px color-mix(in srgb,var(--accent) 70%,transparent)}
+.logo .mark svg{width:18px;height:18px;fill:#fff;stroke:none}
+.logo b{display:block;font-size:15px;letter-spacing:-.01em}.logo small{display:block;color:var(--muted);font-size:12px;margin-top:-2px}
+.navlabel{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);padding:14px 10px 6px}
+nav a.nl{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:9px;color:var(--text2);font-weight:550;position:relative}
+nav a.nl:hover{background:var(--hover);text-decoration:none}
+nav a.nl.on{background:var(--accentsoft);color:var(--accent)}
+nav a.nl.on:before{content:"";position:absolute;left:-14px;top:8px;bottom:8px;width:3px;border-radius:0 3px 3px 0;background:var(--accent)}
+nav .count{margin-left:auto;font-size:11px;font-weight:700;background:var(--panel2);color:var(--muted);border-radius:99px;padding:1px 7px}
+nav a.nl.on .count{background:var(--panel);color:var(--accent)}
+nav .sp{flex:1;min-height:16px}
+.status{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:var(--panel2);font-size:12.5px}
+.status .top{display:flex;align-items:center;gap:8px;font-weight:650;color:var(--text)}
+.status .addr{color:var(--muted);font-family:var(--mono);font-size:11.5px;margin-top:3px;word-break:break-all}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.navfoot{display:flex;gap:6px;margin-top:10px}
+.iconbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--text2);cursor:pointer}
+.iconbtn:hover{background:var(--hover);text-decoration:none}
+.navfoot .grow{display:flex;align-items:center;gap:7px;padding:0 10px;border:1px solid var(--line);border-radius:9px;color:var(--text2);font-weight:550;font-size:13px}
+.navfoot .grow:hover{background:var(--hover);text-decoration:none}
+
+/* layout */
+main{padding:30px clamp(16px,3.4vw,44px) 60px;max-width:1200px;width:100%;min-width:0}
+.ph{display:flex;align-items:flex-end;gap:16px;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px}
+.ph h1{font-size:24px;line-height:1.25;margin:0;letter-spacing:-.02em}.ph p{color:var(--muted);margin:5px 0 0;max-width:720px}
+h2{font-size:15.5px;margin:0;letter-spacing:-.01em}h3{font-size:14.5px;margin:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.cb{padding:18px 20px}.ch{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 20px;border-bottom:1px solid var(--line)}
+.ch p{margin:2px 0 0;color:var(--muted);font-size:13px}
+.grid{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g32{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
+.mt{margin-top:16px}.mb{margin-bottom:16px}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.row>*{min-width:0}.grow{flex:1}
-.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:2px 9px;border-radius:99px;background:var(--chip);color:var(--muted);font-weight:600;white-space:nowrap}
-.chip.ok{background:color-mix(in srgb,var(--ok) 14%,transparent);color:var(--ok)}.chip.warn{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}.chip.bad{background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad)}
-.dot{width:9px;height:9px;border-radius:50%;display:inline-block;background:var(--muted)}.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}
-table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:8px;border-bottom:1px solid var(--line)}
-td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}tr:last-child td{border-bottom:0}
+.muted{color:var(--muted)}.small{font-size:13px}.xs{font-size:12px}.hide{display:none!important}
+code,.mono{font-family:var(--mono);font-size:12.5px}
+:not(pre)>code{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+
+/* controls */
+.btn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line2);background:var(--panel);border-radius:9px;padding:8px 14px;cursor:pointer;font-weight:600;font-size:13.5px;color:var(--text);white-space:nowrap;box-shadow:var(--shadow);transition:background .15s,border-color .15s}
+.btn:hover{background:var(--hover);text-decoration:none}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 1px 2px rgba(16,24,40,.08),0 4px 12px -4px color-mix(in srgb,var(--accent) 55%,transparent)}
+.btn.p:hover{filter:brightness(1.08)}
+.btn.s{padding:5px 10px;font-size:12.5px;border-radius:8px}.btn.d{color:var(--bad)}.btn.ghost{border-color:transparent;box-shadow:none;background:transparent}.btn.ghost:hover{background:var(--hover)}
+.btn[disabled]{opacity:.6;cursor:default}
+input[type=text],input[type=password],input[type=number],select,textarea{background:var(--panel);border:1px solid var(--line2);border-radius:9px;padding:8px 12px;width:100%;transition:border-color .15s,box-shadow .15s}
+input::placeholder,textarea::placeholder{color:color-mix(in srgb,var(--muted) 80%,transparent)}
+textarea{font-family:var(--mono);font-size:12.5px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.search{position:relative}.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}.search input{padding-left:34px}
+.field{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel2);border-radius:9px;padding:4px 4px 4px 12px}
+.field code{flex:1;background:none;border:0;padding:0;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin:0 0 5px;text-transform:uppercase;letter-spacing:.05em}
+.switch{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer}.switch:last-of-type{border-bottom:0}
+.switch input{appearance:none;flex:none;width:36px;height:20px;border-radius:99px;background:var(--line2);position:relative;cursor:pointer;margin:1px 0 0;transition:background .15s}
+.switch input:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2);transition:left .15s}
+.switch input:checked{background:var(--accent)}.switch input:checked:after{left:18px}
+.switch b{display:block;font-weight:600;font-size:13.5px}.switch span{color:var(--muted);font-size:12.5px}
+.numrow{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}.numrow:last-child{border:0}.numrow input{width:84px;text-align:right}
+
+/* chips, dots */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;padding:2px 8px;border-radius:99px;background:var(--panel2);color:var(--text2);font-weight:600;white-space:nowrap;border:1px solid var(--line)}
+.chip.ok{background:var(--oksoft);color:var(--ok);border-color:transparent}.chip.warn{background:var(--warnsoft);color:var(--warn);border-color:transparent}.chip.bad{background:var(--badsoft);color:var(--bad);border-color:transparent}.chip.ac{background:var(--accentsoft);color:var(--accent);border-color:transparent}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--line2);flex:none}.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}
+
+/* home */
+.hero{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--panel);box-shadow:var(--shadow2)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(600px 220px at 0% 0%,color-mix(in srgb,var(--accent2) 14%,transparent),transparent 70%),radial-gradient(500px 240px at 100% 0%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 70%);pointer-events:none}
+.hero .in{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;padding:24px 26px}
+.hero h2{font-size:20px;letter-spacing:-.02em;margin:10px 0 6px}.hero p{color:var(--text2);margin:0}
+.live{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:650;color:var(--ok);background:var(--oksoft);padding:3px 10px;border-radius:99px}
+.conn{display:grid;gap:10px;min-width:0}.conn>div{min-width:0}.field{min-width:0}
+.kpi{padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.kpi .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--accentsoft);color:var(--accent);flex:none}
+.kpi .ic svg{width:18px;height:18px}
+.kpi b{display:block;font-size:22px;line-height:1.2;letter-spacing:-.02em}.kpi span{color:var(--muted);font-size:12.5px}
+.check{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:flex-start}.check:last-child{border:0;padding-bottom:0}
+.check .n{width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:12px;font-weight:700;border:1.5px solid var(--line2);color:var(--muted)}
+.check.done .n{background:var(--ok);border-color:var(--ok);color:#fff}.check.done b{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line2)}
+.check b{display:block;font-size:13.5px}.check span{color:var(--muted);font-size:12.5px}
+.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.how div{padding:14px;border:1px solid var(--line);border-radius:11px;background:var(--panel2)}
+.how i{font-style:normal;display:inline-grid;place-items:center;width:22px;height:22px;border-radius:7px;background:var(--accent);color:#fff;font-size:12px;font-weight:700;margin-bottom:8px}
+.how p{margin:0;font-size:13px;color:var(--text2)}
+.svgchart{width:100%;height:150px;display:block}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:8px}
+
+/* keys */
+.trust{display:flex;gap:12px;align-items:flex-start;padding:13px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--ok) 28%,var(--line));background:color-mix(in srgb,var(--ok) 6%,var(--panel));margin-bottom:16px}
+.trust>svg{color:var(--ok);width:20px;height:20px;margin-top:1px}
+.trust b{color:var(--text)}.trust p{margin:0;color:var(--text2);font-size:13px}
+.trust details{margin-top:4px;font-size:13px}.trust summary{cursor:pointer;color:var(--ok);font-weight:600}.trust ul{margin:8px 0 0;padding-left:18px;color:var(--text2)}.trust li{margin:3px 0}
+.prov{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;padding:16px 20px;border-bottom:1px solid var(--line)}.prov:last-child{border:0}
+.av{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-weight:750;font-size:14px;color:#fff;flex:none}
+.prov h3{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.prov .meta{margin:2px 0 0;color:var(--muted);font-size:12.5px}
+.keyline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px;font-size:12.5px;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--panel2)}
+.keyrow{display:flex;gap:8px;margin-top:10px}.keyrow input{flex:1}
+.acts{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.sec{font-size:12px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:22px 0 8px}
+
+/* connect */
+.tool{display:flex;flex-direction:column}.tool .ch{border:0;padding-bottom:6px}
+pre{background:var(--code);color:var(--codetext);border-radius:10px;padding:14px 16px;overflow:auto;font-size:12.5px;margin:0;white-space:pre-wrap;word-break:break-word;line-height:1.6}
+.copy{position:relative;margin:0 20px 18px}.copy pre{padding-top:44px}.copy .btn{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);color:#e2e8f0;box-shadow:none}
+.copy .btn:hover{background:rgba(255,255,255,.16)}
+.cmd{display:flex;align-items:center;gap:10px;background:var(--code);color:var(--codetext);border-radius:10px;padding:10px 10px 10px 14px;font-family:var(--mono);font-size:13px}
+.cmd span{flex:1;overflow:auto;white-space:nowrap}.cmd .btn{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);color:#e2e8f0;box-shadow:none}
+
+/* tables */
 .tw{overflow-x:auto}
-code,.mono{font-family:var(--mono);font-size:13px}
-pre{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px;overflow:auto;font-size:12.5px;margin:0;white-space:pre-wrap;word-break:break-word}
-.copy{position:relative}.copy .btn{position:absolute;top:8px;right:8px}
-.banner{border-radius:14px;padding:18px 20px;background:linear-gradient(135deg,color-mix(in srgb,var(--brand) 14%,var(--panel)),color-mix(in srgb,var(--brand2) 12%,var(--panel)));border:1px solid var(--line);margin-bottom:18px}
-  .trust{border-radius:14px;padding:16px 18px;margin-bottom:14px;border:1px solid color-mix(in srgb,var(--ok) 35%,var(--line));background:color-mix(in srgb,var(--ok) 9%,var(--panel))}
-.trust h2{margin:0 0 8px;color:var(--ok)}.trust ul{margin:0;padding-left:20px}.trust li{margin:3px 0}.trust small{color:var(--muted)}
-.banner.warn{background:color-mix(in srgb,var(--warn) 12%,var(--panel))}
-.flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0}.flow div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-weight:600}.flow span{color:var(--muted)}
-.bar{height:6px;border-radius:9px;background:var(--panel2);overflow:hidden;min-width:60px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand2))}
-.prov{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.prov:last-child{border:0}
-.prov h3{margin:0;font-size:15px}.prov p{margin:2px 0 0;color:var(--muted);font-size:13px}
-.keyrow{display:flex;gap:8px;margin-top:8px}.keyrow input{flex:1}
-.msg{white-space:pre-wrap;padding:10px 13px;border-radius:12px;margin:8px 0;max-width:85%}.msg.u{background:var(--brand);color:#fff;margin-left:auto}.msg.a{background:var(--panel2)}
-.msg small{display:block;color:var(--muted);font-size:11px;margin-top:6px}
-.chat{height:52vh;overflow:auto;padding:4px}
-.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;opacity:0;transition:.25s;pointer-events:none;z-index:9}.toast.on{opacity:1}
-.opt{border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;display:block}.opt:has(input:checked){border-color:var(--brand);background:var(--chip)}.opt input{margin-right:6px}.opt p{margin:4px 0 0;color:var(--muted);font-size:13px}
-.svgchart{width:100%;height:140px}.muted{color:var(--muted)}.hide{display:none!important}
-.steps{counter-reset:s;display:grid;gap:10px;margin:0;padding:0;list-style:none}.steps li{counter-increment:s;display:flex;gap:10px}.steps li:before{content:counter(s);width:24px;height:24px;flex:none;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700}
-@media (max-width:900px){.app{grid-template-columns:minmax(0,1fr)}nav{position:static;height:auto;flex-direction:row;overflow-x:auto;padding:10px;border-right:0;border-bottom:1px solid var(--line)}nav .logo,nav .sp,nav small{display:none}nav a{white-space:nowrap}.g4{grid-template-columns:repeat(2,1fr)}.g3,.g2{grid-template-columns:1fr}.prov{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel2);white-space:nowrap}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:middle}tr:last-child td{border-bottom:0}tbody tr:hover td{background:color-mix(in srgb,var(--hover) 60%,transparent)}
+.bar{height:6px;border-radius:9px;background:var(--panel2);overflow:hidden;width:90px;border:1px solid var(--line)}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent))}
+.empty{padding:34px 20px;text-align:center;color:var(--muted)}.empty svg{width:28px;height:28px;color:var(--line2);margin-bottom:6px}
+
+/* chat */
+.chatwrap{display:flex;flex-direction:column;height:calc(100vh - 190px);min-height:420px}
+.chat{flex:1;overflow:auto;padding:20px}
+.msg{display:flex;gap:10px;margin:0 0 16px;max-width:860px}.msg .bub{white-space:pre-wrap;padding:10px 14px;border-radius:14px;line-height:1.6;min-width:0;word-wrap:break-word}
+.msg.u{margin-left:auto;flex-direction:row-reverse}.msg.u .bub{background:var(--accent);color:#fff;border-bottom-right-radius:4px}
+.msg.a .bub{background:var(--panel2);border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg .who{width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent2),var(--accent));color:#fff}.msg .who svg{width:14px;height:14px;fill:#fff;stroke:none}
+.msg.u .who{background:var(--panel2);color:var(--muted);border:1px solid var(--line)}
+.msg small{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11.5px;margin-top:6px}
+.composer{border-top:1px solid var(--line);padding:12px;display:flex;gap:10px;align-items:flex-end}
+.composer textarea{font-family:inherit;font-size:14.5px;min-height:44px;max-height:180px}
+.sugg{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.sugg button{border:1px solid var(--line2);background:var(--panel);border-radius:99px;padding:6px 13px;font-size:13px;cursor:pointer;color:var(--text2)}.sugg button:hover{border-color:var(--accent);color:var(--accent)}
+
+/* settings */
+.opts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.opt{border:1px solid var(--line2);border-radius:11px;padding:12px 14px;cursor:pointer;display:block;transition:border-color .15s,background .15s;position:relative}
+.opt:hover{border-color:var(--accent)}.opt:has(input:checked){border-color:var(--accent);background:var(--accentsoft);box-shadow:0 0 0 1px var(--accent) inset}
+.opt input{position:absolute;opacity:0}.opt b{font-size:13.5px}.opt p{margin:3px 0 0;color:var(--muted);font-size:12.5px}
+.savebar{position:sticky;bottom:0;margin-top:18px;padding:12px 0;background:linear-gradient(to top,var(--bg) 70%,transparent);display:flex;gap:10px;align-items:center}
+
+/* misc */
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(8px);background:var(--text);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:13.5px;opacity:0;transition:.2s;pointer-events:none;z-index:9;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}.toast.on{opacity:1;transform:translateX(-50%)}
+.loginwrap{min-height:70vh;display:grid;place-items:center}.login{width:min(440px,100%);padding:28px}
+.skel{height:14px;border-radius:6px;background:linear-gradient(90deg,var(--panel2),var(--hover),var(--panel2));background-size:200% 100%;animation:sk 1.2s infinite}@keyframes sk{to{background-position:-200% 0}}
+@media (max-width:1150px){.opts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1050px){.hero .in{grid-template-columns:minmax(0,1fr)}.g32{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.opts{grid-template-columns:minmax(0,1fr)}.field .xs{display:none}.hero .in{padding:20px 18px}}
+@media (max-width:900px){.app{grid-template-columns:minmax(0,1fr)}nav{position:sticky;z-index:5;height:auto;flex-direction:row;align-items:center;overflow-x:auto;padding:8px 10px;border-right:0;border-bottom:1px solid var(--line);gap:4px}
+  nav .logo{padding:0 8px 0 2px}nav .logo div,nav .navlabel,nav .sp,nav .status,nav .navfoot .grow{display:none}nav a.nl{white-space:nowrap}nav a.nl.on:before{display:none}nav .navfoot{margin:0}
+  .g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3,.g2,.how{grid-template-columns:minmax(0,1fr)}.prov{grid-template-columns:auto minmax(0,1fr)}.prov .acts{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:flex-start}.chatwrap{height:70vh}}
 </style>
 </head>
 <body>
 <div class="app">
 <nav>
-  <div class="logo"><i>⚡</i> Free-LLM Router</div>
-  <a href="#home" data-p="home">🏠 Home</a>
-  <a href="#keys" data-p="keys">🔑 Free keys</a>
-  <a href="#connect" data-p="connect">🔌 Connect your tools</a>
-  <a href="#playground" data-p="playground">💬 Try it</a>
-  <a href="#models" data-p="models">🧠 Models</a>
-  <a href="#activity" data-p="activity">📈 Activity</a>
-  <a href="#settings" data-p="settings">⚙️ Settings</a>
+  <div class="logo"><span class="mark"><svg viewBox="0 0 24 24"><path d="M13.5 2 4 14h7l-1.5 8L19 10h-7z"/></svg></span><div><b>Free-LLM Router</b><small>Runs on this computer</small></div></div>
+  <div class="navlabel">Get started</div>
+  <a class="nl" href="#home" data-p="home" data-i="home">Overview</a>
+  <a class="nl" href="#keys" data-p="keys" data-i="key">Free keys<span class="count hide" id="nkeys"></span></a>
+  <a class="nl" href="#connect" data-p="connect" data-i="plug">Connect your tools</a>
+  <div class="navlabel">Use</div>
+  <a class="nl" href="#playground" data-p="playground" data-i="chat">Playground</a>
+  <a class="nl" href="#models" data-p="models" data-i="layers">Models<span class="count hide" id="nmodels"></span></a>
+  <a class="nl" href="#activity" data-p="activity" data-i="activity">Activity</a>
+  <div class="navlabel">Configure</div>
+  <a class="nl" href="#settings" data-p="settings" data-i="sliders">Settings</a>
   <div class="sp"></div>
-  <a href="https://free-llm.com" target="_blank" rel="noopener">🌐 free-llm.com</a>
-  <a href="#" id="theme">🌓 Theme</a>
-  <small id="ver"></small>
+  <div class="status" id="navstatus"><div class="top"><span class="pulse"></span>Router running</div><div class="addr" id="navaddr">—</div></div>
+  <div class="navfoot">
+    <a class="grow" href="https://free-llm.com" target="_blank" rel="noopener" data-i="globe">free-llm.com</a>
+    <a class="iconbtn" href="https://github.com/nejib1/Free-LLM" target="_blank" rel="noopener" title="Source code on GitHub" data-i="code"></a>
+    <a class="iconbtn" href="#" id="theme" title="Light / dark theme" data-i="moon"></a>
+  </div>
 </nav>
 <main id="main"></main>
 </div>
 <div class="toast" id="toast"></div>
-
 <script>
 window.BOOT = __BOOT__;
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fmt = (n) => Number(n || 0).toLocaleString();
 const ms = (v) => v == null ? '—' : v < 1000 ? Math.round(v) + ' ms' : (v / 1000).toFixed(1) + ' s';
-const ago = (t) => { const s = Math.round((Date.now() - new Date(t).getTime()) / 1000); return s < 60 ? s + 's ago' : s < 3600 ? Math.round(s / 60) + ' min ago' : Math.round(s / 3600) + ' h ago'; };
+const ago = (t) => { const s = Math.round((Date.now() - new Date(t).getTime()) / 1000); return s < 60 ? s + 's ago' : s < 3600 ? Math.round(s / 60) + ' min ago' : s < 86400 ? Math.round(s / 3600) + ' h ago' : Math.round(s / 86400) + ' d ago'; };
 let KEY = BOOT.key;
 try { KEY = KEY || localStorage.getItem('fllm_key'); } catch {}
-$('#ver').textContent = 'v' + BOOT.version;
 
-function toast(t) { const el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('on'), 2200); }
+// ---- icons (stroke icons, drawn inline: no network, no build step) ----
+const ICONS = {
+  home: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>',
+  key: '<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.3-9.3"/><path d="m16 6 3 3"/><path d="m13.5 8.5 2 2"/>',
+  plug: '<path d="M9 2v5"/><path d="M15 2v5"/><path d="M6 7h12v4a6 6 0 0 1-12 0z"/><path d="M12 17v5"/>',
+  chat: '<path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+  layers: '<path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/>',
+  activity: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+  sliders: '<path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/>',
+  globe: '<circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19"/><path d="M12 2.5a14.5 14.5 0 0 1 0 19"/><path d="M12 2.5a14.5 14.5 0 0 0 0 19"/>',
+  code: '<path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/>',
+  moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m4.9 19.1 1.4-1.4"/><path d="m17.7 6.3 1.4-1.4"/>',
+  copy: '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+  eye: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  ext: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  zap: '<path d="M13 2 3 14h9l-1 8 10-12h-9z"/>',
+  cpu: '<rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
+  coins: '<circle cx="8" cy="8" r="6"/><path d="M18.1 10.4A6 6 0 1 1 10.3 18"/><path d="M7 6h1v4"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
+  refresh: '<path d="M21 12a9 9 0 1 1-2.6-6.4L21 8"/><path d="M21 3v5h-5"/>',
+  send: '<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>',
+  plus: '<path d="M12 5v14"/><path d="M5 12h14"/>',
+  trash: '<path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  terminal: '<path d="m4 17 6-6-6-6"/><path d="M12 19h8"/>',
+  box: '<path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/>',
+};
+const I = (n, cls = '') => `<svg class="i ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
+const BOLT = '<svg viewBox="0 0 24 24"><path d="M13.5 2 4 14h7l-1.5 8L19 10h-7z"/></svg>';
+document.querySelectorAll('[data-i]').forEach((el) => el.insertAdjacentHTML('afterbegin', I(el.dataset.i)));
+
+function toast(t) { const el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('on'), 2400); }
 async function api(path, opts = {}) {
   const r = await fetch(path, { ...opts, headers: { authorization: 'Bearer ' + KEY, 'content-type': 'application/json', ...(opts.headers || {}) }, body: opts.body ? JSON.stringify(opts.body) : undefined });
   if (r.status === 401) { login(); throw new Error('unauthorized'); }
@@ -97,29 +249,54 @@ async function api(path, opts = {}) {
   if (!r.ok) throw new Error(j.error?.message || j.error || 'HTTP ' + r.status);
   return j;
 }
-function copyText(t) { navigator.clipboard?.writeText(t).then(() => toast('Copied ✓'), () => toast('Select and copy manually')); }
+function copyText(t) { navigator.clipboard?.writeText(t).then(() => toast('Copied to clipboard'), () => toast('Select and copy manually')); }
 document.addEventListener('click', (e) => {
   const c = e.target.closest('[data-copy]');
   if (c) { e.preventDefault(); copyText(c.dataset.copy); }
 });
+const header = (title, sub, actions = '') => `<div class="ph"><div><h1>${title}</h1>${sub ? `<p>${sub}</p>` : ''}</div>${actions ? `<div class="row">${actions}</div>` : ''}</div>`;
+const copyBtn = (v, label = 'Copy') => `<button class="btn s" data-copy="${esc(v)}">${I('copy')}${label}</button>`;
+const avatar = (name) => {
+  let h = 0; for (const ch of String(name)) h = (h * 31 + ch.charCodeAt(0)) % 360;
+  const ini = String(name).replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase() || '?';
+  return `<span class="av" style="background:linear-gradient(135deg,hsl(${h} 70% 52%),hsl(${(h + 40) % 360} 70% 42%))">${esc(ini)}</span>`;
+};
 
 // theme
 (function () {
   let t = null; try { t = localStorage.getItem('fllm_theme'); } catch {}
   if (t) document.documentElement.dataset.theme = t;
+  const isDark = () => (document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+  const paint = () => { $('#theme').innerHTML = I(isDark() ? 'sun' : 'moon'); };
+  paint();
   $('#theme').onclick = (e) => {
     e.preventDefault();
-    const cur = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const next = cur === 'dark' ? 'light' : 'dark';
+    const next = isDark() ? 'light' : 'dark';
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem('fllm_theme', next); } catch {}
+    paint();
   };
 })();
 
 function login() {
-  $('#main').innerHTML = `<h1>Unlock the dashboard</h1><p class="sub">Paste your router key. It is printed when the router starts, and stored in <code>~/.free-llm/config.json</code>.</p>
-  <div class="card row"><input type="password" id="k" class="grow" placeholder="fllm-…"><button class="btn p" id="go">Open</button></div>`;
-  $('#go').onclick = () => { KEY = $('#k').value.trim(); try { localStorage.setItem('fllm_key', KEY); } catch {} route(); };
+  $('#navstatus').classList.add('hide');
+  $('#main').innerHTML = `<div class="loginwrap"><div class="card login">
+    <div class="logo" style="padding:0 0 18px"><span class="mark">${BOLT}</span><div><b>Unlock the dashboard</b><small>Free-LLM Router v${esc(BOOT.version)}</small></div></div>
+    <p class="muted small" style="margin:0 0 16px">This dashboard needs the router key: you opened it from another device, or the key was changed. It is printed when the router starts, and stored in <code>~/.free-llm/config.json</code>.</p>
+    <label class="label" for="k">Router key</label>
+    <div class="row"><input type="password" id="k" class="grow" placeholder="fllm-…" autocomplete="off"><button class="btn p" id="go">Open</button></div></div></div>`;
+  const go = () => { KEY = $('#k').value.trim(); try { localStorage.setItem('fllm_key', KEY); } catch {} $('#navstatus').classList.remove('hide'); route(); };
+  $('#go').onclick = go;
+  $('#k').onkeydown = (e) => { if (e.key === 'Enter') go(); };
+  $('#k').focus();
+}
+
+function navInfo(s) {
+  if (!s) return;
+  $('#navaddr').textContent = (s.root_url || '').replace(/^https?:\/\//, '') + ' · v' + s.version;
+  const nk = $('#nkeys'), nm = $('#nmodels');
+  nk.textContent = s.providers_with_keys; nk.classList.toggle('hide', !s.providers_with_keys);
+  nm.textContent = s.models; nm.classList.toggle('hide', !s.models);
 }
 
 // ---------------- pages ----------------
@@ -129,79 +306,90 @@ let timer = null;
 
 pages.home = async () => {
   const [s, stats] = await Promise.all([api('/admin/api/status'), api('/admin/api/stats?days=7')]);
-  STATUS = s;
+  STATUS = s; navInfo(s);
   const t = s.today;
   const rate = t.requests ? Math.round((t.ok / t.requests) * 100) : null;
-  const banner = s.guest_mode || !s.providers_with_keys ? `
-    <div class="banner warn"><h2 style="margin:0 0 6px">${s.guest_mode ? "You're in guest mode 👋" : 'One step left: add a free key 🔑'}</h2>
-    <p style="margin:0 0 12px">${s.guest_mode ? 'The router already answers with a few no-account free models, but they are slow and limited.' : 'The router is running, but it needs at least one provider key before it can answer.'}
-    <b>Add 2–3 free keys</b> (1 minute each, most without a credit card — they stay on this computer) and you get dozens of fast, strong models — enough for coding agents like Claude Code.</p>
-    <a class="btn p" href="#keys">🔑 Add my first free key</a></div>` : '';
+  const total7 = (stats.days || []).reduce((a, d) => a + (d.requests || 0), 0);
+  const steps = [
+    [s.providers_with_keys > 0, 'Add a free key', 'Gemini, Groq or OpenRouter take a minute, no card needed.', '#keys', 'Add a key'],
+    [total7 > 0, 'Send a first message', 'Check that everything answers, right here in the browser.', '#playground', 'Open the playground'],
+    [total7 > 2, 'Connect your tools', 'Claude Code, Codex, Cursor, Open WebUI… one command or a copy-paste.', '#connect', 'See recipes'],
+  ];
+  const doneAll = steps.every((x) => x[0]);
+  const masked = s.api_key ? s.api_key.slice(0, 9) + '••••••••••••' + s.api_key.slice(-4) : '';
   $('#main').innerHTML = `
-    <h1>Your free AI gateway is running</h1>
-    <p class="sub">One address for all the free AI models. Point any app at it — the router does the rest.</p>
-    ${banner}
-    <p class="muted" style="margin:-8px 0 16px;font-size:13px">🔒 Everything runs on this computer. Your keys and your conversations never go through free-llm.com — requests go straight from here to each provider. <a href="#keys">How your keys are protected</a></p>
-    <div class="grid g4" style="margin-bottom:14px">
-      <div class="card kpi"><b>${fmt(s.models)}</b><span>free models ready</span></div>
-      <div class="card kpi"><b>${fmt(s.providers_with_keys)}</b><span>providers with your keys</span></div>
-      <div class="card kpi"><b>${fmt(t.requests)}</b><span>requests today${rate != null ? ` · ${rate}% first-try` : ''}</span></div>
-      <div class="card kpi"><b>${fmt(t.tokens)}</b><span>free tokens used today</span></div>
-    </div>
-    <div class="grid g2">
-      <div class="card">
-        <h2>How it works</h2>
-        <div class="flow"><div>Your app or agent</div><span>→</span><div style="border-color:var(--brand)">⚡ Router</div><span>→</span><div>Gemini · Groq · OpenRouter · NVIDIA · …</div></div>
-        <ol class="steps" style="margin-top:14px">
-          <li><span>Your app sends a normal OpenAI- or Anthropic-style request to <b>one</b> address.</span></li>
-          <li><span>The router picks the best free model that is up right now (speed, quality, quota left).</span></li>
-          <li><span>If that provider is busy, slow or out of quota, it switches to the next one <b>instantly</b> — your app never sees the error.</span></li>
-        </ol>
-        <p class="muted" style="margin:12px 0 0;font-size:13px">The list of free providers and models updates itself every few hours from <a href="https://free-llm.com" target="_blank" rel="noopener">free-llm.com</a> — same day, no paywall.</p>
+    ${header('Overview', '')}
+    <div class="hero mb"><div class="in">
+      <div>
+        <span class="live"><span class="pulse"></span> Running · v${esc(s.version)}</span>
+        <h2>All your free AI models, behind one address</h2>
+        <p>Point any app or coding agent at the router. It sends each request to a free model that is up right now, and switches instantly when a provider is busy or out of quota.</p>
+        <div class="row mt">
+          <a class="btn p" href="#connect">${I('plug')}Connect a tool</a>
+          <a class="btn" href="#playground">${I('chat')}Try it</a>
+        </div>
+        <p class="xs muted" style="margin-top:14px;display:flex;gap:6px;align-items:center">${I('shield')} Runs on this computer. Keys and conversations never go through free-llm.com.</p>
       </div>
-      <div class="card">
-        <h2>Your connection details</h2>
-        <p class="muted" style="margin-top:-6px">Use these in any app that accepts an OpenAI-compatible API.</p>
-        <label class="muted" style="font-size:13px">Base URL</label>
-        <div class="row" style="margin-bottom:10px"><code class="grow">${esc(s.base_url)}</code><button class="btn s" data-copy="${esc(s.base_url)}">Copy</button></div>
-        <label class="muted" style="font-size:13px">API key</label>
-        <div class="row" style="margin-bottom:10px"><code class="grow" style="word-break:break-all">${esc(s.api_key)}</code><button class="btn s" data-copy="${esc(s.api_key)}">Copy</button></div>
-        <label class="muted" style="font-size:13px">Model</label>
-        <div class="row"><code class="grow">auto</code><span class="muted" style="font-size:13px">or auto:coding · auto:fast · auto:smart</span></div>
-        <div class="row" style="margin-top:14px"><a class="btn p" href="#connect">🔌 Connect Claude Code, Codex, Cursor…</a><a class="btn" href="#playground">💬 Try it</a></div>
+      <div class="conn">
+        <div><span class="label">Base URL (OpenAI-compatible)</span><div class="field"><code>${esc(s.base_url)}</code>${copyBtn(s.base_url)}</div></div>
+        <div><span class="label">API key</span><div class="field"><code id="apikey" data-full="${esc(s.api_key)}" data-shown="">${esc(masked)}</code><button class="btn s ghost" id="reveal" title="Show / hide">${I('eye')}</button>${copyBtn(s.api_key)}</div></div>
+        <div><span class="label">Model</span><div class="field"><code>auto</code><span class="xs muted" style="padding-right:8px">or auto:coding · auto:fast · auto:smart</span></div></div>
       </div>
+    </div></div>
+    ${s.guest_mode || !s.providers_with_keys ? `<div class="trust" style="border-color:color-mix(in srgb,var(--warn) 35%,var(--line));background:color-mix(in srgb,var(--warn) 7%,var(--panel))">${I('key')}<div class="grow"><b>${s.guest_mode ? 'Guest mode: it works, but slowly' : 'One step left: add a free key'}</b>
+      <p>${s.guest_mode ? 'The router is answering with a few no-account models.' : 'The router needs at least one provider key before it can answer.'} Add 2–3 free keys (a minute each, most without a card) to unlock dozens of fast, strong models.</p></div><a class="btn p" href="#keys">Add a key</a></div>` : ''}
+    <div class="grid g4 mb">
+      <div class="card kpi"><span class="ic">${I('layers')}</span><div><b>${fmt(s.models)}</b><span>free models ready</span></div></div>
+      <div class="card kpi"><span class="ic">${I('key')}</span><div><b>${fmt(s.providers_with_keys)}</b><span>providers connected</span></div></div>
+      <div class="card kpi"><span class="ic">${I('activity')}</span><div><b>${fmt(t.requests)}</b><span>requests today${rate != null ? ` · ${rate}% first try` : ''}</span></div></div>
+      <div class="card kpi"><span class="ic">${I('coins')}</span><div><b>${fmt(t.tokens)}</b><span>free tokens today</span></div></div>
     </div>
-    <div class="card" style="margin-top:14px"><h2>Last 7 days</h2>${chart(stats.days)}</div>
-    <p class="muted" style="font-size:13px;margin-top:14px">Catalog: ${fmt(s.catalog.providers)} providers · ${fmt(s.catalog.models)} models · from ${esc(s.catalog.source)} · loaded ${s.catalog.loaded_at ? ago(s.catalog.loaded_at) : '—'}</p>`;
+    <div class="grid ${doneAll ? '' : 'g32'}">
+      <div class="card"><div class="ch"><div><h2>Last 7 days</h2><p>${fmt(total7)} requests</p></div><a class="btn s" href="#activity">View activity</a></div><div class="cb">${chart(stats.days)}</div></div>
+      ${doneAll ? '' : `<div class="card"><div class="ch"><div><h2>Get set up</h2><p>${steps.filter((x) => x[0]).length} of 3 done</p></div></div><div class="cb" style="padding-top:6px">
+        ${steps.map(([done, title, text, href, cta], i) => `<div class="check ${done ? 'done' : ''}"><span class="n">${done ? I('check') : i + 1}</span><div class="grow"><b>${title}</b><span>${text}</span></div>${done ? '' : `<a class="btn s" href="${href}">${cta}</a>`}</div>`).join('')}
+      </div></div>`}
+    </div>
+    <div class="card mt"><div class="ch"><h2>How it works</h2></div><div class="cb"><div class="how">
+      <div><i>1</i><p>Your app sends a normal <b>OpenAI or Anthropic</b> request to one local address.</p></div>
+      <div><i>2</i><p>The router picks the best <b>free model that is up right now</b>: speed, quality and quota left.</p></div>
+      <div><i>3</i><p>If that provider is busy or out of quota, it <b>switches instantly</b>. Your app never sees the error.</p></div>
+    </div></div></div>
+    <p class="xs muted" style="margin-top:14px">Catalog: ${fmt(s.catalog.providers)} providers · ${fmt(s.catalog.models)} models · from ${esc(s.catalog.source)} · updated ${s.catalog.loaded_at ? ago(s.catalog.loaded_at) : '—'}</p>`;
+  $('#reveal').onclick = () => { const k = $('#apikey'); const show = !k.dataset.shown; k.dataset.shown = show ? '1' : ''; k.textContent = show ? k.dataset.full : masked; };
 };
 
 function chart(raw) {
   // always 7 slots, oldest → today
-  const byDay = Object.fromEntries(raw.map((d) => [d.day, d]));
+  const byDay = Object.fromEntries((raw || []).map((d) => [d.day, d]));
   const days = Array.from({ length: 7 }, (_, i) => {
     const k = new Date(Date.now() - (6 - i) * 864e5).toISOString().slice(0, 10);
     return byDay[k] || { day: k, requests: 0, fail: 0 };
   });
-  if (!days.some((d) => d.requests)) return '<p class="muted">No requests yet. Send one from “Try it” or connect a tool.</p>';
+  if (!days.some((d) => d.requests)) return `<div class="empty">${I('activity')}<div>No requests yet. Send one from the playground or connect a tool.</div></div>`;
   const max = Math.max(...days.map((d) => d.requests), 1);
   const w = 100 / days.length;
+  const grid = [25, 50, 75].map((y) => `<line x1="0" x2="100%" y1="${y}%" y2="${y}%" stroke="var(--line)" stroke-dasharray="3 4"></line>`).join('');
   const bars = days.map((d, i) => {
-    const h = (d.requests / max) * 100;
-    const hf = (d.fail / max) * 100;
-    return `<g><title>${esc(d.day)}: ${d.requests} requests (${d.fail} retried)</title>
-      <rect x="${i * w + w * 0.18}%" y="${100 - h}%" width="${w * 0.64}%" height="${h}%" rx="3" fill="var(--brand)"></rect>
-      <rect x="${i * w + w * 0.18}%" y="${100 - hf}%" width="${w * 0.64}%" height="${hf}%" rx="3" fill="var(--warn)"></rect></g>`;
+    const h = Math.max((d.requests / max) * 92, d.requests ? 2 : 0);
+    const hf = (d.fail / max) * 92;
+    return `<g><title>${esc(d.day)}: ${d.requests} requests (${d.fail} switched)</title>
+      <rect x="${i * w + w * 0.26}%" y="${100 - h}%" width="${w * 0.48}%" height="${h}%" rx="4" fill="var(--accent)" opacity=".9"></rect>
+      ${hf ? `<rect x="${i * w + w * 0.26}%" y="${100 - hf}%" width="${w * 0.48}%" height="${hf}%" rx="4" fill="var(--warn)"></rect>` : ''}</g>`;
   }).join('');
-  const labels = days.map((d, i) => `<span style="width:${w}%;text-align:center">${esc(d.day.slice(5))}</span>`).join('');
-  return `<svg class="svgchart" preserveAspectRatio="none">${bars}</svg><div class="row muted" style="gap:0;font-size:12px">${labels}</div>
-    <p class="muted" style="font-size:12px;margin:6px 0 0"><span class="dot" style="background:var(--brand)"></span> requests &nbsp; <span class="dot warn"></span> switched to another provider</p>`;
+  const wd = (k) => new Date(k + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric' });
+  const labels = days.map((d) => `<span style="width:${w}%;text-align:center">${esc(wd(d.day))}<br><b style="color:var(--text2)">${d.requests || ''}</b></span>`).join('');
+  return `<svg class="svgchart" preserveAspectRatio="none">${grid}${bars}</svg><div class="row muted xs" style="gap:0;margin-top:6px;line-height:1.4">${labels}</div>
+    <div class="legend"><span class="row" style="gap:6px"><span class="dot" style="background:var(--accent)"></span>requests</span><span class="row" style="gap:6px"><span class="dot warn"></span>switched to another provider</span></div>`;
 }
 
-const TRUST = `<div class="trust"><h2>🔒 100% local — your keys never leave this computer</h2><ul>
-  <li><b>Stored only here</b>, encrypted (AES-256-GCM) in <code>~/.free-llm</code>. Not on free-llm.com, not in any cloud, no account.</li>
-  <li><b>Each key goes only to its own provider</b> (e.g. your Groq key only to <code>api.groq.com</code>) — and is locked to that address: if it ever changed, the router would refuse to send it.</li>
-  <li><b>No telemetry, no analytics, no tracking.</b> The only other thing the router downloads is the public list of free models — it sends nothing about you.</li>
-  <li><b>Open source</b>: every line is on <a href="https://github.com/nejib1/Free-LLM/tree/main/router" target="_blank" rel="noopener">GitHub</a> — anyone can check.</li></ul></div>`;
+const TRUST = `<div class="trust">${I('shield')}<div class="grow"><b>100% local: your keys never leave this computer</b>
+  <p>Stored encrypted here, sent only to the provider that issued them. No account, no telemetry.</p>
+  <details><summary>How your keys are protected</summary><ul>
+  <li><b>Stored only here</b>, encrypted (AES-256-GCM) in <code>~/.free-llm</code>. Not on free-llm.com, not in any cloud.</li>
+  <li><b>Each key goes only to its own provider</b> (your Groq key only to <code>api.groq.com</code>) and is locked to that address: if it ever changed, the router would refuse to send it.</li>
+  <li><b>No telemetry, no analytics.</b> The only other download is the public list of free models; nothing about you is sent.</li>
+  <li><b>Open source</b>: every line is on <a href="https://github.com/nejib1/Free-LLM/tree/main/router" target="_blank" rel="noopener">GitHub</a>.</li></ul></details></div></div>`;
 const SIGNUP = { no: ['ok', 'No card'], registration: ['', 'Email sign-up'], phone_verification: ['warn', 'Phone check'], credit_card: ['bad', 'Card required'] };
 let provFilter = '';
 let showAll = false;
@@ -211,39 +399,42 @@ pages.keys = async () => {
   usable.sort((a, b) => (b.keys.length > 0) - (a.keys.length > 0) || b.score - a.score);
   const mine = usable.filter((p) => p.keys.length);
   const list = usable.filter((p) => (!provFilter || (p.name + p.slug).toLowerCase().includes(provFilter)));
-  const shown = showAll || provFilter ? list : list.slice(0, Math.max(14, mine.length + 8));
+  const conn = list.filter((p) => p.keys.length);
+  const rest = list.filter((p) => !p.keys.length);
+  const restShown = showAll || provFilter ? rest : rest.slice(0, Math.max(10, 18 - conn.length));
+  $('#nkeys').textContent = mine.length; $('#nkeys').classList.toggle('hide', !mine.length);
   $('#main').innerHTML = `
-    <h1>Free API keys</h1>
-    <p class="sub">Each key unlocks more free models. Click <b>Get a free key</b>, sign up (usually 1 minute), paste the key here — it is tested right away and stored encrypted on <b>this computer only</b>.</p>
+    ${header('Free keys', 'Each key unlocks more free models. Get a key from the provider (usually a minute), paste it here: it is tested right away.', `<span class="chip ok">${mine.length} connected</span><span class="chip">${usable.length} providers</span>`)}
     ${TRUST}
-    <div class="card" style="margin-bottom:14px"><div class="row"><input type="text" id="pf" class="grow" placeholder="Search a provider (Gemini, Groq, OpenRouter…)" value="${esc(provFilter)}">
-      <span class="chip ok">${mine.length} connected</span><span class="chip">${usable.length} available</span></div></div>
-    <div class="card">${shown.map(provRow).join('')}
-    ${shown.length < list.length ? `<div style="text-align:center;padding-top:12px"><button class="btn" id="more">Show all ${list.length} providers</button></div>` : ''}</div>`;
+    <div class="search mb">${I('search')}<input type="text" id="pf" placeholder="Search a provider: Gemini, Groq, OpenRouter…" value="${esc(provFilter)}"></div>
+    ${conn.length ? `<div class="sec">Connected</div><div class="card">${conn.map(provRow).join('')}</div>` : ''}
+    ${rest.length ? `<div class="sec">${conn.length ? 'Add more providers' : 'Recommended providers'}</div><div class="card">${restShown.map(provRow).join('')}
+      ${restShown.length < rest.length ? `<div style="text-align:center;padding:14px"><button class="btn" id="more">Show all ${rest.length} providers</button></div>` : ''}</div>` : ''}
+    ${!list.length ? `<div class="card empty">${I('search')}<div>No provider matches “${esc(provFilter)}”.</div></div>` : ''}`;
   $('#pf').oninput = (e) => { provFilter = e.target.value.toLowerCase(); clearTimeout(window._pf); window._pf = setTimeout(() => pages.keys().then(() => { const i = $('#pf'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }), 250); };
   if ($('#more')) $('#more').onclick = () => { showAll = true; pages.keys(); };
   document.querySelectorAll('[data-add]').forEach((b) => b.onclick = () => addKey(b.dataset.add));
-  document.querySelectorAll('[data-del]').forEach((b) => b.onclick = async () => { if (!confirm('Remove this key?')) return; await api('/admin/api/keys', { method: 'DELETE', body: { provider: b.dataset.p, id: b.dataset.del } }); toast('Removed'); pages.keys(); });
-  document.querySelectorAll('[data-test]').forEach((b) => b.onclick = async () => { b.textContent = 'Testing…'; const r = await api('/admin/api/keys/test', { method: 'POST', body: { provider: b.dataset.test } }); toast(r.results.every((x) => x.ok) ? 'Works ✓' : 'Problem: ' + (r.results.find((x) => !x.ok)?.error || '')); pages.keys(); });
+  document.querySelectorAll('input[id^="key-"]').forEach((inp) => inp.onkeydown = (e) => { if (e.key === 'Enter') addKey(inp.id.slice(4)); });
+  document.querySelectorAll('[data-del]').forEach((b) => b.onclick = async () => { if (!confirm('Remove this key?')) return; await api('/admin/api/keys', { method: 'DELETE', body: { provider: b.dataset.p, id: b.dataset.del } }); toast('Key removed'); pages.keys(); });
+  document.querySelectorAll('[data-test]').forEach((b) => b.onclick = async () => { b.disabled = true; b.innerHTML = I('refresh') + 'Testing…'; const r = await api('/admin/api/keys/test', { method: 'POST', body: { provider: b.dataset.test } }); toast(r.results.every((x) => x.ok) ? 'The key works' : 'Problem: ' + (r.results.find((x) => !x.ok)?.error || '')); pages.keys(); });
   document.querySelectorAll('[data-guest]').forEach((b) => b.onclick = async () => { await api('/admin/api/providers/toggle', { method: 'POST', body: { provider: b.dataset.guest, guest: b.dataset.on !== '1' } }); pages.keys(); });
 };
 function provRow(p) {
   const [cls, label] = SIGNUP[p.signup] || ['', p.signup || ''];
-  const keys = p.keys.map((k) => `<div class="row" style="margin-top:6px;font-size:13px"><span class="dot ${k.invalid ? 'bad' : 'ok'}"></span><code>${esc(k.masked)}</code>
-    ${k.invalid ? `<span class="chip bad">${esc(k.invalid)}</span>` : `<span class="chip ok">active · only sent to ${esc(k.sent_to || '')}</span>`}
-    ${k.rate?.remaining_requests != null ? `<span class="muted">${fmt(k.rate.remaining_requests)} requests left in window</span>` : ''}
-    <button class="btn s d" data-p="${esc(p.slug)}" data-del="${esc(k.id)}">Remove</button></div>`).join('');
-  return `<div class="prov"><div>
-    <h3>${esc(p.name)} <span class="chip ${cls}">${esc(label)}</span> ${p.category === 'trial_credit' ? '<span class="chip">trial credit</span>' : ''} ${p.guest ? '<span class="chip">works without key</span>' : ''}</h3>
-    <p>${p.chat_models} free models${p.rate_limit ? ' · ' + esc(String(p.rate_limit).slice(0, 110)) : ''}</p>
+  const keys = p.keys.map((k) => `<div class="keyline"><span class="dot ${k.invalid ? 'bad' : 'ok'}"></span><code>${esc(k.masked)}</code>
+    ${k.invalid ? `<span class="chip bad">${esc(k.invalid)}</span>` : `<span class="muted">active · sent only to <code>${esc(k.sent_to || '')}</code></span>`}
+    ${k.rate?.remaining_requests != null ? `<span class="muted">· ${fmt(k.rate.remaining_requests)} requests left in window</span>` : ''}
+    <span class="grow"></span><button class="btn s ghost d" data-p="${esc(p.slug)}" data-del="${esc(k.id)}" title="Remove this key">${I('trash')}Remove</button></div>`).join('');
+  return `<div class="prov">${avatar(p.name)}<div>
+    <h3>${esc(p.name)} <span class="chip ${cls}">${esc(label)}</span>${p.category === 'trial_credit' ? '<span class="chip">trial credit</span>' : ''}${p.guest ? '<span class="chip ac">works without a key</span>' : ''}</h3>
+    <p class="meta">${p.chat_models} free model${p.chat_models === 1 ? '' : 's'}${p.rate_limit ? ' · ' + esc(String(p.rate_limit).slice(0, 110)) : ''}</p>
     ${keys}
     ${p.needs.includes('account_id') ? `<div class="keyrow"><input type="text" id="acc-${esc(p.slug)}" placeholder="Account ID${p.has_account_id ? ' (saved)' : ''}"></div>` : ''}
-    <div class="keyrow"><input type="password" id="key-${esc(p.slug)}" placeholder="Paste your ${esc(p.name)} API key" autocomplete="off"><button class="btn p" data-add="${esc(p.slug)}">Add</button></div>
-    <p style="margin-top:6px;font-size:12px">🔒 Stays on this computer, encrypted · sent only to <code>${esc(p.sends_to || 'the provider')}</code></p>
-    </div><div class="row" style="align-content:start;justify-content:flex-end">
-    <a class="btn" href="${esc(p.help_url)}" target="_blank" rel="noopener">Get a free key ↗</a>
-    ${p.keys.length ? `<button class="btn s" data-test="${esc(p.slug)}">Test</button>` : ''}
-    ${p.guest ? `<button class="btn s" data-guest="${esc(p.slug)}" data-on="${p.guest_enabled ? '1' : ''}">${p.guest_enabled ? 'Disable guest use' : 'Enable guest use'}</button>` : ''}
+    <div class="keyrow"><input type="password" id="key-${esc(p.slug)}" placeholder="${p.keys.length ? 'Add another' : 'Paste your'} ${esc(p.name)} API key" autocomplete="off"><button class="btn ${p.keys.length ? '' : 'p'}" data-add="${esc(p.slug)}">${I('plus')}Add</button></div>
+    </div><div class="acts">
+    <a class="btn s" href="${esc(p.help_url)}" target="_blank" rel="noopener">Get a free key ${I('ext')}</a>
+    ${p.keys.length ? `<button class="btn s" data-test="${esc(p.slug)}">${I('refresh')}Test</button>` : ''}
+    ${p.guest ? `<button class="btn s ghost" data-guest="${esc(p.slug)}" data-on="${p.guest_enabled ? '1' : ''}">${p.guest_enabled ? 'Disable guest use' : 'Enable guest use'}</button>` : ''}
     </div></div>`;
 }
 async function addKey(slug) {
@@ -253,55 +444,66 @@ async function addKey(slug) {
   toast('Saving and testing…');
   try {
     const r = await api('/admin/api/keys', { method: 'POST', body: { provider: slug, key, account_id: acc || undefined } });
-    toast(!r.test ? 'Saved' : r.test.ok ? `Works ✓ (${ms(r.test.ms)}) — models unlocked` : 'Saved, but the test failed: ' + r.test.error);
+    toast(!r.test ? 'Saved' : r.test.ok ? `It works (${ms(r.test.ms)}): models unlocked` : 'Saved, but the test failed: ' + r.test.error);
   } catch (e) { toast(e.message); }
   pages.keys();
 }
 
 pages.connect = async () => {
   const { snippets } = await api('/admin/api/setup');
-  const groups = { agent: 'Coding agents (terminal)', editor: 'Editors & IDE extensions', app: 'Chat apps', mcp: 'MCP — free models as a tool', code: 'Code & SDKs' };
+  const groups = { agent: ['terminal', 'Coding agents'], editor: ['code', 'Editors and IDE extensions'], app: ['chat', 'Chat apps'], mcp: ['box', 'MCP: free models as a tool'], code: ['cpu', 'Code and SDKs'] };
   $('#main').innerHTML = `
-    <h1>Connect your tools</h1>
-    <p class="sub">Anything that speaks the OpenAI or Anthropic API works. For the tools below there is a ready-made recipe — most are one command.</p>
-    <div class="banner"><b>Fastest:</b> in a terminal run <code>free-llm setup claude</code> (or <code>codex</code>, <code>opencode</code>, <code>aider</code>) — your tool now runs on free models. Undo any time with <code>--remove</code>; your old settings are backed up.</div>
-    ${Object.entries(groups).map(([g, title]) => {
+    ${header('Connect your tools', 'Anything that speaks the OpenAI or Anthropic API works. For the tools below there is a ready-made recipe.')}
+    <div class="card cb mb"><div class="row" style="align-items:flex-start;gap:14px"><span class="kpi" style="padding:0"><span class="ic">${I('zap')}</span></span><div class="grow">
+      <h2>Fastest: one command</h2><p class="muted small" style="margin:3px 0 10px">Your coding agent now runs on free models. Undo any time with <code>--remove</code>; your previous settings are backed up.</p>
+      <div class="cmd"><span>free-llm setup claude</span>${copyBtn('free-llm setup claude')}</div>
+      <p class="xs muted" style="margin:8px 0 0">Also: <code>codex</code> · <code>opencode</code> · <code>aider</code></p></div></div></div>
+    ${Object.entries(groups).map(([g, [icon, title]]) => {
       const items = snippets.filter((s) => s.kind === g);
       if (!items.length) return '';
-      return `<h2 style="margin-top:22px">${title}</h2><div class="grid g2">${items.map((s) => `
-        <div class="card"><div class="row" style="margin-bottom:8px"><b class="grow">${esc(s.name)}</b>${s.auto ? '<span class="chip ok">one command</span>' : ''}</div>
-        <div class="copy"><pre>${esc(s.text)}</pre><button class="btn s" data-copy="${esc(s.text)}">Copy</button></div></div>`).join('')}</div>`;
+      return `<div class="sec row" style="gap:7px">${I(icon)}${title}</div><div class="grid g2">${items.map((s) => `
+        <div class="card tool"><div class="ch"><h3>${esc(s.name)}</h3>${s.auto ? '<span class="chip ok">one command</span>' : ''}</div>
+        <div class="copy"><pre>${esc(s.text)}</pre><button class="btn s" data-copy="${esc(s.text)}">${I('copy')}Copy</button></div></div>`).join('')}</div>`;
     }).join('')}`;
 };
 
 let chatHistory = [];
+const SUGG = ['Explain what an API rate limit is, in two sentences', 'Write a Python function that checks if a string is a palindrome', 'Give me three name ideas for a coffee shop'];
 pages.playground = async () => {
   const models = await api('/v1/models');
   const opts = models.data.map((m) => `<option value="${esc(m.id)}">${esc(m.id)}${m.description ? ' — ' + esc(m.description) : ''}</option>`).join('');
   $('#main').innerHTML = `
-    <h1>Try it</h1>
-    <p class="sub">Chat through the router. Each answer shows which free model replied — and whether the router had to switch.</p>
-    <div class="card">
-      <div class="row" style="margin-bottom:10px"><select id="model" class="grow">${opts}</select><button class="btn" id="clear">New chat</button></div>
-      <div class="chat" id="chat">${chatHistory.length ? '' : '<p class="muted">Ask anything. Tip: pick <code>auto:fusion</code> to get an answer merged from three different models.</p>'}</div>
-      <div class="row" style="margin-top:10px"><textarea id="q" rows="2" class="grow" placeholder="Type a message… (Enter to send, Shift+Enter for a new line)" style="font-family:inherit;font-size:15px"></textarea><button class="btn p" id="send">Send</button></div>
+    ${header('Playground', 'Chat through the router. Each answer shows which free model replied, and whether the router had to switch.',
+      `<select id="model" style="width:auto;max-width:340px">${opts}</select><button class="btn" id="clear">${I('plus')}New chat</button>`)}
+    <div class="card chatwrap">
+      <div class="chat" id="chat"></div>
+      <div class="composer"><textarea id="q" rows="1" class="grow" placeholder="Message the router…  (Enter to send, Shift+Enter for a new line)"></textarea><button class="btn p" id="send">${I('send')}Send</button></div>
     </div>`;
   renderChat();
   $('#clear').onclick = () => { chatHistory = []; renderChat(); };
   $('#send').onclick = send;
-  $('#q').onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } };
+  const q = $('#q');
+  q.onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } };
+  q.oninput = () => { q.style.height = 'auto'; q.style.height = Math.min(q.scrollHeight, 180) + 'px'; };
+  q.focus();
 };
 function renderChat() {
   const el = $('#chat');
   if (!el) return;
-  if (!chatHistory.length) return;
-  el.innerHTML = chatHistory.map((m) => `<div class="msg ${m.role === 'user' ? 'u' : 'a'}">${esc(m.content)}${m.meta ? `<small>${esc(m.meta)}</small>` : ''}</div>`).join('');
+  if (!chatHistory.length) {
+    el.innerHTML = `<div class="empty" style="padding-top:12vh"><div class="logo" style="justify-content:center;padding:0 0 10px"><span class="mark">${BOLT}</span></div>
+      <h2 style="color:var(--text)">Ask anything</h2><p class="small" style="margin:4px 0 0">Tip: pick <code>auto:fusion</code> to get one answer merged from three different models.</p>
+      <div class="sugg">${SUGG.map((s) => `<button data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div></div>`;
+    el.querySelectorAll('[data-s]').forEach((b) => b.onclick = () => { $('#q').value = b.dataset.s; send(); });
+    return;
+  }
+  el.innerHTML = chatHistory.map((m) => `<div class="msg ${m.role === 'user' ? 'u' : 'a'}"><span class="who">${m.role === 'user' ? I('user') : BOLT}</span><div style="min-width:0"><div class="bub">${esc(m.content)}</div>${m.meta ? `<small>${I('cpu')}${esc(m.meta)}</small>` : ''}</div></div>`).join('');
   el.scrollTop = el.scrollHeight;
 }
 async function send() {
   const q = $('#q').value.trim();
   if (!q) return;
-  $('#q').value = '';
+  $('#q').value = ''; $('#q').style.height = 'auto';
   chatHistory.push({ role: 'user', content: q });
   const a = { role: 'assistant', content: '…', meta: '' };
   chatHistory.push(a);
@@ -341,30 +543,30 @@ let modelFilter = '';
 pages.models = async () => {
   const { models } = await api('/admin/api/models');
   const list = models.filter((m) => !modelFilter || (m.id + m.name).toLowerCase().includes(modelFilter));
+  const ready = models.filter((m) => m.status === 'ok').length;
+  $('#nmodels').textContent = ready; $('#nmodels').classList.toggle('hide', !ready);
   $('#main').innerHTML = `
-    <h1>Models</h1>
-    <p class="sub">Every free model you can use right now, best first. The router measures speed and reliability as you use them. Switch a model off if you never want it.</p>
-    <div class="card" style="margin-bottom:14px"><div class="row"><input type="text" id="mf" class="grow" placeholder="Filter (deepseek, qwen, gemini…)" value="${esc(modelFilter)}">
-      <span class="chip ok">${models.filter((m) => m.status === 'ok').length} ready</span><span class="chip">${models.length} total</span>
-      <button class="btn s" id="reset">Clear all cooldowns</button></div></div>
-    <div class="card tw"><table><thead><tr><th></th><th>Model</th><th>Provider</th><th>Capability</th><th>Context</th><th>Speed</th><th>Success</th><th></th></tr></thead><tbody>
+    ${header('Models', 'Every free model you can use right now, best first. Speed and reliability are measured as you use them; switch off any model you never want.',
+      `<span class="chip ok">${ready} ready</span><span class="chip">${models.length} total</span><button class="btn s" id="reset">${I('refresh')}Clear cooldowns</button>`)}
+    <div class="search mb">${I('search')}<input type="text" id="mf" placeholder="Filter: deepseek, qwen, gemini…" value="${esc(modelFilter)}"></div>
+    <div class="card tw"><table><thead><tr><th style="width:28px"></th><th>Model</th><th>Provider</th><th>Capability</th><th>Context</th><th>Speed</th><th>Success</th><th style="text-align:right">Use</th></tr></thead><tbody>
     ${list.map((m) => {
       const ok = m.status === 'ok';
       const h = m.health || {};
       return `<tr><td><span class="dot ${ok ? 'ok' : m.disabled ? '' : 'warn'}" title="${esc(m.status)}"></span></td>
-        <td><b>${esc(m.name)}</b><div class="muted mono" style="font-size:12px">${esc(m.provider)}/${esc(m.model)}</div>${!ok ? `<div class="muted" style="font-size:12px">${esc(m.status)}</div>` : ''}</td>
-        <td>${esc(m.provider_name)}${m.guest ? ' <span class="chip">guest</span>' : ''}</td>
-        <td><div class="bar" title="${m.quality}/100"><i style="width:${m.quality}%"></i></div>${m.vision ? '<span class="chip">👁 images</span>' : ''}${m.reasoning ? '<span class="chip">🧩 reasoning</span>' : ''}</td>
+        <td><b>${esc(m.name)}</b><div class="muted mono xs">${esc(m.provider)}/${esc(m.model)}</div>${!ok ? `<div class="xs" style="color:var(--warn)">${esc(m.status)}</div>` : ''}</td>
+        <td>${esc(m.provider_name)}${m.guest ? ' <span class="chip ac">guest</span>' : ''}</td>
+        <td><div class="row" style="gap:6px"><div class="bar" title="Quality ${m.quality}/100"><i style="width:${m.quality}%"></i></div>${m.vision ? '<span class="chip">images</span>' : ''}${m.reasoning ? '<span class="chip">reasoning</span>' : ''}</div></td>
         <td>${!m.ctx ? '—' : m.ctx >= 1e6 ? +(m.ctx / 1e6).toFixed(1) + 'M' : Math.round(m.ctx / 1000) + 'K'}</td>
         <td>${ms(h.ttft ?? h.latency)}</td>
         <td>${h.uses ? Math.round(h.reliability * 100) + '%' : '<span class="muted">new</span>'}</td>
-        <td><button class="btn s" data-tog="${esc(m.provider)}|${esc(m.model)}" data-en="${m.disabled ? '1' : ''}">${m.disabled ? 'Enable' : 'Off'}</button></td></tr>`;
-    }).join('')}</tbody></table>${!list.length ? '<p class="muted">No models yet — add a free key first.</p>' : ''}</div>`;
+        <td style="text-align:right"><label class="switch" style="display:inline-flex;padding:0;border:0" title="${m.disabled ? 'Off: never used' : 'On'}"><input type="checkbox" data-tog="${esc(m.provider)}|${esc(m.model)}" ${m.disabled ? '' : 'checked'}></label></td></tr>`;
+    }).join('')}</tbody></table>${!list.length ? `<div class="empty">${I('layers')}<div>${models.length ? 'No model matches this filter.' : 'No models yet: add a free key first.'}</div></div>` : ''}</div>`;
   $('#mf').oninput = (e) => { modelFilter = e.target.value.toLowerCase(); clearTimeout(window._mf); window._mf = setTimeout(() => pages.models().then(() => { const i = $('#mf'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }), 250); };
   $('#reset').onclick = async () => { await api('/admin/api/reset-cooldowns', { method: 'POST', body: {} }); toast('Cooldowns cleared'); pages.models(); };
-  document.querySelectorAll('[data-tog]').forEach((b) => b.onclick = async () => {
+  document.querySelectorAll('[data-tog]').forEach((b) => b.onchange = async () => {
     const [provider, ...rest] = b.dataset.tog.split('|');
-    await api('/admin/api/models/toggle', { method: 'POST', body: { provider, model: rest.join('|'), enabled: b.dataset.en === '1' } });
+    await api('/admin/api/models/toggle', { method: 'POST', body: { provider, model: rest.join('|'), enabled: b.checked } });
     pages.models();
   });
 };
@@ -372,63 +574,58 @@ pages.models = async () => {
 pages.activity = async () => {
   const [{ requests }, stats] = await Promise.all([api('/admin/api/logs?n=150'), api('/admin/api/stats?days=7')]);
   $('#main').innerHTML = `
-    <h1>Activity</h1>
-    <p class="sub">Live log of the last requests. “Switches” shows when the router silently moved to another free model for you.</p>
-    <div class="card tw" style="margin-bottom:14px"><h2>Most used models (7 days)</h2><table><thead><tr><th>Model</th><th>Requests</th><th>OK</th><th>Median</th><th>p95</th><th>Tokens</th></tr></thead><tbody>
-      ${stats.models.slice(0, 12).map((m) => `<tr><td class="mono">${esc(m.id)}</td><td>${fmt(m.requests)}</td><td>${m.requests ? Math.round((m.ok / m.requests) * 100) : 0}%</td><td>${ms(m.p50)}</td><td>${ms(m.p95)}</td><td>${fmt(m.tokens_in + m.tokens_out)}</td></tr>`).join('') || '<tr><td colspan="6" class="muted">Nothing yet.</td></tr>'}
-    </tbody></table></div>
-    <div class="card tw"><h2>Recent requests</h2><table><thead><tr><th>When</th><th>From</th><th>Asked for</th><th>Answered by</th><th>Switches</th><th>Time</th><th>Tokens</th></tr></thead><tbody>
+    ${header('Activity', 'Live log of the last requests, refreshed every 5 seconds. “Switches” counts the times the router silently moved to another free model for you.', '<span class="live"><span class="pulse"></span>Live</span>')}
+    <div class="card tw mb"><div class="ch"><h2>Most used models</h2><span class="muted xs">last 7 days</span></div><table><thead><tr><th>Model</th><th>Requests</th><th>Success</th><th>Median</th><th>p95</th><th>Tokens</th></tr></thead><tbody>
+      ${stats.models.slice(0, 12).map((m) => `<tr><td class="mono">${esc(m.id)}</td><td>${fmt(m.requests)}</td><td>${m.requests ? Math.round((m.ok / m.requests) * 100) : 0}%</td><td>${ms(m.p50)}</td><td>${ms(m.p95)}</td><td>${fmt(m.tokens_in + m.tokens_out)}</td></tr>`).join('')}
+    </tbody></table>${stats.models.length ? '' : `<div class="empty">${I('activity')}<div>Nothing yet.</div></div>`}</div>
+    <div class="card tw"><div class="ch"><h2>Recent requests</h2><span class="muted xs">${requests.length} shown</span></div><table><thead><tr><th>When</th><th>From</th><th>Asked for</th><th>Answered by</th><th>Switches</th><th>Time</th><th>Tokens</th></tr></thead><tbody>
       ${requests.map((r) => {
         const fails = (r.attempts || []).filter((a) => !a.ok);
-        return `<tr><td>${ago(r.ts)}</td><td><span class="chip">${esc(r.endpoint)}</span><div class="muted" style="font-size:11px">${esc((r.client || '').slice(0, 28))}</div></td><td class="mono">${esc(r.requested)}</td>
-          <td>${r.status === 200 ? `<span class="dot ok"></span> <span class="mono">${esc(r.served || '')}</span>${r.cached ? ' <span class="chip">cache</span>' : ''}` : `<span class="dot bad"></span> ${esc((r.error || '').slice(0, 120))}`}</td>
-          <td title="${esc(fails.map((a) => a.target + ' → ' + a.kind).join('\n'))}">${fails.length ? `<span class="chip warn">${fails.length}</span>` : '0'}</td>
+        return `<tr><td class="muted" style="white-space:nowrap">${ago(r.ts)}</td><td><span class="chip">${esc(r.endpoint)}</span><div class="muted xs">${esc((r.client || '').slice(0, 28))}</div></td><td class="mono">${esc(r.requested)}</td>
+          <td>${r.status === 200 ? `<span class="row" style="gap:7px;flex-wrap:nowrap"><span class="dot ok"></span><span class="mono">${esc(r.served || '')}</span>${r.cached ? '<span class="chip">cache</span>' : ''}</span>` : `<span class="row" style="gap:7px;flex-wrap:nowrap"><span class="dot bad"></span><span style="color:var(--bad)">${esc((r.error || '').slice(0, 120))}</span></span>`}</td>
+          <td title="${esc(fails.map((a) => a.target + ' → ' + a.kind).join('\n'))}">${fails.length ? `<span class="chip warn">${fails.length}</span>` : '<span class="muted">0</span>'}</td>
           <td>${ms(r.ms)}</td><td>${fmt((r.tokens_in || 0) + (r.tokens_out || 0))}</td></tr>`;
-      }).join('') || '<tr><td colspan="7" class="muted">No requests yet.</td></tr>'}
-    </tbody></table></div>`;
+      }).join('')}
+    </tbody></table>${requests.length ? '' : `<div class="empty">${I('activity')}<div>No requests yet.</div></div>`}</div>`;
   clearInterval(timer);
   timer = setInterval(() => { if (location.hash === '#activity' && !document.hidden) pages.activity(); }, 5000);
 };
 
 const STRAT = {
-  balanced: ['Balanced (recommended)', 'Strong models that are also fast. Good for everything.'],
-  smart: ['Smartest first', 'Always try the most capable models first, even if slower.'],
-  fast: ['Fastest first', 'Lowest response time first — great for autocomplete and chat.'],
+  balanced: ['Balanced', 'Strong models that are also fast. The recommended default.'],
+  smart: ['Smartest first', 'The most capable models first, even when slower.'],
+  fast: ['Fastest first', 'Lowest response time first, great for autocomplete and chat.'],
   spread: ['Spread the load', 'Rotate across providers so no free quota runs out.'],
-  order: ['My order', 'Use exactly the order you set in “Preferred models”.'],
+  order: ['My order', 'Exactly the order you set in “Preferred models”.'],
 };
+const SW = (id, on, title, text) => `<label class="switch"><input type="checkbox" id="${id}" ${on ? 'checked' : ''}><div><b>${title}</b><span>${text}</span></div></label>`;
 pages.settings = async () => {
   const s = await api('/admin/api/settings');
   $('#main').innerHTML = `
-    <h1>Settings</h1><p class="sub">The defaults are good. Change things only if you want to.</p>
-    <div class="card" style="margin-bottom:14px"><h2>How should the router choose?</h2>
-      <div class="grid g3">${Object.entries(STRAT).map(([k, [t, d]]) => `<label class="opt"><input type="radio" name="strategy" value="${k}" ${s.strategy === k ? 'checked' : ''}><b>${t}</b><p>${d}</p></label>`).join('')}</div>
-      <p class="muted" style="font-size:13px;margin:10px 0 0">Apps can also ask per request with the model name: <code>auto:coding</code>, <code>auto:fast</code>, <code>auto:smart</code>, <code>auto:long</code>, <code>auto:vision</code>, <code>auto:reasoning</code>, <code>auto:spread</code>, <code>auto:fusion</code>.</p></div>
+    ${header('Settings', 'The defaults work well. Change things only if you want to.')}
+    <div class="card mb"><div class="ch"><div><h2>How should the router choose?</h2><p>Apps can also ask per request with the model name: <code>auto:coding</code>, <code>auto:fast</code>, <code>auto:smart</code>, <code>auto:long</code>, <code>auto:vision</code>, <code>auto:reasoning</code>, <code>auto:spread</code>, <code>auto:fusion</code>.</p></div></div>
+      <div class="cb"><div class="opts">${Object.entries(STRAT).map(([k, [t, d]]) => `<label class="opt"><input type="radio" name="strategy" value="${k}" ${s.strategy === k ? 'checked' : ''}><b>${t}</b>${k === 'balanced' ? ' <span class="chip ac" style="margin-left:4px">default</span>' : ''}<p>${d}</p></label>`).join('')}</div></div></div>
     <div class="grid g2">
-      <div class="card"><h2>Behaviour</h2>
-        <label class="row"><input type="checkbox" id="fallback" ${s.fallback_to_auto ? 'checked' : ''}> If the exact model asked for is unavailable, use another free model</label>
-        <label class="row"><input type="checkbox" id="think" ${s.strip_think_tags ? 'checked' : ''}> Hide &lt;think&gt; reasoning from answers</label>
-        <label class="row"><input type="checkbox" id="cache" ${s.cache?.enabled ? 'checked' : ''}> Cache identical requests (saves quota)</label>
-        <label class="row"><input type="checkbox" id="logs" ${s.log_requests ? 'checked' : ''}> Keep a request log on disk</label>
-        <label class="row"><input type="checkbox" id="ollama" ${s.ollama?.enabled !== false ? 'checked' : ''}> Ollama-compatible API (for Zed, JetBrains, Open WebUI)</label>
-        <label class="row"><input type="checkbox" id="mcp" ${s.mcp?.enabled !== false ? 'checked' : ''}> MCP server at /mcp</label>
-        <div class="row" style="margin-top:10px"><span class="grow">Keep a conversation on the same model for (minutes)</span><input type="number" id="sticky" value="${s.sticky_minutes}" style="width:90px"></div>
-        <div class="row" style="margin-top:8px"><span class="grow">Max providers tried per request</span><input type="number" id="attempts" value="${s.max_attempts}" style="width:90px"></div>
-        <div class="row" style="margin-top:8px"><span class="grow">Give up on a silent provider after (seconds)</span><input type="number" id="ftt" value="${s.first_token_timeout_s}" style="width:90px"></div>
-      </div>
-      <div class="card"><h2>Preferred models</h2>
-        <p class="muted" style="margin-top:-6px;font-size:13px">One per line, as <code>provider/model</code> (see Models). They are tried first; with “My order” they are tried in exactly this order.</p>
-        <textarea id="chain" rows="7" placeholder="groq-cloud/openai/gpt-oss-120b&#10;google-ai-studio/gemini-3-flash-preview">${esc((s.chain || []).join('\n'))}</textarea>
-        <h2 style="margin-top:14px">Model name mapping</h2>
-        <p class="muted" style="margin-top:-6px;font-size:13px">What to use when a tool asks for a model name the router doesn't know (e.g. Claude Code asking for “claude-sonnet”).</p>
-        <textarea id="aliases" rows="6">${esc(JSON.stringify(s.aliases, null, 2))}</textarea>
+      <div class="card"><div class="ch"><h2>Behaviour</h2></div><div class="cb" style="padding-top:4px">
+        ${SW('fallback', s.fallback_to_auto, 'Fall back to another free model', 'When the exact model asked for is busy or unavailable.')}
+        ${SW('think', s.strip_think_tags, 'Hide &lt;think&gt; reasoning', 'Remove reasoning blocks some models leak into answers.')}
+        ${SW('cache', s.cache?.enabled, 'Cache identical requests', 'Saves quota when the same request is sent twice.')}
+        ${SW('logs', s.log_requests, 'Keep a request log on disk', 'Powers the Activity page across restarts.')}
+        ${SW('ollama', s.ollama?.enabled !== false, 'Ollama-compatible API', 'For Zed, JetBrains, Open WebUI and other Ollama clients.')}
+        ${SW('mcp', s.mcp?.enabled !== false, 'MCP server at /mcp', 'Give MCP clients free models as a tool.')}
+        <div class="numrow" style="margin-top:6px"><span class="grow">Keep a conversation on the same model for <span class="muted">(minutes)</span></span><input type="number" id="sticky" value="${s.sticky_minutes}"></div>
+        <div class="numrow"><span class="grow">Max providers tried per request</span><input type="number" id="attempts" value="${s.max_attempts}"></div>
+        <div class="numrow"><span class="grow">Give up on a silent provider after <span class="muted">(seconds)</span></span><input type="number" id="ftt" value="${s.first_token_timeout_s}"></div>
+      </div></div>
+      <div class="card"><div class="ch"><div><h2>Preferred models</h2><p>One per line, as <code>provider/model</code> (see Models). Tried first; with “My order”, in exactly this order.</p></div></div>
+        <div class="cb"><textarea id="chain" rows="7" placeholder="groq-cloud/openai/gpt-oss-120b&#10;google-ai-studio/gemini-3-flash-preview">${esc((s.chain || []).join('\n'))}</textarea></div>
+        <div class="ch" style="border-top:1px solid var(--line)"><div><h2>Model name mapping</h2><p>What to use when a tool asks for a model the router doesn't know, e.g. Claude Code asking for “claude-sonnet”.</p></div></div>
+        <div class="cb"><textarea id="aliases" rows="7">${esc(JSON.stringify(s.aliases, null, 2))}</textarea></div>
       </div>
     </div>
-    <div class="row" style="margin:14px 0"><button class="btn p" id="save">Save settings</button></div>
-    <div class="card"><h2>Maintenance</h2><div class="row">
-      <button class="btn" id="refresh">Update model catalog now</button>
-      <button class="btn" id="rotate">Generate a new router key</button>
-      <span class="muted" style="font-size:13px">Address: ${esc(s.host)}:${esc(s.port)} — change with <code>free-llm start --host 0.0.0.0 --port 4000</code> to share on your network.</span></div></div>`;
+    <div class="savebar"><button class="btn p" id="save">${I('check')}Save settings</button><span class="muted xs" id="savehint"></span></div>
+    <div class="card"><div class="ch"><div><h2>Maintenance</h2><p>Listening on <code>${esc(s.host)}:${esc(s.port)}</code>. To share on your network: <code>free-llm start --host 0.0.0.0</code> (the dashboard then asks for the router key).</p></div></div>
+      <div class="cb row"><button class="btn" id="refresh">${I('refresh')}Update model catalog now</button><button class="btn d" id="rotate">${I('key')}Generate a new router key</button></div></div>`;
   $('#save').onclick = async () => {
     let aliases;
     try { aliases = JSON.parse($('#aliases').value); } catch { return toast('Model name mapping is not valid JSON'); }
@@ -439,7 +636,7 @@ pages.settings = async () => {
       chain: $('#chain').value.split('\n').map((x) => x.trim()).filter(Boolean), aliases,
     };
     await api('/admin/api/settings', { method: 'POST', body });
-    toast('Saved ✓');
+    toast('Settings saved'); $('#savehint').textContent = 'Saved ' + new Date().toLocaleTimeString();
   };
   $('#refresh').onclick = async () => { const r = await api('/admin/api/catalog/refresh', { method: 'POST', body: {} }); toast(`Catalog: ${r.catalog.providers} providers, ${r.catalog.models} models`); };
   $('#rotate').onclick = async () => {
@@ -452,10 +649,11 @@ pages.settings = async () => {
 
 async function route() {
   const p = (location.hash || '#home').slice(1);
-  document.querySelectorAll('nav a[data-p]').forEach((a) => a.classList.toggle('on', a.dataset.p === p));
+  document.querySelectorAll('nav a[data-p]').forEach((a) => a.classList.toggle('on', a.dataset.p === (pages[p] ? p : 'home')));
   clearInterval(timer);
   if (!KEY) return login();
-  try { await (pages[p] || pages.home)(); } catch (e) { if (e.message !== 'unauthorized') $('#main').innerHTML = `<div class="card"><h2>Something went wrong</h2><p>${esc(e.message)}</p></div>`; }
+  if (!STATUS) api('/admin/api/status').then((s) => { STATUS = s; navInfo(s); }).catch(() => {});
+  try { await (pages[p] || pages.home)(); } catch (e) { if (e.message !== 'unauthorized') $('#main').innerHTML = `<div class="card cb"><h2>Something went wrong</h2><p class="muted">${esc(e.message)}</p><button class="btn mt" onclick="route()">${I('refresh')}Try again</button></div>`; }
 }
 addEventListener('hashchange', route);
 route();

@@ -11,6 +11,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+### Changed
+
+- Redesigned dashboard: grouped navigation with icons and the router's status always visible, an overview with your connection details (key hidden until you reveal it) and a setup checklist, connected providers listed first on the keys page, a chat-style playground with example prompts, switches in the models list and settings, a sign-in screen for remote access, and a reworked dark theme. Same features and API, still a single file with no build step and no network requests.
+
 ## [1.1.1] - 2026-11-26
 
 ### Added
