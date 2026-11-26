@@ -11,6 +11,8 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-11-26
+
 ### Changed
 
 - Dashboard overview: the router's own key is labelled "Router key, created for you" so nobody thinks they have to find an API key first, and guest mode is presented as what it is: the router already answers with no key at all.
@@ -90,7 +92,8 @@ First public release.
 - Installers for macOS/Linux (`install.sh`) and Windows (`install.ps1`), `npx`/`npm` install from GitHub, and a Dockerfile.
 - Zero runtime dependencies, Node.js 18+.
 
-[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.2.0...HEAD
+[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.2.1...HEAD
+[1.2.1]: https://github.com/nejib1/Free-LLM/compare/router-v1.2.0...router-v1.2.1
 [1.2.0]: https://github.com/nejib1/Free-LLM/compare/router-v1.1.1...router-v1.2.0
 [1.1.1]: https://github.com/nejib1/Free-LLM/compare/router-v1.1.0...router-v1.1.1
 [1.1.0]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.3...router-v1.1.0
