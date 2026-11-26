@@ -8,6 +8,12 @@ Which LLM APIs and models became free, and which stopped being free. This file i
 
 ## November 2026
 
+### November 26, 2026
+
+- ⛔ **[Inferaft](https://free-llm.com/provider/inferaft)** — free tier ended  
+  <sub>The launch grant of 3M free GLM 5.3 Flash tokens has ended; the official pricing page now says there is no free tier and every model needs a plan.</sub>
+- 🆕 **[Plugsky](https://free-llm.com/provider/plugsky)** — new free provider
+
 ### November 25, 2026
 
 - ⛔ **[IteraCompute](https://free-llm.com/provider/iteracompute)** — free tier ended  
