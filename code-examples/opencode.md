@@ -34,14 +34,6 @@ export OPENROUTER_API_KEY="sk-or-v1-your_openrouter_key"
 
 Get your key at [openrouter.ai/keys](https://openrouter.ai/keys). Recommended model: `nvidia/nemotron-3-ultra-550b-a55b:free` (the free catalog rotates quickly — see the [official free models list](https://openrouter.ai/collections/free-models)). Some free models may use your prompts for training.
 
-### Mistral (La Plateforme)
-
-```bash
-export MISTRAL_API_KEY="your_mistral_key"
-```
-
-Get your key at [console.mistral.ai/api-keys](https://console.mistral.ai/api-keys). Recommended model: `codestral-latest` for coding tasks (`open-mistral-nemo` was retired on July 31, 2026).
-
 ### Cerebras (very fast inference, $5 trial credit)
 
 ```bash

@@ -5,11 +5,11 @@ Claude Code can run on free models, but there's one catch that most guides get w
 So there are two ways to do it:
 
 1. **Use a provider that has a native Anthropic-compatible endpoint.** Two environment variables and you're done.
-2. **Put a small translation proxy in front of an OpenAI-only provider** (Groq, Cerebras, NVIDIA NIM, Mistral, Gemini, Cloudflare…). LiteLLM or claude-code-router do the conversion.
+2. **Put a small translation proxy in front of an OpenAI-only provider** (Groq, Cerebras, NVIDIA NIM, Gemini, Cloudflare…). LiteLLM or claude-code-router do the conversion.
 
 Always set `ANTHROPIC_MODEL` too. Otherwise Claude Code sends its own model names (`claude-sonnet-…`), which other providers don't know.
 
-> Last checked: November 4, 2026. Free tiers change often, so check the live directory at [free-llm.com](https://free-llm.com) before you rely on one.
+> Last checked: November 26, 2026. Free tiers change often, so check the live directory at [free-llm.com](https://free-llm.com) before you rely on one.
 
 ---
 
@@ -22,9 +22,8 @@ Always set `ANTHROPIC_MODEL` too. Otherwise Claude Code sends its own model name
 | [FreeInference](https://free-llm.com/provider/freeinference) (Harvard SEAS) | `https://freeinference.org/anthropic` | Free for research/open source, no card | `glm-5.3-flash`, `deepseek-v4-flash` |
 | [Ollama](https://free-llm.com/provider/ollama) (local) | `http://localhost:11434` | Free, runs on your machine | `qwen3.8`, `gpt-oss:20b`, `flint:40b` |
 | [LM Studio](https://free-llm.com/provider/lm-studio) (local) | `http://localhost:1234` | Free, runs on your machine | any loaded model |
-| [Ollama Cloud](https://free-llm.com/provider/ollama-cloud) | `https://ollama.com` | Pay-as-you-go; `beam:cloud` is the only free model | `beam:cloud` |
 
-Paid options with native endpoints, for reference: DeepSeek (`https://api.deepseek.com/anthropic`), MiniMax (`https://api.minimax.io/anthropic`), Alibaba Model Studio (per-workspace `/apps/anthropic` URL).
+Paid options with native endpoints, for reference: Ollama Cloud (`https://ollama.com`, no free model since November 2026), DeepSeek (`https://api.deepseek.com/anthropic`), MiniMax (`https://api.minimax.io/anthropic`), Alibaba Model Studio (per-workspace `/apps/anthropic` URL).
 
 ### OpenRouter
 
@@ -77,7 +76,7 @@ Recent Ollama versions can also do it in one step: `ollama launch claude`.
 
 ## Option 2: OpenAI-only providers through a proxy
 
-Groq, Cerebras, NVIDIA NIM, Mistral, Google AI Studio (OpenAI endpoint), Cloudflare, Scaleway, OVH and most gateways only accept OpenAI-format requests. A local proxy translates Claude Code's requests.
+Groq, Cerebras, NVIDIA NIM, Google AI Studio (OpenAI endpoint), Cloudflare, Scaleway, OVH and most gateways only accept OpenAI-format requests. A local proxy translates Claude Code's requests.
 
 ### With LiteLLM (example: Groq, free, no card)
 
@@ -107,10 +106,9 @@ claude
 |:---|:---|:---|
 | Groq | `https://api.groq.com/openai/v1` | `openai/gpt-oss-120b`, `qwen/qwen3.8-27b` |
 | Cerebras | `https://api.cerebras.ai/v1` | `gpt-oss-120b`, `qwen-3.8-27b` (needs a card for the $5 credit) |
-| NVIDIA NIM | `https://integrate.api.nvidia.com/v1` | `z-ai/glm-5.3-flash`, `moonshotai/kimi-k2.6`, `mistralai/mistral-large-4-1t-a52b` |
-| Mistral | `https://api.mistral.ai/v1` | `codestral-latest`, `mistral-small-latest` |
+| NVIDIA NIM | `https://integrate.api.nvidia.com/v1` | `z-ai/glm-5.3-flash`, `moonshotai/kimi-k3.1-pro`, `mistralai/mistral-large-4-1t-a52b` |
 | Google AI Studio | `https://generativelanguage.googleapis.com/v1beta/openai` | `gemini-3.8-flash` |
-| Kilo Gateway | `https://ai-gateway.kilo.ai/api/v1` | `cohere/north-mini-code:free` |
+| Kilo Gateway | `https://ai-gateway.kilo.ai/api/v1` | `nvidia/nemotron-3.5-lightning:free` |
 
 ### With claude-code-router
 
@@ -121,11 +119,21 @@ ccr ui      # add your provider (base URL, key, model) in the web UI
 
 The router then serves Claude Code on `http://127.0.0.1:3456`. See the [project README](https://github.com/musistudio/claude-code-router) for its config file format.
 
+### With the Free-LLM Router (this repo)
+
+The [Free-LLM Router](../router/README.md) runs locally, speaks the Anthropic Messages API itself, and spreads requests over all the free keys you add (Gemini, Groq, OpenRouter, NVIDIA…), switching provider when one hits its limit:
+
+```bash
+npm install -g github:nejib1/Free-LLM
+free-llm keys add groq gsk_your_groq_key     # add as many free keys as you like
+free-llm setup claude                        # points Claude Code at the router
+```
+
 ---
 
 ## Tips
 
-- **Tool calling matters.** Claude Code relies heavily on tools. Models that handle tools well on free tiers: GPT-OSS 120B, GLM-5.3 Flash, Kimi K2.6 / K2.7 Code, Qwen3.8 27B, Cohere North Mini Code, Nemotron 3 Ultra.
+- **Tool calling matters.** Claude Code relies heavily on tools. Models that handle tools well on free tiers: GPT-OSS 120B, GLM-5.3 Flash, Kimi K3.1 Pro, Qwen3.8 27B, Cohere North Mini Code, Nemotron 3 Ultra.
 - **Rate limits hit fast.** An agent session can send dozens of requests a minute. A provider with 20-30 RPM will throttle; use Groq, NVIDIA NIM or a local model for long sessions.
 - **Avoid "free Claude" key pools.** Services that offer free or 80%-off Claude/GPT through shared accounts break the providers' terms and can leak your code.
 - **Generate a config for any provider** at [free-llm.com/setup](https://free-llm.com/setup). It picks the native endpoint when there is one and the proxy config otherwise.
