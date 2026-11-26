@@ -533,7 +533,7 @@ Free-LLM/
 
 가장 유용한 기여는 수정 제보입니다. 무료 플랜은 혼자서는 따라갈 수 없을 만큼 빨리 바뀌니까요.
 
-1. **틀리거나 오래된 정보를 발견했나요?** 제공업체 공식 페이지 링크와 함께 [데이터 수정을 제보](https://github.com/nejib1/Free-LLM/issues/new/choose)해 주세요. 표는 매일 밤 다시 생성되므로 PR로 표를 고치지 마세요. 수정은 데이터에 반영되어야 합니다.
+1. **틀리거나 오래된 정보를 발견했나요?** 제공업체 공식 페이지 링크와 함께 [데이터 수정을 제보](https://github.com/nejib1/Free-LLM/issues/new/choose)해 주세요. PR로 표를 직접 고쳐도 됩니다. 표는 매일 밤 다시 생성되므로 내용을 데이터베이스에 반영하고 공동 작성자로 크레딧을 드립니다.
 2. **빠진 제공업체가 있나요?** [제안 양식](https://free-llm.com/submit)이나 "Add a provider" 이슈 양식을 사용하세요. 서비스 제공자가 직접 제안하는 것도 환영합니다(그렇다고 밝혀 주세요).
 3. **아직 다루지 않는 도구 설정이 있나요?** [`code-examples/`](code-examples/)와 Router에 대한 PR을 환영합니다. [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요.
 

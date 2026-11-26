@@ -533,7 +533,7 @@ Free-LLM/
 
 最有价值的贡献是更正：免费额度的变化速度，任何人都无法独自跟上。
 
-1. **发现错误或过时信息？** 附上提供商官方页面链接，[提交数据更正](https://github.com/nejib1/Free-LLM/issues/new/choose)。请不要在 PR 中修改表格：表格每晚重新生成，更改必须落到数据里。
+1. **发现错误或过时信息？** 附上提供商官方页面链接，[提交数据更正](https://github.com/nejib1/Free-LLM/issues/new/choose)。直接在 PR 中修改表格也可以：表格每晚重建，我们会把内容更新到数据库，并把你列为共同作者。
 2. **缺少某个提供商？** 使用[提交表单](https://free-llm.com/submit)或 "Add a provider" issue 表单。欢迎服务商提交自己的服务，只需说明身份。
 3. **有我们尚未覆盖的工具配置？** 欢迎向 [`code-examples/`](code-examples/) 和 Router 提交 PR，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

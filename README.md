@@ -535,7 +535,7 @@ Free-LLM/
 
 Corrections are the most useful contribution: free tiers change faster than anyone can track alone.
 
-1. **Something is wrong or outdated?** [Open a data correction](https://github.com/nejib1/Free-LLM/issues/new/choose) with a link to the provider's official page. Please don't edit the tables in a PR: they are regenerated every night, so the change has to go in the data.
+1. **Something is wrong or outdated?** [Open a data correction](https://github.com/nejib1/Free-LLM/issues/new/choose) with a link to the provider's official page. A PR that edits a table works too: the tables are rebuilt every night, so we apply the fact to the database and credit you as a co-author.
 2. **A provider is missing?** Use the [submit form](https://free-llm.com/submit) or the "Add a provider" issue form. Vendors are welcome to submit their own service; just say so.
 3. **A config for a tool we don't cover?** PRs to [`code-examples/`](code-examples/) and to the router are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
