@@ -11,6 +11,8 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-11-26
+
 ### Changed
 
 - Redesigned dashboard: grouped navigation with icons and the router's status always visible, an overview with your connection details (key hidden until you reveal it) and a setup checklist, connected providers listed first on the keys page, a chat-style playground with example prompts, switches in the models list and settings, a sign-in screen for remote access, and a reworked dark theme. Same features and API, still a single file with no build step and no network requests.
@@ -84,7 +86,8 @@ First public release.
 - Installers for macOS/Linux (`install.sh`) and Windows (`install.ps1`), `npx`/`npm` install from GitHub, and a Dockerfile.
 - Zero runtime dependencies, Node.js 18+.
 
-[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.1.1...HEAD
+[Unreleased]: https://github.com/nejib1/Free-LLM/compare/router-v1.2.0...HEAD
+[1.2.0]: https://github.com/nejib1/Free-LLM/compare/router-v1.1.1...router-v1.2.0
 [1.1.1]: https://github.com/nejib1/Free-LLM/compare/router-v1.1.0...router-v1.1.1
 [1.1.0]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.3...router-v1.1.0
 [1.0.3]: https://github.com/nejib1/Free-LLM/compare/router-v1.0.2...router-v1.0.3
