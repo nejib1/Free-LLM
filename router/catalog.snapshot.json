@@ -4,10 +4,10 @@
     "source": "https://free-llm.com",
     "license": "MIT",
     "schema_version": 2,
-    "generated_at": "2026-11-26T04:00:04+01:00",
-    "updated_at": "2026-11-25T00:38:57+01:00",
+    "generated_at": "2026-11-26T11:44:46+01:00",
+    "updated_at": "2026-11-26T11:01:32+01:00",
     "provider_count": 87,
-    "model_count": 458,
+    "model_count": 459,
     "providers": [
         {
             "slug": "agnes-ai",
@@ -2191,38 +2191,6 @@
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": 128000
-                }
-            ]
-        },
-        {
-            "slug": "inferaft",
-            "name": "Inferaft",
-            "type": "Trial Credits",
-            "url": "https://free-llm.com/provider/inferaft",
-            "website": "https://inferaft.com/",
-            "base_url": "https://inferaft.com/v1",
-            "free_tier": "trial_credits",
-            "category": "trial_credit",
-            "signup_requirement": "no",
-            "verified": true,
-            "rate_limit": "Not published for the free grant; usage is drawn at the published per-token rates",
-            "daily_limit": null,
-            "credits": null,
-            "credits_duration": null,
-            "openai_compatible": true,
-            "openai_base_url": "https://inferaft.com/v1",
-            "needs": [],
-            "anonymous_key": null,
-            "key_help_url": "https://free-llm.com/provider/inferaft",
-            "models": [
-                {
-                    "id": null,
-                    "name": "glm-5.3-flash",
-                    "context": "1,048,560",
-                    "key": "glm-5.3-flash",
-                    "kind": "chat",
-                    "vision": false,
-                    "context_tokens": null
                 }
             ]
         },
@@ -4527,6 +4495,47 @@
                     "name": "Solaria 3",
                     "context": null,
                     "key": "solaria-3",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
+        },
+        {
+            "slug": "plugsky",
+            "name": "Plugsky",
+            "type": "API",
+            "url": "https://free-llm.com/provider/plugsky",
+            "website": "https://plugsky.com/",
+            "base_url": "https://api.plugsky.com/v1",
+            "free_tier": "truly_free",
+            "category": "permanent",
+            "signup_requirement": "no",
+            "verified": true,
+            "rate_limit": "30 RPM",
+            "daily_limit": "500 requests/day (about 100/day for accounts created from 2 Nov 2026)",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://api.plugsky.com/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/plugsky",
+            "models": [
+                {
+                    "id": null,
+                    "name": "plugsky-micro",
+                    "context": "262,144",
+                    "key": "plugsky-micro",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "plugsky-lite",
+                    "context": "262,144",
+                    "key": "plugsky-lite",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": null
