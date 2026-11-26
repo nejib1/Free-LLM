@@ -1,6 +1,6 @@
 {
   "name": "free-llm",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Free-LLM Router — every free LLM API behind one OpenAI- and Anthropic-compatible endpoint. Automatic failover, live catalog from free-llm.com, works with Claude Code, Codex, Cursor, OpenCode, Aider and any OpenAI SDK.",
   "type": "module",
   "bin": {
