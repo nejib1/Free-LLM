@@ -332,12 +332,12 @@ pages.home = async () => {
       </div>
       <div class="conn">
         <div><span class="label">Base URL (OpenAI-compatible)</span><div class="field"><code>${esc(s.base_url)}</code>${copyBtn(s.base_url)}</div></div>
-        <div><span class="label">API key</span><div class="field"><code id="apikey" data-full="${esc(s.api_key)}" data-shown="">${esc(masked)}</code><button class="btn s ghost" id="reveal" title="Show / hide">${I('eye')}</button>${copyBtn(s.api_key)}</div></div>
+        <div><span class="label">Router key <span style="text-transform:none;letter-spacing:0;font-weight:500">· created for you, nothing to sign up for</span></span><div class="field"><code id="apikey" data-full="${esc(s.api_key)}" data-shown="">${esc(masked)}</code><button class="btn s ghost" id="reveal" title="Show / hide">${I('eye')}</button>${copyBtn(s.api_key)}</div></div>
         <div><span class="label">Model</span><div class="field"><code>auto</code><span class="xs muted" style="padding-right:8px">or auto:coding · auto:fast · auto:smart</span></div></div>
       </div>
     </div></div>
-    ${s.guest_mode || !s.providers_with_keys ? `<div class="trust" style="border-color:color-mix(in srgb,var(--warn) 35%,var(--line));background:color-mix(in srgb,var(--warn) 7%,var(--panel))">${I('key')}<div class="grow"><b>${s.guest_mode ? 'Guest mode: it works, but slowly' : 'One step left: add a free key'}</b>
-      <p>${s.guest_mode ? 'The router is answering with a few no-account models.' : 'The router needs at least one provider key before it can answer.'} Add 2–3 free keys (a minute each, most without a card) to unlock dozens of fast, strong models.</p></div><a class="btn p" href="#keys">Add a key</a></div>` : ''}
+    ${s.guest_mode || !s.providers_with_keys ? `<div class="trust" ${s.guest_mode ? '' : 'style="border-color:color-mix(in srgb,var(--warn) 35%,var(--line));background:color-mix(in srgb,var(--warn) 7%,var(--panel))"'}>${I(s.guest_mode ? 'check' : 'key')}<div class="grow"><b>${s.guest_mode ? 'It already works, with no key at all' : 'One step left: add a free key'}</b>
+      <p>${s.guest_mode ? 'You are in guest mode: a few no-account models answer right now. Want it faster? Add 2–3 free keys (a minute each, most without a card) to unlock dozens of strong models.' : 'The router needs at least one provider key before it can answer. Most take a minute and need no card.'}</p></div><a class="btn ${s.guest_mode ? '' : 'p'}" href="#keys">${s.guest_mode ? 'Make it faster' : 'Add a key'}</a></div>` : ''}
     <div class="grid g4 mb">
       <div class="card kpi"><span class="ic">${I('layers')}</span><div><b>${fmt(s.models)}</b><span>free models ready</span></div></div>
       <div class="card kpi"><span class="ic">${I('key')}</span><div><b>${fmt(s.providers_with_keys)}</b><span>providers connected</span></div></div>

@@ -11,6 +11,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+### Changed
+
+- Dashboard overview: the router's own key is labelled "Router key, created for you" so nobody thinks they have to find an API key first, and guest mode is presented as what it is: the router already answers with no key at all.
+
 ## [1.2.0] - 2026-11-26
 
 ### Changed

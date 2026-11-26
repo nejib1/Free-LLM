@@ -41,7 +41,7 @@ Dozens of companies give away AI for free: Google, Groq, NVIDIA, Cloudflare, Coh
   Gemini  Groq  OpenRouter  NVIDIA  Cohere  …60+ more
 ```
 
-<p align="center"><img src="docs/dashboard.png" width="820" alt="Free-LLM Router dashboard: router status, connection details with the key hidden, free models ready and requests today"></p>
+<p align="center"><img src="docs/dashboard.png" width="820" alt="Free-LLM Router playground: a coding question answered by a free model, then a second answer after the router switched provider on its own"></p>
 
 ### The big advantage
 
