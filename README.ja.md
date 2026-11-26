@@ -160,8 +160,8 @@ print(response.choices[0].message.content)
 | **[NVIDIA NIM](https://free-llm.com/provider/nvidia-nim)**<br><sub>📱 電話認証</sub> | ⏱️ ~40 RPM (varies per model, not published) | GLM-5.3 Flash, Riva Translate 4B v2, Cosmos Reason 2 8B, Muse Glimmer 30B |
 | **[Groq](https://free-llm.com/provider/groq-cloud)**<br><sub>🟢 カード不要</sub> | ⏱️ 30 RPM; 8K TPM on most chat models (varies by model)<br>📅 1,000 requests/day and 200K tokens/day on gpt-oss / Qwen (varies by model)<br>🗓️ Free Forever | GPT-OSS 120B, Qwen3.8 27B, Whisper Large v3, Whisper Large v3 Turbo |
 | **[Z.AI (GLM)](https://free-llm.com/provider/z-ai)**<br><sub>✉️ メール登録</sub> | ⏱️ ~1 request/second (Flash models)<br>📅 ~1,000 requests/day (Flash tier)<br>🗓️ Free tier ongoing, subject to change | GLM-4.6V-Flash (vision), GLM-4.5-Flash, GLM-4.7-Flash |
-| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ メール登録</sub> | ⏱️ 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go)<br>🗓️ Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
 | **[Cloudflare Workers AI](https://free-llm.com/provider/cloudflare-workers-ai)**<br><sub>🟢 カード不要</sub> | ⏱️ モデルにより異なる<br>📅 1 日 10,000 neurons<br>🗓️ ~300,000 neurons/month | FLUX.2 Dev (image), Whisper Large v3 Turbo, EuroLLM 9B, Apertus v1.5 8B |
+| **[OVH AI Endpoints](https://free-llm.com/provider/ovh-ai)**<br><sub>✉️ メール登録</sub> | ⏱️ 2 RPM per IP per model (anonymous, free); 400 RPM with a key (pay-as-you-go)<br>🗓️ Beta Access | GPT OSS 120B, BGE-M3 (embeddings), Whisper Large v3 Turbo, Qwen2.5 VL 72B Instruct |
 | **[Kilo AI Gateway](https://free-llm.com/provider/kilo-gateway)**<br><sub>🟢 カード不要</sub> | ⏱️ 200 requests/hour per IP on free models (anonymous use allowed)<br>📅 Default free models only<br>🗓️ Free plan, no expiry | Nemotron 3.5 Lightning, Nemotron 3 Nano Omni Reasoning, Reflection Beam 1.0, Nemotron 3.5 Super VL |
 | **[Nous Portal](https://free-llm.com/provider/nous-portal)**<br><sub>💳 カード必要</sub> | ⏱️ Standard rate limits (figures not published)<br>📅 Free models only (no monthly credit)<br>🗓️ Free tier: $0/month. A GitHub user reported (14 Sep 2026) that a payment method (Stripe, $0 ch…<br><sub>[詳細 →](https://free-llm.com/provider/nous-portal)</sub> | StepFun Step 3.7 Flash, Upstage Solar Mini 4, Qwen4 Max, LongCat 2.5 |
 | **[Hetzner Inference API](https://free-llm.com/provider/hetzner-inference)**<br><sub>💳 カード必要</sub> | ⏱️ 10 requests, 4M input / 100K output tokens per 60s (per API key)<br>📅 No daily cap published (free while the API is experimental); a Hetzner account with billing de…<br>🗓️ Free during experimental phase, no billing system yet<br><sub>[詳細 →](https://free-llm.com/provider/hetzner-inference)</sub> | Qwen3.8 27B, Qwen3.6 35B A3B |
@@ -299,8 +299,8 @@ print(response.choices[0].message.content)
 | **[FreeModel](https://free-llm.com/provider/freemodel)**<br><sub>🟢 カード不要 · [🔑&nbsp;キー](https://freemodel.online/)</sub> | `https://freemodel.online/v1 (OpenAI-compatible) · https://freemodel.online/api/gateway (Anthropic-compatible)` |
 | **[Inferaft](https://free-llm.com/provider/inferaft)**<br><sub>🟢 カード不要 · [🔑&nbsp;キー](https://inferaft.com/)</sub> | `https://inferaft.com/v1` |
 | **[Runcrate (free inference)](https://free-llm.com/provider/runcrate)**<br><sub>🟢 カード不要 · [🔑&nbsp;キー](https://www.runcrate.ai/inference/free)</sub> | `https://api.runcrate.ai/v1` |
-| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)**<br><sub>🟢 カード不要 · [🔑&nbsp;キー](https://pollinations.ai)</sub> | `https://gen.pollinations.ai/v1` |
 | **[Inception Labs](https://free-llm.com/provider/inception-labs)**<br><sub>🟢 カード不要 · [🔑&nbsp;キー](https://www.inceptionlabs.ai/)</sub> | `https://api.inceptionlabs.ai/v1` |
+| **[Pollinations.ai](https://free-llm.com/provider/pollinations-ai)**<br><sub>🟢 カード不要 · [🔑&nbsp;キー](https://pollinations.ai)</sub> | `https://gen.pollinations.ai/v1` |
 | **[Replicate](https://free-llm.com/provider/replicate)**<br><sub>✉️ メール登録 · [🔑&nbsp;キー](https://replicate.com/)</sub> | <sub>独自 API のみ — [設定ガイド](https://free-llm.com/provider/replicate)</sub> |
 | **[Fireworks AI](https://free-llm.com/provider/fireworks-ai)**<br><sub>✉️ メール登録 · [🔑&nbsp;キー](https://fireworks.ai/)</sub> | `https://api.fireworks.ai/inference/v1` |
 | **[Novita AI](https://free-llm.com/provider/novita-ai)**<br><sub>✉️ メール登録 · [🔑&nbsp;キー](https://novita.ai/)</sub> | `https://api.novita.ai/v3/openai` |
@@ -474,4 +474,4 @@ MIT — 詳細は [LICENSE](LICENSE) を参照してください。
 
 ---
 
-<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-25<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Data synced automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-26<!--LASTSYNC:END--></sub></p>
