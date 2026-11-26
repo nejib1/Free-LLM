@@ -2,7 +2,7 @@
 
 Point OpenAI's Codex CLI at a free OpenAI-compatible backend.
 
-> Last checked: November 4, 2026. Free tiers change often, so check [free-llm.com](https://free-llm.com) before relying on one.
+> Last checked: November 26, 2026. Free tiers change often, so check [free-llm.com](https://free-llm.com) before relying on one.
 
 ## How it works
 
@@ -32,11 +32,6 @@ base_url = "https://integrate.api.nvidia.com/v1"
 env_key = "NVIDIA_API_KEY"
 wire_api = "chat"
 
-[model_providers.mistral]
-name = "Mistral"
-base_url = "https://api.mistral.ai/v1"
-env_key = "MISTRAL_API_KEY"
-wire_api = "chat"
 ```
 
 Then export the key and run Codex, switching provider and model on the command line when you like:
@@ -49,10 +44,7 @@ export OPENROUTER_API_KEY="sk-or-v1-your_key"      # openrouter.ai/keys, no card
 codex -c model_provider=openrouter -m "nvidia/nemotron-3-ultra-550b-a55b:free"
 
 export NVIDIA_API_KEY="nvapi-your_key"             # build.nvidia.com
-codex -c model_provider=nvidia -m "moonshotai/kimi-k2.6"
-
-export MISTRAL_API_KEY="your_mistral_key"          # console.mistral.ai, free Experiment plan
-codex -c model_provider=mistral -m "codestral-latest"
+codex -c model_provider=nvidia -m "moonshotai/kimi-k3.1-pro"
 ```
 
 ## Good free models for Codex
@@ -61,10 +53,9 @@ codex -c model_provider=mistral -m "codestral-latest"
 |:---|:---|:---|
 | Groq | `openai/gpt-oss-120b` | Very fast, good tool calling, 1,000 requests/day |
 | Groq / Cerebras | `qwen/qwen3.8-27b` / `qwen-3.8-27b` | Strong coder for its size |
-| NVIDIA NIM | `moonshotai/kimi-k2.6`, `z-ai/glm-5.3-flash`, `mistralai/mistral-large-4-1t-a52b` | Large models on free trial endpoints |
+| NVIDIA NIM | `moonshotai/kimi-k3.1-pro`, `z-ai/glm-5.3-flash`, `mistralai/mistral-large-4-1t-a52b` | Large models on free trial endpoints |
 | OpenRouter | `nvidia/nemotron-3-ultra-550b-a55b:free`, `cohere/north-mini-code:free`, `recursive/flint-v1.0:free` | Free, 1M-token context on Nemotron |
-| Mistral | `codestral-latest` | Built for code, fill-in-the-middle |
-| Cloudflare | `@cf/moonshotai/kimi-k2.7-code` | Coding model, 10,000 free neurons/day (needs the account-specific URL) |
+| Cloudflare | `@cf/google/gemma-4-26b-a4b-it` | 10,000 free neurons/day (needs the account-specific URL) |
 
 ## Caveats
 
