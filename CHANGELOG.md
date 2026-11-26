@@ -11,6 +11,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+### Added
+
+- `--json` for `free-llm status`, `free-llm models` and `free-llm providers`: the same information as JSON on stdout, for scripts, status bars and CI checks (#43).
+
 ## [1.0.3] - 2026-11-24
 
 ### Added

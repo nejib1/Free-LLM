@@ -350,3 +350,38 @@ test('cli: a key the provider refuses is not kept, an unknown provider gets a cl
   const service = await run('service');
   assert.match(service.stdout, /Usage: free-llm service install/);
 });
+
+test('cli: --json prints only JSON for status, models and providers', async () => {
+  const { spawn } = await import('node:child_process');
+  const { fileURLToPath } = await import('node:url');
+  const bin = fileURLToPath(new URL('../bin/free-llm.js', import.meta.url));
+  const run = (args, env = {}) => new Promise((resolve) => {
+    const child = spawn(process.execPath, [bin, ...args], { env: { ...process.env, FREE_LLM_HOME: HOME, HOME, FREE_LLM_NO_ENV_IMPORT: '1', NO_COLOR: '1', ...env } });
+    let stdout = '';
+    child.stdout.on('data', (d) => { stdout += d; });
+    child.on('close', (status) => resolve({ status, stdout }));
+  });
+
+  const down = await run(['status', '--json']);
+  assert.equal(down.status, 0);
+  assert.equal(JSON.parse(down.stdout).running, false);
+
+  const up = await run(['status', '--json'], { FREE_LLM_PORT: String(server.address().port) });
+  assert.equal(up.status, 0);
+  const status = JSON.parse(up.stdout);
+  assert.equal(status.running, true);
+  assert.equal(status.strategy, 'order');
+  assert.equal(typeof status.today.requests, 'number');
+  assert.equal(status.api_key, undefined, 'the router key stays out of status output');
+
+  const models = await run(['models', '--json']);
+  assert.equal(models.status, 0);
+  const ids = JSON.parse(models.stdout).data.map((m) => m.id);
+  assert.ok(ids.includes('auto') && ids.includes('ok-model'));
+
+  const providers = await run(['providers', '--all', '--json']);
+  assert.equal(providers.status, 0);
+  const alpha = JSON.parse(providers.stdout).providers.find((p) => p.slug === 'alpha');
+  assert.equal(alpha.has_key, true);
+  assert.equal(alpha.chat_models, MODELS.length);
+});
