@@ -214,6 +214,7 @@ free-llm service install     start automatically at login (systemd / launchd / W
 free-llm status | doctor     health check and diagnostics
 free-llm chat "question"     ask from the terminal
 free-llm models | providers  what you can use, where to get more
+free-llm status --json       same as JSON, for scripts (also: models, providers)
 free-llm update              refresh the catalog now
 ```
 
