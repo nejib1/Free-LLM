@@ -27,6 +27,7 @@ const color = process.stdout.isTTY && !process.env.NO_COLOR;
 const c = (code) => (s) => (color ? `\x1b[${code}m${s}\x1b[0m` : String(s));
 const bold = c('1'), dim = c('2'), green = c('32'), yellow = c('33'), red = c('31'), cyan = c('36'), magenta = c('35');
 const out = (...a) => console.log(...a);
+const outJson = (v) => out(JSON.stringify(v, null, 2));
 // `free-llm … | head` closes the pipe early: stop quietly instead of crashing.
 process.stdout.on('error', (e) => { if (e.code === 'EPIPE') process.exit(0); });
 
@@ -118,10 +119,10 @@ ${bold('Start')}
   free-llm                      first run: guided setup, then start the router
   free-llm start [--port 4000] [--host 127.0.0.1] [--open] [--daemon]
   free-llm stop                 stop a background router
-  free-llm status               is it running? usage today
+  free-llm status [--json]      is it running? usage today
 
 ${bold('Keys & providers')}
-  free-llm providers [--all]    best free providers to sign up for (with links)
+  free-llm providers [--all] [--json]  best free providers to sign up for (with links)
   free-llm keys                 list your keys
   free-llm keys add <provider> <key> [--label x] [--account-id id]
   free-llm keys remove <provider> [key-id]
@@ -132,7 +133,7 @@ ${bold('Use it')}
   free-llm launch <agent> [-- args]               run claude / codex / opencode / aider / qwen / goose / crush on free models
   free-llm connect [tool]       copy-paste settings for Cursor, Cline, Continue, Zed, Open WebUI, SDKs…
   free-llm chat ["question"] [--model auto:coding]   quick chat in the terminal
-  free-llm models [--all]       models you can use now
+  free-llm models [--all] [--json]  models you can use now
 
 ${bold('Maintenance')}
   free-llm doctor               diagnose problems
@@ -267,9 +268,13 @@ async function cmdStop() {
 async function cmdStatus() {
   const cfg = loadConfig();
   const up = await routerRunning(cfg);
+  const r = up ? await fetch(`${urls(cfg).root}/admin/api/status`, { headers: { authorization: `Bearer ${cfg.api_key}` } }).then((x) => x.json()) : null;
+  if (flags.json) {
+    outJson(r ? { running: true, version: r.version, root_url: r.root_url, models: r.models, targets: r.targets, healthy_targets: r.healthy_targets, guest_mode: r.guest_mode, today: r.today, catalog: r.catalog, strategy: r.strategy } : { running: false, root_url: urls(cfg).root });
+    return;
+  }
   out(`${bold('Router')}      ${up ? green('running') : red('not running')}  ${dim(urls(cfg).root)}`);
   if (!up) { out(dim('Start it with: free-llm start   (or free-llm start --daemon)')); return; }
-  const r = await fetch(`${urls(cfg).root}/admin/api/status`, { headers: { authorization: `Bearer ${cfg.api_key}` } }).then((x) => x.json());
   out(`${bold('Models')}      ${r.models} usable (${r.healthy_targets}/${r.targets} routes healthy)${r.guest_mode ? yellow('  — guest mode, add keys for speed') : ''}`);
   out(`${bold('Today')}       ${r.today.requests} requests · ${r.today.ok} ok · ${r.today.fail} retried · ${r.today.tokens.toLocaleString()} tokens`);
   out(`${bold('Catalog')}     ${r.catalog.providers} providers, ${r.catalog.models} models — ${r.catalog.source}`);
@@ -280,6 +285,10 @@ async function cmdProviders() {
   const cfg = loadConfig();
   const cat = await ensureCatalog(cfg);
   const list = flags.all ? [...cat.providers.values()].filter((p) => p.usable).sort((a, b) => a.name.localeCompare(b.name)) : recommended(cat, 15);
+  if (flags.json) {
+    outJson({ providers: list.map((p) => ({ slug: p.slug, name: p.name, signup: p.signup, chat_models: p.models.filter((m) => m.kind === 'chat').length, help_url: p.helpUrl, guest: p.anonymousKey !== null, has_key: providerKeys(cfg, p.slug).length > 0 })) });
+    return;
+  }
   out(bold(flags.all ? `All ${list.length} providers the router can use:` : 'Best free providers to sign up for:'));
   for (const p of list) {
     const has = providerKeys(cfg, p.slug).length ? green(' ✓ key saved') : p.anonymousKey !== null ? dim(' (guest access)') : '';
@@ -365,7 +374,9 @@ async function cmdModels() {
   const cfg = loadConfig();
   await ensureCatalog(cfg);
   st.loadState();
-  const data = listModels(cfg, { all: Boolean(flags.all) }).data;
+  const list = listModels(cfg, { all: Boolean(flags.all) });
+  if (flags.json) { outJson(list); return; }
+  const data = list.data;
   out(bold('Profiles') + dim(' (send these as the model name)'));
   for (const m of data.filter((x) => x.id.startsWith('auto'))) out(`  ${cyan(m.id.padEnd(16))} ${dim(m.description || '')}`);
   const rest = data.filter((x) => !x.id.startsWith('auto'));
