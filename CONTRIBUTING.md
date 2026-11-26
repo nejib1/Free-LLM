@@ -2,11 +2,22 @@
 
 Thanks for helping. This repository mirrors the live directory at [free-llm.com](https://free-llm.com), and it's only useful if the data is right. Free tiers change every week, so a short, sourced correction is often worth more than a big PR.
 
+## You get credit for what you contribute
+
+Every contribution we use is credited, whatever its size:
+
+- **Your name and avatar** in the Contributors section of the README and in [CONTRIBUTORS.md](CONTRIBUTORS.md)
+- **Co-author credit on the commit** that applies your change, so you appear in GitHub's Contributors list even when the change goes through the database rather than a merge
+- **Your commits stay yours** when we merge your pull request
+- **A thank-you** in the issue or pull request, and in the [release notes](CHANGELOG.md) for router changes
+
+A sourced correction ("this free tier ended, here is the official page") counts as a contribution, just like code.
+
 ## Read this first: the README tables are generated
 
 Every provider table in `README.md` and the translated READMEs (Permanent Free Tiers, Renewable Credits, One-Time Trial Credits, Quick Reference) is **regenerated every night from the live database** that powers free-llm.com. The parts between `<!--TABLE:...:START-->` and `<!--TABLE:...:END-->` markers are overwritten on the next sync.
 
-So a PR that edits a table row will be lost the next morning, even if we agree with it. To change a provider, open an issue (or use the website). We check the facts, update the database, and the README follows on its own.
+So the table text itself is rebuilt every night. If you open a PR that edits a row anyway, no problem: we check the facts, apply them to the database, and credit you as a co-author; the README follows on its own. An issue (or the website) works just as well and is a little quicker to review.
 
 PRs are welcome for everything outside the tables: wording, translations, new code examples, tool configs and fixes to `code-examples/`.
 
@@ -49,6 +60,7 @@ npm test                                 # node --test router/test/router.test.j
 ```
 
 - The tests use a local mock provider (`router/test/mock-provider.js`), so they need no API key and no network. Please run them before opening a pull request.
+- Looking for something to do? Start with [`good first issue`](https://github.com/nejib1/Free-LLM/labels/good%20first%20issue) or [`help wanted`](https://github.com/nejib1/Free-LLM/labels/help%20wanted). Small improvements (a test, a recipe for another tool, a clearer error message, a dashboard fix) can go straight to a pull request.
 - A bug fix should come with a test that fails without it. For a new feature, open a [feature request](https://github.com/nejib1/Free-LLM/issues/new?template=router-feature.yml) first so we can agree on the shape before you write code.
 - Keep it dependency-free. That is a feature: the whole router is a ~100 KB download.
 - `router/catalog.snapshot.json` is refreshed by the daily sync. Don't edit it by hand.
