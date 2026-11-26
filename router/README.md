@@ -279,7 +279,7 @@ The router is small (plain Node.js, no dependencies, no build step) and easy to 
 
 <!--ROUTERCONTRIB:START-->
 <table>
-  <tr><td align="center" valign="top" width="14%"><a href="https://github.com/octo-patch"><img src="https://avatars.githubusercontent.com/u/266937838?v=4&s=80" width="64" height="64" alt="octo-patch"><br><sub><b>octo-patch</b></sub></a><br><sub title="MiniMax-M3.1-Flash in auto:reasoning routes, with a regression test">⚡ Router <a href="https://github.com/nejib1/Free-LLM/issues/40">#40</a></sub></td></tr>
+  <tr><td align="center" valign="top" width="14%"><a href="https://github.com/octo-patch"><img src="https://avatars.githubusercontent.com/u/266937838?v=4&s=80" width="64" height="64" alt="octo-patch"><br><sub><b>octo-patch</b></sub></a><br><sub title="MiniMax-M3.1-Flash in auto:reasoning routes, with a regression test">⚡ Router <a href="https://github.com/nejib1/Free-LLM/issues/40">#40</a></sub></td><td align="center" valign="top" width="14%"><a href="https://github.com/tridev-tej"><img src="https://avatars.githubusercontent.com/u/188414140?v=4&s=80" width="64" height="64" alt="tridev-tej"><br><sub><b>tridev-tej</b></sub></a><br><sub title="--json output for status, models and providers, with a CLI test">⚡ Router <a href="https://github.com/nejib1/Free-LLM/issues/43">#43</a> <a href="https://github.com/nejib1/Free-LLM/issues/45">#45</a></sub></td></tr>
 </table>
 <!--ROUTERCONTRIB:END-->
 
