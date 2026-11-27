@@ -4,10 +4,10 @@
     "source": "https://free-llm.com",
     "license": "MIT",
     "schema_version": 2,
-    "generated_at": "2026-11-26T13:59:18+01:00",
-    "updated_at": "2026-11-26T11:01:32+01:00",
-    "provider_count": 87,
-    "model_count": 459,
+    "generated_at": "2026-11-27T03:51:00+01:00",
+    "updated_at": "2026-11-26T20:39:35+01:00",
+    "provider_count": 88,
+    "model_count": 465,
     "providers": [
         {
             "slug": "agnes-ai",
@@ -352,6 +352,83 @@
                     "name": "Qwen3.8-27B",
                     "context": "See provider",
                     "key": "qwen3.8-27b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                }
+            ]
+        },
+        {
+            "slug": "amd-token-lab",
+            "name": "AMD Token Lab",
+            "type": "Trial Credits",
+            "url": "https://free-llm.com/provider/amd-token-lab",
+            "website": "https://notebooks.amd.com/tokenlab",
+            "base_url": "https://api.tokenlab.amd.com/v1",
+            "free_tier": "trial_credits",
+            "category": "trial_credit",
+            "signup_requirement": "registration",
+            "verified": true,
+            "rate_limit": "20 requests/minute per key",
+            "daily_limit": "None specified",
+            "credits": null,
+            "credits_duration": null,
+            "openai_compatible": true,
+            "openai_base_url": "https://api.tokenlab.amd.com/v1",
+            "needs": [],
+            "anonymous_key": null,
+            "key_help_url": "https://free-llm.com/provider/amd-token-lab",
+            "models": [
+                {
+                    "id": null,
+                    "name": "Gemma-4-31B-IT",
+                    "context": "262K",
+                    "key": "gemma-4-31b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": 262000
+                },
+                {
+                    "id": null,
+                    "name": "DeepSeek-V4.1-Flash",
+                    "context": "See provider",
+                    "key": "deepseek-v4.1-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "DeepSeek-V4-Flash",
+                    "context": "See provider",
+                    "key": "deepseek-v4-flash",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "Qwen3.8-27B",
+                    "context": "See provider",
+                    "key": "qwen3.8-27b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "MiniCPM-V-4.7-35B-A3B",
+                    "context": "See provider",
+                    "key": "minicpm-v-4.7-35b",
+                    "kind": "chat",
+                    "vision": false,
+                    "context_tokens": null
+                },
+                {
+                    "id": null,
+                    "name": "MiniCPM5-2B",
+                    "context": "See provider",
+                    "key": "minicpm5-2b",
                     "kind": "chat",
                     "vision": false,
                     "context_tokens": null
