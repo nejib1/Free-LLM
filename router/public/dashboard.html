@@ -255,7 +255,7 @@ document.addEventListener('click', (e) => {
   if (c) { e.preventDefault(); copyText(c.dataset.copy); }
 });
 const header = (title, sub, actions = '') => `<div class="ph"><div><h1>${title}</h1>${sub ? `<p>${sub}</p>` : ''}</div>${actions ? `<div class="row">${actions}</div>` : ''}</div>`;
-const copyBtn = (v, label = 'Copy') => `<button class="btn s" data-copy="${esc(v)}">${I('copy')}${label}</button>`;
+const copyBtn = (v, label = 'Copy') => `<button type="button" class="btn s" data-copy="${esc(v)}">${I('copy')}${label}</button>`;
 const avatar = (name) => {
   let h = 0; for (const ch of String(name)) h = (h * 31 + ch.charCodeAt(0)) % 360;
   const ini = String(name).replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase() || '?';
@@ -450,7 +450,10 @@ async function addKey(slug) {
 }
 
 pages.connect = async () => {
-  const { snippets } = await api('/admin/api/setup');
+  const { snippets, tunnel, host, port } = await api('/admin/api/setup');
+  const p = Number(port) || 4000;
+  const sshCmd = tunnel?.command || `ssh -L ${p}:127.0.0.1:${p} you@server`;
+  const localOnly = !host || ['127.0.0.1', 'localhost', '::1'].includes(host);
   const groups = { agent: ['terminal', 'Coding agents'], editor: ['code', 'Editors and IDE extensions'], app: ['chat', 'Chat apps'], mcp: ['box', 'MCP: free models as a tool'], code: ['cpu', 'Code and SDKs'] };
   $('#main').innerHTML = `
     ${header('Connect your tools', 'Anything that speaks the OpenAI or Anthropic API works. For the tools below there is a ready-made recipe.')}
@@ -458,6 +461,15 @@ pages.connect = async () => {
       <h2>Fastest: one command</h2><p class="muted small" style="margin:3px 0 10px">Your coding agent now runs on free models. Undo any time with <code>--remove</code>; your previous settings are backed up.</p>
       <div class="cmd"><span>free-llm setup claude</span>${copyBtn('free-llm setup claude')}</div>
       <p class="xs muted" style="margin:8px 0 0">Also: <code>codex</code> · <code>opencode</code> · <code>aider</code></p></div></div></div>
+    <div class="card cb mb"><div class="row" style="align-items:flex-start;gap:14px"><span class="kpi" style="padding:0"><span class="ic">${I('globe')}</span></span><div class="grow">
+      <h2>Using it from another computer?</h2>
+      <p class="muted small" style="margin:3px 0 10px">${localOnly
+        ? `The dashboard listens on localhost only. Run this on your own computer, then open <code>${esc(tunnel?.url || `http://localhost:${p}`)}</code>:`
+        : `Listening on <code>${esc(host)}:${p}</code> (remote browsers sign in with the router key). Or keep it localhost-only and use an SSH tunnel:`}</p>
+      <div class="cmd"><span>${esc(sshCmd)}</span>${copyBtn(sshCmd)}</div>
+      <p class="xs muted" style="margin:8px 0 0">${localOnly
+        ? 'Or share it on your network (the dashboard asks for the router key): <code>free-llm start --host 0.0.0.0</code>'
+        : 'To restrict it to this machine again: <code>free-llm start --host 127.0.0.1</code>'}</p></div></div></div>
     ${Object.entries(groups).map(([g, [icon, title]]) => {
       const items = snippets.filter((s) => s.kind === g);
       if (!items.length) return '';

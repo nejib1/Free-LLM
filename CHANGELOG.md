@@ -11,6 +11,10 @@ and the monthly [`data-YYYY.MM` releases](https://github.com/nejib1/Free-LLM/rel
 
 ## [Unreleased]
 
+### Added
+
+- `free-llm doctor`, `free-llm status`, and the dashboard *Connect your tools* page now show the `ssh -L` tunnel tip (and `--host 0.0.0.0` alternative) when running on localhost (#46).
+
 ## [1.2.1] - 2026-11-26
 
 ### Changed

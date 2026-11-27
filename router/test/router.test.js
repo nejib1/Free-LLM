@@ -397,3 +397,59 @@ test('ssh tunnel hint: shown over SSH on localhost only, with the right port and
     'ssh -L 4100:127.0.0.1:4100 -p 2222 ana@10.0.0.9');
   assert.equal(sshTunnelHint({ host: '0.0.0.0', port: 4000 }, { SSH_CONNECTION: '1.1.1.1 1 2.2.2.2 22' }, 'x'), null, 'already shared on the network');
 });
+
+test('cli: doctor and status show the ssh tunnel hint over SSH on localhost only', async () => {
+  const { spawn } = await import('node:child_process');
+  const { fileURLToPath } = await import('node:url');
+  const bin = fileURLToPath(new URL('../bin/free-llm.js', import.meta.url));
+  const port = server.address().port;
+  const user = os.userInfo().username;
+  const sshEnv = { SSH_CONNECTION: '192.168.1.20 51022 192.168.1.171 22', SSH_CLIENT: '' };
+  const noSshEnv = { SSH_CONNECTION: '', SSH_CLIENT: '' };
+  const run = (args, env = {}) => new Promise((resolve) => {
+    const child = spawn(process.execPath, [bin, ...args], { env: { ...process.env, FREE_LLM_HOME: HOME, HOME, FREE_LLM_NO_ENV_IMPORT: '1', FREE_LLM_PORT: String(port), NO_COLOR: '1', ...env } });
+    let stdout = '';
+    child.stdout.on('data', (d) => { stdout += d; });
+    child.on('close', (status) => resolve({ status, stdout }));
+  });
+
+  const expectedCmd = `ssh -L ${port}:127.0.0.1:${port} ${user}@192.168.1.171`;
+
+  const docNoSsh = await run(['doctor'], noSshEnv);
+  assert.equal(docNoSsh.status, 0);
+  assert.ok(!docNoSsh.stdout.includes('ssh -L'), 'doctor outside SSH stays unchanged');
+
+  const docSsh = await run(['doctor'], sshEnv);
+  assert.equal(docSsh.status, 0);
+  assert.ok(docSsh.stdout.includes('localhost only'));
+  assert.ok(docSsh.stdout.includes(expectedCmd), 'doctor over SSH shows tunnel command');
+
+  const docShared = await run(['doctor'], { ...sshEnv, FREE_LLM_HOST: '0.0.0.0' });
+  assert.equal(docShared.status, 0);
+  assert.ok(!docShared.stdout.includes('ssh -L'), 'doctor with --host 0.0.0.0 omits tunnel tip');
+
+  const stNoSsh = await run(['status'], noSshEnv);
+  assert.equal(stNoSsh.status, 0);
+  assert.ok(!stNoSsh.stdout.includes('ssh -L'), 'status outside SSH stays unchanged');
+
+  const stSsh = await run(['status'], sshEnv);
+  assert.equal(stSsh.status, 0);
+  assert.ok(stSsh.stdout.includes(expectedCmd), 'status over SSH shows tunnel command');
+
+  const stJson = await run(['status', '--json'], sshEnv);
+  assert.equal(stJson.status, 0);
+  assert.equal(JSON.parse(stJson.stdout).running, true, 'status --json prints only JSON over SSH');
+
+  const stShared = await run(['status'], { ...sshEnv, FREE_LLM_HOST: '0.0.0.0' });
+  assert.equal(stShared.status, 0);
+  assert.ok(!stShared.stdout.includes('ssh -L'), 'status with --host 0.0.0.0 omits tunnel tip');
+
+  const setup = await fetch(base + '/admin/api/setup', { headers: { authorization: `Bearer ${KEY}` } }).then((x) => x.json());
+  assert.equal(setup.host, '127.0.0.1');
+  assert.equal(typeof setup.port, 'number');
+  assert.ok('tunnel' in setup);
+
+  const html = await fetch(base + '/').then((x) => x.text());
+  assert.ok(html.includes('Using it from another computer?'));
+  assert.ok(html.includes('free-llm start --host 0.0.0.0'));
+});

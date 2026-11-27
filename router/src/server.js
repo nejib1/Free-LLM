@@ -225,7 +225,9 @@ async function admin(cfg, req, res, p, body) {
     return sendJson(res, 200, { ok: true, catalog: catalogStatus() });
   }
   if (p === 'reset-cooldowns' && m === 'POST') { st.resetCooldowns(); return sendJson(res, 200, { ok: true }); }
-  if (p === 'setup' && m === 'GET') return sendJson(res, 200, { snippets: snippets(cfg) });
+  if (p === 'setup' && m === 'GET') {
+    return sendJson(res, 200, { snippets: snippets(cfg), tunnel: sshTunnelHint(cfg), host: cfg.host, port: cfg.port });
+  }
   if (p === 'api-key/rotate' && m === 'POST') {
     cfg.api_key = 'fllm-' + uid('', 40);
     saveConfig(cfg);
