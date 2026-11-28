@@ -19,7 +19,7 @@ const { loadCatalog, catalog, catalogStatus, refreshCatalog, recommendScore } = 
 const st = await import('../src/state.js');
 const { runChat, allTargets, listModels, PROFILES } = await import('../src/router.js');
 const { testKey } = await import('../src/upstream.js');
-const { AGENTS, snippets, urls } = await import('../src/setup.js');
+const { AGENTS, snippets, urls, sshTunnelHint } = await import('../src/setup.js');
 const { VERSION, sleep, fmtMs } = await import('../src/util.js');
 
 // ---------- tiny terminal helpers ----------
@@ -279,6 +279,8 @@ async function cmdStatus() {
   out(`${bold('Today')}       ${r.today.requests} requests · ${r.today.ok} ok · ${r.today.fail} retried · ${r.today.tokens.toLocaleString()} tokens`);
   out(`${bold('Catalog')}     ${r.catalog.providers} providers, ${r.catalog.models} models — ${r.catalog.source}`);
   out(`${bold('Strategy')}    ${r.strategy}`);
+  const tunnel = sshTunnelHint(cfg);
+  if (tunnel) out(`${bold('SSH tunnel')}  ${tunnel.command}  ${dim(`→ ${tunnel.url}`)}`);
 }
 
 async function cmdProviders() {
@@ -496,6 +498,8 @@ async function cmdDoctor() {
   }
   const up = await routerRunning(cfg);
   line(up, 'Router running', up ? urls(cfg).root : 'start it: free-llm start');
+  const tunnel = sshTunnelHint(cfg);
+  if (tunnel) out(`  ${dim('·')} Dashboard listens on localhost only (unreachable from another computer over SSH) — run on your computer: ${cyan(tunnel.command)}  ${dim(`then open ${tunnel.url}`)}`);
   for (const [id, a] of Object.entries(AGENTS)) {
     if (!a.file) continue;
     const f = a.file();
