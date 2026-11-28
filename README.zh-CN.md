@@ -574,4 +574,4 @@ Free-LLM/
 
 ---
 
-<p align="center"><sub>表格根据在线目录自动重建 — 最后更新：<!--LASTSYNC:START-->2026-11-27<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>表格根据在线目录自动重建 — 最后更新：<!--LASTSYNC:START-->2026-11-28<!--LASTSYNC:END--></sub></p>

@@ -574,4 +574,4 @@ Free-LLM/
 
 ---
 
-<p align="center"><sub>표는 실시간 디렉터리에서 자동으로 다시 생성됩니다 — 마지막 업데이트: <!--LASTSYNC:START-->2026-11-27<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>표는 실시간 디렉터리에서 자동으로 다시 생성됩니다 — 마지막 업데이트: <!--LASTSYNC:START-->2026-11-28<!--LASTSYNC:END--></sub></p>

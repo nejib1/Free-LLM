@@ -576,4 +576,4 @@ If this list saved you time, a ⭐ helps other people find it.
 
 ---
 
-<p align="center"><sub>Tables rebuilt automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-27<!--LASTSYNC:END--></sub></p>
+<p align="center"><sub>Tables rebuilt automatically from the live directory — last updated: <!--LASTSYNC:START-->2026-11-28<!--LASTSYNC:END--></sub></p>
